@@ -4,17 +4,18 @@ Recopilación de apuntes, conceptos transversales y notas de cursada para la **E
 
 Este sitio es un complemento de estudio compartido entre compañeres de la cursada. La intención es tener a mano definiciones operativas, marcos teóricos y conexiones entre materias, escritas en lenguaje accesible.
 
-!!! warning "Sobre el contenido — leer antes de usar"
-    **Estos apuntes fueron producidos en diálogo con Claude (Anthropic)**, un modelo de lenguaje (LLM). Surgieron de conversaciones donde le pedía que me explicara, ampliara o aclarara conceptos que aparecían en clases y lecturas, y después curaba/editaba las respuestas que me parecían útiles para sumarlas acá.
+## ⚠️ Sobre el contenido — leer antes de usar
 
-    **Implicaciones de las que conviene estar al tanto:**
+**Estos apuntes fueron producidos en diálogo con Claude (Anthropic)**, un modelo de lenguaje (LLM). Surgieron de conversaciones donde le pedía que me explicara, ampliara o aclarara conceptos que aparecían en clases y lecturas, y después curaba/editaba las respuestas que me parecían útiles para sumarlas acá.
 
-    - **Pueden contener errores** — fechas mal, atribuciones incorrectas, generalizaciones excesivas. Verificá con fuentes primarias antes de citar.
-    - **No reemplazan la lectura** de los textos del programa. Son scaffolding conceptual, no resúmenes oficiales.
-    - **Reflejan mi recorrido personal** de cursada — los ejemplos, conexiones y énfasis están sesgados a lo que a mí me sirvió entender.
-    - **Si encontrás algo mal o discutible**, abrí un *issue* en el [repo](https://github.com/juliamendoim/Especializacion-Neurociencias-Page) o avisame.
+**Implicaciones:**
 
-    Para curiosos: el flujo es básicamente *yo le pregunto, Claude responde, yo edito y publico*. La curaduría es humana, la prosa es mayormente del modelo.
+- **Pueden contener errores** — fechas mal, atribuciones incorrectas, generalizaciones excesivas. Verificá con fuentes primarias antes de citar.
+- **No reemplazan la lectura** de los textos del programa. Son scaffolding conceptual, no resúmenes oficiales.
+- **Reflejan mi recorrido personal** de cursada — los ejemplos y énfasis están sesgados a lo que a mí me sirvió entender.
+- **Si encontrás algo mal o discutible**, abrí un *issue* en el [repo](https://github.com/juliamendoim/Especializacion-Neurociencias-Page).
+
+El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría es humana, la prosa es mayormente del modelo.
 
 ---
 

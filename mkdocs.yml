@@ -4,8 +4,7 @@ site_author: Julia Milanese
 repo_url: https://github.com/juliamendoim/Especializacion-Neurociencias-Page
 repo_name: juliamendoim/Especializacion-Neurociencias-Page
 
-copyright: |
-  Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese — <a href="/">leer disclaimer</a>. Verificá con fuentes primarias antes de citar.
+copyright: 'Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.'
 
 theme:
   name: material
