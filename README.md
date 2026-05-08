@@ -2,6 +2,12 @@
 
 Sitio web público con apuntes y conceptos transversales de la **Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura** (UBA, 2026).
 
+## ⚠️ Sobre el contenido
+
+**Los apuntes están producidos en diálogo con Claude (Anthropic)**, un modelo de lenguaje (LLM). Surgieron de conversaciones donde se pedía explicar, ampliar o aclarar conceptos que aparecían en clases y lecturas, y luego se curaron/editaron las respuestas útiles.
+
+**Implicaciones**: pueden contener errores; no reemplazan la lectura de los textos del programa; reflejan un recorrido personal de cursada. Verificá con fuentes primarias antes de citar.
+
 ## 🌐 Sitio publicado
 
 → **https://juliamendoim.github.io/Especializacion-Neurociencias-Page/**
