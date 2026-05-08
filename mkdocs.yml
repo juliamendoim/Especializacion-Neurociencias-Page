@@ -23,22 +23,17 @@ theme:
         icon: material/brightness-4
         name: Modo claro
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.sections
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
+    - navigation.path
     - toc.follow
     - search.suggest
     - search.highlight
     - search.share
     - content.code.copy
-
-plugins:
-  - search:
-      lang: es
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
 markdown_extensions:
   - admonition
@@ -57,6 +52,27 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+plugins:
+  - search:
+      lang: es
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
 nav:
   - Inicio: index.md
-  - Aprendizajes generales: aprendizajes-generales.md
+  - Estadística:
+    - estadistica/index.md
+    - t de Student: estadistica/t-de-student.md
+    - Efecto techo: estadistica/efecto-techo.md
+    - Media y desvío: estadistica/media-y-desvio.md
+  - Modelos cognitivos:
+    - modelos-cognitivos/index.md
+    - Buffer fonológico: modelos-cognitivos/buffer-fonologico.md
+    - Modelo dual-ruta: modelos-cognitivos/dual-ruta-lectura.md
+    - Activación: modelos-cognitivos/activacion.md
+  - Evaluación:
+    - evaluacion/index.md
+    - ITPA: evaluacion/itpa.md
+    - K-BIT: evaluacion/kbit.md
+  - Metodología:
+    - metodologia/index.md
+    - PRISMA: metodologia/prisma.md

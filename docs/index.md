@@ -6,34 +6,52 @@ Este sitio es un complemento de estudio compartido entre compañeres de la cursa
 
 ---
 
-## ¿Qué hay acá?
+## Secciones
 
-### [Aprendizajes generales](aprendizajes-generales.md)
-Conceptos transversales que aparecen en distintas materias:
+### 📊 [Estadística](estadistica/index.md)
+Conceptos estadísticos básicos que aparecen en papers.
 
-- **Conceptos de estadística** — t de Student, efecto techo, media y desvío estándar
-- **Modelos cognitivos del lenguaje** — buffer fonológico de salida, modelo dual-ruta de lectura, activación
-- **Instrumentos de evaluación** — ITPA, K-BIT
-- **Metodología de investigación** — PRISMA
+- [t de Student](estadistica/t-de-student.md)
+- [Efecto techo](estadistica/efecto-techo.md)
+- [Media y desvío estándar](estadistica/media-y-desvio.md)
+
+### 🧠 [Modelos cognitivos del lenguaje](modelos-cognitivos/index.md)
+Marcos teóricos sobre procesamiento del lenguaje.
+
+- [Buffer fonológico de salida](modelos-cognitivos/buffer-fonologico.md)
+- [Modelo dual-ruta de lectura](modelos-cognitivos/dual-ruta-lectura.md)
+- [Activación](modelos-cognitivos/activacion.md)
+
+### 📋 [Instrumentos de evaluación](evaluacion/index.md)
+Tests estandarizados de lenguaje e inteligencia.
+
+- [ITPA](evaluacion/itpa.md)
+- [K-BIT](evaluacion/kbit.md)
+
+### 🔬 [Metodología de investigación](metodologia/index.md)
+Estándares para diseñar y reportar investigación.
+
+- [PRISMA](metodologia/prisma.md)
 
 ---
 
 ## Cómo usar este sitio
 
-- **Buscador**: arriba a la derecha (icono de lupa). Busca en todo el contenido.
-- **Navegación**: panel izquierdo, por sección.
+- **Buscador**: arriba a la derecha (icono de lupa). Tecla `S` o `/` desde teclado para abrirlo. **Escape** para cerrarlo.
+- **Navegación lateral**: panel izquierdo. Click en una sección para expandir/colapsar.
+- **Breadcrumbs**: arriba de cada página, mostrando dónde estás y cómo volver.
+- **Logo o "Apuntes"** del header → siempre vuelve a esta página.
 - **Modo oscuro**: switch arriba a la derecha.
-- **Mobile**: responde bien en celular.
 
 ---
 
 ## Cómo contribuir
 
-El contenido vive en [este repositorio público](https://github.com/juliamendoim/Especializacion-Neurociencias-Page). Si querés sumar correcciones, ampliaciones o nuevos conceptos, podés:
+El contenido vive en [este repositorio público](https://github.com/juliamendoim/Especializacion-Neurociencias-Page). Si querés sumar correcciones, ampliaciones o nuevos conceptos:
 
-1. Hacer un *fork* y mandar un *pull request*, o
-2. Abrir un *issue* con la sugerencia, o
-3. Pedirme acceso de colaborador directo.
+1. Hacé un *fork* y mandá un *pull request*, o
+2. Abrí un *issue* con la sugerencia, o
+3. Pedime acceso de colaborador directo.
 
 ---
 
