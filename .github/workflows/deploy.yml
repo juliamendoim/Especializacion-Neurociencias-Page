@@ -22,8 +22,8 @@ jobs:
           python-version: '3.x'
           cache: pip
 
-      - name: Install MkDocs Material
-        run: pip install mkdocs-material
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Build and deploy site
         run: mkdocs gh-deploy --force --no-history
