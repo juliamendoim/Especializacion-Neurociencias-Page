@@ -64,6 +64,7 @@ nav:
   - Estadística:
     - estadistica/index.md
     - t de Student: estadistica/t-de-student.md
+    - Chi cuadrado: estadistica/chi-cuadrado.md
     - Efecto techo: estadistica/efecto-techo.md
     - Media y desvío: estadistica/media-y-desvio.md
   - Modelos cognitivos:
