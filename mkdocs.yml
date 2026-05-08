@@ -1,0 +1,56 @@
+site_name: Apuntes — Especialización en Neurociencias del Lenguaje
+site_description: Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA)
+site_author: Julia Milanese
+repo_url: https://github.com/juliamendoim/Especializacion-Neurociencias-Page
+repo_name: juliamendoim/Especializacion-Neurociencias-Page
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+nav:
+  - Inicio: index.md
+  - Aprendizajes generales: aprendizajes-generales.md
