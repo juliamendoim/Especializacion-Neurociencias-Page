@@ -21,30 +21,12 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 
 ## Secciones
 
-### 📊 [Estadística](estadistica/index.md)
-Conceptos estadísticos básicos que aparecen en papers.
+- 📊 **[Estadística](estadistica/index.md)** — conceptos que aparecen en papers (t de Student, efecto techo, media y DE).
+- 🧠 **[Modelos cognitivos del lenguaje](modelos-cognitivos/index.md)** — buffer fonológico, dual-ruta, activación.
+- 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT).
+- 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA).
 
-- [t de Student](estadistica/t-de-student.md)
-- [Efecto techo](estadistica/efecto-techo.md)
-- [Media y desvío estándar](estadistica/media-y-desvio.md)
-
-### 🧠 [Modelos cognitivos del lenguaje](modelos-cognitivos/index.md)
-Marcos teóricos sobre procesamiento del lenguaje.
-
-- [Buffer fonológico de salida](modelos-cognitivos/buffer-fonologico.md)
-- [Modelo dual-ruta de lectura](modelos-cognitivos/dual-ruta-lectura.md)
-- [Activación](modelos-cognitivos/activacion.md)
-
-### 📋 [Instrumentos de evaluación](evaluacion/index.md)
-Tests estandarizados de lenguaje e inteligencia.
-
-- [ITPA](evaluacion/itpa.md)
-- [K-BIT](evaluacion/kbit.md)
-
-### 🔬 [Metodología de investigación](metodologia/index.md)
-Estándares para diseñar y reportar investigación.
-
-- [PRISMA](metodologia/prisma.md)
+Usá el **sidebar izquierdo** o el **buscador** (lupa arriba a la derecha o tecla `S`) para navegar entre conceptos.
 
 ---
 
