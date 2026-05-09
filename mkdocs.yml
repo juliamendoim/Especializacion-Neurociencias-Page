@@ -91,6 +91,9 @@ nav:
   - Tipología:
     - tipologia/index.md
     - Español como lengua fusional: tipologia/espanol-fusional.md
+  - TDL:
+    - tdl/index.md
+    - Etiología multifactorial: tdl/etiologia-multifactorial.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md

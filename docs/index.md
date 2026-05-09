@@ -26,7 +26,8 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 - 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT, CELF, TROG, CEG).
 - 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)** — unidades para cuantificar producción (unidades-t, cláusulas).
 - 🌐 **[Tipología lingüística](tipologia/index.md)** — clasificaciones estructurales de lenguas (español como lengua fusional).
-- 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA).
+- 🧒 **[TDL](tdl/index.md)** — Trastorno del Desarrollo del Lenguaje: etiología, modelos teóricos, factores de riesgo.
+- 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA, CATALISE).
 
 Usá el **sidebar izquierdo** o el **buscador** (lupa arriba a la derecha o tecla `S`) para navegar entre conceptos.
 
