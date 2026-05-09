@@ -84,6 +84,9 @@ nav:
   - Medidas lingüísticas:
     - medidas-linguisticas/index.md
     - Unidades-t y cláusulas: medidas-linguisticas/unidades-t-y-clausulas.md
+  - Tipología:
+    - tipologia/index.md
+    - Español como lengua fusional: tipologia/espanol-fusional.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md
