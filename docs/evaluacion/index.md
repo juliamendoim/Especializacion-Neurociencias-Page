@@ -9,3 +9,4 @@ Tests estandarizados que aparecen como herramientas de medición en investigaci�
 - **[CELF — Clinical Evaluation of Language Fundamentals](celf.md)** — batería integral de lenguaje (gold standard internacional para TDL).
 - **[TROG — Test for Reception of Grammar](trog.md)** — comprensión gramatical receptiva, en inglés (Bishop).
 - **[CEG — Comprensión de Estructuras Gramaticales](ceg.md)** — el equivalente español del TROG (Mendoza et al.).
+- **[ECENI — Evaluación de la Comprensión y Producción en Narrativas Infantiles](eceni.md)** — narrativa como ventana integrada al lenguaje del niño.
