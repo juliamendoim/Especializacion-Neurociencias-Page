@@ -1,10 +1,13 @@
-# Garden path sentences
+# Garden path sentences (oraciones de "vía muerta")
+
+!!! note "Nombre en español"
+    En la literatura hispanohablante se traduce como **"oraciones de vía muerta"** (a veces "oraciones laberinto" o "oraciones-trampa"). La metáfora del callejón sin salida ferroviario captura bien la idea: el parser entra por una vía que no llega a destino y tiene que retroceder.
 
 ## Qué son
 
-Una **garden path sentence** (oración de "jardín") es una oración gramaticalmente correcta que **lleva al lector por un camino interpretativo que después resulta incorrecto**, forzándolo a **reanalizar** la estructura sintáctica al llegar a una palabra que rompe la lectura inicial.
+Una **garden path sentence** — o **oración de vía muerta** — es una oración gramaticalmente correcta que **lleva al lector por un camino interpretativo que después resulta incorrecto**, forzándolo a **reanalizar** la estructura sintáctica al llegar a una palabra que rompe la lectura inicial.
 
-El nombre viene de la expresión inglesa *to lead someone down the garden path* — engañar a alguien dirigiéndolo por un camino atractivo pero falso.
+El nombre original viene de la expresión inglesa *to lead someone down the garden path* — engañar a alguien dirigiéndolo por un camino atractivo pero falso. La traducción "vía muerta" mantiene el sentido del camino que no lleva a ninguna parte.
 
 ## Ejemplos clásicos en inglés
 
