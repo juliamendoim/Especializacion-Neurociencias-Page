@@ -81,6 +81,9 @@ nav:
     - CELF: evaluacion/celf.md
     - TROG: evaluacion/trog.md
     - CEG: evaluacion/ceg.md
+  - Medidas lingüísticas:
+    - medidas-linguisticas/index.md
+    - Unidades-t y cláusulas: medidas-linguisticas/unidades-t-y-clausulas.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md

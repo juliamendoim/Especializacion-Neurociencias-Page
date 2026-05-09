@@ -23,7 +23,8 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 
 - 📊 **[Estadística](estadistica/index.md)** — conceptos que aparecen en papers (t de Student, efecto techo, media y DE).
 - 🧠 **[Modelos cognitivos del lenguaje](modelos-cognitivos/index.md)** — buffer fonológico, dual-ruta, activación.
-- 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT).
+- 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT, CELF, TROG, CEG).
+- 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)** — unidades para cuantificar producción (unidades-t, cláusulas).
 - 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA).
 
 Usá el **sidebar izquierdo** o el **buscador** (lupa arriba a la derecha o tecla `S`) para navegar entre conceptos.
