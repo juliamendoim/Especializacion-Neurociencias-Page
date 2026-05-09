@@ -70,6 +70,27 @@ Esto explicaría por qué los chicos con TDL:
 - Tienen morfología pobre: para abstraer un morfema como /-aba/ del input, hay que oírlo varias veces y compararlo con otras formas en memoria.
 - Tienen comprensión sintáctica débil para oraciones largas: no pueden mantener el inicio mientras procesan el final.
 
+### Span de dígitos: cómo se mide WM directamente
+
+El **span de dígitos** (Digit Span) es la prueba clásica para medir capacidad de WM. Tiene dos versiones que aprovechan justo la distinción STM vs. WM:
+
+| | **Span directo** (forward) | **Span inverso** (backward) |
+|---|---|---|
+| Tarea | Oír *3-7-2-9* y repetir igual | Oír *3-7-2-9* y repetir al revés: *9-2-7-3* |
+| Qué mide | STM — solo almacenamiento | **WM — almacenamiento + manipulación** |
+| Sustrato | Bucle fonológico | Bucle fonológico + ejecutivo central |
+| Capacidad típica | ~7 dígitos en adultos | ~5 dígitos en adultos |
+
+El **span inverso es la medida limpia de memoria de trabajo**: invertir el orden obliga a manipular la información mientras se la mantiene. Por eso las puntuaciones son consistentemente menores que en directo, y el gradiente entre ambas versiones es diagnósticamente informativo.
+
+**Dónde aparece**: en el subtest **Dígitos** de las escalas Wechsler ([WISC-V](../evaluacion/wisc-v.md), WAIS), en la WMS, y en muchas baterías de investigación como medida rápida de WM. En el **Índice de Memoria de Trabajo del WISC-V** es uno de los pilares.
+
+**Para TDL**:
+- Si solo el directo está afectado → problema de almacenamiento fonológico (bucle).
+- Si el inverso está mucho más afectado que el directo → problema en el componente ejecutivo de la WM.
+
+Esa disociación, cruzada con [repetición de pseudopalabras](../evaluacion/repeticion-pseudopalabras.md), permite perfilar subtipos de déficit más finos que un puntaje global de "memoria".
+
 ### El non-word repetition test (NWR) como marker de TDL
 
 **Conti-Ramsden, Botting & Faragher (2001)** mostraron que la **repetición de no-palabras** es uno de los markers más sensibles y específicos de TDL.
