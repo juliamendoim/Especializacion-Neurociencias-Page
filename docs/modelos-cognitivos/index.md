@@ -8,3 +8,4 @@ Marcos teóricos que describen cómo el cerebro procesa el lenguaje en términos
 - **[Modelo dual-ruta de lectura](dual-ruta-lectura.md)** — cómo se convierten letras en sonido vía ruta léxica y sublexical.
 - **[Activación](activacion.md)** — la dinámica que hace funcionar todos los modelos cognitivos.
 - **[Garden paths](garden-paths.md)** — oraciones que engañan al parser y permiten estudiarlo en tiempo real (también en LLMs).
+- **[Surprisal](surprisal.md)** — la métrica que conecta LLMs con tiempos de lectura humanos.

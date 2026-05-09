@@ -73,6 +73,7 @@ nav:
     - Modelo dual-ruta: modelos-cognitivos/dual-ruta-lectura.md
     - Activación: modelos-cognitivos/activacion.md
     - Garden paths: modelos-cognitivos/garden-paths.md
+    - Surprisal: modelos-cognitivos/surprisal.md
   - Evaluación:
     - evaluacion/index.md
     - ITPA: evaluacion/itpa.md
