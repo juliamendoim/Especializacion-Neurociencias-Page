@@ -26,7 +26,8 @@ theme:
         name: Modo claro
   features:
     - navigation.tracking
-    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - navigation.path
