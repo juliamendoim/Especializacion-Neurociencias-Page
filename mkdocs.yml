@@ -75,6 +75,9 @@ nav:
     - Activación: modelos-cognitivos/activacion.md
     - Garden paths: modelos-cognitivos/garden-paths.md
     - Surprisal: modelos-cognitivos/surprisal.md
+  - Neurobiología:
+    - neurobiologia/index.md
+    - Sincitio y doctrina neurona: neurobiologia/sincitio.md
   - Evaluación:
     - evaluacion/index.md
     - ITPA: evaluacion/itpa.md
