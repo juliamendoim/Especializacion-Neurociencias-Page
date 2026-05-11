@@ -1,6 +1,6 @@
-# Tipología lingüística
+# Lingüística
 
-Características estructurales que clasifican a las lenguas y tienen consecuencias para la adquisición, el procesamiento, los trastornos del lenguaje y el comportamiento de modelos computacionales.
+Conceptos de lingüística que aparecen transversalmente en los seminarios: tipología, morfología, sintaxis, fonología, semántica. Lo que aquí se acumule tiene consecuencias para la adquisición, el procesamiento, los trastornos del lenguaje y el comportamiento de modelos computacionales.
 
 ## En esta sección
 
