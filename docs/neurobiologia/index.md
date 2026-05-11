@@ -6,3 +6,4 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 
 - **[Sincitio y la doctrina de la neurona](sincitio.md)** — qué es un sincitio, por qué importa históricamente en neurociencia (Golgi vs. Cajal) y dónde sigue siendo útil hoy.
 - **[Plasticidad cerebral adulta — experimentos fundacionales](plasticidad-experimentos-fundacionales.md)** — Merzenich, Kaas & Killackey, Wall & Egger: los tres trabajos que demolieron la idea de que el cerebro adulto era inmodificable.
+- **[Ontogenia y filogenia](ontogenia-filogenia.md)** — desarrollo individual vs. evolución de la especie; dos planos que conviene no confundir cuando se habla del encéfalo humano.
