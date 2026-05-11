@@ -21,16 +21,16 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 
 ## Secciones
 
-- 📊 **[Estadística](estadistica/index.md)** — conceptos que aparecen en papers (t de Student, efecto techo, media y DE).
-- 🧠 **[Modelos cognitivos del lenguaje](modelos-cognitivos/index.md)** — buffer fonológico, dual-ruta, activación.
-- 🔬 **[Neurobiología](neurobiologia/index.md)** — bases biológicas del sistema nervioso (sincitio, doctrina de la neurona).
-- 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT, CELF, TROG, CEG).
-- 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)** — unidades para cuantificar producción (unidades-t, cláusulas).
-- 🌐 **[Lingüística](tipologia/index.md)** — conceptos lingüísticos transversales (tipología, morfología, español como lengua fusional).
-- 🧒 **[TDL](tdl/index.md)** — Trastorno del Desarrollo del Lenguaje: etiología, modelos teóricos, factores de riesgo.
-- 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA, CATALISE).
+- 📊 **[Estadística](estadistica/index.md)**
+- 🧠 **[Modelos cognitivos](modelos-cognitivos/index.md)**
+- 🔬 **[Neurobiología](neurobiologia/index.md)**
+- 📋 **[Evaluación](evaluacion/index.md)**
+- 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)**
+- 🌐 **[Lingüística](tipologia/index.md)**
+- 🧒 **[TDL](tdl/index.md)**
+- 🔬 **[Metodología](metodologia/index.md)**
 
-Usá el **sidebar izquierdo** o el **buscador** (lupa arriba a la derecha o tecla `S`) para navegar entre conceptos.
+También están accesibles desde las **tabs de arriba** y desde el **buscador** (lupa arriba a la derecha o tecla `S`).
 
 ---
 
