@@ -30,7 +30,6 @@ theme:
     - navigation.top
     - navigation.indexes
     - navigation.path
-    - navigation.expand
     - toc.follow
     - search.suggest
     - search.highlight
