@@ -26,11 +26,11 @@ theme:
         name: Modo claro
   features:
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.sections
     - navigation.top
     - navigation.indexes
     - navigation.path
+    - navigation.expand
     - toc.follow
     - search.suggest
     - search.highlight

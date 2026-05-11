@@ -26,7 +26,7 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 - 🔬 **[Neurobiología](neurobiologia/index.md)** — bases biológicas del sistema nervioso (sincitio, doctrina de la neurona).
 - 📋 **[Instrumentos de evaluación](evaluacion/index.md)** — tests estandarizados (ITPA, K-BIT, CELF, TROG, CEG).
 - 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)** — unidades para cuantificar producción (unidades-t, cláusulas).
-- 🌐 **[Tipología lingüística](tipologia/index.md)** — clasificaciones estructurales de lenguas (español como lengua fusional).
+- 🌐 **[Lingüística](tipologia/index.md)** — conceptos lingüísticos transversales (tipología, morfología, español como lengua fusional).
 - 🧒 **[TDL](tdl/index.md)** — Trastorno del Desarrollo del Lenguaje: etiología, modelos teóricos, factores de riesgo.
 - 🔬 **[Metodología de investigación](metodologia/index.md)** — estándares de reporte (PRISMA, CATALISE).
 
