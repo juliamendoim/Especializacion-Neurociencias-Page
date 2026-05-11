@@ -28,6 +28,9 @@ A medida que se reabsorbe el edema y se eliminan los residuos, **el tejido sano 
 
 ## Diasquisis reversa transináptica
 
+![Corte sagital del encéfalo humano](../assets/images/cerebro-corte-sagital.svg){ width="600" }
+*Sección sagital del encéfalo humano con sus principales estructuras: corteza, cuerpo calloso, tálamo, hipotálamo, cerebelo y tronco encefálico. La diasquisis suele propagarse a través de estas estructuras conectadas. Fuente: Lsanabria, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Human_brain_-_Sagittal_section.svg), CC BY-SA 4.0.*
+
 **Diasquisis** (von Monakow, 1914): fenómeno por el cual una lesión en una zona cerebral causa **disfunción en zonas distantes** pero **conectadas sinápticamente** a la zona dañada. La zona distante está estructuralmente intacta, pero como pierde el input que normalmente recibe, **deja de funcionar correctamente**.
 
 Ejemplo: una lesión en corteza motora primaria puede causar disfunción en el cerebelo contralateral (que está estructuralmente sano), porque las conexiones cortico-cerebelosas se interrumpieron.

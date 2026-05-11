@@ -2,6 +2,9 @@
 
 Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervioso que aparecen en el seminario de **Neurofisiología y procesos cognitivos básicos**.
 
+![Lóbulos del cerebro](../assets/images/cerebrum-lobulos-es.svg){ width="600" }
+*Lóbulos del cerebro humano (vista lateral): frontal, parietal, temporal, occipital. Fuente: Jkwchui, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cerebrum_lobes-es.svg), CC BY-SA 3.0.*
+
 ## En esta sección
 
 - **[Sincitio y la doctrina de la neurona](sincitio.md)** — qué es un sincitio, por qué importa históricamente en neurociencia (Golgi vs. Cajal) y dónde sigue siendo útil hoy.

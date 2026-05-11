@@ -52,6 +52,9 @@ Es un mecanismo de compensación: si no llega el input, lo poco que llegue se ap
 
 ### Desenmascaramiento sináptico dependiente de actividad
 
+![Esquema de una sinapsis química](../assets/images/sinapsis-quimica.svg){ width="500" }
+*Sinapsis química: terminal presináptico con vesículas y mitocondrias, hendidura sináptica y membrana postsináptica con receptores. El desenmascaramiento depende justamente de qué receptores hay en la membrana postsináptica. Fuente: Dake (vectorizado por Mouagip), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Synapse_diag1.svg), CC BY-SA 3.0.*
+
 En el cerebro hay muchas **sinapsis "silenciosas"**: anatómicamente presentes pero **funcionalmente débiles o inactivas**. Tienen receptores NMDA pero pocos o ningún receptor AMPA, por lo que no responden en condiciones normales (porque NMDA requiere despolarización previa).
 
 Con la actividad correcta:
