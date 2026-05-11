@@ -12,6 +12,9 @@ Esta visión venía en parte del propio Cajal, que escribió la famosa frase:
 
 Los tres experimentos siguientes mostraron que estaba equivocado.
 
+![Homúnculo sensorial cortical de Penfield](../assets/images/homunculo-sensorial-en.svg){ width="600" }
+*Homúnculo sensorial: representación cortical desproporcionada del cuerpo en la corteza somatosensoria primaria. Las áreas con más receptores (manos, labios, lengua) ocupan más superficie cortical. Es justamente este mapa el que Merzenich mostró que se reorganiza en adultos. Fuente: Popadius (derivado de OpenStax College), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sensory_Homunculus-en.svg), CC BY 3.0.*
+
 ## 1. Merzenich et al. — amputación digital en monos adultos
 
 **Experimento (Merzenich et al., 1983/1984)**: amputaron un dedo en **monos adultos** y meses después mapearon su corteza somatosensoria primaria.

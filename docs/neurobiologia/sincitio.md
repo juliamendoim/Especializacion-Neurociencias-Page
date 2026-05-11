@@ -1,5 +1,8 @@
 # Sincitio y la doctrina de la neurona
 
+![Diagrama completo de una neurona con sus partes](../assets/images/neurona-completa-es.svg){ width="650" }
+*Esquema de una neurona típica con sus partes: soma, dendritas, axón, mielina, nódulos de Ranvier y terminales sinápticos. Fuente: LadyofHats (original) / Josell7 (traducción al español), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Complete_neuron_cell_diagram_es.svg), Dominio público.*
+
 ## Qué es un sincitio
 
 Un **sincitio** es un tejido o estructura formada por **varias células fusionadas que comparten su citoplasma**. Es decir, una sola masa de citoplasma con **múltiples núcleos**, donde las membranas celulares se disolvieron o nunca se separaron.
