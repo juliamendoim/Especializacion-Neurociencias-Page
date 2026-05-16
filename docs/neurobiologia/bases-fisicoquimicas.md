@@ -81,6 +81,56 @@ Cuando se combinan ambos se habla de **gradiente electroquímico** — la "fuerz
 
 Ejemplo: el Na⁺ tiene **alta concentración afuera** (quiere entrar para igualar) y además el interior es **negativo** (lo atrae). Las dos fuerzas empujan en la misma dirección → si se abre un canal de Na⁺, el Na⁺ entra rapidísimo.
 
+## Por qué los canales son selectivos (canal de Na⁺ vs. canal de K⁺)
+
+Pregunta natural: si un canal es un agujero en la membrana, ¿cómo hace para dejar pasar **solo un tipo de ion** y no otros? Los canales **no son simples agujeros** — son proteínas con una arquitectura química que distingue un ion de otro con una precisión enorme.
+
+### El "filtro de selectividad"
+
+Cada canal tiene una región específica llamada **filtro de selectividad** (*selectivity filter*), donde el ion tiene que pasar **uno por uno** y donde se decide quién entra y quién no.
+
+### El truco contraintuitivo: la hidratación
+
+A primera vista uno esperaría que un canal "pequeño para Na⁺" deje pasar fácil al K⁺ (que es más chico)... pero al revés: **el K⁺ desnudo es MÁS GRANDE que el Na⁺ desnudo** (mayor radio atómico).
+
+Y peor: en agua los iones no están desnudos — están rodeados por una **capa de agua** (*hydration shell*) porque las moléculas de agua se orientan alrededor de la carga del ion. Esto invierte la relación de tamaños:
+
+- **Na⁺ hidratado** → más grande (porque, al ser más chico el ion, atrae al agua con más fuerza y carga una capa más gruesa).
+- **K⁺ hidratado** → más chico (capa de agua más floja).
+
+Cuando un ion entra al canal tiene que **deshidratarse** (soltar el agua), y eso cuesta energía. El canal hace su magia precisamente en cómo facilita o impide ese paso.
+
+### Canal de K⁺ (Nobel 2003 a Roderick MacKinnon)
+
+El filtro del canal de K⁺ tiene **4 oxígenos** orientados con una geometría exactísima que **imita la capa de agua del K⁺**. Cuando el K⁺ entra, el filtro lo "abraza" como si fuera su capa de agua → **no le cuesta energía deshidratarse**.
+
+Para el Na⁺ en el mismo canal:
+
+- Es más chico → si entrara, no llegaría a tocar los 4 oxígenos del filtro (le quedan grandes).
+- Para deshidratarse necesita un reemplazo perfecto del agua, y el filtro de K⁺ no se lo da.
+
+Resultado: el K⁺ pasa unas **10.000 veces mejor** que el Na⁺ por un canal de K⁺.
+
+### Canal de Na⁺
+
+Estrategia distinta pero con la misma lógica:
+
+- El filtro tiene un anillo cargado negativamente (un aminoácido glutamato).
+- La geometría del poro y la disposición de las cargas favorece al **Na⁺ con una sola molécula de agua** (parcialmente hidratado).
+- El K⁺ es demasiado grande para acomodarse en esa geometría.
+
+### El principio general
+
+Los canales **no filtran por tamaño bruto**. Filtran por una combinación de:
+
+1. **Geometría del poro** (encaje físico).
+2. **Cargas eléctricas** dentro del filtro.
+3. **Energía de hidratación** — cuánto cuesta soltar el agua y si el filtro la "reemplaza" bien.
+
+Es química fina, no plomería.
+
+Por qué importa: esto justifica que se hable de "canales de Na⁺", "canales de K⁺", "canales de Ca²⁺" como entidades **funcionalmente distintas**. La selectividad es lo que permite que el potencial de acción tenga fases bien separadas (entrada de Na⁺ y luego salida de K⁺) — sin selectividad no habría potencial de acción tal como lo conocemos.
+
 ## Por qué importa todo esto
 
 Sin este vocabulario mínimo, los textos del seminario son una sopa de letras. Pero con esto en la mano, frases como:
@@ -102,4 +152,5 @@ Este es **pre-requisito** para:
 
 - **Carlson, N. R. (2013)** *Fundamentos de Fisiología de la Conducta*. Pearson. Cap. 2. — repaso de bases biológicas accesible.
 - **Kandel, Schwartz & Jessell (2013)** *Principios de Neurociencia*. McGrawHill. Caps. 5–7. — todo el detalle, ya un poco técnico.
+- **Doyle, D. A. et al. (1998)** "The structure of the potassium channel: molecular basis of K⁺ conduction and selectivity". *Science* 280:69-77. — el paper de MacKinnon que cristalizó el canal de K⁺ y desentrañó el filtro de selectividad (Nobel 2003).
 - **Khan Academy** y **Concept Neuroscience**: tienen videos muy claros de 5–10 minutos sobre cada uno de estos conceptos si la lectura no alcanza.
