@@ -77,6 +77,9 @@ nav:
     - Surprisal: modelos-cognitivos/surprisal.md
   - Neurobiología:
     - neurobiologia/index.md
+    - Las 4 preguntas de Tinbergen: neurobiologia/tinbergen-niveles-analisis.md
+    - Bottom-up vs. top-down: neurobiologia/bottom-up-top-down.md
+    - Bases físico-químicas: neurobiologia/bases-fisicoquimicas.md
     - Sincitio y doctrina neurona: neurobiologia/sincitio.md
     - Plasticidad — experimentos fundacionales: neurobiologia/plasticidad-experimentos-fundacionales.md
     - Ontogenia y filogenia: neurobiologia/ontogenia-filogenia.md

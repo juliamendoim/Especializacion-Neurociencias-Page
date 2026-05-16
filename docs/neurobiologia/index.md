@@ -7,6 +7,14 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 
 ## En esta sección
 
+### Marcos generales
+
+- **[Las 4 preguntas de Tinbergen y niveles de análisis](tinbergen-niveles-analisis.md)** — el marco que ordena cualquier pregunta de neurociencia (función, mecanismo, ontogenia, filogenia) y los niveles a los que se puede estudiar (comportamental, fisiológico, molecular).
+- **[Bottom-up vs. top-down](bottom-up-top-down.md)** — los dos enfoques metodológicos que conviven en neurociencia. Distinción epistemológica útil para entender por qué la primera mitad del programa va de neurona a cognición y la segunda mitad al revés.
+- **[Bases físico-químicas para entender la neurona](bases-fisicoquimicas.md)** — repaso mínimo de átomos, iones, cargas, voltaje y gradientes. Pre-requisito para todo lo que viene en U1 y U2.
+
+### Conceptos del curso
+
 - **[Sincitio y la doctrina de la neurona](sincitio.md)** — qué es un sincitio, por qué importa históricamente en neurociencia (Golgi vs. Cajal) y dónde sigue siendo útil hoy.
 - **[Plasticidad cerebral adulta — experimentos fundacionales](plasticidad-experimentos-fundacionales.md)** — Merzenich, Kaas & Killackey, Wall & Egger: los tres trabajos que demolieron la idea de que el cerebro adulto era inmodificable.
 - **[Ontogenia y filogenia](ontogenia-filogenia.md)** — desarrollo individual vs. evolución de la especie; dos planos que conviene no confundir cuando se habla del encéfalo humano.
