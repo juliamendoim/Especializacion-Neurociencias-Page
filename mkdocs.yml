@@ -59,6 +59,9 @@ plugins:
       lang: es
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
+extra_javascript:
+  - javascripts/goatcounter.js
+
 nav:
   - Inicio: index.md
   - Estadística:
@@ -71,6 +74,7 @@ nav:
     - modelos-cognitivos/index.md
     - Buffer fonológico: modelos-cognitivos/buffer-fonologico.md
     - Memoria de trabajo: modelos-cognitivos/memoria-trabajo.md
+    - Recuperación de memoria (voluntaria/involuntaria): modelos-cognitivos/recuperacion-memoria.md
     - Modelo dual-ruta: modelos-cognitivos/dual-ruta-lectura.md
     - Activación: modelos-cognitivos/activacion.md
     - Garden paths: modelos-cognitivos/garden-paths.md
@@ -80,6 +84,7 @@ nav:
     - Las 4 preguntas de Tinbergen: neurobiologia/tinbergen-niveles-analisis.md
     - Bottom-up vs. top-down: neurobiologia/bottom-up-top-down.md
     - Bases físico-químicas: neurobiologia/bases-fisicoquimicas.md
+    - Marr — modelo computacional de la visión: neurobiologia/marr-vision-computacional.md
     - Sincitio y doctrina neurona: neurobiologia/sincitio.md
     - Plasticidad — experimentos fundacionales: neurobiologia/plasticidad-experimentos-fundacionales.md
     - Ontogenia y filogenia: neurobiologia/ontogenia-filogenia.md

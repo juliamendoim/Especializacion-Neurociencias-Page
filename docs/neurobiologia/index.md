@@ -12,6 +12,7 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 - **[Las 4 preguntas de Tinbergen y niveles de análisis](tinbergen-niveles-analisis.md)** — el marco que ordena cualquier pregunta de neurociencia (función, mecanismo, ontogenia, filogenia) y los niveles a los que se puede estudiar (comportamental, fisiológico, molecular).
 - **[Bottom-up vs. top-down](bottom-up-top-down.md)** — los dos enfoques metodológicos que conviven en neurociencia. Distinción epistemológica útil para entender por qué la primera mitad del programa va de neurona a cognición y la segunda mitad al revés.
 - **[Bases físico-químicas para entender la neurona](bases-fisicoquimicas.md)** — repaso mínimo de átomos, iones, cargas, voltaje y gradientes. Pre-requisito para todo lo que viene en U1 y U2.
+- **[Marr — modelo computacional de la visión (y sus continuidades)](marr-vision-computacional.md)** — los tres niveles de análisis (computacional, algorítmico, implementacional), el pipeline esbozo primario → 2½D → 3D, y cómo el programa de Marr llega hasta las redes convolucionales actuales y el predictive coding.
 
 ### Conceptos del curso
 
