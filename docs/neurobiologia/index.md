@@ -22,4 +22,5 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 - **[Mecanismos celulares de recuperación post-lesión](mecanismos-recuperacion-post-lesion.md)** — equilibrio iónico, reabsorción del edema, diasquisis reversa: cómo el cerebro recupera función a corto plazo después de una lesión.
 - **[Mecanismos de plasticidad estructural y sináptica](plasticidad-estructural-mecanismos.md)** — factores neurotróficos, LTP/LTD, desenmascaramiento sináptico, brotes axonales, regeneración: la maquinaria celular de la recuperación a mediano-largo plazo.
 - **[Neuronas tipo ensamble (cell assemblies)](neuronas-ensamble.md)** — la idea de Hebb (1949) sobre representaciones distribuidas y "neurons that fire together, wire together".
+- **[Arousal — activación general del organismo](arousal.md)** — la dimensión continua de activación fisiológica que modula percepción, atención y memoria. Yerkes-Dodson, ARAS, locus coeruleus, pupilometría, circumplejo de Russell. Por qué los LLMs no tienen análogo.
 - **[FOXP2](foxp2.md)** — el supuesto "gen del lenguaje": qué es realmente, qué descubrió la familia KE, y por qué la etiqueta se quedó corta.
