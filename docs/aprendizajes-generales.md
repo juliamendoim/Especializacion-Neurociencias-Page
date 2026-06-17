@@ -530,3 +530,130 @@ Esta cita es también un argumento contra la idea de que una red neuronal artifi
 - Los LLMs no tienen "andamiaje innato" de ningún tipo. Empiezan literalmente de cero y necesitan, para compensar esa ausencia, **órdenes de magnitud más datos** que un niño.
 
 Esa asimetría — el cerebro humano se prepara biológicamente para aprender lenguaje desde antes de nacer; el modelo artificial no se prepara en absoluto — es uno de los argumentos más sólidos contra la equivalencia ingenua entre los dos sistemas, y un dato a tener presente en el TP final.
+
+### La línea numérica cortical y la organización topográfica — Dehaene
+
+Otra cita de Dehaene que vale la pena tener anclada, esta vez sobre cómo el cerebro **codifica información mediante la posición física** de las neuronas:
+
+> "Mis colegas y yo propusimos un modelo matemático de gran precisión para la autoorganización de las neuronas detectoras del número, esta vez basado en la propagación de actividad de un tipo de onda a lo largo de la superficie de la corteza en desarrollo. Esta teoría puede explicar todos los detalles de las propiedades de las neuronas detectoras del número. Según el modelo, estas células terminan por formar una suerte de línea numérica, una cadena lineal en que los números 1, 2, 3, 4… ocupan posiciones sucesivas y que surge espontáneamente en el seno de una red de neuronas aleatorias (Hannagan y otros, 2017)."
+>
+> (Dehaene, 2019, citando Hannagan et al., 2017)
+
+#### Qué describe esta cita
+
+En el surco intraparietal del cerebro humano (y también en otros primates) hay neuronas que responden a **cantidades numéricas**. Una neurona específica se activa fuerte ante "tres objetos" y débilmente ante "uno" o "cinco"; la vecina se activa fuerte ante "cuatro" y débilmente ante "dos" o "seis"; y así sucesivamente.
+
+Lo notable: estas neuronas **no están distribuidas al azar** en la corteza. Las que responden a números cercanos están **físicamente cercanas**, formando una "línea numérica" cortical donde la **posición espacial codifica el valor numérico**. La distancia física entre neuronas refleja la distancia conceptual entre los números que detectan.
+
+Lo que Hannagan et al. (2017) muestran es que esta organización **emerge espontáneamente** durante el desarrollo, sin necesidad de un plan genético detallado, a partir de la propagación de ondas de actividad en una red inicialmente aleatoria.
+
+#### El principio general: organización topográfica del cerebro
+
+La línea numérica es un caso particular de un fenómeno más amplio: gran parte del cerebro está organizado **topográficamente**, es decir, **la posición física de una neurona codifica algún aspecto del estímulo que procesa**:
+
+| Región | Qué codifica la posición |
+|---|---|
+| Corteza visual primaria (V1) | **Retinotopía** — la posición espacial en la retina |
+| Corteza somatosensorial | **Somatotopía** — la parte del cuerpo (homúnculo sensorial) |
+| Corteza auditiva | **Tonotopía** — la frecuencia del sonido |
+| Surco intraparietal | **Línea numérica** — el valor numérico |
+| Corteza motora | **Somatotopía motora** — la parte del cuerpo a controlar |
+
+En todos estos casos, **valores parecidos del estímulo se procesan en neuronas físicamente vecinas**. La distancia anatómica codifica la similitud funcional.
+
+#### "¿Como en computación?"
+
+Acá está el contraste interesante que da la pregunta. Sí y no — la respuesta tiene matices que vale la pena distinguir.
+
+**En memoria de computadora clásica (RAM)**, la posición es **arbitraria**. La dirección `0x7F4E2A` no significa nada en sí misma: es solo un nombre. La información en `0x7F4E2A` no tiene ninguna relación esperable con la información en `0x7F4E2B`. La cercanía física en el chip no implica cercanía semántica. El sistema accede a la información mediante su dirección, pero esa dirección es un identificador, no un atributo.
+
+**En el cerebro**, la posición es **funcional**. Dos neuronas vecinas codifican cosas relacionadas. La cercanía física **es** la cercanía semántica. Por eso una lesión focal produce un déficit selectivo y predecible (perder una pequeña zona del córtex visual ciega una pequeña región del campo visual; perder una zona pequeña del córtex somatosensorial deja sin sensibilidad a una parte específica del cuerpo).
+
+Hay sin embargo dos arquitecturas computacionales donde la posición sí codifica relación, y son los análogos plausibles del principio topográfico:
+
+1. **Mapas autoorganizativos (Self-Organizing Maps, SOM)** de Teuvo Kohonen (1982). Son redes neuronales artificiales explícitamente diseñadas para imitar la organización topográfica cortical: entrenan una grilla de unidades de manera que entradas parecidas terminan activando unidades vecinas. Resultado: un mapa bidimensional donde la posición preserva relaciones de similitud del input. Es una **importación directa** del principio biológico a la computación.
+
+2. **Embeddings vectoriales en aprendizaje automático y LLMs**. La palabra "rey" y la palabra "reina" tienen vectores cercanos en el espacio de embeddings; "rey" y "mesa" tienen vectores lejanos. La posición en el espacio vectorial codifica relación semántica. Esto es análogo al principio topográfico, aunque opera en un espacio de cientos o miles de dimensiones en lugar de en la superficie bidimensional del córtex.
+
+Pero hay diferencias importantes incluso en estos análogos:
+
+- En el cerebro la topografía es **anatómicamente real y restringida a 2D** (la superficie de la corteza). Esto impone limitaciones (no se pueden representar todas las relaciones de alta dimensionalidad en una superficie bidimensional, hay distorsiones inevitables).
+- En los embeddings de un LLM no hay restricción dimensional: los vectores pueden tener 768 o 12.288 dimensiones. Cabe mucha más estructura, pero a costa de perder la elegancia geométrica de un mapa físico.
+- En el cerebro, la organización topográfica **se autoorganiza durante el desarrollo** a partir de actividad espontánea (como muestra el modelo de Hannagan), de manera que las restricciones biofísicas (costo del cableado, sincronización de ondas corticales) dirigen la forma final. En un modelo computacional, la organización emerge de la función objetivo del entrenamiento, no de constricciones físicas.
+
+#### Por qué importa esto para el TP
+
+Esta cita sirve para varios capítulos del trabajo final por homonimias:
+
+1. **Capítulo de memoria**. La memoria humana es **espacial y de contenido**: la organización topográfica del córtex significa que recuperar información es activar una región específica, y regiones vecinas activan información relacionada. En la RAM de una computadora, la posición no significa nada y la cercanía no implica relación. En embeddings sí, pero en un sentido distinto y sin sustrato físico.
+
+2. **Capítulo de neurona y arquitectura**. Refuerza el argumento del capítulo 1 (homonimia neurona biológica vs. artificial): no solo el principio de Dale o la inactivación de canales son específicos de la neurona biológica; también lo es el hecho de que su **posición anatómica codifica función**. En una neurona artificial estándar, la "posición" en una matriz de pesos es solo una indexación de bookkeeping; en una neurona biológica, la posición es parte de lo que la neurona "es" funcionalmente.
+
+3. **Capítulo de representación o aprendizaje**. La cita conecta con la pregunta de cómo el conocimiento queda escrito en el sustrato físico. En el cerebro, escribir conocimiento implica **especializar zonas anatómicas**. En un LLM, escribir conocimiento implica ajustar pesos numéricos en una arquitectura sin geografía física propia. Las dos cosas pueden producir comportamientos equivalentes, pero no son la misma operación.
+
+4. **Caso de homonimia convergente parcial**. Los mapas autoorganizativos y los embeddings son ejemplos donde la idea de **"información codificada por posición"** sí cruzó entre cerebro e IA con cierto éxito. Vale como ejemplo de cuándo el préstamo conceptual fue productivo, y conviene contrastarlo con casos donde la homonimia es más ornamental.
+
+### Autoorganización cerebral vs. big data — Dehaene
+
+Cita central para el debate **cerebro vs. redes neuronales artificiales**, particularmente relevante para el capítulo de Aprendizaje del TP final:
+
+> "La idea de autoorganización difiere radicalmente del enfoque actual de la inteligencia artificial, basada en big data. A diferencia de las redes neuronales actuales, nuestro cerebro no parece necesitar millones de datos para organizarse. Por el contrario, sus núcleos de conocimiento se desarrollan espontáneamente, por estimulación interna. Son escasos los informáticos que, como Joshua Tenenbaum, profesor del MIT, contemplan la posibilidad de copiar esta autoorganización en una inteligencia artificial. Tenenbaum trabaja para simular un bebé virtual que llegaría al mundo con la capacidad de generar, por sí solo, millones de imágenes realistas. Estas le servirían de base para el aprendizaje, sin que exista necesidad de algún otro dato. Según este enfoque radical, incluso antes del nacimiento, los circuitos neuronales se entrenarían con ayuda de una base de datos generada por ellos mismos (Lake y otros, 2016; de paso, señalemos que es otro ejemplo del bootstrapping del barón de Münchhausen). La mayor parte de su aprendizaje se produce de forma interna, sin interacción con el exterior, y luego solo resta realizar algunos ajustes en función de los datos suplementarios tomados del mundo real."
+>
+> (Dehaene, 2019, citando Lake et al., 2016)
+
+#### El argumento central
+
+Dehaene está señalando una **asimetría empírica fuerte** entre cerebro humano y redes neuronales artificiales contemporáneas. No es una crítica filosófica abstracta sino un dato cuantitativo:
+
+| | Cerebro humano | LLM contemporáneo |
+|---|---|---|
+| Datos de entrenamiento | ~10⁷ – 10⁸ palabras hasta la adolescencia | ~10¹¹ – 10¹³ tokens |
+| Asimetría | — | **4 a 6 órdenes de magnitud más** |
+| Aprendizaje "preexterior" | Sí — circuitos se ensamblan in utero por actividad espontánea | No — los pesos arrancan aleatorios |
+| Eficiencia de muestreo | Altísima (un niño aprende de pocos ejemplos) | Bajísima (requiere exposición masiva) |
+
+La pregunta clave que esta cita pone sobre la mesa: **¿por qué el cerebro logra con menos datos lo que una red artificial necesita órdenes de magnitud más para alcanzar?** Dos hipótesis posibles, que no son excluyentes:
+
+1. El cerebro tiene **andamiaje innato** (los circuitos se autoorganizan antes de cualquier input externo, por actividad espontánea pre y posnatal — la cita anterior sobre la guía axonal va por este lado).
+2. El cerebro tiene **mecanismos de autoorganización** distintos del gradient descent + big data: aprende por simulación interna, por generación de hipótesis, por modelos causales, por composicionalidad de conceptos.
+
+Ambas hipótesis aparecen articuladas en el paper de **Lake et al. (2016)** que Dehaene cita.
+
+#### La referencia clave: Lake, Ullman, Tenenbaum y Gershman (2016)
+
+**Lake, B. M., Ullman, T. D., Tenenbaum, J. B. y Gershman, S. J. (2016)** "Building machines that learn and think like people". *Behavioral and Brain Sciences*, 40, e253. Es uno de los papers más citados del cruce ciencia cognitiva / inteligencia artificial del último decenio, y un *must read* para el TP final.
+
+Su argumento, en cuatro puntos:
+
+1. **Construir modelos causales del mundo**, no solo aprender correlaciones estadísticas.
+2. **Sostener principios fundamentales de cognición intuitiva**: física intuitiva (los objetos persisten, caen, ocupan espacio) y psicología intuitiva (los agentes tienen objetivos, creencias).
+3. **Aprender a aprender** (*learning to learn*): adquirir rápidamente nuevas tareas a partir de pocos ejemplos, aprovechando estructura compartida con tareas previas.
+4. **Pensar rápido y lento**: integrar inferencia rápida (sistema 1) con planificación deliberativa (sistema 2).
+
+Los autores muestran que las redes neuronales profundas son potentes pero **fundamentalmente limitadas** en estos cuatro aspectos. Su propuesta: incorporar **priors estructurados** y **modelos generativos** al aprendizaje automático.
+
+#### El bebé virtual y el bootstrapping de Münchhausen
+
+La idea del bebé virtual que se entrena con datos que él mismo genera es **conceptualmente paradójica** —de ahí la broma con Münchhausen, el barón que decía haberse sacado del pantano tirando de su propio pelo—. Tenaza paradoja: ¿cómo puede aprender algo nuevo si solo se entrena con lo que ya puede generar?
+
+La solución técnica que proponen Lake y Tenenbaum: el sistema arranca con un **núcleo mínimo de conocimiento innato** (física intuitiva, intuición psicológica, principios de objetos y agentes) y a partir de ese núcleo **genera escenarios coherentes** que sirven como datos de entrenamiento. La "generación" no es arbitraria: está limitada por las leyes que el núcleo innato impone (los objetos no atraviesan paredes, los agentes persiguen objetivos).
+
+Esa idea conecta directamente con la idea filosófica más amplia de que **no se aprende todo desde cero** y que la mente humana viene con **estructura previa que hace posible el aprendizaje**. Es Kant traducido al siglo XXI.
+
+#### Conexión con líneas del TP final
+
+Esta cita es probablemente **el ancla más fuerte del libro de Dehaene** para los siguientes capítulos del TP:
+
+- **Línea 1 (Aprendizaje estadístico vs. LLMs)**: Dehaene está señalando exactamente la asimetría de eficiencia que vos ya tenés identificada. Sirve para cerrar el argumento de que los LLMs no son modelos plausibles del aprendizaje infantil sin reformas profundas. Conecta directo con **Yedetore et al. (2023)** "How poor is the stimulus?", que muestra empíricamente que las redes entrenadas con input chiquito (como el del niño) fallan en generalizaciones que el niño hace.
+
+- **Capítulo 1 (Neurona / Potencial de acción)**: refuerza el punto de que el cerebro biológico llega al mundo **ya estructurado** (andamiaje innato + capacidad de autoorganización por actividad espontánea), mientras que la red artificial llega con pesos aleatorios. Es otra forma de mostrar la asimetría de partida.
+
+- **Capítulo 3 (Aprendizaje)**: ofrece una clasificación interesante para tu tipología de homonimias. El "aprendizaje" en el cerebro humano y el "aprendizaje" en un LLM son superficialmente equivalentes (ambos modifican parámetros internos en función de input), pero difieren radicalmente en (a) el punto de partida, (b) la cantidad de datos requerida, (c) el mecanismo subyacente (autoorganización + actualización local vs. gradient descent global). Esta cita es **el caso de homonimia engañosa** más claro de tu TP: la misma palabra para procesos que se parecen en la superficie pero que son arquitectónicamente distintos.
+
+- **Capítulo 4 (Predicción)**: el bebé virtual de Tenenbaum es un sistema **predictivo en sentido estricto** — genera escenarios para entrenarse. Conecta con todo el programa de predictive coding (Rao & Ballard, Friston, Schrimpf, Caucheteux).
+
+#### Una observación más para tu TP
+
+La cita también pone sobre la mesa una pregunta que tu TP debería abordar explícitamente: **¿cuánta de la asimetría humano-LLM se debe a la cantidad de datos, y cuánta se debe a la arquitectura de partida?** Si fuera solo cantidad, entrenar un LLM con más datos cerraría la brecha. Si es arquitectura (priors innatos, capacidad de autoorganización, estructura causal del conocimiento), no hay cantidad de datos que la cierre.
+
+La evidencia hasta ahora — Lake et al. (2016), Yedetore et al. (2023), Hosseini et al. (2024), todo este programa — apunta a que **una parte sustancial de la asimetría es arquitectónica**, no de cantidad de datos. Esa es una tesis defendible y fuerte para tu trabajo.
