@@ -657,3 +657,77 @@ Esta cita es probablemente **el ancla más fuerte del libro de Dehaene** para lo
 La cita también pone sobre la mesa una pregunta que tu TP debería abordar explícitamente: **¿cuánta de la asimetría humano-LLM se debe a la cantidad de datos, y cuánta se debe a la arquitectura de partida?** Si fuera solo cantidad, entrenar un LLM con más datos cerraría la brecha. Si es arquitectura (priors innatos, capacidad de autoorganización, estructura causal del conocimiento), no hay cantidad de datos que la cierre.
 
 La evidencia hasta ahora — Lake et al. (2016), Yedetore et al. (2023), Hosseini et al. (2024), todo este programa — apunta a que **una parte sustancial de la asimetría es arquitectónica**, no de cantidad de datos. Esa es una tesis defendible y fuerte para tu trabajo.
+
+### Expresión génica: el aprendizaje como cambio molecular y estructural — Dehaene
+
+Cuarta cita de Dehaene en esta sección, esta vez sobre lo que pasa **a nivel molecular** dentro de las neuronas cuando se aprende algo:
+
+> "Allí se expresan nuevos genes, las sinapsis brotan, las arborescencias de dendritas y de axones se multiplican y, en el animal experto, todas estas ramificaciones suplementarias se traducen en un aumento del 23 % del espesor de la corteza."
+>
+> (Dehaene, 2019)
+
+#### Qué significa "expresar genes"
+
+Toda célula del cuerpo tiene el mismo ADN completo — las mismas ~20.000 instrucciones genéticas. Lo que diferencia a una neurona de una célula del hígado es **cuáles de esos genes están activos en cada momento**.
+
+"Expresar un gen" = **leer ese gen y traducirlo en una proteína funcional**. El proceso tiene dos pasos:
+
+1. **Transcripción**: una enzima copia la secuencia del gen del ADN a una molécula intermedia llamada ARN mensajero (ARNm).
+2. **Traducción**: los ribosomas leen el ARNm y ensamblan los aminoácidos en una proteína específica.
+
+En cualquier momento, una neurona tiene solo una fracción de sus genes activos. "Se expresan nuevos genes" significa que el aprendizaje **activa genes que estaban dormidos**, y esos genes fabrican proteínas nuevas que se necesitan para los cambios físicos siguientes en la célula.
+
+#### Dos tipos de cambios cerebrales en el aprendizaje
+
+| Tipo | Tiempo | Mecanismo |
+|---|---|---|
+| **Cambios rápidos / corto plazo** | Segundos a minutos | Modificación de proteínas que ya existen (más receptores, mayor sensibilidad). No requiere nuevos genes. |
+| **Cambios duraderos / largo plazo** | Horas a días | **Nuevas proteínas, hechas a partir de nuevos genes activados.** Las proteínas construyen estructura nueva. |
+
+Esta distinción la estableció **Eric Kandel** (Premio Nobel 2000) trabajando con el caracol marino *Aplysia*. Mostró que la memoria de corto plazo se mantiene con las proteínas que ya tenés, pero **la memoria de largo plazo solo se forma si se expresan genes nuevos y se sintetizan proteínas**. Si bloqueás la síntesis proteica con drogas, el animal aprende la tarea inmediatamente pero la olvida a las pocas horas: no hay cambio estructural duradero porque no hubo nuevos genes expresados.
+
+#### La cascada molecular que describe Dehaene
+
+Cuando un animal aprende, en la corteza se desencadena, en este orden:
+
+1. **Actividad eléctrica intensa** en los circuitos involucrados en la tarea.
+2. La actividad dispara **segundos mensajeros** dentro de las neuronas (calcio, AMP cíclico).
+3. Los segundos mensajeros activan **factores de transcripción** — el más famoso es **CREB** (cAMP response element-binding protein).
+4. CREB entra al núcleo y enciende **genes tempranos inmediatos** (c-fos, Arc, zif268), que actúan como interruptores.
+5. Estos a su vez encienden **genes tardíos** que codifican proteínas estructurales (factores de crecimiento, moléculas de adhesión, componentes sinápticos).
+6. Las proteínas nuevas viajan al sitio donde se necesitan y **construyen estructuras físicas**: sinapsis nuevas, espinas dendríticas nuevas, ramas axonales nuevas.
+7. A escala macroscópica, después de mucho aprendizaje sostenido en una zona, **el córtex se vuelve más grueso** porque hay más estructura física. Es el "23 % de aumento del espesor cortical" que cita Dehaene.
+
+#### Qué se ramifica concretamente
+
+- **Sinapsis brotan**: aparecen nuevos puntos de contacto entre neuronas. Una neurona puede tener decenas de miles de sinapsis, y ese número cambia con el aprendizaje.
+- **Arborización dendrítica**: las dendritas (ramas que reciben señales) crecen, se ramifican, desarrollan más espinas dendríticas — las pequeñas protuberancias donde típicamente se establecen sinapsis.
+- **Arborización axonal**: los axones extienden ramas adicionales hacia otras neuronas, ampliando con qué áreas se conecta esa célula.
+
+Todo esto requiere **proteínas nuevas**, que requieren **genes activados**, que requieren **actividad inducida por el aprendizaje**. Es una cadena causal continua desde la experiencia hasta el ADN y desde el ADN de vuelta a la estructura cerebral.
+
+#### Conexión con el TP final
+
+La cita refuerza la asimetría entre aprendizaje biológico y aprendizaje artificial que ya viene apareciendo en las otras citas de Dehaene:
+
+| | Cerebro aprendiendo | LLM aprendiendo |
+|---|---|---|
+| Lo que cambia | Proteínas, sinapsis, dendritas, espesor cortical | Pesos numéricos en matrices |
+| Sustrato físico del cambio | Estructura biológica nueva | Ninguna alteración física, solo números |
+| Costo energético del cambio | Alto (síntesis proteica es costosa) | Igual al cómputo normal de inferencia |
+| Velocidad del cambio | Horas a días para consolidarse | Inmediato (cada paso de gradient descent) |
+| Reversibilidad | Difícil (lleva tiempo desmantelar estructuras) | Instantánea (los pesos pueden modificarse libremente) |
+| Genes involucrados | Sí: CREB, c-fos, Arc, decenas más | Ninguno (no hay genes) |
+| Reproducibilidad del cambio | Variable, depende del estado del organismo | Determinístico dado el algoritmo |
+
+En una red artificial, "aprender" significa **cambiar números**. En el cerebro, aprender significa **rearmar la maquinaria celular** — fabricar proteínas nuevas, hacer crecer estructuras, modificar físicamente el órgano. Es la misma palabra para procesos arquitectónicamente muy distintos: caso clásico de **homonimia con divergencia mecanística profunda** para el Capítulo 3 (Aprendizaje) del TP. La homonimia es engañosa porque sugiere equivalencia mecánica donde la divergencia es total — el mismo verbo "aprender" describe en un caso un proceso bioquímico costoso, lento y semi-irreversible, y en el otro una actualización numérica instantánea y sin sustrato físico.
+
+#### Referencias clave
+
+Para anclar académicamente esta sección, los papers fundacionales son:
+
+- **Kandel, E. R. (2001)** "The molecular biology of memory storage: A dialogue between genes and synapses". *Science*, 294(5544), 1030-1038. **El paper del Nobel.** Síntesis del programa de Kandel sobre la base molecular del aprendizaje.
+- **Greenough, W. T. y Bailey, C. H. (1988)** "The anatomy of a memory: Convergence of results across a diversity of tests". *Trends in Neurosciences*, 11(4), 142-147. Los estudios clásicos sobre cambio estructural cortical por aprendizaje.
+- **Bailey, C. H. y Kandel, E. R. (2008)** "Synaptic remodeling, synaptic growth and the storage of long-term memory in Aplysia". *Progress in Brain Research*, 169, 179-198.
+
+Estos tres van directo a la **categoría 16 (Aprendizaje biológico vs. artificial)** del INDICE de bibliografía del TP.
