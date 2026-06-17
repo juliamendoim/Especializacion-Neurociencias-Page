@@ -731,3 +731,82 @@ Para anclar académicamente esta sección, los papers fundacionales son:
 - **Bailey, C. H. y Kandel, E. R. (2008)** "Synaptic remodeling, synaptic growth and the storage of long-term memory in Aplysia". *Progress in Brain Research*, 169, 179-198.
 
 Estos tres van directo a la **categoría 16 (Aprendizaje biológico vs. artificial)** del INDICE de bibliografía del TP.
+
+### Calcio y glucosa: la economía energética del aprendizaje
+
+Una nota complementaria de la entrada anterior. Toda la cascada de expresión génica y construcción estructural que describe Dehaene **es metabólicamente costosísima**, y depende de una colaboración muy estrecha entre dos moléculas:
+
+- El **calcio (Ca²⁺)** funciona como **señal**: dice cuándo hay que aprender y qué hay que aprender.
+- La **glucosa** funciona como **combustible**: paga la cuenta energética de hacer ese aprendizaje.
+
+No forman un complejo molecular en sentido estricto — es decir, no se unen químicamente como hacen, por ejemplo, hemoglobina con oxígeno. Pero **están acoplados funcionalmente en tres niveles distintos**, y el acople es central para entender por qué aprender requiere energía y por qué el cerebro consume tanta glucosa.
+
+#### Primer nivel: el Ca²⁺ como gatillo del aprendizaje
+
+Cuando una neurona se activa intensamente durante el aprendizaje:
+
+1. Se abren canales de **Ca²⁺ dependientes de voltaje**.
+2. El Ca²⁺ entra al citoplasma desde el exterior (donde hay ~10.000 veces más concentración que adentro, en reposo).
+3. El pico de Ca²⁺ activa **CaMKII** (calmodulin-dependent kinase II), **PKA** (protein kinase A) y otras quinasas.
+4. Estas quinasas fosforilan a **CREB**, el factor de transcripción que prende los genes nuevos que vimos antes.
+5. La expresión de genes y la síntesis de proteínas comienzan: aparecen sinapsis, dendritas y axones nuevos.
+
+**Sin la señal de Ca²⁺ no hay aprendizaje duradero.** Es el primer eslabón de toda la cascada de Kandel.
+
+#### Segundo nivel: la glucosa como combustible
+
+Toda esa cascada consume energía en forma de **ATP** (adenosin trifosfato):
+
+- Cada vez que una bomba devuelve Ca²⁺ del citoplasma al exterior, gasta ATP. Es esencial: si el Ca²⁺ se quedara alto demasiado tiempo, la neurona se autodestruiría (excitotoxicidad).
+- Cada vez que se sintetiza una proteína nueva (para construir una sinapsis, una dendrita), se gasta ATP en cantidades enormes — la traducción es uno de los procesos celulares más costosos energéticamente.
+- Cada vez que se transcribe un gen, se gasta ATP y GTP.
+- Cada vez que el axón crece una ramita nueva, se gasta ATP para mover el citoesqueleto, generar membrana, transportar componentes.
+
+El ATP en el cerebro se fabrica **casi exclusivamente a partir de glucosa**, a través de la glucólisis citoplasmática + la fosforilación oxidativa mitocondrial. El cerebro humano consume **~120 g de glucosa por día**, que representa aproximadamente **el 20 % del total de la energía del cuerpo en reposo**, aun siendo solo el 2 % de la masa corporal. La mayor parte de ese gasto va a mantener gradientes iónicos (incluido el de Ca²⁺) y a alimentar los procesos de plasticidad sináptica.
+
+#### Tercer nivel: el diálogo bidireccional en la mitocondria
+
+Acá está el dato más fino y es lo que se parece más a un "complejo" funcional:
+
+Cuando hay un pico de Ca²⁺ citoplasmático por actividad neuronal, **las mitocondrias absorben parte de ese Ca²⁺** a través de un canal específico (el MCU, *mitochondrial calcium uniporter*). Una vez adentro de la mitocondria, el Ca²⁺ **activa directamente tres enzimas clave del ciclo de Krebs**: la piruvato deshidrogenasa, la isocitrato deshidrogenasa y la α-cetoglutarato deshidrogenasa.
+
+¿Qué hacen estas enzimas? Aceleran la oxidación de la glucosa para producir más ATP.
+
+Entonces lo que ocurre es:
+
+> **Pico de Ca²⁺ → mitocondria absorbe Ca²⁺ → enzimas mitocondriales se activan → ciclo de Krebs se acelera → se quema más glucosa → se produce más ATP → la cascada de aprendizaje tiene combustible disponible.**
+
+Es decir: **la misma señal que dice "hay que aprender" (Ca²⁺) también dice "preparen más energía" (al activar el metabolismo de glucosa en la mitocondria)**. Es un acople fisiológicamente elegante: cuando hace falta gastar mucho ATP en reconfiguración estructural, el sistema mismo se asegura de producirlo. Esto es lo más parecido a un "complejo" funcional entre calcio y glucosa, aunque a nivel molecular son moléculas distintas que no se unen estructuralmente.
+
+#### Por qué importa esto para la imagen del aprendizaje
+
+- **Aprender cuesta energía físicamente concreta**, no es una metáfora. Después de horas de estudio intenso, sentís cansancio mental porque literalmente bajó la glucosa en sangre y se acumularon metabolitos en zonas activas del cerebro.
+
+- **Las regiones que aprenden mucho son las que consumen más glucosa**, y eso se puede medir directamente con técnicas como la **PET-FDG** (tomografía por emisión de positrones con glucosa marcada radiactivamente). En PET, las zonas más oscuras son las que están metabolizando más glucosa, es decir, las que están más activas.
+
+- **La fMRI (resonancia magnética funcional)** mide indirectamente lo mismo: detecta el consumo de oxígeno, que sigue al consumo de glucosa, que sigue a la actividad neuronal con sus picos de Ca²⁺. Toda la neuroimagen funcional descansa sobre este acople metabólico.
+
+- **Trastornos metabólicos afectan la cognición**: hipoglucemia severa produce confusión y eventualmente pérdida de conciencia, justamente porque las neuronas pierden la capacidad de mantener gradientes iónicos y de aprender. La diabetes mal controlada se asocia a deterioro cognitivo a largo plazo.
+
+#### Conexión con el TP final
+
+Este acople refuerza otra asimetría con los LLMs que vale tener en mente:
+
+| | Cerebro humano | LLM |
+|---|---|---|
+| Combustible | Glucosa (~120 g/día) | Electricidad |
+| Señal de aprendizaje | Ca²⁺ intracelular | Gradiente de error vía backprop |
+| Acople señal-energía | Ca²⁺ activa el metabolismo de glucosa en la mitocondria — el aprendizaje "pide" su propia energía | El gradient descent no modula el consumo eléctrico del chip |
+| Costo del aprendizaje | Variable, modulado por el sistema mismo (más actividad → más glucosa local) | Constante por paso de entrenamiento |
+| Consecuencia de quedarse sin combustible | Neurodegeneración, muerte celular | El cómputo simplemente se detiene cuando se corta la corriente |
+
+El cerebro tiene un **sistema metabólico inteligente** que adapta el consumo energético a la demanda cognitiva. Un LLM, en cambio, gasta electricidad de manera uniforme según el procesamiento, sin un sistema homeostático interno que regule el costo en función de lo que está aprendiendo. Es otra capa de divergencia mecanística entre los dos sistemas que la palabra "aprender" colapsa engañosamente.
+
+#### Referencias
+
+Para anclar académicamente esta sección:
+
+- **Magistretti, P. J. y Allaman, I. (2015)** "A cellular perspective on brain energy metabolism and functional imaging". *Neuron*, 86(4), 883-901. **El review canónico contemporáneo** sobre cómo se acoplan actividad neural, consumo de glucosa y neuroimagen.
+- **Attwell, D. y Laughlin, S. B. (2001)** "An energy budget for signaling in the grey matter of the brain". *Journal of Cerebral Blood Flow and Metabolism*, 21(10), 1133-1145. El cálculo clásico de cuánto cuesta cada potencial de acción y cada sinapsis en términos de ATP.
+- **Rizzuto, R., De Stefani, D., Raffaello, A. y Mammucari, C. (2012)** "Mitochondria as sensors and regulators of calcium signalling". *Nature Reviews Molecular Cell Biology*, 13(9), 566-578. La revisión clave sobre cómo las mitocondrias absorben Ca²⁺ y lo usan para regular la producción de ATP.
+- **McCormack, J. G., Halestrap, A. P. y Denton, R. M. (1990)** "Role of calcium ions in regulation of mammalian intramitochondrial metabolism". *Physiological Reviews*, 70(2), 391-425. **El paper fundacional** sobre la activación de enzimas mitocondriales por Ca²⁺. Es viejo pero sigue siendo la referencia.
