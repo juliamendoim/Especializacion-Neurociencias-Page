@@ -21,6 +21,48 @@ Ejemplo intuitivo. Después de *"El gato persigue al…"*:
 - *"…ratón"* → probabilidad alta → surprisal baja
 - *"…tractor"* → probabilidad baja → surprisal alta
 
+<figure markdown>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-label="Surprisal en función de la probabilidad del token: curva del logaritmo negativo">
+  <defs>
+    <pattern id="grid-surp" width="49" height="35.7" patternUnits="userSpaceOnUse">
+      <path d="M 49 0 L 0 0 0 35.7" fill="none" stroke="#e8e8f5" stroke-width="0.7"/>
+    </pattern>
+  </defs>
+  <rect x="70" y="40" width="490" height="250" fill="url(#grid-surp)"/>
+  <line x1="70" y1="290" x2="560" y2="290" stroke="#222" stroke-width="1.5"/>
+  <line x1="70" y1="290" x2="70" y2="40" stroke="#222" stroke-width="1.5"/>
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#444" text-anchor="middle">
+    <text x="70" y="307">0</text>
+    <text x="168" y="307">0.2</text>
+    <text x="266" y="307">0.4</text>
+    <text x="364" y="307">0.6</text>
+    <text x="462" y="307">0.8</text>
+    <text x="560" y="307">1.0</text>
+  </g>
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#444" text-anchor="end">
+    <text x="63" y="294">0</text>
+    <text x="63" y="258">1</text>
+    <text x="63" y="222">2</text>
+    <text x="63" y="187">3</text>
+    <text x="63" y="151">4</text>
+    <text x="63" y="115">5</text>
+    <text x="63" y="79">6</text>
+    <text x="63" y="44">7</text>
+  </g>
+  <text x="315" y="332" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#222" text-anchor="middle">P(palabra | contexto)</text>
+  <text x="22" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#222" text-anchor="middle" transform="rotate(-90 22 165)">surprisal = −log₂ P  (bits)</text>
+  <text x="315" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="600">La curva del logaritmo negativo</text>
+  <polyline points="74.9,52.7 79.8,88.4 84.7,109.3 94.5,135.6 104.3,153.0 119.0,171.4 143.5,192.3 168.0,207.1 217.0,228.0 266.0,242.8 315.0,254.3 364.0,263.7 413.0,271.6 462.0,278.5 511.0,284.6 560.0,290.0" fill="none" stroke="#3F51B5" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="511" cy="284.6" r="5" fill="#43A047" stroke="white" stroke-width="1.5"/>
+  <text x="503" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#2E7D32" text-anchor="end" font-weight="500">esperable (P≈0.9, S≈0.15)</text>
+  <circle cx="217" cy="228" r="5" fill="#FB8C00" stroke="white" stroke-width="1.5"/>
+  <text x="227" y="223" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E65100" font-weight="500">poco esperada (P≈0.3, S≈1.7)</text>
+  <circle cx="94.5" cy="135.6" r="5" fill="#E53935" stroke="white" stroke-width="1.5"/>
+  <text x="105" y="131" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#B71C1C" font-weight="500">inesperada (P≈0.05, S≈4.3)</text>
+</svg>
+<figcaption markdown>**Surprisal en función de la probabilidad del token**. Cuando la palabra es esperable (P alta), la surprisal es casi cero — el sistema "ya la tenía". Cuando es inesperada (P baja), la surprisal crece rápido y sin cota cuando P → 0. La curva es **cóncava**: el costo no escala lineal con la rareza, sino logarítmicamente, lo que coincide con lo que se observa en tiempos de lectura humanos (Smith & Levy, 2013).</figcaption>
+</figure>
+
 ## Por qué importa: la teoría surprisal de Levy (2008)
 
 **Roger Levy** propuso en *"Expectation-based syntactic comprehension"* (Cognition, 2008) una hipótesis fuerte: **el tiempo de procesamiento de una palabra es proporcional a su surprisal**.
