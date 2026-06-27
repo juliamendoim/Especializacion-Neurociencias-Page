@@ -12,7 +12,7 @@ Traducido:
 
 - Si una palabra tiene **probabilidad alta** dado el contexto (predecible) → surprisal **baja** (poca sorpresa).
 - Si tiene **probabilidad baja** (inesperada) → surprisal **alta**.
-- El logaritmo es lo que la convierte en una escala "psicológicamente lineal" (volveré a esto).
+- El logaritmo es lo que la convierte en una escala "psicológicamente lineal" — lo desarrollo en la sección **¿Por qué logaritmo?** más abajo.
 
 La unidad son **bits** (con log base 2) o **nats** (con log natural). En psicolingüística se reporta usualmente en bits.
 
@@ -63,6 +63,22 @@ Ejemplo intuitivo. Después de *"El gato persigue al…"*:
 <figcaption markdown>**Surprisal en función de la probabilidad del token**. Cuando la palabra es esperable (P alta), la surprisal es casi cero — el sistema "ya la tenía". Cuando es inesperada (P baja), la surprisal crece rápido y sin cota cuando P → 0. La curva es **cóncava**: el costo no escala lineal con la rareza, sino logarítmicamente, lo que coincide con lo que se observa en tiempos de lectura humanos (Smith & Levy, 2013).</figcaption>
 </figure>
 
+## Un ejemplo numérico
+
+Supongamos que después del contexto *"El gato persigue al…"* un modelo de lenguaje (un LLM, o un humano hipotético) asigna las siguientes probabilidades a posibles continuaciones:
+
+| Palabra | P(palabra \| contexto) | Surprisal (bits) | Cálculo |
+|---|---|---|---|
+| ratón | 0.40 | **1.32** | $-\log_2 0.40 = 1.32$ |
+| pájaro | 0.20 | **2.32** | $-\log_2 0.20 = 2.32$ |
+| niño | 0.10 | **3.32** | $-\log_2 0.10 = 3.32$ |
+| ladrón | 0.02 | **5.64** | $-\log_2 0.02 = 5.64$ |
+| tractor | 0.0001 | **13.29** | $-\log_2 0.0001 = 13.29$ |
+
+Si la teoría surprisal de Levy es correcta (ver abajo), el tiempo de lectura para *"tractor"* debería ser ~10× más alto que para *"ratón"* (sumando un baseline constante para procesos comunes a todos los tokens: acceso visual, articulación, etc.).
+
+Lo notable, y lo que motiva el uso del logaritmo: la diferencia entre P=0.40 y P=0.20 (factor 2 en probabilidad) suma **1 bit** de surprisal. La diferencia entre P=0.0001 y P=0.00005 (también factor 2) suma **1 bit** también. Lo que importa **no es la diferencia absoluta de probabilidades, sino el factor multiplicativo entre ellas**. Sobre este punto vuelvo en la sección de abajo.
+
 ## Por qué importa: la teoría surprisal de Levy (2008)
 
 **Roger Levy** propuso en *"Expectation-based syntactic comprehension"* (Cognition, 2008) una hipótesis fuerte: **el tiempo de procesamiento de una palabra es proporcional a su surprisal**.
@@ -78,7 +94,29 @@ Cuanto más sorprendente la palabra dado el contexto, más tarda el cerebro en p
 - **[Garden paths](garden-paths.md)**: el disambiguador tiene baja probabilidad bajo la interpretación inicial → surprisal alta → RT alta. Eso explica el "spike" de tiempo de lectura.
 - **Sintaxis sin parser explícito**: cualquier estructura sintáctica que afecte la distribución de probabilidades de la siguiente palabra se refleja en surprisal.
 
-**El logaritmo es crucial**. Smith & Levy (2013) mostraron empíricamente que el efecto de la probabilidad sobre el tiempo de lectura es **logarítmico, no lineal**. Eso valida la fórmula matemática y le da soporte empírico a la teoría.
+## ¿Por qué logaritmo? La escala "psicológicamente lineal"
+
+La forma logarítmica de la fórmula no es arbitraria. Tiene **tres justificaciones convergentes** que vale la pena tener separadas:
+
+### 1. Justificación teórica (información de Shannon)
+
+Shannon (1948) demostró que si querés que la información de eventos independientes **se sume** (en lugar de multiplicarse), la única función que cumple eso es el logaritmo de la probabilidad. Para dos eventos independientes A y B:
+
+$$S(A \cap B) = -\log P(A)P(B) = -\log P(A) - \log P(B) = S(A) + S(B)$$
+
+Sin el logaritmo no podrías sumar contribuciones independientes — tendrías que multiplicarlas, lo cual es contraintuitivo como medida de "esfuerzo acumulado". El logaritmo convierte productos de probabilidades (la regla matemática para eventos independientes) en sumas de surprisal (lo que se siente como costo aditivo).
+
+### 2. Justificación empírica (Smith & Levy 2013)
+
+Smith & Levy (2013) hicieron el test crítico: ¿el RT humano escala lineal o logarítmicamente con la probabilidad? Usaron una variedad de modelos de lenguaje con distintos niveles de calidad, calcularon probabilidades para palabras en corpus de eye-tracking, y testearon ambos modelos contra datos humanos.
+
+**Resultado**: el efecto es **logarítmico, no lineal**. La diferencia entre P=0.5 y P=0.25 (factor 2) produce el mismo aumento de RT que la diferencia entre P=0.001 y P=0.0005 (también factor 2). Validación empírica directa de la forma matemática.
+
+### 3. Conexión con la ley de Weber-Fechner
+
+En psicofísica clásica (Fechner 1860), la **magnitud subjetiva percibida** (intensidad de un sonido, brillo de una luz, peso) escala **logarítmicamente** con la magnitud física. Pasar el volumen de 60 a 70 dB se percibe como un aumento similar al de 80 a 90 dB — el mismo factor multiplicativo, no el mismo incremento aditivo.
+
+La surprisal y el RT comparten esta forma: lo "psicológicamente lineal" es el **logaritmo de la probabilidad**, no la probabilidad bruta. El sistema cognitivo opera en escala logarítmica de probabilidad, **igual que opera en escala logarítmica de intensidad sensorial**. Esto es lo que se quiere decir cuando se afirma que el logaritmo convierte la sorpresa probabilística en una escala psicológicamente lineal.
 
 ## Cómo se mide surprisal con un LLM
 
@@ -128,6 +166,25 @@ Razón intuitiva: los modelos enormes tienen tan buena memoria distribucional qu
 
 Esto conecta con el debate de Yedetore et al. (2023): cuando reducís el modelo a un tamaño comparable al input infantil, **se vuelve más humano** — pero también más limitado.
 
+## Más allá del costo: UID — uniform information density (Jaeger & Tily)
+
+Hasta acá vimos surprisal como **medida descriptiva** del costo de procesamiento del oyente. Pero también tiene un uso **normativo** importante: la hipótesis de **uniform information density (UID)**, propuesta por Levy & Jaeger (2007) y desarrollada principalmente por **T. Florian Jaeger** y **Harry Tily**.
+
+**La hipótesis central**: los hablantes estructuran sus enunciados para que la información (medida en surprisal) se distribuya de manera **aproximadamente uniforme** a lo largo del enunciado. Picos de surprisal son costosos para el oyente; un buen hablante los evita redistribuyendo la información.
+
+Esto invierte la mirada: surprisal no es solo lo que **sufre el oyente al procesar**, también es lo que **el hablante optimiza al producir**.
+
+**Predicciones empíricas que se han confirmado**:
+
+- **Palabras opcionales** (el "*that*" del inglés en *"the fact that…"*, los pronombres en lenguas pro-drop como el español) tienden a usarse cuando lo que viene después es de alta surprisal — para "amortiguar" el pico. Cuando lo que viene es predecible, se omiten — porque no hace falta amortiguar.
+- **Reducciones fonológicas** (vocales reducidas, contracciones) ocurren preferentemente en palabras de baja surprisal, donde el riesgo de pérdida de información es menor.
+- En lenguas con **orden de palabras flexible**, los hablantes prefieren órdenes que distribuyen la información de manera más uniforme.
+- **Velocidad del habla**: las palabras de baja surprisal se pronuncian más rápido; las de alta surprisal, más lento. Esto está documentado en corpus de habla espontánea (Aylett & Turk 2004; Jaeger 2010).
+
+**El paper canónico** es **Jaeger (2010)** "Redundancy and reduction: Speakers manage syntactic information density" (*Cognitive Psychology* 61:23-62), que muestra evidencia empírica fuerte de que la omisión opcional del *that* complementizador en inglés se predice bien por surprisal local.
+
+**Para el debate IA / cerebro**: UID predice algo que los LLMs no necesariamente hacen — los LLMs se entrenan para **minimizar surprisal promedio**, no para producir surprisal **uniforme** a lo largo del output. Eso da un test interesante: ¿el output de un LLM tiene picos de surprisal que un hablante humano evitaría? Si sí, esa es una asimetría productiva-cognitiva entre humanos y máquinas que vale la pena estudiar — y que conecta con el debate sobre por qué el texto generado por LLMs a veces "suena raro" aun cuando es gramaticalmente impecable.
+
 ## Conexión con el resto del campo
 
 **Hale (2001)** introdujo formalmente la idea de surprisal aplicada al parsing en *"A probabilistic Earley parser as a psycholinguistic model"*. **Levy (2008)** la generalizó y le dio soporte empírico fuerte. Desde entonces es **la** medida estándar para vincular modelos computacionales del lenguaje con datos de procesamiento humano.
@@ -143,3 +200,8 @@ Hay competencia teórica: modelos basados en **memoria** (Lewis & Vasishth 2005,
 - **Wilcox et al. (2020)** "On the predictive power of neural language models for human real-time comprehension behavior".
 - **Oh & Schuler (2023)** "Why does surprisal from larger transformer-based language models provide a poorer fit to human reading times?".
 - **van Schijndel & Linzen (2021)** "Single-stage prediction models do not explain the magnitude of syntactic disambiguation difficulty".
+- **Levy, R. & Jaeger, T. F. (2007)** "Speakers optimize information density through syntactic reduction" *NeurIPS*. **El paper fundacional de UID.**
+- **Jaeger, T. F. (2010)** "Redundancy and reduction: Speakers manage syntactic information density" *Cognitive Psychology* 61(1):23-62.
+- **Jaeger, T. F. & Tily, H. (2011)** "On language 'utility': Processing complexity and communicative efficiency" *Wiley Interdisciplinary Reviews: Cognitive Science* 2(3):323-335. **Revisión accesible de UID y procesamiento.**
+- **Aylett, M. & Turk, A. (2004)** "The smooth signal redundancy hypothesis" *Language and Speech* 47:31-56. Precursor empírico de UID en fonética.
+- **Fechner, G. T. (1860)** *Elemente der Psychophysik*. La ley logarítmica de la percepción — antecedente conceptual del logaritmo en surprisal.
