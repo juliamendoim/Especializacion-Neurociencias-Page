@@ -72,6 +72,8 @@ Otros modelos canónicos de la tradición:
 
 Trueswell, Tanenhaus & Garnsey (1994) mostraron que la **plausibilidad semántica** influye sobre la resolución de ambigüedad **en tiempo real** (con eye-tracking), lo cual es difícil de acomodar para el modelo clásico modular pero natural para *constraint satisfaction*.
 
+Otro caso paradigmático que favorece esta familia: los errores de **agreement attraction** (*"la llave de las habitaciones están…"*) modulados por **distributividad** y otras propiedades conceptuales no estructurales. Ver entrada dedicada: [Agreement attraction y la lectura distributiva](agreement-attraction-distributividad.md).
+
 ## Diferencia con los otros dos modelos modernos
 
 Las tres familias modernas comparten su rechazo al modelo generativo clásico, pero difieren en qué consideran la operación central:

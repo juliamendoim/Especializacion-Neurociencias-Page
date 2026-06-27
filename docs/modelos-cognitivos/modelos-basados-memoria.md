@@ -57,6 +57,8 @@ El modelo generativo clásico no tiene un mecanismo natural para este efecto. Le
 
 **Wagers, Lau & Phillips (2009)** dieron evidencia experimental fuerte de que la attraction es un efecto de retrieval, no de codificación inicial.
 
+Ver la entrada dedicada [Agreement attraction y la lectura distributiva](agreement-attraction-distributividad.md) para el tratamiento extendido del fenómeno, el rol de la distributividad/número nocional, el modelo *marking and morphing*, y la comparación con modelos lexicalistas y con LLMs.
+
 ## McElree y la atención focal
 
 **McElree (2000, 2006)** propone una versión más extrema: la comprensión opera sobre una **memoria direccionable por contenido**, donde el retrieval es esencialmente **plano en el tiempo**. No hay decaimiento gradual — solo hay una distinción entre lo que está **en foco** (un solo ítem, capacidad ~1) y lo que está **fuera de foco** (todo lo demás).

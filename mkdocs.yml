@@ -78,6 +78,7 @@ nav:
     - Modelos basados en memoria (retrieval): modelos-cognitivos/modelos-basados-memoria.md
     - Modelos lexicalistas / constraint satisfaction (conexionistas): modelos-cognitivos/modelos-lexicalistas.md
     - Frecuencia y cómo se representa mentalmente: modelos-cognitivos/frecuencia.md
+    - Agreement attraction y lectura distributiva: modelos-cognitivos/agreement-attraction-distributividad.md
     - Recuperación de memoria (voluntaria/involuntaria): modelos-cognitivos/recuperacion-memoria.md
     - RAM vs. memoria de trabajo (y chunks): modelos-cognitivos/memoria-trabajo-ram.md
     - Amnesias y casos clínicos (HM, Wearing, Korsakoff…): modelos-cognitivos/amnesias-casos-clinicos.md
