@@ -118,6 +118,70 @@ En psicofísica clásica (Fechner 1860), la **magnitud subjetiva percibida** (in
 
 La surprisal y el RT comparten esta forma: lo "psicológicamente lineal" es el **logaritmo de la probabilidad**, no la probabilidad bruta. El sistema cognitivo opera en escala logarítmica de probabilidad, **igual que opera en escala logarítmica de intensidad sensorial**. Esto es lo que se quiere decir cuando se afirma que el logaritmo convierte la sorpresa probabilística en una escala psicológicamente lineal.
 
+## Surprisal y entropía: la familia info-teórica
+
+Surprisal no vive sola. Es parte de una familia de medidas de la **teoría de la información** (Shannon 1948) que aparecen permanentemente en psicolingüística y en LLMs. Vale la pena tener las relaciones claras.
+
+### La identidad básica: entropía = surprisal esperada
+
+**Surprisal** es una propiedad de un **evento individual** (una palabra concreta dado un contexto). **Entropía** es una propiedad de una **distribución entera** — el promedio esperado de la surprisal sobre todos los posibles eventos:
+
+$$H(X) = \mathbb{E}[S(X)] = -\sum_{x} P(x) \log P(x)$$
+
+En lenguaje natural:
+
+- **Surprisal del token *t* dado el contexto**: $-\log P(t \mid contexto)$. Lo que medís cuando **llega** esa palabra concreta.
+- **Entropía del próximo token dado el contexto**: $H(\text{próximo} \mid contexto)$. Cuánta incertidumbre tiene el sistema sobre lo que viene, **antes** de que llegue.
+
+Para *"El gato persigue al…"* la entropía es relativamente baja (el sistema sabe que viene probablemente un ser animado). Para *"Y entonces dijo…"* la entropía es altísima (cualquier cosa puede venir). Surprisal mide la sorpresa post-hoc; entropía mide la incertidumbre prospectiva.
+
+### Cross-entropy: el objetivo de entrenamiento de los LLMs
+
+Lo que minimiza el entrenamiento de un LLM **es exactamente** la cross-entropy entre la distribución real de los datos $P$ y la distribución que el modelo predice $Q$:
+
+$$H(P, Q) = -\sum_x P(x) \log Q(x)$$
+
+Operacionalmente: **el LLM se entrena para minimizar la surprisal promedio que asigna al corpus de entrenamiento**. Toda la teoría del aprendizaje de los LLMs es teoría de minimización de cross-entropy. Cada paso de backprop ajusta los pesos para reducir la sorpresa promedio del modelo sobre los datos vistos.
+
+### Perplexity: la métrica de evaluación
+
+$$\text{perplexity} = 2^{H(P, Q)}$$
+
+Es el "tamaño efectivo de vocabulario" implicado por la distribución del modelo. Perplexity 100 significa que, en promedio, el modelo se comporta como si tuviera 100 opciones igualmente probables para cada token. Perplexity baja = modelo confiado y acertado; perplexity alta = modelo inseguro.
+
+Toda comparación entre LLMs (¿GPT-2 es mejor que GPT-1?) se reporta históricamente en perplexity sobre held-out test sets. Es la métrica heredada directamente de la teoría de la información.
+
+### Entropy reduction: la teoría alternativa a surprisal (Hale 2006)
+
+**John Hale** propuso una variante de su propia teoría de surprisal. La idea: el costo de procesamiento no es solo cuán sorprendente fue la palabra que llegó (surprisal), sino **cuánto redujo la incertidumbre sobre lo que sigue** (entropy reduction):
+
+$$\text{cost}(w_i) \propto H(\text{futuro} \mid w_1...w_{i-1}) - H(\text{futuro} \mid w_1...w_i)$$
+
+Algunas palabras tienen surprisal baja pero entropy reduction alta (resuelven mucha ambigüedad estructural sin ser ellas mismas sorprendentes — un determinante o un verbo que comprometea con cierta estructura). Otras al revés (palabras esperadas pero que dejan abierta mucha ambigüedad de continuación).
+
+**Frank (2013)** y trabajos posteriores muestran que **surprisal y entropy reduction predicen aspectos distintos del RT humano** — son complementarias, no equivalentes. Hay literatura empírica midiendo cuál pesa más en distintos contextos.
+
+### Conexión con UID
+
+Lo que acabamos de discutir en la sección de **UID** (Jaeger & Tily) es en el fondo sobre **entropy rate** — la información por unidad de tiempo o por sílaba del enunciado. Cuando se dice "los hablantes distribuyen la información de manera uniforme", lo que se mantiene constante es la entropy rate. UID se podría haber bautizado "uniform entropy rate".
+
+Esto cierra el círculo: si los hablantes optimizan UID (entropy rate uniforme en producción) y los oyentes pagan costo por surprisal (procesamiento), entonces el sistema comunicativo está optimizando **la transmisión de información** en sentido shannoniano. Es teoría de la información aplicada a habla natural.
+
+### Resumen mental
+
+| Concepto | Qué mide | Dónde aparece |
+|---|---|---|
+| **Surprisal** $S(x)$ | Sorpresa de un evento concreto | Costo de procesar una palabra (Levy 2008) |
+| **Entropía** $H(X)$ | Surprisal esperada de una distribución | Incertidumbre prospectiva |
+| **Cross-entropy** $H(P,Q)$ | Surprisal promedio que el modelo $Q$ asigna a datos reales $P$ | Loss de entrenamiento de LLMs |
+| **Perplexity** $2^{H(P,Q)}$ | Tamaño efectivo de vocabulario | Métrica de evaluación de LLMs |
+| **Entropy reduction** $\Delta H$ | Cuánto cambia la entropía con cada palabra | Teoría alternativa de costo (Hale 2006) |
+| **Mutual information** $I(X;Y)$ | Cuánto reduce conocer $Y$ la incertidumbre sobre $X$ | Collocations, dependencias léxicas |
+| **KL divergence** $D_{KL}(P\|Q)$ | Cuán diferentes son dos distribuciones | Aprendizaje variacional, calibración |
+| **Entropy rate** | Información por unidad de tiempo en el enunciado | UID — principio normativo de producción |
+
+Todos derivan de Shannon (1948); todos son métricas que algún modelo cognitivo o algún sistema de IA está optimizando o midiendo. Tener la familia entera mapeada ayuda a leer la literatura sin confundir conceptos.
+
 ## Cómo se mide surprisal con un LLM
 
 Los LLMs son **modelos probabilísticos del lenguaje**: dada una secuencia, asignan a cada posible siguiente token una probabilidad. Esa es exactamente la distribución que necesitás para calcular surprisal.
@@ -205,3 +269,6 @@ Hay competencia teórica: modelos basados en **memoria** (Lewis & Vasishth 2005,
 - **Jaeger, T. F. & Tily, H. (2011)** "On language 'utility': Processing complexity and communicative efficiency" *Wiley Interdisciplinary Reviews: Cognitive Science* 2(3):323-335. **Revisión accesible de UID y procesamiento.**
 - **Aylett, M. & Turk, A. (2004)** "The smooth signal redundancy hypothesis" *Language and Speech* 47:31-56. Precursor empírico de UID en fonética.
 - **Fechner, G. T. (1860)** *Elemente der Psychophysik*. La ley logarítmica de la percepción — antecedente conceptual del logaritmo en surprisal.
+- **Shannon, C. E. (1948)** "A mathematical theory of communication" *Bell System Technical Journal* 27:379-423, 623-656. **El paper fundacional** de toda la familia info-teórica (surprisal, entropía, cross-entropy, mutual information).
+- **Hale, J. (2006)** "Uncertainty about the rest of the sentence" *Cognitive Science* 30(4):643-672. La teoría de entropy reduction como alternativa/complemento a surprisal.
+- **Frank, S. L. (2013)** "Uncertainty reduction as a measure of cognitive load in sentence comprehension" *Topics in Cognitive Science* 5(3):475-494. Comparación empírica entre surprisal y entropy reduction.
