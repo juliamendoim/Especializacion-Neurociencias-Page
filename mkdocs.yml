@@ -121,6 +121,9 @@ nav:
     - tdl/index.md
     - Etiología multifactorial: tdl/etiologia-multifactorial.md
     - Markers psicolingüísticos: tdl/markers-psicolinguisticos.md
+  - Afasia:
+    - afasia/index.md
+    - Triángulo / casita de Wernicke-Lichtheim: afasia/triangulo-lichtheim-wernicke.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md
