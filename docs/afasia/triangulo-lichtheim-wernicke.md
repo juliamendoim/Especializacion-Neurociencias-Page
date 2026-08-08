@@ -31,80 +31,11 @@ Más las conexiones con periferia:
 - **Input auditivo → A** (oído → representación acústica de palabra).
 - **M → output motor** (representación motora → articulación).
 
-<figure markdown>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" role="img" aria-label="Diagrama de Wernicke-Lichtheim: tres centros (A auditivo, M motor, B conceptos) con siete sitios de lesión numerados que producen distintos tipos de afasia">
-  <!-- Title -->
-  <text x="310" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="600">Casita de Wernicke-Lichtheim</text>
-  <text x="310" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-style="italic">Tres centros, siete sitios de lesión, siete síndromes afásicos</text>
+<p style="text-align: center;">
+<img src="images/lichtheim-house.svg" alt="Diagrama de Wernicke-Lichtheim: tres centros (A auditivo, M motor, B conceptos) con siete sitios de lesión numerados que producen distintos tipos de afasia" style="max-width: 620px; width: 100%; height: auto;">
+</p>
 
-  <!-- Connection lines (drawn first so circles overlay them) -->
-  <!-- A - B -->
-  <line x1="163" y1="272" x2="288" y2="150" stroke="#3F51B5" stroke-width="2"/>
-  <!-- B - M -->
-  <line x1="332" y1="150" x2="457" y2="272" stroke="#3F51B5" stroke-width="2"/>
-  <!-- A - M (arcuate) -->
-  <line x1="185" y1="300" x2="435" y2="300" stroke="#3F51B5" stroke-width="2"/>
-
-  <!-- Auditory input arrow: from left-bottom into A -->
-  <line x1="60" y1="400" x2="130" y2="335" stroke="#666" stroke-width="1.6" marker-end="url(#arrow-gray)"/>
-  <text x="45" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#555" text-anchor="start">input auditivo</text>
-
-  <!-- Motor output arrow: from M to right-bottom -->
-  <line x1="490" y1="335" x2="560" y2="400" stroke="#666" stroke-width="1.6" marker-end="url(#arrow-gray)"/>
-  <text x="575" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#555" text-anchor="end">output motor (habla)</text>
-
-  <!-- Arrow marker definition -->
-  <defs>
-    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
-  </defs>
-
-  <!-- B (concepts) at top -->
-  <circle cx="310" cy="120" r="45" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2.5"/>
-  <text x="310" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#1A237E" text-anchor="middle" font-weight="700">B</text>
-  <text x="310" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1A237E" text-anchor="middle">conceptos</text>
-
-  <!-- A (auditory) at bottom-left -->
-  <circle cx="140" cy="300" r="45" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2.5"/>
-  <text x="140" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#1A237E" text-anchor="middle" font-weight="700">A</text>
-  <text x="140" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1A237E" text-anchor="middle">Wernicke</text>
-
-  <!-- M (motor) at bottom-right -->
-  <circle cx="480" cy="300" r="45" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2.5"/>
-  <text x="480" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#1A237E" text-anchor="middle" font-weight="700">M</text>
-  <text x="480" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1A237E" text-anchor="middle">Broca</text>
-
-  <!-- Lesion sites numbered in red -->
-  <!-- 1: A (Wernicke) -->
-  <circle cx="140" cy="255" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="140" y="259" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">1</text>
-  <!-- 2: M (Broca) -->
-  <circle cx="480" cy="255" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="480" y="259" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">2</text>
-  <!-- 3: A-M (conduction) -->
-  <circle cx="310" cy="300" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="310" y="304" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">3</text>
-  <!-- 4: A-B (transcortical sensory) -->
-  <circle cx="225" cy="211" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="225" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">4</text>
-  <!-- 5: B-M (transcortical motor) -->
-  <circle cx="395" cy="211" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="395" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">5</text>
-  <!-- 6: input to A (pure word deafness) -->
-  <circle cx="95" cy="368" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="95" y="372" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">6</text>
-  <!-- 7: output from M (anarthria) -->
-  <circle cx="525" cy="368" r="10" fill="#E53935" stroke="white" stroke-width="1.5"/>
-  <text x="525" y="372" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">7</text>
-
-  <!-- Legend box -->
-  <rect x="40" y="452" width="540" height="38" fill="#F5F5F5" stroke="#DDD" stroke-width="1" rx="4"/>
-  <text x="60" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#333"><tspan font-weight="600">1</tspan> Wernicke  •  <tspan font-weight="600">2</tspan> Broca  •  <tspan font-weight="600">3</tspan> Conducción  •  <tspan font-weight="600">4</tspan> Transc. sensorial</text>
-  <text x="60" y="484" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#333"><tspan font-weight="600">5</tspan> Transc. motora  •  <tspan font-weight="600">6</tspan> Sordera verbal pura  •  <tspan font-weight="600">7</tspan> Anartria / afasia motora pura</text>
-</svg>
-<figcaption markdown>**Casita de Wernicke-Lichtheim**. Tres centros (**A** auditivo, **M** motor, **B** conceptos) unidos por vías: A↔M es el haz arcuato (repetición), A↔B comprensión, B↔M producción voluntaria. Los siete puntos rojos numerados marcan los sitios de lesión que producen los siete síndromes afásicos clásicos. La lógica del modelo: **cada lesión desconecta funciones específicas**, produciendo un perfil predecible de qué habilidades se preservan y qué se pierden.</figcaption>
-</figure>
+**Casita de Wernicke-Lichtheim**. Tres centros (**A** auditivo, **M** motor, **B** conceptos) unidos por vías: A↔M es el haz arcuato (repetición), A↔B comprensión, B↔M producción voluntaria. Los siete puntos rojos numerados marcan los sitios de lesión que producen los siete síndromes afásicos clásicos. La lógica del modelo: **cada lesión desconecta funciones específicas**, produciendo un perfil predecible de qué habilidades se preservan y qué se pierden.
 
 ## Las siete afasias predichas por el modelo
 
