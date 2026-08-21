@@ -4,7 +4,22 @@ El diagrama de **Wernicke-Lichtheim** —también llamado *casita de Lichtheim*,
 
 ## Genealogía histórica
 
-Tres papers seminales, todos alemanes, entre 1861 y 1885:
+Tres papers seminales entre 1861 y 1885 fundaron la aphasiology moderna. Broca y Wernicke son alemán y francés respectivamente; Lichtheim es alemán:
+
+<div class="grid" markdown>
+<figure markdown="span">
+  ![Retrato de Paul Broca](images/paul-broca-portrait.jpg){ width="180" }
+  <figcaption><strong>Paul Broca</strong><br>(1824-1880)</figcaption>
+</figure>
+<figure markdown="span">
+  ![Retrato de Carl Wernicke](images/carl-wernicke-portrait.jpg){ width="180" }
+  <figcaption><strong>Carl Wernicke</strong><br>(1848-1905)</figcaption>
+</figure>
+<figure markdown="span">
+  ![Retrato de Ludwig Lichtheim](images/ludwig-lichtheim-portrait.jpg){ width="180" }
+  <figcaption><strong>Ludwig Lichtheim</strong><br>(1845-1928)</figcaption>
+</figure>
+</div>
 
 - **Paul Broca (1861)** describe el caso *"Tan"* (Leborgne). Identifica una lesión en la tercera circunvolución frontal izquierda asociada a la pérdida de producción del habla con comprensión relativamente preservada. Nace el concepto de **localización cerebral del lenguaje** y de "área de Broca".
 - **Carl Wernicke (1874)** *Der aphasische Symptomencomplex*. Describe un segundo tipo de afasia: comprensión alterada, producción fluente pero llena de errores (parafasias), asociada a lesión temporal posterior izquierda (área de Wernicke). **Postula un tercer tipo predicho: afasia de conducción**, por lesión en el haz de fibras que conecta ambas áreas (arcuato). El paper es teórico + clínico: no solo describe, **predice**.

@@ -22,6 +22,11 @@ Complementa la entrada sobre el [triángulo / casita de Wernicke-Lichtheim](tria
 
 ### Descubrimiento histórico
 
+<figure markdown="span">
+  ![Retrato de Paul Broca](images/paul-broca-portrait.jpg){ width="220" }
+  <figcaption><strong>Paul Broca (1824-1880)</strong>, cirujano y antropólogo francés. Publicó en 1861 el caso Leborgne (Tan), fundando la aphasiology moderna y la doctrina de localización cerebral del lenguaje.</figcaption>
+</figure>
+
 **Paul Broca (1861)** presenta ante la Société d'Anthropologie de Paris el caso de un paciente conocido como **"Tan"** (por ser la única sílaba que producía) — Louis Victor Leborgne. Autopsia: lesión focal en la tercera circunvolución frontal izquierda. Broca formaliza la doctrina de la **localización cerebral del lenguaje** y funda la aphasiology moderna.
 
 Nota histórica importante: el cerebro de Leborgne se conservó y actualmente está en el Musée Dupuytren en París. Análisis modernos con MRI (Dronkers et al. 2007) mostraron que la lesión de Leborgne **excedía** el área que hoy llamamos "área de Broca" — incluía sustancia blanca subyacente e ínsula. Esto matiza la interpretación clásica.
@@ -72,6 +77,11 @@ Para saber quién es alto y quién abraza a quién, necesitás procesamiento sin
 - Adyacente al giro angular y al giro supramarginal (áreas del lóbulo parietal inferior involucradas en lectura, escritura y procesamiento léxico-semántico).
 
 ### Descubrimiento histórico
+
+<figure markdown="span">
+  ![Retrato de Carl Wernicke](images/carl-wernicke-portrait.jpg){ width="220" }
+  <figcaption><strong>Carl Wernicke (1848-1905)</strong>, neurólogo y psiquiatra alemán. Publicó a los 26 años el paper fundacional que describe la afasia de comprensión y predice teóricamente la afasia de conducción — que después se encontró clínicamente.</figcaption>
+</figure>
 
 **Carl Wernicke (1874)**, en *Der aphasische Symptomencomplex*, describe un tipo de afasia **cualitativamente distinto** al de Broca: comprensión alterada, producción fluente pero con parafasias. Localiza el sitio de lesión en el tercio posterior del giro temporal superior izquierdo. **Predice teóricamente** un tercer síndrome (afasia de conducción) por lesión en el conector entre ambas áreas — que después se encontró clínicamente.
 
