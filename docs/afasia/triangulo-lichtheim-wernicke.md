@@ -31,11 +31,10 @@ Más las conexiones con periferia:
 - **Input auditivo → A** (oído → representación acústica de palabra).
 - **M → output motor** (representación motora → articulación).
 
-<p style="text-align: center;">
-<img src="images/lichtheim-house.svg" alt="Diagrama de Wernicke-Lichtheim: tres centros (A auditivo, M motor, B conceptos) con siete sitios de lesión numerados que producen distintos tipos de afasia" style="max-width: 620px; width: 100%; height: auto;">
-</p>
-
-**Casita de Wernicke-Lichtheim**. Tres centros (**A** auditivo, **M** motor, **B** conceptos) unidos por vías: A↔M es el haz arcuato (repetición), A↔B comprensión, B↔M producción voluntaria. Los siete puntos rojos numerados marcan los sitios de lesión que producen los siete síndromes afásicos clásicos. La lógica del modelo: **cada lesión desconecta funciones específicas**, produciendo un perfil predecible de qué habilidades se preservan y qué se pierden.
+<figure markdown="span">
+  ![Diagrama de Wernicke-Lichtheim: tres centros (A auditivo, M motor, B conceptos) con siete sitios de lesión numerados que producen distintos tipos de afasia](images/lichtheim-house.svg){ width="620" }
+  <figcaption><strong>Casita de Wernicke-Lichtheim</strong>. Tres centros (<strong>A</strong> auditivo, <strong>M</strong> motor, <strong>B</strong> conceptos) unidos por vías: A↔M es el haz arcuato (repetición), A↔B comprensión, B↔M producción voluntaria. Los siete puntos rojos numerados marcan los sitios de lesión que producen los siete síndromes afásicos clásicos. La lógica del modelo: <strong>cada lesión desconecta funciones específicas</strong>, produciendo un perfil predecible de qué habilidades se preservan y qué se pierden.</figcaption>
+</figure>
 
 ## Las siete afasias predichas por el modelo
 

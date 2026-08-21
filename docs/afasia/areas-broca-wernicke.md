@@ -6,11 +6,10 @@ Complementa la entrada sobre el [triángulo / casita de Wernicke-Lichtheim](tria
 
 ## Diagrama anatómico
 
-<p style="text-align: center;">
-<img src="images/areas-broca-wernicke.svg" alt="Hemisferio izquierdo con área de Broca en el lóbulo frontal inferior, área de Wernicke en el lóbulo temporal superior posterior, y el fascículo arcuato conectándolas por sobre la cisura de Silvio" style="max-width: 720px; width: 100%; height: auto;">
-</p>
-
-**Vista lateral del hemisferio izquierdo**. Las dos áreas clásicas del lenguaje (Broca en naranja, Wernicke en verde) están separadas por la **cisura de Silvio** (línea punteada) y unidas por el **fascículo arcuato** (línea violeta), un haz de fibras de sustancia blanca que arquea por encima de la cisura. Cada área tiene un síndrome afásico asociado; la desconexión de la vía arcuato produce un tercer síndrome.
+<figure markdown="span">
+  ![Hemisferio izquierdo con área de Broca en el lóbulo frontal inferior, área de Wernicke en el lóbulo temporal superior posterior, y el fascículo arcuato conectándolas por sobre la cisura de Silvio](images/areas-broca-wernicke.svg){ width="720" }
+  <figcaption><strong>Vista lateral del hemisferio izquierdo</strong>. Las dos áreas clásicas del lenguaje (Broca en naranja, Wernicke en verde) están separadas por la <strong>cisura de Silvio</strong> (línea punteada) y unidas por el <strong>fascículo arcuato</strong> (línea violeta), un haz de fibras de sustancia blanca que arquea por encima de la cisura. Cada área tiene un síndrome afásico asociado; la desconexión de la vía arcuato produce un tercer síndrome.</figcaption>
+</figure>
 
 ## Área de Broca
 
