@@ -1,6 +1,6 @@
 # Las 4 preguntas de Tinbergen y los niveles de análisis del comportamiento
 
-Marco conceptual que ordena cualquier pregunta de neurociencia. Útil al inicio del seminario para no confundir "cómo funciona" con "por qué evolucionó" — son preguntas distintas, con métodos distintos, y se responden con evidencia distinta.
+Marco conceptual que ordena cualquier pregunta de neurociencia. Útil como punto de partida para no confundir "cómo funciona" con "por qué evolucionó" — son preguntas distintas, con métodos distintos, y se responden con evidencia distinta.
 
 ## Las 4 preguntas de Tinbergen
 

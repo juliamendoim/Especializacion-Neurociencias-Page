@@ -47,14 +47,14 @@ En la práctica, la mejor neurociencia **alterna entre ambos**: una observación
 - **[Las 4 preguntas de Tinbergen](tinbergen-niveles-analisis.md)**: ortogonal a esta distinción — Tinbergen pregunta *qué tipo de causa* (próxima, última, etc.), mientras que bottom-up/top-down pregunta *desde dónde empezás*.
 - **Niveles de análisis del comportamiento** (comportamental, fisiológico, molecular): bottom-up arranca abajo y sube; top-down arranca arriba y baja. Pero el destino puede ser cualquier nivel.
 
-## En tu seminario
+## En la organización de un curso de Neurofisiología
 
-El programa de Neurofisiología y procesos cognitivos básicos **mezcla los dos enfoques**:
+Un programa típico de Neurofisiología y procesos cognitivos suele **combinar los dos enfoques** en secuencia:
 
-- **Bottom-up**: Unidad 1 y 2 — neurona, sinapsis, sistema nervioso. Empieza por la unidad mínima y sube.
-- **Top-down**: Unidades 3 a 6 — procesos cognitivos (percepción, atención, memoria). Empieza por la capacidad cognitiva y busca su implementación.
+- **Bottom-up primero**: neurona, sinapsis, sistema nervioso. Se empieza por la unidad mínima y se sube.
+- **Top-down después**: procesos cognitivos (percepción, atención, memoria). Se parte de la capacidad cognitiva y se busca su implementación.
 
-Es deliberado. La primera mitad da la base celular; la segunda muestra cómo capacidades cognitivas complejas emergen de — y se mapean a — esa base.
+La primera mitad da la base celular; la segunda muestra cómo capacidades cognitivas complejas emergen de — y se mapean a — esa base. El armado no es casual: refleja la convicción metodológica de que la mejor neurociencia alterna entre ambos enfoques.
 
 ## Lecturas
 

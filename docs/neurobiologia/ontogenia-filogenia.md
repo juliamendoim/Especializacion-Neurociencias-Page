@@ -17,7 +17,7 @@ Dos conceptos centrales en biología del desarrollo y evolución que aparecen si
 
 ## Por qué importan en neurofisiología
 
-El programa de Neurofisiología (Unidad 2) menciona específicamente **"filogenia y ontogenia"** del encéfalo. Estos dos planos cuentan dos historias complementarias sobre el cerebro humano:
+**Filogenia y ontogenia** del encéfalo son dos planos que cuentan historias complementarias sobre el cerebro humano:
 
 ### Filogenia del encéfalo
 

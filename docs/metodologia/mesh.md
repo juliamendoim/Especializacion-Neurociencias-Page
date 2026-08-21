@@ -44,7 +44,7 @@ Sinónimos mapeados al mismo descriptor:
 
 Una búsqueda en PubMed con `"Neuronal Plasticity"[MeSH]` te trae **todos** los papers indexados con ese descriptor, sin perderse los que el autor escribió con otra variante.
 
-## Cuándo aparece "MeSH" en un paper que estás leyendo
+## Cuándo aparece "MeSH" en un paper
 
 Cuando un paper médico tiene una sección de palabras clave con algo como:
 

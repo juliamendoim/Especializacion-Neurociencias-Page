@@ -73,7 +73,7 @@ La continuación más viva del **proyecto Marr** son hoy las teorías predictiva
 
 Todas estas teorías se ubican en el **nivel computacional de Marr** (qué problema resuelve el sistema), pero con una respuesta distinta: no "reconstrucción del mundo 3D" sino "minimización del error de predicción".
 
-## Por qué importa para este seminario
+## Por qué importa
 
 - Marr es un buen contrapeso a la pregunta "¿dónde se activa el cerebro cuando X?" — recuerda que ubicar la activación no equivale a entender el proceso.
 - Es el puente más limpio entre **neurociencia** y **modelos computacionales de la cognición** (incluido lo que hoy se llama IA).

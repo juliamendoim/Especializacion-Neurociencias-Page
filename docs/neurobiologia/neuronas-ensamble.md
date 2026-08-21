@@ -48,7 +48,7 @@ Por eso a veces se dice que los LLMs son "máquinas de ensambles hebbianos a esc
 
 Hay un debate histórico que conviene tener presente:
 
-**Hipótesis de la neurona de la abuela** (Jerry Lettvin, 1969, en chiste): habría neuronas individuales especializadas en reconocer conceptos específicos — una neurona para tu abuela, otra para Jennifer Aniston, etc.
+**Hipótesis de la neurona de la abuela** (Jerry Lettvin, 1969, en chiste): habría neuronas individuales especializadas en reconocer conceptos específicos — una neurona para el concepto "abuela", otra para "Jennifer Aniston", etc.
 
 **Hipótesis del ensamble** (Hebb): no, las representaciones son distribuidas.
 
@@ -61,8 +61,8 @@ Es decir: **el cerebro usa codificación distribuida con grados variables de spa
 
 ## Conexión con conceptos contemporáneos
 
-- **Sparse coding** (Hawkins, Ahmad — bibliografía U2 del seminario): formaliza la idea de ensambles con codificación distribuida pero sparse, donde solo un pequeño porcentaje de neuronas se activa para cada representación.
-- **LTP / LTD** (programa U1): los mecanismos sinápticos que implementan la regla hebbiana.
+- **Sparse coding** (Hawkins, Ahmad): formaliza la idea de ensambles con codificación distribuida pero sparse, donde solo un pequeño porcentaje de neuronas se activa para cada representación.
+- **LTP / LTD**: los mecanismos sinápticos que implementan la regla hebbiana.
 - **Aprendizaje en redes neuronales artificiales**: los algoritmos de aprendizaje (incluyendo gradient descent en deep learning) son refinamientos del principio hebbiano.
 
 ## Lecturas

@@ -120,7 +120,7 @@ Esto es lo que les permite a memoristas, ajedrecistas, médicos, traductores y o
 
 ### Chunks y lenguaje
 
-Específicamente interesante para el seminario:
+Aplicaciones específicas del chunking al procesamiento del lenguaje:
 
 - **Lectura**: los lectores expertos chunkean palabras en sintagmas; los principiantes chunkean letras en palabras. Por eso el span lector (Daneman & Carpenter, 1980) crece con la habilidad lectora.
 - **Procesamiento sintáctico**: los **garden paths** ([entrada aparte](garden-paths.md)) son fallos de chunking — el parser cierra un chunk en un punto y tiene que reabrirlo. La dependency locality theory de Gibson (DLT, 2000) modela la dificultad de oraciones como costo de mantener referentes abiertos en MT.

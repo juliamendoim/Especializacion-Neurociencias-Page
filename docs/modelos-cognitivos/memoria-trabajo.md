@@ -147,6 +147,6 @@ Por eso **los LLMs procesan center embeddings y oraciones de varias líneas sin 
 - **Baddeley, A. (1986)** *Working Memory*. Oxford UP. El libro fundacional.
 - **Baddeley, A. (2000)** "The episodic buffer: A new component of working memory?" *TICS* 4(11):417-423. La actualización del modelo.
 - **Gathercole & Baddeley (1996)** "Children's Test of Nonword Repetition" — el test estándar.
-- **Conti-Ramsden, Botting & Faragher (2001)** "Psycholinguistic markers for SLI" — el paper que consolidó NWR como marker. **Está en U5 complementaria.**
+- **Conti-Ramsden, Botting & Faragher (2001)** "Psycholinguistic markers for SLI" — el paper que consolidó NWR como marker.
 - **Caplan & Waters (1999)** "Verbal working memory and sentence comprehension". *BBS* 22:77-94. Hipótesis del recurso específico para sintaxis.
 - **Lewis & Vasishth (2005)** "An activation-based model of sentence processing as skilled memory retrieval". *Cognitive Science* 29:375-419. Alternativa basada en interferencia.

@@ -529,7 +529,7 @@ Esta cita es también un argumento contra la idea de que una red neuronal artifi
 - En una red neuronal artificial, **la arquitectura inicial no tiene ninguna estructura específica** — los pesos arrancan aleatorios, y toda la organización emerge del entrenamiento.
 - Los LLMs no tienen "andamiaje innato" de ningún tipo. Empiezan literalmente de cero y necesitan, para compensar esa ausencia, **órdenes de magnitud más datos** que un niño.
 
-Esa asimetría — el cerebro humano se prepara biológicamente para aprender lenguaje desde antes de nacer; el modelo artificial no se prepara en absoluto — es uno de los argumentos más sólidos contra la equivalencia ingenua entre los dos sistemas, y un dato a tener presente en el TP final.
+Esa asimetría — el cerebro humano se prepara biológicamente para aprender lenguaje desde antes de nacer; el modelo artificial no se prepara en absoluto — es uno de los argumentos más sólidos contra la equivalencia ingenua entre los dos sistemas.
 
 ### La línea numérica cortical y la organización topográfica — Dehaene
 
@@ -581,21 +581,21 @@ Pero hay diferencias importantes incluso en estos análogos:
 - En los embeddings de un LLM no hay restricción dimensional: los vectores pueden tener 768 o 12.288 dimensiones. Cabe mucha más estructura, pero a costa de perder la elegancia geométrica de un mapa físico.
 - En el cerebro, la organización topográfica **se autoorganiza durante el desarrollo** a partir de actividad espontánea (como muestra el modelo de Hannagan), de manera que las restricciones biofísicas (costo del cableado, sincronización de ondas corticales) dirigen la forma final. En un modelo computacional, la organización emerge de la función objetivo del entrenamiento, no de constricciones físicas.
 
-#### Por qué importa esto para el TP
+#### Por qué importa esta cita
 
-Esta cita sirve para varios capítulos del trabajo final por homonimias:
+Se conecta con varios puntos del análisis de términos compartidos entre IA y neurociencia:
 
-1. **Capítulo de memoria**. La memoria humana es **espacial y de contenido**: la organización topográfica del córtex significa que recuperar información es activar una región específica, y regiones vecinas activan información relacionada. En la RAM de una computadora, la posición no significa nada y la cercanía no implica relación. En embeddings sí, pero en un sentido distinto y sin sustrato físico.
+1. **Memoria como capacidad situada.** La memoria humana es **espacial y de contenido**: la organización topográfica del córtex significa que recuperar información es activar una región específica, y regiones vecinas activan información relacionada. En la RAM de una computadora, la posición no significa nada y la cercanía no implica relación. En embeddings sí, pero en un sentido distinto y sin sustrato físico.
 
-2. **Capítulo de neurona y arquitectura**. Refuerza el argumento del capítulo 1 (homonimia neurona biológica vs. artificial): no solo el principio de Dale o la inactivación de canales son específicos de la neurona biológica; también lo es el hecho de que su **posición anatómica codifica función**. En una neurona artificial estándar, la "posición" en una matriz de pesos es solo una indexación de bookkeeping; en una neurona biológica, la posición es parte de lo que la neurona "es" funcionalmente.
+2. **Neurona y arquitectura.** Refuerza el argumento de que la homonimia entre neurona biológica y artificial esconde diferencias arquitectónicas profundas: no solo el principio de Dale o la inactivación de canales son específicos de la neurona biológica; también lo es el hecho de que su **posición anatómica codifica función**. En una neurona artificial estándar, la "posición" en una matriz de pesos es solo una indexación de bookkeeping; en una neurona biológica, la posición es parte de lo que la neurona "es" funcionalmente.
 
-3. **Capítulo de representación o aprendizaje**. La cita conecta con la pregunta de cómo el conocimiento queda escrito en el sustrato físico. En el cerebro, escribir conocimiento implica **especializar zonas anatómicas**. En un LLM, escribir conocimiento implica ajustar pesos numéricos en una arquitectura sin geografía física propia. Las dos cosas pueden producir comportamientos equivalentes, pero no son la misma operación.
+3. **Representación y aprendizaje.** La cita conecta con la pregunta de cómo el conocimiento queda escrito en el sustrato físico. En el cerebro, escribir conocimiento implica **especializar zonas anatómicas**. En un LLM, escribir conocimiento implica ajustar pesos numéricos en una arquitectura sin geografía física propia. Las dos cosas pueden producir comportamientos equivalentes, pero no son la misma operación.
 
-4. **Caso de homonimia convergente parcial**. Los mapas autoorganizativos y los embeddings son ejemplos donde la idea de **"información codificada por posición"** sí cruzó entre cerebro e IA con cierto éxito. Vale como ejemplo de cuándo el préstamo conceptual fue productivo, y conviene contrastarlo con casos donde la homonimia es más ornamental.
+4. **Caso de homonimia convergente parcial.** Los mapas autoorganizativos y los embeddings son ejemplos donde la idea de **"información codificada por posición"** sí cruzó entre cerebro e IA con cierto éxito. Vale como ejemplo de cuándo el préstamo conceptual fue productivo, y conviene contrastarlo con casos donde la homonimia es más ornamental.
 
 ### Autoorganización cerebral vs. big data — Dehaene
 
-Cita central para el debate **cerebro vs. redes neuronales artificiales**, particularmente relevante para el capítulo de Aprendizaje del TP final:
+Cita central para el debate **cerebro vs. redes neuronales artificiales**, particularmente relevante para pensar la asimetría en aprendizaje:
 
 > "La idea de autoorganización difiere radicalmente del enfoque actual de la inteligencia artificial, basada en big data. A diferencia de las redes neuronales actuales, nuestro cerebro no parece necesitar millones de datos para organizarse. Por el contrario, sus núcleos de conocimiento se desarrollan espontáneamente, por estimulación interna. Son escasos los informáticos que, como Joshua Tenenbaum, profesor del MIT, contemplan la posibilidad de copiar esta autoorganización en una inteligencia artificial. Tenenbaum trabaja para simular un bebé virtual que llegaría al mundo con la capacidad de generar, por sí solo, millones de imágenes realistas. Estas le servirían de base para el aprendizaje, sin que exista necesidad de algún otro dato. Según este enfoque radical, incluso antes del nacimiento, los circuitos neuronales se entrenarían con ayuda de una base de datos generada por ellos mismos (Lake y otros, 2016; de paso, señalemos que es otro ejemplo del bootstrapping del barón de Münchhausen). La mayor parte de su aprendizaje se produce de forma interna, sin interacción con el exterior, y luego solo resta realizar algunos ajustes en función de los datos suplementarios tomados del mundo real."
 >
@@ -621,7 +621,7 @@ Ambas hipótesis aparecen articuladas en el paper de **Lake et al. (2016)** que 
 
 #### La referencia clave: Lake, Ullman, Tenenbaum y Gershman (2016)
 
-**Lake, B. M., Ullman, T. D., Tenenbaum, J. B. y Gershman, S. J. (2016)** "Building machines that learn and think like people". *Behavioral and Brain Sciences*, 40, e253. Es uno de los papers más citados del cruce ciencia cognitiva / inteligencia artificial del último decenio, y un *must read* para el TP final.
+**Lake, B. M., Ullman, T. D., Tenenbaum, J. B. y Gershman, S. J. (2016)** "Building machines that learn and think like people". *Behavioral and Brain Sciences*, 40, e253. Es uno de los papers más citados del cruce ciencia cognitiva / inteligencia artificial del último decenio, y un *must read* para cualquier trabajo serio sobre el tema.
 
 Su argumento, en cuatro puntos:
 
@@ -640,23 +640,23 @@ La solución técnica que proponen Lake y Tenenbaum: el sistema arranca con un *
 
 Esa idea conecta directamente con la idea filosófica más amplia de que **no se aprende todo desde cero** y que la mente humana viene con **estructura previa que hace posible el aprendizaje**. Es Kant traducido al siglo XXI.
 
-#### Conexión con líneas del TP final
+#### Conexión con el debate IA / neurociencia
 
-Esta cita es probablemente **el ancla más fuerte del libro de Dehaene** para los siguientes capítulos del TP:
+Esta cita es probablemente **el ancla más fuerte del libro de Dehaene** para varias líneas del debate contemporáneo:
 
-- **Línea 1 (Aprendizaje estadístico vs. LLMs)**: Dehaene está señalando exactamente la asimetría de eficiencia que vos ya tenés identificada. Sirve para cerrar el argumento de que los LLMs no son modelos plausibles del aprendizaje infantil sin reformas profundas. Conecta directo con **Yedetore et al. (2023)** "How poor is the stimulus?", que muestra empíricamente que las redes entrenadas con input chiquito (como el del niño) fallan en generalizaciones que el niño hace.
+- **Aprendizaje estadístico vs. LLMs**: Dehaene señala explícitamente la asimetría de eficiencia entre el aprendizaje infantil y el de las redes neuronales artificiales. Da soporte al argumento de que los LLMs no son modelos plausibles del aprendizaje infantil sin reformas profundas. Conecta directo con **Yedetore et al. (2023)** "How poor is the stimulus?", que muestra empíricamente que las redes entrenadas con input del tamaño del que recibe un niño fallan en generalizaciones que el niño hace sin esfuerzo.
 
-- **Capítulo 1 (Neurona / Potencial de acción)**: refuerza el punto de que el cerebro biológico llega al mundo **ya estructurado** (andamiaje innato + capacidad de autoorganización por actividad espontánea), mientras que la red artificial llega con pesos aleatorios. Es otra forma de mostrar la asimetría de partida.
+- **Neurona y potencial de acción**: refuerza el punto de que el cerebro biológico llega al mundo **ya estructurado** (andamiaje innato + capacidad de autoorganización por actividad espontánea), mientras que la red artificial llega con pesos aleatorios. Es otra forma de mostrar la asimetría de partida.
 
-- **Capítulo 3 (Aprendizaje)**: ofrece una clasificación interesante para tu tipología de homonimias. El "aprendizaje" en el cerebro humano y el "aprendizaje" en un LLM son superficialmente equivalentes (ambos modifican parámetros internos en función de input), pero difieren radicalmente en (a) el punto de partida, (b) la cantidad de datos requerida, (c) el mecanismo subyacente (autoorganización + actualización local vs. gradient descent global). Esta cita es **el caso de homonimia engañosa** más claro de tu TP: la misma palabra para procesos que se parecen en la superficie pero que son arquitectónicamente distintos.
+- **Aprendizaje**: ofrece una distinción útil dentro de la tipología de homonimias entre términos compartidos por IA y neurociencia. El "aprendizaje" en el cerebro humano y el "aprendizaje" en un LLM son superficialmente equivalentes (ambos modifican parámetros internos en función de input), pero difieren radicalmente en (a) el punto de partida, (b) la cantidad de datos requerida, (c) el mecanismo subyacente (autoorganización + actualización local vs. gradient descent global). Es un caso limpio de **homonimia engañosa**: la misma palabra para procesos que se parecen en la superficie pero que son arquitectónicamente distintos.
 
-- **Capítulo 4 (Predicción)**: el bebé virtual de Tenenbaum es un sistema **predictivo en sentido estricto** — genera escenarios para entrenarse. Conecta con todo el programa de predictive coding (Rao & Ballard, Friston, Schrimpf, Caucheteux).
+- **Predicción**: el bebé virtual de Tenenbaum es un sistema **predictivo en sentido estricto** — genera escenarios para entrenarse. Conecta con todo el programa de predictive coding (Rao & Ballard, Friston, Schrimpf, Caucheteux).
 
-#### Una observación más para tu TP
+#### Una observación más
 
-La cita también pone sobre la mesa una pregunta que tu TP debería abordar explícitamente: **¿cuánta de la asimetría humano-LLM se debe a la cantidad de datos, y cuánta se debe a la arquitectura de partida?** Si fuera solo cantidad, entrenar un LLM con más datos cerraría la brecha. Si es arquitectura (priors innatos, capacidad de autoorganización, estructura causal del conocimiento), no hay cantidad de datos que la cierre.
+La cita pone sobre la mesa una pregunta que este debate necesita abordar explícitamente: **¿cuánta de la asimetría humano-LLM se debe a la cantidad de datos, y cuánta se debe a la arquitectura de partida?** Si fuera solo cantidad, entrenar un LLM con más datos cerraría la brecha. Si es arquitectura (priors innatos, capacidad de autoorganización, estructura causal del conocimiento), no hay cantidad de datos que la cierre.
 
-La evidencia hasta ahora — Lake et al. (2016), Yedetore et al. (2023), Hosseini et al. (2024), todo este programa — apunta a que **una parte sustancial de la asimetría es arquitectónica**, no de cantidad de datos. Esa es una tesis defendible y fuerte para tu trabajo.
+La evidencia hasta ahora — Lake et al. (2016), Yedetore et al. (2023), Hosseini et al. (2024), todo este programa — apunta a que **una parte sustancial de la asimetría es arquitectónica**, no de cantidad de datos.
 
 ### Expresión génica: el aprendizaje como cambio molecular y estructural — Dehaene
 
@@ -706,7 +706,7 @@ Cuando un animal aprende, en la corteza se desencadena, en este orden:
 
 Todo esto requiere **proteínas nuevas**, que requieren **genes activados**, que requieren **actividad inducida por el aprendizaje**. Es una cadena causal continua desde la experiencia hasta el ADN y desde el ADN de vuelta a la estructura cerebral.
 
-#### Conexión con el TP final
+#### Conexión con el debate cerebro vs. red artificial
 
 La cita refuerza la asimetría entre aprendizaje biológico y aprendizaje artificial que ya viene apareciendo en las otras citas de Dehaene:
 
@@ -720,7 +720,7 @@ La cita refuerza la asimetría entre aprendizaje biológico y aprendizaje artifi
 | Genes involucrados | Sí: CREB, c-fos, Arc, decenas más | Ninguno (no hay genes) |
 | Reproducibilidad del cambio | Variable, depende del estado del organismo | Determinístico dado el algoritmo |
 
-En una red artificial, "aprender" significa **cambiar números**. En el cerebro, aprender significa **rearmar la maquinaria celular** — fabricar proteínas nuevas, hacer crecer estructuras, modificar físicamente el órgano. Es la misma palabra para procesos arquitectónicamente muy distintos: caso clásico de **homonimia con divergencia mecanística profunda** para el Capítulo 3 (Aprendizaje) del TP. La homonimia es engañosa porque sugiere equivalencia mecánica donde la divergencia es total — el mismo verbo "aprender" describe en un caso un proceso bioquímico costoso, lento y semi-irreversible, y en el otro una actualización numérica instantánea y sin sustrato físico.
+En una red artificial, "aprender" significa **cambiar números**. En el cerebro, aprender significa **rearmar la maquinaria celular** — fabricar proteínas nuevas, hacer crecer estructuras, modificar físicamente el órgano. Es la misma palabra para procesos arquitectónicamente muy distintos: caso clásico de **homonimia con divergencia mecanística profunda** entre "aprender" en el cerebro y "aprender" en un LLM. La homonimia es engañosa porque sugiere equivalencia mecánica donde la divergencia es total — el mismo verbo describe en un caso un proceso bioquímico costoso, lento y semi-irreversible, y en el otro una actualización numérica instantánea y sin sustrato físico.
 
 #### Referencias clave
 
@@ -729,8 +729,6 @@ Para anclar académicamente esta sección, los papers fundacionales son:
 - **Kandel, E. R. (2001)** "The molecular biology of memory storage: A dialogue between genes and synapses". *Science*, 294(5544), 1030-1038. **El paper del Nobel.** Síntesis del programa de Kandel sobre la base molecular del aprendizaje.
 - **Greenough, W. T. y Bailey, C. H. (1988)** "The anatomy of a memory: Convergence of results across a diversity of tests". *Trends in Neurosciences*, 11(4), 142-147. Los estudios clásicos sobre cambio estructural cortical por aprendizaje.
 - **Bailey, C. H. y Kandel, E. R. (2008)** "Synaptic remodeling, synaptic growth and the storage of long-term memory in Aplysia". *Progress in Brain Research*, 169, 179-198.
-
-Estos tres van directo a la **categoría 16 (Aprendizaje biológico vs. artificial)** del INDICE de bibliografía del TP.
 
 ### Calcio y glucosa: la economía energética del aprendizaje
 
@@ -788,7 +786,7 @@ Es decir: **la misma señal que dice "hay que aprender" (Ca²⁺) también dice 
 
 - **Trastornos metabólicos afectan la cognición**: hipoglucemia severa produce confusión y eventualmente pérdida de conciencia, justamente porque las neuronas pierden la capacidad de mantener gradientes iónicos y de aprender. La diabetes mal controlada se asocia a deterioro cognitivo a largo plazo.
 
-#### Conexión con el TP final
+#### Conexión con el debate cerebro vs. red artificial
 
 Este acople refuerza otra asimetría con los LLMs que vale tener en mente:
 

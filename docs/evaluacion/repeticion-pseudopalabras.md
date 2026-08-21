@@ -72,5 +72,5 @@ Cuando un paper dice *"se aplicó NWR test"*, conviene revisar **qué versión u
 ## Lecturas
 
 - **Gathercole, S. E. & Baddeley, A. (1996)** *Children's Test of Nonword Repetition (CNRep)*. Psychological Corporation. **El test estándar.**
-- **Conti-Ramsden, Botting & Faragher (2001)** "Psycholinguistic markers for SLI" — el paper que consolidó NWR como marker. **Tenés en U5 complementaria.**
+- **Conti-Ramsden, Botting & Faragher (2001)** "Psycholinguistic markers for SLI" — el paper que consolidó NWR como marker.
 - **Aguado, G. y otros**: adaptaciones al español (referencia exacta a confirmar con material de cátedra).

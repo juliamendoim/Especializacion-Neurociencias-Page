@@ -67,7 +67,7 @@ Modelos de acceso léxico predicen que anagramas de palabras vecinas ortográfic
 
 ## Aplicaciones en neuropsicología cognitiva de la afasia y la disgrafia
 
-**Éste es el uso central en el contexto del seminario de afasia.**
+Este es uno de los usos clínicamente más relevantes de la tarea.
 
 ### Disociar ruta ortográfica y ruta fonológica
 
@@ -107,9 +107,7 @@ La combinación de tareas de anagrama con escritura al dictado, denominación es
 
 ## Conexión con LLMs — una asimetría reveladora
 
-Esta parte es interesante para tu TP de homonimias IA / cognición humana.
-
-**Los LLMs son notoriamente malos con anagramas**. Ejemplo viral: si le pedís a un LLM que cuente cuántas "r" hay en la palabra *"strawberry"* o que reordene las letras de una palabra, con frecuencia falla o dice cosas absurdas.
+**Los LLMs son notoriamente malos con anagramas**. Ejemplo viral: si se le pide a un LLM que cuente cuántas "r" hay en la palabra *"strawberry"* o que reordene las letras de una palabra, con frecuencia falla o dice cosas absurdas.
 
 **La razón**: los LLMs no ven letras individuales — ven **tokens**. La tokenización BPE (Byte-Pair Encoding) que usan modelos como GPT y Claude convierte *"strawberry"* en algo así como `[straw][berry]` o `[str][aw][berry]` — dos o tres tokens, no ocho letras. La palabra *"MESA"* es un token único, no *M-E-S-A*.
 
@@ -118,11 +116,11 @@ Esto tiene consecuencias importantes:
 - Tareas triviales para humanos (contar letras, hacer anagramas, deletrear) son sorprendentemente difíciles para LLMs.
 - Con **chain-of-thought** y prompting explícito, los LLMs pueden hacer estas tareas mejor — pero de manera indirecta, "razonando" sobre las letras que asumen que la palabra tiene.
 
-**Por qué es interesante para tu TP**:
+**Lo que revela esta asimetría**:
 
-- Es una **homonimia engañosa** poderosa. "Procesar palabras" en un humano incluye trivialmente acceso a letras. "Procesar palabras" en un LLM opera sobre unidades distintas (tokens) que no coinciden con letras.
+- Es un caso limpio donde "procesar palabras" significa cosas distintas en humanos y en LLMs. Para un humano incluye trivialmente acceso a letras; para un LLM opera sobre unidades (tokens) que no coinciden con letras.
 - Los humanos que aprenden a leer aprenden **explícitamente** que las palabras están compuestas de letras — hay una intuición desarrollada de la unidad. Los LLMs no tienen esa intuición porque su arquitectura no lo requiere.
-- Esta asimetría revela que **capacidades funcionalmente similares** (uso de lenguaje escrito) pueden operar sobre **representaciones internas radicalmente distintas**.
+- Muestra que **capacidades funcionalmente similares** (uso de lenguaje escrito) pueden operar sobre **representaciones internas radicalmente distintas**.
 - Es un buen argumento contra la lectura ingenua de que "los LLMs procesan el lenguaje como los humanos".
 
 ## Conexiones en este sitio

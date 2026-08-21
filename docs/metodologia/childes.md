@@ -71,7 +71,7 @@ CHILDES hizo posible que la psicolingüística pase de hipótesis basadas en cas
 
 Ejemplo concreto: la pelea **Tomasello vs. innatistas** sobre si el niño aprende por construcciones (*usage-based*) o aplica reglas innatas (Pinker) **se libra en buena medida sobre datos de CHILDES**. Cuando Tomasello argumenta que el niño aprende patrones específicos de verbos antes de generalizar, lo que está haciendo es analizar corpora de Manchester o Brown. Cuando los innatistas responden, también suelen apoyarse en CHILDES.
 
-### Para el debate sobre IA y lenguaje (tu TP final)
+### Para el debate sobre IA y lenguaje
 
 Esto es lo que vuelve a CHILDES central para el cruce IA / neurociencia: **CHILDES proporciona los corpora con los que se entrenan los BabyLMs**.
 

@@ -133,7 +133,7 @@ Por qué importa: esto justifica que se hable de "canales de Na⁺", "canales de
 
 ## Por qué importa todo esto
 
-Sin este vocabulario mínimo, los textos del seminario son una sopa de letras. Pero con esto en la mano, frases como:
+Sin este vocabulario mínimo, los textos técnicos de neurofisiología pueden parecer una sopa de letras. Pero con esto en la mano, frases como:
 
 > *"Al abrirse los canales de Na⁺, el ion entra siguiendo su gradiente electroquímico, despolarizando la membrana."*
 

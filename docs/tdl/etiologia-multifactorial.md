@@ -130,10 +130,10 @@ Este modelo conecta limpio con la idea de Friedmann sobre **subtipos** (SySLI, P
 - Estudios sobre TDL deben **caracterizar bien la muestra** (genética, NSE, comorbilidades), porque "TDL" no es un grupo homogéneo.
 - Por eso baterías como K-BIT y reportes detallados de medias y desvíos en variables sociodemográficas son **necesarios**, no decorativos.
 
-## Conexión con investigación que estás leyendo
+## Conexión con literatura relacionada
 
-- **Ferinua et al. (2021)** "Antecedentes familiares, factores sociodemográficos y dificultades lingüísticas en el TDL" — es **exactamente** este enfoque multifactorial. Toma medidas de antecedentes familiares (proxy genético) y factores sociodemográficos, y los cruza con desempeño lingüístico.
-- **Acosta, Moreno & Axpe (2014)** sobre agramaticalidad en TEL — caracteriza el perfil dentro de un grupo con criterios establecidos, pero asume el TDL como condición discreta. Refleja la transición teórica que estamos viviendo.
+- **Ferinua et al. (2021)** "Antecedentes familiares, factores sociodemográficos y dificultades lingüísticas en el TDL" — aplicación **exactamente** de este enfoque multifactorial. Toma medidas de antecedentes familiares (proxy genético) y factores sociodemográficos, y los cruza con desempeño lingüístico.
+- **Acosta, Moreno & Axpe (2014)** sobre agramaticalidad en TEL — caracteriza el perfil dentro de un grupo con criterios establecidos, pero asume el TDL como condición discreta. Refleja la transición teórica en curso.
 - **Andreu et al. (2021)** sobre el cambio TEL → TDL — documenta justamente la adopción del marco multifactorial en contexto angloparlante.
 - **Conti-Ramsden, Botting & Faragher (2001)** sobre markers psicolingüísticos — propone markers que funcionan **a través** de las distintas combinaciones de factores (por eso son útiles cuando la causa es heterogénea).
 
@@ -143,4 +143,4 @@ Este modelo conecta limpio con la idea de Friedmann sobre **subtipos** (SySLI, P
 - **Bishop, D. V. M. (2009)** "Genes, cognition, and communication: Insights from neurodevelopmental disorders" *Annals of the New York Academy of Sciences* 1156:1-18.
 - **Hart, B. & Risley, T. (1995)** *Meaningful differences in the everyday experience of young American children*. Brookes. (Para el "30 million word gap" — leer críticamente, hay debate sobre la interpretación).
 - **Bronfenbrenner, U. (1979)** *The Ecology of Human Development*. Harvard UP. **El modelo de sistemas anidados.**
-- **Ferinua et al. (2021)** — la aplicación específica que tenés en U5 obligatoria.
+- **Ferinua et al. (2021)** — aplicación empírica específica del enfoque multifactorial en TDL.

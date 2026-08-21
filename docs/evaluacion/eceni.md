@@ -90,11 +90,11 @@ En un protocolo completo de evaluación de TDL en español:
 
 Cada uno cubre un ángulo distinto y juntos componen un perfil completo.
 
-## Conexión con investigación que estás leyendo
+## Conexión con investigación relacionada
 
 - **Peñaloza, Araya & Coloma (2017)** mide complejidad sintáctica en **recontados narrativos** — esa metodología es exactamente la que aprovechan instrumentos como ECENI.
 - **Acosta, Moreno & Axpe (2014)** sobre agramaticalidad en discurso narrativo de TEL — usa producción narrativa para detectar dificultades morfosintácticas que no aparecen en producción no-narrativa.
 
 ## Nota sobre la entrada
 
-Si encontrás referencia bibliográfica completa de ECENI (autores, año, editorial) en tu material de cursada, conviene actualizar esta entrada con esos datos. Las pruebas de esta familia tienen variantes y revisiones, y la versión exacta importa para citarla bien.
+Si aparece la referencia bibliográfica completa de ECENI (autores, año, editorial) en material de cátedra, conviene actualizar esta entrada con esos datos. Las pruebas de esta familia tienen variantes y revisiones, y la versión exacta importa para citarla bien.

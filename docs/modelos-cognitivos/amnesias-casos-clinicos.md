@@ -141,7 +141,7 @@ Por contraste, mencionando las demencias más relevantes:
 | **Demencia por cuerpos de Lewy** | >60 | **Alucinaciones visuales** + parkinsonismo + fluctuaciones | Amnesia menos prominente |
 | **Demencia vascular** | Variable | Escalonada, déficits focales según ACVs | Patrón irregular, no progresivo uniforme |
 
-Para el seminario interesa especialmente la **afasia progresiva primaria** porque el déficit inicial es lingüístico — punto de contacto entre demencias y patología del lenguaje.
+De estas demencias, la **afasia progresiva primaria** es especialmente relevante desde el punto de vista lingüístico porque el déficit inicial es de lenguaje — punto de contacto entre demencias y patología del lenguaje adulto.
 
 ## Conexión con el resto del sitio
 

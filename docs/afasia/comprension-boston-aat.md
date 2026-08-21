@@ -2,8 +2,6 @@
 
 La **comprensión** es uno de los ejes centrales del diagnóstico afásico: distintos síndromes se diferencian en buena medida por qué tanto está preservada o alterada esta función, y por qué patrón (comprensión de palabras aisladas vs. oraciones vs. discurso; auditiva vs. lectora). Los dos instrumentos más influyentes en la evaluación estandarizada de la afasia — el **Boston Diagnostic Aphasia Examination (BDAE)** y el **Aachen Aphasia Test (AAT)** — abordan la comprensión con **filosofías metodológicas distintas** pero cubren el mismo terreno teórico. Esta entrada los compara.
 
-Ambos aparecen como bibliografía complementaria de la Unidad 5 (Evaluación y rehabilitación) del seminario *Problemas en el procesamiento del lenguaje en el adulto*.
-
 ## Por qué la comprensión es central en el diagnóstico afásico
 
 La clasificación clásica de las afasias (ver [Áreas de Broca y Wernicke](areas-broca-wernicke.md) y [Casita de Wernicke-Lichtheim](triangulo-lichtheim-wernicke.md)) usa la comprensión como **eje diferenciador clave**:

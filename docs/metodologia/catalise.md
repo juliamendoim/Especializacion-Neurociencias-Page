@@ -81,7 +81,7 @@ Se distinguen condiciones relacionadas pero distintas:
 
 ## Por qué importa para investigación contemporánea
 
-- **Andreu et al. (2021)** "Cambio del TEL al TDL en contexto angloparlante" es el paper que documenta esta transición específicamente. Lo tenés en U5 obligatoria.
+- **Andreu et al. (2021)** "Cambio del TEL al TDL en contexto angloparlante" es el paper que documenta esta transición específicamente.
 - Cualquier paper de TDL **publicado después de 2017** debería usar la nomenclatura CATALISE — si usa "SLI" o "TEL", es importante saber si ese trabajo se hizo con criterios pre-CATALISE.
 - La **muestra clínica cambia**: bajo criterios CATALISE, se identifican chicos que antes se excluían (los que tenían comorbilidades). Eso afecta la generalizabilidad de hallazgos previos.
 - En **español hispanohablante** la adopción de "TDL" sobre "TEL" todavía está en transición (~2020 en adelante). Vas a ver ambos términos coexistiendo en literatura reciente.
