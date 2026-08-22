@@ -12,3 +12,4 @@ Tests estandarizados que aparecen como herramientas de medición en investigaci�
 - **[CEG — Comprensión de Estructuras Gramaticales](ceg.md)** — el equivalente español del TROG (Mendoza et al.).
 - **[ECENI — Evaluación de la Comprensión y Producción en Narrativas Infantiles](eceni.md)** — narrativa como ventana integrada al lenguaje del niño.
 - **[Repetición de pseudopalabras (NWR)](repeticion-pseudopalabras.md)** — uno de los markers más sensibles y específicos de TDL.
+- **[Span de dígitos (Digit Span)](span-de-digitos.md)** — la prueba neuropsicológica clásica de STM y memoria de trabajo. Estructura, versiones forward / backward / sequencing, patrones diagnósticos, aplicaciones en TDL, afasia de conducción, envejecimiento y demencias, confounds cross-lingüísticos (efecto de longitud fonológica: galés vs. inglés vs. mandarín), y pruebas relacionadas (Corsi, reading span, operation span).
