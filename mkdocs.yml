@@ -103,7 +103,6 @@ nav:
     - Neuronas tipo ensamble: neurobiologia/neuronas-ensamble.md
     - Arousal (activación general): neurobiologia/arousal.md
     - FOXP2: neurobiologia/foxp2.md
-    - Test de Wada: neurobiologia/test-de-wada.md
   - Evaluación:
     - evaluacion/index.md
     - ITPA: evaluacion/itpa.md
@@ -135,6 +134,7 @@ nav:
     - Afasia de conducción: afasia/afasia-conduccion.md
     - Afasias transcorticales (motora, sensorial, mixta): afasia/afasias-transcorticales.md
     - Parafasias — tipos y valor diagnóstico: afasia/parafasias.md
+    - BADA (Batería para el Análisis de los Déficits Afásicos): afasia/bada.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md
