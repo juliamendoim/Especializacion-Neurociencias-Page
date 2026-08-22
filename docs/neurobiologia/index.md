@@ -1,6 +1,6 @@
 # Neurobiología
 
-Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervioso que aparecen en el seminario de **Neurofisiología y procesos cognitivos básicos**.
+Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervioso que aparecen recurrentemente en el estudio de la **neurofisiología y los procesos cognitivos básicos**.
 
 ![Lóbulos del cerebro](../assets/images/cerebrum-lobulos-es.svg){ width="600" }
 *Lóbulos del cerebro humano (vista lateral): frontal, parietal, temporal, occipital. Fuente: Jkwchui, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cerebrum_lobes-es.svg), CC BY-SA 3.0.*
@@ -10,8 +10,8 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 ### Marcos generales
 
 - **[Las 4 preguntas de Tinbergen y niveles de análisis](tinbergen-niveles-analisis.md)** — el marco que ordena cualquier pregunta de neurociencia (función, mecanismo, ontogenia, filogenia) y los niveles a los que se puede estudiar (comportamental, fisiológico, molecular).
-- **[Bottom-up vs. top-down](bottom-up-top-down.md)** — los dos enfoques metodológicos que conviven en neurociencia. Distinción epistemológica útil para entender por qué la primera mitad del programa va de neurona a cognición y la segunda mitad al revés.
-- **[Bases físico-químicas para entender la neurona](bases-fisicoquimicas.md)** — repaso mínimo de átomos, iones, cargas, voltaje y gradientes. Pre-requisito para todo lo que viene en U1 y U2.
+- **[Bottom-up vs. top-down](bottom-up-top-down.md)** — los dos enfoques metodológicos que conviven en neurociencia. Distinción epistemológica útil para entender por qué muchos currículums van de neurona a cognición en la primera mitad y al revés en la segunda.
+- **[Bases físico-químicas para entender la neurona](bases-fisicoquimicas.md)** — repaso mínimo de átomos, iones, cargas, voltaje y gradientes. Pre-requisito para el resto de esta sección.
 - **[Marr — modelo computacional de la visión (y sus continuidades)](marr-vision-computacional.md)** — los tres niveles de análisis (computacional, algorítmico, implementacional), el pipeline esbozo primario → 2½D → 3D, y cómo el programa de Marr llega hasta las redes convolucionales actuales y el predictive coding.
 
 ### Conceptos del curso
@@ -24,3 +24,4 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 - **[Neuronas tipo ensamble (cell assemblies)](neuronas-ensamble.md)** — la idea de Hebb (1949) sobre representaciones distribuidas y "neurons that fire together, wire together".
 - **[Arousal — activación general del organismo](arousal.md)** — la dimensión continua de activación fisiológica que modula percepción, atención y memoria. Yerkes-Dodson, ARAS, locus coeruleus, pupilometría, circumplejo de Russell. Por qué los LLMs no tienen análogo.
 - **[FOXP2](foxp2.md)** — el supuesto "gen del lenguaje": qué es realmente, qué descubrió la familia KE, y por qué la etiqueta se quedó corta.
+- **[Test de Wada (procedimiento de amobarbital intracarotídeo)](test-de-wada.md)** — la prueba clásica para determinar de qué hemisferio depende el lenguaje y la memoria antes de una cirugía cerebral. Método (inyección carotídea, anestesia hemisférica transitoria, batería breve), historia (Juhn Wada 1949), datos empíricos sobre lateralización (Rasmussen & Milner: 96 % lenguaje izquierdo en diestros, ~70 % en zurdos), usos actuales en cirugía de epilepsia, limitaciones y reemplazos modernos (fMRI, TMS navegada).
