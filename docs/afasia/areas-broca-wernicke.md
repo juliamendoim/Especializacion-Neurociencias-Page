@@ -192,6 +192,7 @@ En la clínica moderna con evaluación fina, los pacientes pocas veces encajan e
 
 ## Conexiones en este sitio
 
+- [Anatomía del lenguaje: perisilviano, extrasilviano y subcortical](anatomia-lenguaje-perisilviano-subcortical.md) — la vista integradora que ubica esta entrada dentro del **corredor perisilviano** y la contrasta con las lesiones **extrasilvianas** (watershed → transcorticales) y **subcorticales** (talámica, estriato-capsular). Con diagrama de territorios vasculares y corte coronal de ganglios basales, cápsula interna y sustancia blanca periventricular.
 - [Triángulo / casita de Wernicke-Lichtheim](triangulo-lichtheim-wernicke.md) — la sistematización teórica clásica con los 7 síndromes.
 - [Modelos basados en memoria](../modelos-cognitivos/modelos-basados-memoria.md) — Lewis & Vasishth como marco moderno para entender déficits sintácticos en afasia agramática (agramatismo como problema de retrieval bajo interferencia).
 - [Agreement attraction](../modelos-cognitivos/agreement-attraction-distributividad.md) — errores de concordancia en afasia agramática de Broca.
