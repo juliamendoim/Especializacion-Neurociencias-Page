@@ -136,6 +136,9 @@ nav:
     - Parafasias — tipos y valor diagnóstico: afasia/parafasias.md
     - BADA (Batería para el Análisis de los Déficits Afásicos): afasia/bada.md
     - Anatomía del lenguaje (perisilviano, extrasilviano, subcortical): afasia/anatomia-lenguaje-perisilviano-subcortical.md
+  - Lectura y alfabetización:
+    - lectura/index.md
+    - Constructivismo y palabra generadora: lectura/constructivismo-palabra-generadora.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md

@@ -28,6 +28,8 @@ El flujo es: *yo pregunto, Claude responde, yo edito y publico*. La curaduría e
 - 📏 **[Medidas lingüísticas](medidas-linguisticas/index.md)**
 - 🌐 **[Lingüística](tipologia/index.md)**
 - 🧒 **[TDL](tdl/index.md)**
+- 🗣️ **[Afasia](afasia/index.md)**
+- 📖 **[Lectura y alfabetización](lectura/index.md)**
 - 🔬 **[Metodología](metodologia/index.md)**
 
 También están accesibles desde las **tabs de arriba** y desde el **buscador** (lupa arriba a la derecha o tecla `S`).
