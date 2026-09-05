@@ -68,6 +68,81 @@ Cada experiencia lingüística se almacena como un **ejemplar concreto** (token 
 
 **Mecanismo mental propuesto**: la memoria lingüística funciona como la memoria episódica — guarda eventos concretos, no abstracciones. La sensibilidad a la frecuencia emerge de la densidad de ejemplares en torno a una región del espacio de representación.
 
+## Una segunda tradición: los modelos de acceso léxico
+
+Las cuatro propuestas anteriores vienen del debate sobre **aprendizaje y parsing** (usage-based vs. innatismo). Hay una tradición paralela, la del **reconocimiento visual de palabras**, que se hizo la misma pregunta con otro vocabulario y llegó a respuestas distintas. Vale tenerlas juntas porque responden más literalmente a "¿dónde vive la frecuencia?".
+
+### 5. Umbral o nivel de reposo (logogen, activación interactiva)
+
+En el [modelo de logogen](activacion.md) de Morton (1969), cada palabra tiene una unidad detectora con un **umbral**. La frecuencia fija ese umbral: las palabras frecuentes lo tienen más bajo y necesitan menos evidencia para dispararse. El modelo de activación interactiva de McClelland y Rumelhart (1981) hace lo mismo con **niveles de activación en reposo**.
+
+Es la respuesta más literal posible a la pregunta: la frecuencia vive **en el estado basal de la unidad léxica**, antes de que llegue ningún estímulo. Es también la más fácil de conectar con la clínica: un léxico degradado pierde primero las unidades de umbral más alto, es decir, las de baja frecuencia.
+
+### 6. Rango, no magnitud (Forster; Murray & Forster 2004)
+
+En el modelo de búsqueda serial de Forster (1976), el léxico está organizado en "cajones" recorridos **en orden de frecuencia**. Lo que importa no es cuán frecuente es una palabra sino **en qué posición del orden está**.
+
+La distinción no es cosmética. Murray y Forster (2004) argumentan que los datos ajustan mejor al **rango** que a la frecuencia bruta o a su logaritmo. Si tienen razón, el sistema no almacena cantidades: almacena un **orden**. Es una hipótesis más económica y bastante menos discutida de lo que merece.
+
+### 7. Probabilidad previa (Norris 2006, *Bayesian Reader*)
+
+No hay contador, ni umbral, ni orden: hay **inferencia**. El reconocimiento es una decisión bayesiana óptima que combina la evidencia perceptual con el **prior** de cada candidato, y ese prior es la frecuencia.
+
+La consecuencia teórica es fuerte: los efectos de frecuencia dejan de ser una propiedad del almacenamiento y pasan a ser **una propiedad de la decisión**. De ahí que el modelo prediga —correctamente— que el tamaño del efecto **varía con la tarea y con el contexto**. Norris lo formula así: los efectos de frecuencia son una especie de efecto de predictibilidad que aparece **cuando el contexto está ausente o no restringe**, y el sistema tiene que caer en el prior.
+
+Esto tiene consecuencias metodológicas directas: una tarea con contexto reducido no es una tarea "más simple", es una tarea diseñada para **forzar la exhibición del prior**.
+
+### 8. Acumulación de evidencia (modelos de difusión)
+
+En los modelos de difusión (Ratcliff), la decisión se modela como acumulación ruidosa de evidencia hasta un límite. La frecuencia puede entrar en **dos parámetros distintos**:
+
+- **Tasa de deriva** (*drift rate*): la evidencia a favor de una palabra frecuente se acumula más rápido.
+- **Punto de partida**: el acumulador arranca sesgado hacia la respuesta frecuente, antes de ver nada.
+
+Son mecanismos diferentes con la misma firma gruesa en latencias medias, y se separan solo modelando **la distribución completa de tiempos de respuesta**. Es un buen recordatorio de que "efecto de frecuencia" nombra un fenómeno conductual, no un mecanismo.
+
+---
+
+## ¿Es la frecuencia la variable correcta?
+
+Dos resultados le pegan al concepto mismo, y conviene conocerlos antes de tratar la frecuencia como primitivo.
+
+### Diversidad contextual
+
+**Adelman, Brown y Quesada (2006)** compararon la frecuencia con la **diversidad contextual**: en cuántos contextos distintos (documentos, películas) aparece una palabra, sin importar cuántas veces en cada uno.
+
+El resultado es asimétrico y por eso contundente: al controlar diversidad contextual, **el efecto de frecuencia desaparece; al revés no**. Lo que estaría representado no sería un conteo de ocurrencias sino algo más cercano a **en cuántas situaciones distintas esa palabra resultó útil**.
+
+Es una diferencia conceptual, no estadística: sugiere que el sistema no registra repeticiones sino **contextos de utilidad**.
+
+### Edad de adquisición
+
+Buena parte de lo que se atribuye a la frecuencia puede ser **orden de entrenamiento**. Las palabras aprendidas temprano quedan más entrenadas en la red, y frecuencia y edad de adquisición están fuertemente correlacionadas en cualquier corpus.
+
+En español, Cuetos y colegas muestran efectos de edad de adquisición **independientes** de la frecuencia en denominación, modulados por la tarea y por la imaginabilidad de los ítems: en denominación inmediata y rápida solo pesa la frecuencia; en decisión léxica pesan ambas. O sea que ninguna de las dos es reducible a la otra, pero tampoco son separables sin diseños específicos.
+
+### La moraleja
+
+Si la diversidad contextual predice mejor que la frecuencia, y la edad de adquisición aporta varianza propia, entonces **el cerebro nunca contó nada**. Lo que llamamos frecuencia es un resumen externo de una historia de aprendizaje que incluye cuándo se aprendió algo, en cuántas situaciones y con qué utilidad. "Frecuencia" es una variable de investigador, no necesariamente una magnitud representada.
+
+---
+
+## Dónde vive la frecuencia en el cerebro
+
+Un argumento neural sencillo apunta en la misma dirección. Si existiera un contador, un ítem frecuente debería producir **más** actividad. Se observa lo contrario: **supresión por repetición**, menos respuesta neural para lo repetido y lo frecuente. Esa es la firma de un sistema **sintonizado** —representaciones más eficientes y más selectivas— no de una tabla que se consulta.
+
+A nivel de localización, la frecuencia léxica modula sobre todo el **giro frontal inferior izquierdo** y regiones **temporales posteriores y fusiformes**: las palabras de baja frecuencia producen más activación, consistente con una recuperación más costosa.
+
+### La frecuencia no es una sola cosa
+
+El punto más importante para no simplificar: **Carreiras, Mechelli y Price (2006)** manipularon **frecuencia léxica y frecuencia silábica en el mismo experimento** y encontraron firmas neurales distintas — las sílabas de baja frecuencia modularon la ínsula anterior izquierda, con un patrón disociable del de la frecuencia de palabra.
+
+O sea que la frecuencia no vive en un lugar. **Vive en cada nivel de representación que aprende**: correspondencias fonema-grafema, sílabas, morfemas, palabras, construcciones. Cada nivel tiene la suya, y en cualquier tarea concreta varias están operando a la vez.
+
+Esto tiene una consecuencia práctica para leer literatura clínica: cuando un trabajo reporta "un efecto de frecuencia", la primera pregunta es **frecuencia de qué unidad**. Ver la entrada sobre [disgrafía superficial y homófonos](../lectura/disgrafia-superficial-homofonos.md), donde el mismo sesgo conductual admite cuatro loci distintos según el nivel en que se resuelva.
+
+---
+
 ## Distinciones que organizan el debate
 
 ### Type frequency vs token frequency
@@ -135,7 +210,9 @@ Esto es importante para el debate IA / neurociencia: la convergencia entre LLMs 
 - [Modelos basados en memoria](modelos-basados-memoria.md) — ACT-R y la activación base como mecanismo explícito de frecuencia.
 - [Modelos lexicalistas / conexionistas](modelos-lexicalistas.md) — la frecuencia como información léxica de primer nivel; pesos en redes neuronales como sustrato implícito.
 - [Surprisal](surprisal.md) — la operacionalización dominante hoy.
-- [Activación](activacion.md) — el sustrato común a varios de estos modelos.
+- [Activación](activacion.md) — el sustrato común a varios de estos modelos; ahí está el modelo de logogen que acá se desarrolla como familia 5.
+- [Disgrafía superficial y homófonos](../lectura/disgrafia-superficial-homofonos.md) — un caso clínico donde la pregunta "¿dónde vive la frecuencia?" tiene cuatro respuestas empíricamente separables.
+- [La sílaba como unidad subléxica](../lectura/silaba-unidad-sublexical.md) — frecuencia silábica con signo inhibitorio frente a frecuencia de raíz con signo facilitatorio: la mejor demostración de que "frecuencia" no nombra una sola cosa.
 - [Aprendizajes generales](../aprendizajes-generales.md) — la sección sobre autoorganización vs. big data discute si la frecuencia bruta alcanza.
 
 ## Referencias clave
@@ -155,4 +232,14 @@ Esto es importante para el debate IA / neurociencia: la convergencia entre LLMs 
 - **Yang, C. (2016)** *The Price of Linguistic Productivity*. MIT Press. La *tolerance principle* formalizada.
 - **Ellis, N. C. (2002)** "Frequency effects in language processing: A review with implications for theories of implicit and explicit language acquisition" *Studies in Second Language Acquisition* 24:143-188. Síntesis amplia.
 - **Hay, J. & Baayen, R. H. (2005)** "Shifting paradigms: Gradient structure in morphology" *Trends in Cognitive Sciences* 9:342-348.
+- **Morton, J. (1969)** "Interaction of information in word recognition" *Psychological Review* 76:165-178. El modelo de logogen; la frecuencia como umbral.
+- **Forster, K. I. (1976)** "Accessing the mental lexicon" en *New Approaches to Language Mechanisms*. North-Holland. La frecuencia como orden de búsqueda.
+- **McClelland, J. L. & Rumelhart, D. E. (1981)** "An interactive activation model of context effects in letter perception" *Psychological Review* 88:375-407.
+- **Norris, D. (2006)** "The Bayesian Reader: explaining word recognition as an optimal Bayesian decision process" *Psychological Review* 113(2):327-357. La frecuencia como probabilidad previa.
+- **Ratcliff, R. & McKoon, G. (2008)** "The diffusion decision model: theory and data for two-choice decision tasks" *Neural Computation* 20(4):873-922. Tasa de deriva vs. punto de partida.
+- **Adelman, J. S., Brown, G. D. A. & Quesada, J. F. (2006)** "Contextual diversity, not word frequency, determines word-naming and lexical decision times" *Psychological Science* 17(9):814-823.
+- **Cuetos, F. & Barbón, A. (2006)** "Word naming in Spanish" *European Journal of Cognitive Psychology* 18:415-436. Efectos independientes de edad de adquisición y frecuencia acumulada.
+- **Davies, R., Barbón, A. & Cuetos, F. (2013)** "Lexical and semantic age-of-acquisition effects on word naming in Spanish" *Memory & Cognition* 41(2):297-311.
+- **Carreiras, M., Mechelli, A. & Price, C. (2006)** "Effect of word and syllable frequency on activation during lexical decision and reading aloud" *Human Brain Mapping* 27(12):963-972. Frecuencia léxica y silábica con firmas neurales disociables.
+- **Grill-Spector, K., Henson, R. & Martin, A. (2006)** "Repetition and the brain: neural models of stimulus-specific effects" *Trends in Cognitive Sciences* 10(1):14-23. Supresión por repetición.
 - **Yedetore, A., Linzen, T. et al. (2023)** "How poor is the stimulus? Evaluating hierarchical generalization in neural networks trained on child-directed speech" *ACL*.

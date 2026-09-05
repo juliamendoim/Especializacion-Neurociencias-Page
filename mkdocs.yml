@@ -64,6 +64,7 @@ extra_javascript:
 
 nav:
   - Inicio: index.md
+  - Aprendizajes generales: aprendizajes-generales.md
   - Estadística:
     - estadistica/index.md
     - t de Student: estadistica/t-de-student.md
@@ -140,6 +141,7 @@ nav:
     - lectura/index.md
     - Constructivismo y palabra generadora: lectura/constructivismo-palabra-generadora.md
     - La sílaba como unidad subléxica (y el morfema): lectura/silaba-unidad-sublexical.md
+    - Disgrafía superficial y homófonos: lectura/disgrafia-superficial-homofonos.md
   - Metodología:
     - metodologia/index.md
     - PRISMA: metodologia/prisma.md
