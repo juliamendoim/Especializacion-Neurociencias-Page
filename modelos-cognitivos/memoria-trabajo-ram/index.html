@@ -1,0 +1,4260 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../recuperacion-memoria/">
+      
+      
+        <link rel="next" href="../amnesias-casos-clinicos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>RAM vs. memoria de trabajo (y chunks) - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ram-memoria-de-trabajo-hasta-donde-llega-la-analogia" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RAM vs. memoria de trabajo (y chunks)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../neurobiologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frecuencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#donde-la-analogia-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Donde la analogía funciona
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donde-la-analogia-se-rompe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Donde la analogía se rompe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Donde la analogía se rompe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direccionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Direccionamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fidelidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fidelidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-capacidad-y-por-que-la-diferencia-mas-interesante-es-plastica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Capacidad — y por qué la diferencia más interesante es plástica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-substrato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Substrato
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-decaimiento-e-interferencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Decaimiento e interferencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-multi-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Multi-componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-almacenamiento-manipulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Almacenamiento ≠ manipulación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-mantenimiento-activo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Mantenimiento activo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-interaccion-con-la-memoria-a-largo-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Interacción con la memoria a largo plazo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chunks-la-diferencia-mas-interesante-y-la-que-la-analogia-oculta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chunks — la diferencia más interesante (y la que la analogía oculta)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chunks — la diferencia más interesante (y la que la analogía oculta)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un chunk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miller-1956-el-origen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Miller (1956) — el origen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chase-simon-1973-la-prueba-con-ajedrez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chase &amp; Simon (1973) — la prueba con ajedrez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cowan-2001-la-correccion-del-numero-de-miller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cowan (2001) — la corrección del número de Miller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ericsson-kintsch-1995-long-term-working-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ericsson &amp; Kintsch (1995) — long-term working memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunks-y-lenguaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chunks y lenguaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-importa-para-la-analogia-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa para la analogía RAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#una-analogia-mejor-pero-tambien-imperfecta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una analogía mejor (pero también imperfecta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-lectura-desde-marr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La lectura desde Marr
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-el-resto-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con el resto del sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecturas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-entrar-al-tema-de-chunks-los-tres-papers-que-te-bastan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para entrar al tema de chunks — los tres papers que te bastan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-extender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para extender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sobre-mt-y-substrato-neural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre MT y substrato neural
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-con-lenguaje-especificamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con lenguaje específicamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../neurobiologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#donde-la-analogia-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Donde la analogía funciona
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donde-la-analogia-se-rompe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Donde la analogía se rompe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Donde la analogía se rompe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direccionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Direccionamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fidelidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fidelidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-capacidad-y-por-que-la-diferencia-mas-interesante-es-plastica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Capacidad — y por qué la diferencia más interesante es plástica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-substrato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Substrato
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-decaimiento-e-interferencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Decaimiento e interferencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-multi-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Multi-componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-almacenamiento-manipulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Almacenamiento ≠ manipulación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-mantenimiento-activo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Mantenimiento activo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-interaccion-con-la-memoria-a-largo-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Interacción con la memoria a largo plazo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chunks-la-diferencia-mas-interesante-y-la-que-la-analogia-oculta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chunks — la diferencia más interesante (y la que la analogía oculta)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chunks — la diferencia más interesante (y la que la analogía oculta)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-chunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un chunk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miller-1956-el-origen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Miller (1956) — el origen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chase-simon-1973-la-prueba-con-ajedrez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chase &amp; Simon (1973) — la prueba con ajedrez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cowan-2001-la-correccion-del-numero-de-miller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cowan (2001) — la corrección del número de Miller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ericsson-kintsch-1995-long-term-working-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ericsson &amp; Kintsch (1995) — long-term working memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunks-y-lenguaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chunks y lenguaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-importa-para-la-analogia-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa para la analogía RAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#una-analogia-mejor-pero-tambien-imperfecta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una analogía mejor (pero también imperfecta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-lectura-desde-marr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La lectura desde Marr
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-el-resto-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con el resto del sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecturas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-entrar-al-tema-de-chunks-los-tres-papers-que-te-bastan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para entrar al tema de chunks — los tres papers que te bastan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-extender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para extender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sobre-mt-y-substrato-neural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre MT y substrato neural
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-con-lenguaje-especificamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con lenguaje específicamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Modelos cognitivos
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ram-memoria-de-trabajo-hasta-donde-llega-la-analogia">RAM ≠ memoria de trabajo: hasta dónde llega la analogía<a class="headerlink" href="#ram-memoria-de-trabajo-hasta-donde-llega-la-analogia" title="Permanent link">&para;</a></h1>
+<p>La memoria RAM de la computadora es una de las analogías más usadas para explicar qué es la memoria de trabajo. <strong>Funciona a un nivel y se rompe en los demás.</strong> Esta entrada mapea con honestidad dónde sirve, dónde miente, y por qué la diferencia más interesante — los <strong>chunks</strong> — disuelve directamente la idea de "capacidad" tomada de la informática.</p>
+<h2 id="donde-la-analogia-funciona">Donde la analogía funciona<a class="headerlink" href="#donde-la-analogia-funciona" title="Permanent link">&para;</a></h2>
+<p>A nivel <strong>funcional abstracto</strong> — el nivel computacional de Marr ("¿qué problema resuelve el sistema?") — RAM y memoria de trabajo (MT) hacen lo mismo:</p>
+<ul>
+<li><strong>Almacén temporario</strong> activo durante el procesamiento.</li>
+<li><strong>Capacidad limitada</strong> (RAM en GB; MT en ~4 chunks según Cowan, 7±2 según Miller).</li>
+<li><strong>Acceso rápido</strong> comparado con un "disco" (memoria a largo plazo).</li>
+<li><strong>Decae si se pierde la "alimentación"</strong> (corte de luz / pérdida de atención).</li>
+<li><strong>Workspace</strong> para la computación en curso — ni RAM ni MT son donde "vive" la información a la larga.</li>
+</ul>
+<p>Hasta acá la analogía es útil. Y se queda corta acá.</p>
+<h2 id="donde-la-analogia-se-rompe">Donde la analogía se rompe<a class="headerlink" href="#donde-la-analogia-se-rompe" title="Permanent link">&para;</a></h2>
+<h3 id="1-direccionamiento">1. Direccionamiento<a class="headerlink" href="#1-direccionamiento" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: direccionable por <strong>dirección</strong> ("dame el byte en 0x4F2A" → te lo da). Bit-exacto.</li>
+<li><strong>MT</strong>: direccionable por <strong>contenido / clave</strong> ("algo que empezaba con M y era de la facu" → te trae aproximaciones).</li>
+</ul>
+<p>No hay "dirección" de un recuerdo. Es el mismo contraste que aparece en <a href="../recuperacion-memoria/">recuperación de memoria</a> — pattern completion en vez de random access.</p>
+<h3 id="2-fidelidad">2. Fidelidad<a class="headerlink" href="#2-fidelidad" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: read/write perfecto (asumiendo hardware OK).</li>
+<li><strong>MT</strong>: lossy. Items decaen, se distorsionan, interfieren. El efecto de similitud fonológica (recordar B-C-V-G es más difícil que B-K-R-M) no tiene equivalente en RAM.</li>
+</ul>
+<h3 id="3-capacidad-y-por-que-la-diferencia-mas-interesante-es-plastica">3. Capacidad — y por qué la diferencia más interesante es plástica<a class="headerlink" href="#3-capacidad-y-por-que-la-diferencia-mas-interesante-es-plastica" title="Permanent link">&para;</a></h3>
+<p>(Esta es la sección de chunks, que extiendo abajo en detalle.)</p>
+<ul>
+<li><strong>RAM</strong>: capacidad en bytes, <strong>discreta y definida por el hardware</strong>.</li>
+<li><strong>MT</strong>: capacidad en <strong>chunks</strong>, y el chunk es <strong>plástico</strong>. Depende de qué tenés en memoria a largo plazo.</li>
+</ul>
+<h3 id="4-substrato">4. Substrato<a class="headerlink" href="#4-substrato" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: módulo físico <strong>separado</strong> (chip distinto del CPU, conectado por bus).</li>
+<li><strong>MT</strong>: <strong>no es una región</strong> del cerebro. Emerge de <strong>actividad persistente</strong> en córtex prefrontal y áreas asociadas, en <strong>las mismas neuronas</strong> que hacen otro procesamiento. No hay "stick de MT".</li>
+</ul>
+<p>Hay un consenso creciente (Cowan, D'Esposito) de que <strong>MT es la porción activada de la memoria a largo plazo</strong> — el foco atencional sobre representaciones que ya viven en LP. RAM no es "la porción activada del disco".</p>
+<h3 id="5-decaimiento-e-interferencia">5. Decaimiento e interferencia<a class="headerlink" href="#5-decaimiento-e-interferencia" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: decae sólo con pérdida de power. Una posición no afecta a otra.</li>
+<li><strong>MT</strong>: decae <strong>pasivamente</strong> en ~15-30 seg (paradigma Brown-Peterson) Y por <strong>interferencia</strong> entre items similares.</li>
+</ul>
+<h3 id="6-multi-componente">6. Multi-componente<a class="headerlink" href="#6-multi-componente" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: homogénea. No le importa si guardás texto, imágenes o números.</li>
+<li><strong>MT</strong> (Baddeley): bucle fonológico, sketchpad visuoespacial, buffer episódico, ejecutivo central. Mantener verbal + espacial al mismo tiempo es <strong>más fácil</strong> que verbal + verbal — los subsistemas no compiten entre sí.</li>
+</ul>
+<h3 id="7-almacenamiento-manipulacion">7. Almacenamiento ≠ manipulación<a class="headerlink" href="#7-almacenamiento-manipulacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: <strong>sólo almacena</strong>. La CPU manipula y vuelve a escribir.</li>
+<li><strong>MT</strong>: el "working" es justamente la <strong>manipulación</strong>. Mantener "342 + 178" en mente mientras lo sumás no es "leer de RAM → computar en CPU → escribir a RAM": es la misma operación neural haciendo las dos cosas a la vez. <strong>El cerebro no es Von Neumann</strong>: no hay separación arquitectónica entre storage y processing.</li>
+</ul>
+<h3 id="8-mantenimiento-activo">8. Mantenimiento activo<a class="headerlink" href="#8-mantenimiento-activo" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: no requiere "atención" para conservar contenido. Está ahí.</li>
+<li><strong>MT</strong>: requiere <strong>rehearsal o atención activa</strong>. Sin eso decae. Por eso la MT está tan acoplada al control atencional.</li>
+</ul>
+<h3 id="9-interaccion-con-la-memoria-a-largo-plazo">9. Interacción con la memoria a largo plazo<a class="headerlink" href="#9-interaccion-con-la-memoria-a-largo-plazo" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RAM</strong>: lo que pasa por RAM no modifica el disco.</li>
+<li><strong>MT</strong>: lo que se mantiene en MT tiene <strong>más chance de consolidarse</strong> en LP. Relación bidireccional, no buffer pasivo.</li>
+</ul>
+<h2 id="chunks-la-diferencia-mas-interesante-y-la-que-la-analogia-oculta">Chunks — la diferencia más interesante (y la que la analogía oculta)<a class="headerlink" href="#chunks-la-diferencia-mas-interesante-y-la-que-la-analogia-oculta" title="Permanent link">&para;</a></h2>
+<p>Esta es la parte que más complica el paralelo, y la que más vale la pena entender.</p>
+<h3 id="que-es-un-chunk">Qué es un chunk<a class="headerlink" href="#que-es-un-chunk" title="Permanent link">&para;</a></h3>
+<p>Un <strong>chunk</strong> es <strong>una unidad significativa de información tratada como una sola pieza por la MT</strong>, independientemente de cuántos elementos "básicos" la compongan.</p>
+<p>Ejemplo clásico: tratá de retener esta secuencia de letras:</p>
+<blockquote>
+<p>FBI – CIA – KGB – NSA – MIT</p>
+</blockquote>
+<p>Son 15 letras (15 unidades a nivel bit) pero retenerlas es trivial porque las agrupás en <strong>5 chunks</strong> (5 siglas conocidas). Si las letras fueran al azar — <code>QXRPL – ZVMTC – BWGRD</code> — serían también 15 letras pero <strong>15 chunks</strong>, e inalcanzables sin estrategia.</p>
+<p><strong>Lo que define un chunk no es el material, sino lo que ya sabés</strong>.</p>
+<h3 id="miller-1956-el-origen">Miller (1956) — el origen<a class="headerlink" href="#miller-1956-el-origen" title="Permanent link">&para;</a></h3>
+<p>George A. Miller, en <em>"The Magical Number Seven, Plus or Minus Two"</em> (Psychological Review), propuso que la MT mantiene <strong>7 ± 2 chunks</strong>. Era una observación empírica robusta a través de tareas (dígitos, palabras, posiciones), y fue el paper fundacional del estudio cognitivo de la MT.</p>
+<p>Lo importante del paper no es el número sino la idea: <strong>la capacidad es en chunks, no en bits</strong>. Miller ya notaba que "expandimos artificialmente nuestra capacidad" al recodificar la información en unidades más significativas.</p>
+<h3 id="chase-simon-1973-la-prueba-con-ajedrez">Chase &amp; Simon (1973) — la prueba con ajedrez<a class="headerlink" href="#chase-simon-1973-la-prueba-con-ajedrez" title="Permanent link">&para;</a></h3>
+<p>Estudio canónico. Tomaron <strong>maestros de ajedrez</strong> y <strong>jugadores principiantes</strong>, les mostraron una posición de tablero por 5 segundos, y luego les pidieron reconstruirla. Dos condiciones:</p>
+<table>
+<thead>
+<tr>
+<th>Condición</th>
+<th>Principiante</th>
+<th>Maestro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Posición de una partida real</strong></td>
+<td>Recuerda ~4-5 piezas</td>
+<td>Recuerda ~25 piezas</td>
+</tr>
+<tr>
+<td><strong>Posición aleatoria</strong> (piezas tiradas al azar)</td>
+<td>Recuerda ~4-5 piezas</td>
+<td><strong>Recuerda ~4-5 piezas</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La conclusión: el maestro <strong>no tiene mejor MT</strong> que el principiante. Tiene una <strong>memoria a largo plazo enorme de patrones de juego</strong> que le permite <strong>chunkear</strong> la posición en pocas unidades ("ataque indio de rey + estructura de peones tipo erizo + alfiles desarrollados"). En la posición aleatoria no puede chunkear → vuelve a la capacidad base.</p>
+<p>Es la demostración más limpia de que <strong>la "capacidad" depende del conocimiento previo</strong>.</p>
+<h3 id="cowan-2001-la-correccion-del-numero-de-miller">Cowan (2001) — la corrección del número de Miller<a class="headerlink" href="#cowan-2001-la-correccion-del-numero-de-miller" title="Permanent link">&para;</a></h3>
+<p>Nelson Cowan, en <em>"The magical number 4 in short-term memory: a reconsideration of mental storage capacity"</em> (Behavioral and Brain Sciences), revisó cuidadosamente los experimentos posteriores a Miller y argumentó que la <strong>verdadera capacidad del foco atencional es ~4 chunks</strong>, no 7.</p>
+<p>¿Por qué Miller veía 7? Porque sus tareas permitían <strong>rehearsal</strong> (repaso subvocálico) que infla artificialmente el conteo. Cuando se bloquea el rehearsal (con tareas de supresión articulatoria), la capacidad cae a <strong>4 ± 1</strong>.</p>
+<p>Hoy el consenso es <strong>4 chunks como capacidad pura de foco atencional</strong>, expandible con rehearsal y estrategias.</p>
+<h3 id="ericsson-kintsch-1995-long-term-working-memory">Ericsson &amp; Kintsch (1995) — long-term working memory<a class="headerlink" href="#ericsson-kintsch-1995-long-term-working-memory" title="Permanent link">&para;</a></h3>
+<p>Anders Ericsson y Walter Kintsch propusieron que <strong>expertos en un dominio usan la memoria a largo plazo como extensión virtual de la MT</strong>. Los chunks complejos del experto no están "en MT" en el sentido tradicional — están en LP, pero las <strong>claves de recuperación</strong> están en MT, y los chunks se traen tan rápido que funcionalmente actúan como MT extendida.</p>
+<p>Esto es lo que les permite a memoristas, ajedrecistas, médicos, traductores y otros expertos manejar volúmenes de información que romperían cualquier modelo de MT clásica.</p>
+<p><strong>Implicación clave</strong>: la MT efectiva en un dominio depende casi totalmente de cuánto LP estructurado tenés en ese dominio. Esto desarma definitivamente la analogía con RAM, donde el espacio está fijado por el hardware.</p>
+<h3 id="chunks-y-lenguaje">Chunks y lenguaje<a class="headerlink" href="#chunks-y-lenguaje" title="Permanent link">&para;</a></h3>
+<p>Aplicaciones específicas del chunking al procesamiento del lenguaje:</p>
+<ul>
+<li><strong>Lectura</strong>: los lectores expertos chunkean palabras en sintagmas; los principiantes chunkean letras en palabras. Por eso el span lector (Daneman &amp; Carpenter, 1980) crece con la habilidad lectora.</li>
+<li><strong>Procesamiento sintáctico</strong>: los <strong>garden paths</strong> (<a href="../garden-paths/">entrada aparte</a>) son fallos de chunking — el parser cierra un chunk en un punto y tiene que reabrirlo. La dependency locality theory de Gibson (DLT, 2000) modela la dificultad de oraciones como costo de mantener referentes abiertos en MT.</li>
+<li><strong>Adquisición</strong>: los niños van armando chunks lingüísticos progresivamente (fonemas → sílabas → palabras → frases hechas → patrones sintácticos abstractos). Tomasello (2003) construyó toda una teoría de adquisición del lenguaje sobre esto.</li>
+<li><strong>TDL y dislexia</strong>: niños con TDL muestran <strong>chunks fonológicos más débiles</strong> (Gathercole et al.). La repetición de pseudopalabras los expone porque no hay LP para chunkear.</li>
+<li><strong>LLMs</strong>: los modelos de lenguaje también "chunkean" — pero con tokens (BPE, byte-pair encoding). La compresión es estructuralmente análoga a la chunking humana en lectura, aunque la implementación es muy distinta. Conecta con <a href="../surprisal/">surprisal</a>.</li>
+</ul>
+<h3 id="por-que-importa-para-la-analogia-ram">Por qué importa para la analogía RAM<a class="headerlink" href="#por-que-importa-para-la-analogia-ram" title="Permanent link">&para;</a></h3>
+<p>Decir "tenés 4-7 espacios de MT" como si fueran slots de RAM <strong>es engañoso</strong>. La capacidad efectiva en cualquier dominio es:</p>
+<blockquote>
+<p>capacidad efectiva = N_chunks × tamaño_promedio_de_chunk</p>
+</blockquote>
+<p>El primer factor (N_chunks) es relativamente constante por individuo. El segundo (tamaño del chunk) es <strong>infinitamente expansible</strong> con experticia. Lo que parece "memoria limitada" desde el lado de la informática es en realidad <strong>memoria estructurada por aprendizaje</strong> desde el lado de la cognición.</p>
+<h2 id="una-analogia-mejor-pero-tambien-imperfecta">Una analogía mejor (pero también imperfecta)<a class="headerlink" href="#una-analogia-mejor-pero-tambien-imperfecta" title="Permanent link">&para;</a></h2>
+<p>Más fiel sería comparar la MT con <strong>registros de CPU + caché L1</strong>, no con RAM:</p>
+<ul>
+<li>Capacidad mucho más chica.</li>
+<li>Acoplada físicamente al procesador (no es un módulo aparte).</li>
+<li>Acceso rapidísimo.</li>
+<li>Contenido desaparece rápido cuando deja de usarse.</li>
+</ul>
+<p>Pero también se rompe — los registros se direccionan por nombre, y el caché reemplaza con LRU sin equivalente cognitivo claro.</p>
+<h2 id="la-lectura-desde-marr">La lectura desde Marr<a class="headerlink" href="#la-lectura-desde-marr" title="Permanent link">&para;</a></h2>
+<p>Es el mismo patrón que aparece en muchas comparaciones cerebro-máquina:</p>
+<table>
+<thead>
+<tr>
+<th>Nivel de Marr</th>
+<th>¿RAM ≈ MT?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Computacional</strong> (qué problema resuelve)</td>
+<td>✅ Sirve. Ambos resuelven "mantener info brevemente durante el procesamiento".</td>
+</tr>
+<tr>
+<td><strong>Algorítmico</strong> (con qué procedimiento)</td>
+<td>❌ Direccionamiento, capacidad y interferencia distintos.</td>
+</tr>
+<tr>
+<td><strong>Implementacional</strong> (en qué hardware)</td>
+<td>❌ Chip separado vs. actividad persistente en córtex; Von Neumann vs. no-Von Neumann.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regla general</strong>: las analogías cerebro-computadora suelen funcionar en el nivel 1 y romperse en los niveles 2 y 3. Útil saberlo para no llevar la analogía a conclusiones que no sostiene — por ejemplo "podemos hacer upgrade de MT como agregamos RAM" (falso) o "la MT tiene una capacidad fija como la RAM" (falso, depende del LP).</p>
+<h2 id="conexion-con-el-resto-del-sitio">Conexión con el resto del sitio<a class="headerlink" href="#conexion-con-el-resto-del-sitio" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../memoria-trabajo/">Memoria de trabajo y corto plazo</a></strong> — el modelo de Baddeley en detalle.</li>
+<li><strong><a href="../recuperacion-memoria/">Recuperación de memoria</a></strong> — direccionamiento por contenido en vez de por dirección, pattern completion.</li>
+<li><strong><a href="../../neurobiologia/marr-vision-computacional/">Marr — modelo computacional</a></strong> — los tres niveles que ordenan dónde funciona y dónde no la analogía.</li>
+<li><strong><a href="../garden-paths/">Garden paths</a></strong> — los chunks lingüísticos en acción (y fallando).</li>
+<li><strong><a href="../surprisal/">Surprisal</a></strong> — la conexión con chunking en modelos de lenguaje.</li>
+</ul>
+<h2 id="lecturas">Lecturas<a class="headerlink" href="#lecturas" title="Permanent link">&para;</a></h2>
+<h3 id="para-entrar-al-tema-de-chunks-los-tres-papers-que-te-bastan">Para entrar al tema de chunks — los tres papers que te bastan<a class="headerlink" href="#para-entrar-al-tema-de-chunks-los-tres-papers-que-te-bastan" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Miller, G. A. (1956)</strong> "The magical number seven, plus or minus two: some limits on our capacity for processing information". <em>Psychological Review</em> 63:81-97. — <strong>El paper fundacional.</strong> Corto, escrito con humor, todavía vigente.</li>
+<li><strong>Chase, W. G. &amp; Simon, H. A. (1973)</strong> "Perception in chess". <em>Cognitive Psychology</em> 4:55-81. — <strong>La demostración empírica más limpia.</strong> El estudio del ajedrez con la condición de tableros aleatorios.</li>
+<li><strong>Cowan, N. (2001)</strong> "The magical number 4 in short-term memory: a reconsideration of mental storage capacity". <em>Behavioral and Brain Sciences</em> 24:87-185. — <strong>La revisión moderna</strong> que recalibra el número de Miller. Largo pero el target article son ~30 páginas y vale la pena.</li>
+</ol>
+<h3 id="para-extender">Para extender<a class="headerlink" href="#para-extender" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ericsson, K. A. &amp; Kintsch, W. (1995)</strong> "Long-term working memory". <em>Psychological Review</em> 102:211-245. — el marco que explica cómo los expertos rompen los límites aparentes.</li>
+<li><strong>Gobet, F. &amp; Simon, H. A. (1996)</strong> "Templates in chess memory: a mechanism for recalling several boards". <em>Cognitive Psychology</em> 31:1-40. — extensión de Chase &amp; Simon con el concepto de "template" (chunk de chunks).</li>
+<li><strong>Gobet, F. et al. (2001)</strong> "Chunking mechanisms in human learning". <em>Trends in Cognitive Sciences</em> 5:236-243. — revisión accesible.</li>
+</ul>
+<h3 id="sobre-mt-y-substrato-neural">Sobre MT y substrato neural<a class="headerlink" href="#sobre-mt-y-substrato-neural" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cowan, N. (2008)</strong> "What are the differences between long-term, short-term, and working memory?" <em>Progress in Brain Research</em> 169:323-338. — modelo embedded-processes.</li>
+<li><strong>D'Esposito, M. &amp; Postle, B. R. (2015)</strong> "The cognitive neuroscience of working memory". <em>Annual Review of Psychology</em> 66:115-142. — revisión del substrato neural; deja claro que no hay "región de MT".</li>
+<li><strong>Baddeley, A. (2003)</strong> "Working memory: looking back and looking forward". <em>Nature Reviews Neuroscience</em> 4:829-839. — el modelo multi-componente del autor.</li>
+</ul>
+<h3 id="conexion-con-lenguaje-especificamente">Conexión con lenguaje específicamente<a class="headerlink" href="#conexion-con-lenguaje-especificamente" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Daneman, M. &amp; Carpenter, P. A. (1980)</strong> "Individual differences in working memory and reading". <em>Journal of Verbal Learning and Verbal Behavior</em> 19:450-466. — la <em>reading span task</em> que enlaza chunks con habilidad lectora.</li>
+<li><strong>Gibson, E. (2000)</strong> "The dependency locality theory: a distance-based theory of linguistic complexity". En <em>Image, Language, Brain</em> (Marantz et al., eds.), MIT Press. — DLT y chunks en parsing.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>

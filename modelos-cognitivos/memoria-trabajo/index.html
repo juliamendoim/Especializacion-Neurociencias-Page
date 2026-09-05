@@ -1,0 +1,3872 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../buffer-fonologico/">
+      
+      
+        <link rel="next" href="../modelos-predictivos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Memoria de trabajo - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#memoria-de-trabajo-y-memoria-de-corto-plazo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Memoria de trabajo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../neurobiologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stm-vs-wm-la-distincion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STM vs. WM — la distinción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-modelo-de-baddeley-1986-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El modelo de Baddeley (1986, 2000)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-bucle-fonologico-phonological-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El bucle fonológico (phonological loop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El bucle fonológico (phonological loop)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tres-efectos-clasicos-del-bucle-fonologico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tres efectos clásicos del bucle fonológico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-importa-esto-en-tdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa esto en TDL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Por qué importa esto en TDL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#span-de-digitos-como-se-mide-wm-directamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Span de dígitos: cómo se mide WM directamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-non-word-repetition-test-nwr-como-marker-de-tdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El non-word repetition test (NWR) como marker de TDL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-de-trabajo-y-procesamiento-sintactico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memoria de trabajo y procesamiento sintáctico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con LLMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-otros-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con otros conceptos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frecuencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo-ram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../neurobiologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stm-vs-wm-la-distincion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STM vs. WM — la distinción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-modelo-de-baddeley-1986-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El modelo de Baddeley (1986, 2000)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-bucle-fonologico-phonological-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El bucle fonológico (phonological loop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El bucle fonológico (phonological loop)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tres-efectos-clasicos-del-bucle-fonologico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tres efectos clásicos del bucle fonológico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-importa-esto-en-tdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa esto en TDL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Por qué importa esto en TDL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#span-de-digitos-como-se-mide-wm-directamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Span de dígitos: cómo se mide WM directamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-non-word-repetition-test-nwr-como-marker-de-tdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El non-word repetition test (NWR) como marker de TDL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-de-trabajo-y-procesamiento-sintactico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memoria de trabajo y procesamiento sintáctico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con LLMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-otros-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con otros conceptos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Modelos cognitivos
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="memoria-de-trabajo-y-memoria-de-corto-plazo">Memoria de trabajo y memoria de corto plazo<a class="headerlink" href="#memoria-de-trabajo-y-memoria-de-corto-plazo" title="Permanent link">&para;</a></h1>
+<p>Conceptos centrales para entender los modelos cognitivos del lenguaje, los déficits en TDL, y por qué procesar oraciones complejas tiene costo. Conviene tener clara la distinción entre los dos términos antes de avanzar.</p>
+<h2 id="stm-vs-wm-la-distincion">STM vs. WM — la distinción<a class="headerlink" href="#stm-vs-wm-la-distincion" title="Permanent link">&para;</a></h2>
+<p><strong>Memoria de corto plazo (STM, <em>short-term memory</em>)</strong>: capacidad <strong>pasiva</strong> de mantener información disponible por un período corto (segundos), sin manipularla. Es el "repetir un número de teléfono mientras se marca".</p>
+<p><strong>Memoria de trabajo (WM, <em>working memory</em>)</strong>: capacidad de <strong>mantener y manipular</strong> información simultáneamente. Es el "repetir el número de teléfono y a la vez decirlo al revés".</p>
+<p>La distinción la formalizaron <strong>Baddeley y Hitch (1974)</strong> y reemplazó al modelo más simple de Atkinson &amp; Shiffrin (1968), que solo postulaba un "almacén de corto plazo" pasivo. La working memory es <strong>activa, controlada y limitada en capacidad</strong>.</p>
+<p>En la práctica, los términos se usan a veces como sinónimos en literatura aplicada, pero conviene tenerlos diferenciados teóricamente.</p>
+<h2 id="el-modelo-de-baddeley-1986-2000">El modelo de Baddeley (1986, 2000)<a class="headerlink" href="#el-modelo-de-baddeley-1986-2000" title="Permanent link">&para;</a></h2>
+<p>Es el marco dominante en psicolingüística. Postula varios componentes:</p>
+<div class="highlight"><pre><span></span><code>                   ┌──────────────────────┐
+                   │  Ejecutivo central   │  ← atención, control
+                   └─────────┬────────────┘
+                             │
+       ┌─────────────────────┼─────────────────────┐
+       │                     │                     │
+       ▼                     ▼                     ▼
+┌──────────────┐   ┌──────────────────┐   ┌────────────────┐
+│ Bucle        │   │ Agenda           │   │ Buffer         │
+│ fonológico   │   │ visuoespacial    │   │ episódico      │
+│ (verbal)     │   │ (visual)         │   │ (integrador)   │
+└──────────────┘   └──────────────────┘   └────────────────┘
+</code></pre></div>
+<ul>
+<li><strong>Ejecutivo central</strong>: gestiona la atención, decide en qué subsistema procesar.</li>
+<li><strong>Bucle fonológico</strong>: el sistema clave para el lenguaje. Mantiene info verbal-acústica.</li>
+<li><strong>Agenda visuoespacial</strong>: para imágenes, escenas espaciales.</li>
+<li><strong>Buffer episódico</strong> (agregado en 2000): integra info de los otros y la conecta con memoria de largo plazo.</li>
+</ul>
+<h2 id="el-bucle-fonologico-phonological-loop">El bucle fonológico (phonological loop)<a class="headerlink" href="#el-bucle-fonologico-phonological-loop" title="Permanent link">&para;</a></h2>
+<p>Es <strong>el componente que más nos importa</strong> porque es donde "vive" el lenguaje en el procesamiento de corto plazo. Tiene dos subcomponentes:</p>
+<table>
+<thead>
+<tr>
+<th>Subcomponente</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Almacén fonológico</strong> (pasivo)</td>
+<td>Guarda información verbal-acústica por unos 2 segundos. Sin rehearsal, decae.</td>
+</tr>
+<tr>
+<td><strong>Repaso articulatorio</strong> (activo)</td>
+<td>Re-articula subvocálicamente lo guardado para refrescarlo (mecanismo "loop").</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Capacidad</strong>: aproximadamente 2 segundos de articulación. Por eso podés mantener ~7 dígitos cortos en inglés, pero menos cuando los dígitos son palabras largas (en galés, donde los nombres de los dígitos son más largos, la gente recuerda menos).</p>
+<h3 id="tres-efectos-clasicos-del-bucle-fonologico">Tres efectos clásicos del bucle fonológico<a class="headerlink" href="#tres-efectos-clasicos-del-bucle-fonologico" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Efecto de longitud de palabra (Word length effect)</strong>: palabras más largas → menos ítems retenidos. Porque cada palabra ocupa más tiempo de articulación.</p>
+</li>
+<li>
+<p><strong>Efecto de similitud fonológica (Phonological similarity effect)</strong>: palabras que suenan parecido (<em>man, cap, hat, mat</em>) son más difíciles de mantener juntas que palabras distintas (<em>pen, day, cow, sun</em>). Porque se confunden en el almacén fonológico.</p>
+</li>
+<li>
+<p><strong>Efecto de habla irrelevante (Irrelevant speech effect)</strong>: si hay habla de fondo (aunque sea en un idioma desconocido), interfiere con el rehearsal. Música o ruido blanco interfieren menos.</p>
+</li>
+</ol>
+<p>Estos tres efectos son la <strong>firma diagnóstica</strong> de que el bucle fonológico existe como sistema separado.</p>
+<h2 id="por-que-importa-esto-en-tdl">Por qué importa esto en TDL<a class="headerlink" href="#por-que-importa-esto-en-tdl" title="Permanent link">&para;</a></h2>
+<p>Una de las hipótesis más fuertes sobre la etiología del TDL es <strong>el déficit de memoria fonológica de corto plazo</strong>. La idea es:</p>
+<blockquote>
+<p>Los chicos con TDL tienen <strong>un bucle fonológico deficiente</strong>, lo que limita su capacidad de mantener secuencias fonológicas el tiempo suficiente para <strong>extraer patrones morfosintácticos</strong> del input.</p>
+</blockquote>
+<p>Esto explicaría por qué los chicos con TDL:</p>
+<ul>
+<li>Fallan en concordancia: no logran mantener el sujeto en mente hasta que llega el verbo.</li>
+<li>Tienen vocabulario más pobre: el "fast mapping" (asociar palabra nueva a referente) requiere mantener la forma fonológica brevemente, y eso está comprometido.</li>
+<li>Tienen morfología pobre: para abstraer un morfema como /-aba/ del input, hay que oírlo varias veces y compararlo con otras formas en memoria.</li>
+<li>Tienen comprensión sintáctica débil para oraciones largas: no pueden mantener el inicio mientras procesan el final.</li>
+</ul>
+<h3 id="span-de-digitos-como-se-mide-wm-directamente">Span de dígitos: cómo se mide WM directamente<a class="headerlink" href="#span-de-digitos-como-se-mide-wm-directamente" title="Permanent link">&para;</a></h3>
+<p>El <strong>span de dígitos</strong> (Digit Span) es la prueba clásica para medir capacidad de WM. Tiene dos versiones que aprovechan justo la distinción STM vs. WM:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Span directo</strong> (forward)</th>
+<th><strong>Span inverso</strong> (backward)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tarea</td>
+<td>Oír <em>3-7-2-9</em> y repetir igual</td>
+<td>Oír <em>3-7-2-9</em> y repetir al revés: <em>9-2-7-3</em></td>
+</tr>
+<tr>
+<td>Qué mide</td>
+<td>STM — solo almacenamiento</td>
+<td><strong>WM — almacenamiento + manipulación</strong></td>
+</tr>
+<tr>
+<td>Sustrato</td>
+<td>Bucle fonológico</td>
+<td>Bucle fonológico + ejecutivo central</td>
+</tr>
+<tr>
+<td>Capacidad típica</td>
+<td>~7 dígitos en adultos</td>
+<td>~5 dígitos en adultos</td>
+</tr>
+</tbody>
+</table>
+<p>El <strong>span inverso es la medida limpia de memoria de trabajo</strong>: invertir el orden obliga a manipular la información mientras se la mantiene. Por eso las puntuaciones son consistentemente menores que en directo, y el gradiente entre ambas versiones es diagnósticamente informativo.</p>
+<p><strong>Dónde aparece</strong>: en el subtest <strong>Dígitos</strong> de las escalas Wechsler (<a href="../../evaluacion/wisc-v/">WISC-V</a>, WAIS), en la WMS, y en muchas baterías de investigación como medida rápida de WM. En el <strong>Índice de Memoria de Trabajo del WISC-V</strong> es uno de los pilares.</p>
+<p><strong>Para TDL</strong>:
+- Si solo el directo está afectado → problema de almacenamiento fonológico (bucle).
+- Si el inverso está mucho más afectado que el directo → problema en el componente ejecutivo de la WM.</p>
+<p>Esa disociación, cruzada con <a href="../../evaluacion/repeticion-pseudopalabras/">repetición de pseudopalabras</a>, permite perfilar subtipos de déficit más finos que un puntaje global de "memoria".</p>
+<h3 id="el-non-word-repetition-test-nwr-como-marker-de-tdl">El non-word repetition test (NWR) como marker de TDL<a class="headerlink" href="#el-non-word-repetition-test-nwr-como-marker-de-tdl" title="Permanent link">&para;</a></h3>
+<p><strong>Conti-Ramsden, Botting &amp; Faragher (2001)</strong> mostraron que la <strong>repetición de no-palabras</strong> es uno de los markers más sensibles y específicos de TDL.</p>
+<p>La tarea: el examinador dice una pseudopalabra (<em>"pristoplán"</em>, <em>"berfucadelo"</em>) y el chico tiene que repetirla.</p>
+<p>Por qué funciona como marker:</p>
+<ul>
+<li>No-palabras <strong>no se pueden apoyar en memoria de largo plazo</strong> (no hay representación léxica).</li>
+<li>Solo se puede repetir si el bucle fonológico mantuvo la secuencia íntegra.</li>
+<li>Si el bucle es débil, <strong>la longitud de la pseudopalabra colapsa el rendimiento</strong>.</li>
+<li>Chicos con TDL puntúan dramáticamente bajo en pseudopalabras de 4+ sílabas, aun cuando su lenguaje espontáneo parece comparable a controles.</li>
+</ul>
+<p>El NWR está incorporado en baterías como el <strong><a href="../../evaluacion/celf/">CELF</a></strong> y se usa en investigación hispanohablante adaptado al español (Aguado, Mendoza, Acosta).</p>
+<h2 id="memoria-de-trabajo-y-procesamiento-sintactico">Memoria de trabajo y procesamiento sintáctico<a class="headerlink" href="#memoria-de-trabajo-y-procesamiento-sintactico" title="Permanent link">&para;</a></h2>
+<p>La WM no solo afecta retención fonológica, también <strong>el costo de procesar estructuras complejas</strong>:</p>
+<ul>
+<li><strong>Dependencias de larga distancia</strong>: para entender <em>"El nene </em><em>que la nena</em><em> </em><em>abrazó</em><em> se rió"</em>, hay que mantener "el nene" en mente hasta que llega "se rió", a través de la cláusula intermedia. Eso carga memoria de trabajo.</li>
+<li><strong><a href="../garden-paths/">Garden paths</a></strong>: la reanalysis requiere "deshacer" una estructura ya construida y mantener material en mente para rearmar.</li>
+<li><strong>Center embedding</strong>: oraciones tipo <em>"el gato que el perro que la rata mordió persiguió huyó"</em> son técnicamente gramaticales pero exceden la capacidad de WM humana.</li>
+</ul>
+<p><strong>Caplan &amp; Waters (1999)</strong> propusieron que hay un <strong>recurso de WM específico para sintaxis</strong> separado del WM general. La idea es controvertida pero ha generado mucha literatura.</p>
+<p><strong>Lewis &amp; Vasishth (2005)</strong> propusieron una alternativa: el costo de procesar estructuras complejas no es por capacidad limitada, sino por <strong>interferencia entre representaciones similares</strong> que se solapan en la memoria. Su modelo (basado en ACT-R) compite teóricamente con la teoría de surprisal de Levy.</p>
+<h2 id="conexion-con-llms">Conexión con LLMs<a class="headerlink" href="#conexion-con-llms" title="Permanent link">&para;</a></h2>
+<p>Los LLMs no tienen "memoria de trabajo" en el sentido cognitivo, pero tienen un análogo: la <strong>ventana de contexto</strong>. Es la cantidad de tokens previos que el modelo puede "ver" al predecir el siguiente.</p>
+<ul>
+<li>Modelos clásicos: 512-2048 tokens.</li>
+<li>Modelos modernos: 32K, 128K, hasta 1M tokens.</li>
+</ul>
+<p>Diferencias críticas con WM humana:</p>
+<ul>
+<li>La ventana del LLM es <strong>pasiva</strong> (todos los tokens están igualmente "presentes") mientras que la WM humana es <strong>activa</strong> (la atención privilegia ciertos elementos sobre otros).</li>
+<li>La ventana no decae con el tiempo. La WM humana sí.</li>
+<li>La ventana no sufre <strong>interferencia</strong> entre ítems similares. La WM humana sí (efecto de similitud fonológica).</li>
+<li>La ventana puede ser enormemente más grande que la WM humana (~7 ítems).</li>
+</ul>
+<p>Por eso <strong>los LLMs procesan center embeddings y oraciones de varias líneas sin esfuerzo</strong>, mientras que los humanos colapsan. Esa asimetría es uno de los argumentos para sostener que <strong>los LLMs no son modelos directos del procesamiento humano</strong> — al menos no a nivel de capacidad de mantenimiento.</p>
+<h2 id="conexion-con-otros-conceptos">Conexión con otros conceptos<a class="headerlink" href="#conexion-con-otros-conceptos" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../buffer-fonologico/">Buffer fonológico de salida</a></strong>: el buffer es parte del bucle fonológico (la pieza de <strong>producción</strong>). El bucle es más amplio: incluye almacén de input + rehearsal + interfaces con léxico.</li>
+<li><strong><a href="../activacion/">Activación</a></strong>: la WM se entiende parcialmente como activación residual de unidades léxicas / fonológicas. Se mantienen activas mientras no llegue input que las apague.</li>
+<li><strong><a href="../garden-paths/">Garden paths</a></strong>: el costo de reanalysis es, en parte, costo de WM.</li>
+<li><strong><a href="../../evaluacion/itpa/">ITPA — memoria secuencial</a></strong>: el subtest mide directamente la capacidad del bucle fonológico (repetición de dígitos).</li>
+<li><strong><a href="../../evaluacion/celf/">CELF — Working Memory Index</a></strong>: incluye repetición de oraciones y de pseudopalabras, los dos markers clásicos.</li>
+</ul>
+<h2 id="lecturas-recomendadas">Lecturas recomendadas<a class="headerlink" href="#lecturas-recomendadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Baddeley, A. (1986)</strong> <em>Working Memory</em>. Oxford UP. El libro fundacional.</li>
+<li><strong>Baddeley, A. (2000)</strong> "The episodic buffer: A new component of working memory?" <em>TICS</em> 4(11):417-423. La actualización del modelo.</li>
+<li><strong>Gathercole &amp; Baddeley (1996)</strong> "Children's Test of Nonword Repetition" — el test estándar.</li>
+<li><strong>Conti-Ramsden, Botting &amp; Faragher (2001)</strong> "Psycholinguistic markers for SLI" — el paper que consolidó NWR como marker.</li>
+<li><strong>Caplan &amp; Waters (1999)</strong> "Verbal working memory and sentence comprehension". <em>BBS</em> 22:77-94. Hipótesis del recurso específico para sintaxis.</li>
+<li><strong>Lewis &amp; Vasishth (2005)</strong> "An activation-based model of sentence processing as skilled memory retrieval". <em>Cognitive Science</em> 29:375-419. Alternativa basada en interferencia.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>

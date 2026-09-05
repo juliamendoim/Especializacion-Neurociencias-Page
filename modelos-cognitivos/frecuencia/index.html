@@ -1,0 +1,4244 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../modelos-lexicalistas/">
+      
+      
+        <link rel="next" href="../agreement-attraction-distributividad/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Frecuencia y cómo se representa mentalmente - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frecuencia-y-como-se-representa-mentalmente" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Frecuencia y cómo se representa mentalmente
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../neurobiologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-punto-de-partida-el-modelo-clasico-casi-no-incluye-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El punto de partida: el modelo clásico casi no incluye frecuencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-cuatro-propuestas-modernas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las cuatro propuestas modernas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Las cuatro propuestas modernas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-activacion-residual-con-decaimiento-act-r-lewis-vasishth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Activación residual con decaimiento (ACT-R, Lewis &amp; Vasishth)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pesos-en-redes-neuronales-elman-srn-conexionismo-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Pesos en redes neuronales (Elman, SRN, conexionismo, LLMs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-probabilidades-lexicas-almacenadas-macdonald-pearlmutter-seidenberg-1994" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Probabilidades léxicas almacenadas (MacDonald, Pearlmutter &amp; Seidenberg 1994)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ejemplares-almacenados-bybee-pierrehumbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ejemplares almacenados (Bybee, Pierrehumbert)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#una-segunda-tradicion-los-modelos-de-acceso-lexico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una segunda tradición: los modelos de acceso léxico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Una segunda tradición: los modelos de acceso léxico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-umbral-o-nivel-de-reposo-logogen-activacion-interactiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Umbral o nivel de reposo (logogen, activación interactiva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-rango-no-magnitud-forster-murray-forster-2004" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Rango, no magnitud (Forster; Murray &amp; Forster 2004)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-probabilidad-previa-norris-2006-bayesian-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Probabilidad previa (Norris 2006, Bayesian Reader)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-acumulacion-de-evidencia-modelos-de-difusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Acumulación de evidencia (modelos de difusión)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#es-la-frecuencia-la-variable-correcta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Es la frecuencia la variable correcta?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Es la frecuencia la variable correcta?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diversidad-contextual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diversidad contextual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edad-de-adquisicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edad de adquisición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-moraleja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La moraleja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donde-vive-la-frecuencia-en-el-cerebro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde vive la frecuencia en el cerebro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dónde vive la frecuencia en el cerebro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-frecuencia-no-es-una-sola-cosa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La frecuencia no es una sola cosa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distinciones-que-organizan-el-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinciones que organizan el debate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distinciones que organizan el debate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-frequency-vs-token-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type frequency vs token frequency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencia-logaritmica-vs-lineal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencia logarítmica vs lineal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decaimiento-la-frecuencia-se-mantiene-indefinidamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decaimiento — ¿la frecuencia se mantiene indefinidamente?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probabilidad-condicional-vs-frecuencia-absoluta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad condicional vs frecuencia absoluta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-debate-tomasello-innatistas-se-libra-aca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El debate Tomasello / innatistas se libra acá
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con LLMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-en-este-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones en este sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo-ram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../neurobiologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-punto-de-partida-el-modelo-clasico-casi-no-incluye-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El punto de partida: el modelo clásico casi no incluye frecuencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-cuatro-propuestas-modernas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las cuatro propuestas modernas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Las cuatro propuestas modernas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-activacion-residual-con-decaimiento-act-r-lewis-vasishth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Activación residual con decaimiento (ACT-R, Lewis &amp; Vasishth)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pesos-en-redes-neuronales-elman-srn-conexionismo-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Pesos en redes neuronales (Elman, SRN, conexionismo, LLMs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-probabilidades-lexicas-almacenadas-macdonald-pearlmutter-seidenberg-1994" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Probabilidades léxicas almacenadas (MacDonald, Pearlmutter &amp; Seidenberg 1994)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ejemplares-almacenados-bybee-pierrehumbert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ejemplares almacenados (Bybee, Pierrehumbert)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#una-segunda-tradicion-los-modelos-de-acceso-lexico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una segunda tradición: los modelos de acceso léxico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Una segunda tradición: los modelos de acceso léxico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-umbral-o-nivel-de-reposo-logogen-activacion-interactiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Umbral o nivel de reposo (logogen, activación interactiva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-rango-no-magnitud-forster-murray-forster-2004" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Rango, no magnitud (Forster; Murray &amp; Forster 2004)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-probabilidad-previa-norris-2006-bayesian-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Probabilidad previa (Norris 2006, Bayesian Reader)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-acumulacion-de-evidencia-modelos-de-difusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Acumulación de evidencia (modelos de difusión)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#es-la-frecuencia-la-variable-correcta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Es la frecuencia la variable correcta?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Es la frecuencia la variable correcta?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diversidad-contextual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diversidad contextual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edad-de-adquisicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edad de adquisición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-moraleja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La moraleja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donde-vive-la-frecuencia-en-el-cerebro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde vive la frecuencia en el cerebro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dónde vive la frecuencia en el cerebro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-frecuencia-no-es-una-sola-cosa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La frecuencia no es una sola cosa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distinciones-que-organizan-el-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinciones que organizan el debate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distinciones que organizan el debate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-frequency-vs-token-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type frequency vs token frequency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencia-logaritmica-vs-lineal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencia logarítmica vs lineal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decaimiento-la-frecuencia-se-mantiene-indefinidamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decaimiento — ¿la frecuencia se mantiene indefinidamente?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probabilidad-condicional-vs-frecuencia-absoluta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad condicional vs frecuencia absoluta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-debate-tomasello-innatistas-se-libra-aca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El debate Tomasello / innatistas se libra acá
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión con LLMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-en-este-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones en este sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Modelos cognitivos
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="frecuencia-y-como-se-representa-mentalmente">Frecuencia y cómo se representa mentalmente<a class="headerlink" href="#frecuencia-y-como-se-representa-mentalmente" title="Permanent link">&para;</a></h1>
+<p>La <strong>frecuencia</strong> — qué tan seguido aparece una palabra, una estructura o una construcción en la experiencia lingüística — es uno de los conceptos más empíricamente robustos y teóricamente cargados de la psicolingüística. Las palabras frecuentes se reconocen más rápido. Las estructuras frecuentes se procesan con menos esfuerzo. Las construcciones frecuentes se aprenden antes. <strong>Esto está fuera de discusión a nivel comportamental</strong>. Lo que sí se discute, y mucho, es <strong>cómo se supone que esa frecuencia "vive" en la mente</strong>: qué tipo de representación mental implementa la sensibilidad a la frecuencia.</p>
+<p>Esta entrada es transversal a las tres alternativas modernas al <a href="../modelos-predictivos/">modelo generativo clásico</a>: <a href="../modelos-predictivos/">modelos predictivos</a>, <a href="../modelos-basados-memoria/">basados en memoria</a> y <a href="../modelos-lexicalistas/">lexicalistas/conexionistas</a>. Cada una propone una mecánica distinta para la frecuencia.</p>
+<h2 id="el-punto-de-partida-el-modelo-clasico-casi-no-incluye-frecuencia">El punto de partida: el modelo clásico casi no incluye frecuencia<a class="headerlink" href="#el-punto-de-partida-el-modelo-clasico-casi-no-incluye-frecuencia" title="Permanent link">&para;</a></h2>
+<p>Frazier, Forster y Fodor pensaron el procesamiento del lenguaje como <strong>categórico y modular</strong>. Las heurísticas del parser (<em>minimal attachment</em>, <em>late closure</em>) son universales — se aplican igual a oraciones frecuentes que a infrecuentes. Forster reconoció que la frecuencia influye en el <strong>acceso léxico</strong> (más frecuente, más rápido), pero <strong>no en el parsing</strong>.</p>
+<p>Este es uno de los puntos débiles que los modelos modernos atacan: si la frecuencia no juega un rol durante el procesamiento estructural, ¿por qué procesamos más rápido las estructuras frecuentes? ¿Por qué <em>send NP NP</em> se procesa de manera distinta a <em>send NP PP</em> dependiendo del verbo? El clásico no tiene buena respuesta. Las alternativas modernas hacen de la frecuencia un mecanismo central, pero la implementan de <strong>cuatro maneras profundamente distintas</strong>.</p>
+<h2 id="las-cuatro-propuestas-modernas">Las cuatro propuestas modernas<a class="headerlink" href="#las-cuatro-propuestas-modernas" title="Permanent link">&para;</a></h2>
+<h3 id="1-activacion-residual-con-decaimiento-act-r-lewis-vasishth">1. Activación residual con decaimiento (ACT-R, Lewis &amp; Vasishth)<a class="headerlink" href="#1-activacion-residual-con-decaimiento-act-r-lewis-vasishth" title="Permanent link">&para;</a></h3>
+<p>Cada <em>chunk</em> en memoria tiene un <strong>nivel de activación base</strong> que es función explícita del historial de uso. La fórmula canónica de ACT-R:</p>
+<div class="arithmatex">\[B_i = \ln\left(\sum_{j=1}^{n} t_j^{-d}\right)\]</div>
+<p>donde <em>t_j</em> es el tiempo desde el j-ésimo uso del chunk <em>i</em>, y <em>d</em> es una constante de decaimiento (típicamente 0.5). Cada uso "refresca" la activación; el decaimiento la erosiona con el tiempo.</p>
+<p><strong>Implicaciones mentales</strong>:</p>
+<ul>
+<li>Más frecuente y reciente → más activación → más rápido se recupera.</li>
+<li>La frecuencia y la recencia están <strong>integradas en una sola medida</strong>.</li>
+<li>El logaritmo en la fórmula predice que el efecto de la frecuencia es <strong>logarítmico</strong> — la diferencia entre 10 y 100 ocurrencias es similar a la diferencia entre 1000 y 10000.</li>
+</ul>
+<p><strong>Mecanismo mental propuesto</strong>: existe una "memoria de uso" que mantiene activación residual de cada representación lingüística, actualizada en cada uso. Es la versión más explícita y matemáticamente formal de cómo la frecuencia opera en la mente. Es la cara central de los <a href="../modelos-basados-memoria/">modelos basados en memoria</a>.</p>
+<h3 id="2-pesos-en-redes-neuronales-elman-srn-conexionismo-llms">2. Pesos en redes neuronales (Elman, SRN, conexionismo, LLMs)<a class="headerlink" href="#2-pesos-en-redes-neuronales-elman-srn-conexionismo-llms" title="Permanent link">&para;</a></h3>
+<p><strong>No hay contador</strong>, hay <strong>pesos sinápticos</strong>. Cada experiencia lingüística ajusta los pesos vía aprendizaje hebbiano o <em>error-driven</em> (backpropagation). Una palabra o estructura frecuente termina con conexiones más fuertes porque hubo más oportunidades de ajuste.</p>
+<p><strong>Implicaciones mentales</strong>:</p>
+<ul>
+<li>La frecuencia no es algo "almacenado" en ningún lugar específico — emerge de la <strong>facilidad con que la red activa una representación</strong>.</li>
+<li>Es completamente <strong>implícita y distribuida</strong> sobre toda la red.</li>
+<li>Una palabra rara cuesta más porque sus patrones de activación no están bien establecidos.</li>
+<li>No hay un "contador de frecuencia" inspeccionable — solo hay pesos.</li>
+</ul>
+<p><strong>Mecanismo mental propuesto</strong>: la sensibilidad a la frecuencia es una propiedad emergente de la arquitectura, no una operación explícita. Esta es la cara central de los <a href="../modelos-lexicalistas/">modelos conexionistas/lexicalistas</a>, y por extensión, de los LLMs.</p>
+<h3 id="3-probabilidades-lexicas-almacenadas-macdonald-pearlmutter-seidenberg-1994">3. Probabilidades léxicas almacenadas (MacDonald, Pearlmutter &amp; Seidenberg 1994)<a class="headerlink" href="#3-probabilidades-lexicas-almacenadas-macdonald-pearlmutter-seidenberg-1994" title="Permanent link">&para;</a></h3>
+<p>El léxico <strong>carga representaciones probabilísticas explícitas</strong>. Cada palabra tiene "<em>frequency biases</em>" para sus posibles estructuras: <em>send</em> sabe que aparece ~70 % en transitivo simple y ~30 % en ditransitivo; <em>give</em> sabe lo opuesto.</p>
+<p><strong>Implicaciones mentales</strong>:</p>
+<ul>
+<li>El léxico <strong>es</strong> un repositorio probabilístico.</li>
+<li>Estas frecuencias <strong>no son derivadas de otro lado</strong> — son <strong>constitutivas de qué significa "saber una palabra"</strong>.</li>
+<li>Saber una palabra es saber su distribución de uso, no solo su forma y significado.</li>
+</ul>
+<p><strong>Mecanismo mental propuesto</strong>: la frecuencia es información léxica de primer nivel, igual de fundamental que la categoría gramatical o el significado. Esta es la cara central del <strong>lexicalismo</strong> (MacDonald et al. 1994; Trueswell &amp; Tanenhaus 1994).</p>
+<p>Ambigüedad sobre si las probabilidades son realmente "almacenadas explícitamente" o son <strong>descripción computacional</strong> de algo implementado vía pesos (familia 2). El propio MacDonald oscila entre lecturas más realistas y más instrumentalistas.</p>
+<h3 id="4-ejemplares-almacenados-bybee-pierrehumbert">4. Ejemplares almacenados (Bybee, Pierrehumbert)<a class="headerlink" href="#4-ejemplares-almacenados-bybee-pierrehumbert" title="Permanent link">&para;</a></h3>
+<p>Cada experiencia lingüística se almacena como un <strong>ejemplar concreto</strong> (token episódico) en una memoria de gran capacidad. No hay abstracción separada de los datos: la "regla" no es una regla, es una <strong>nube densa de ejemplares similares</strong> en el espacio de representación.</p>
+<p><strong>Implicaciones mentales</strong>:</p>
+<ul>
+<li>La frecuencia es <strong>literalmente número de ejemplares almacenados</strong>.</li>
+<li>Categorías más frecuentes son nubes más densas; más fácil acceder, más resistentes al olvido.</li>
+<li>El conocimiento lingüístico es <strong>conocimiento episódico</strong> del lenguaje, no abstracciones.</li>
+<li>Bybee aplica esto especialmente a morfología y construcciones; Pierrehumbert a fonología.</li>
+</ul>
+<p><strong>Mecanismo mental propuesto</strong>: la memoria lingüística funciona como la memoria episódica — guarda eventos concretos, no abstracciones. La sensibilidad a la frecuencia emerge de la densidad de ejemplares en torno a una región del espacio de representación.</p>
+<h2 id="una-segunda-tradicion-los-modelos-de-acceso-lexico">Una segunda tradición: los modelos de acceso léxico<a class="headerlink" href="#una-segunda-tradicion-los-modelos-de-acceso-lexico" title="Permanent link">&para;</a></h2>
+<p>Las cuatro propuestas anteriores vienen del debate sobre <strong>aprendizaje y parsing</strong> (usage-based vs. innatismo). Hay una tradición paralela, la del <strong>reconocimiento visual de palabras</strong>, que se hizo la misma pregunta con otro vocabulario y llegó a respuestas distintas. Vale tenerlas juntas porque responden más literalmente a "¿dónde vive la frecuencia?".</p>
+<h3 id="5-umbral-o-nivel-de-reposo-logogen-activacion-interactiva">5. Umbral o nivel de reposo (logogen, activación interactiva)<a class="headerlink" href="#5-umbral-o-nivel-de-reposo-logogen-activacion-interactiva" title="Permanent link">&para;</a></h3>
+<p>En el <a href="../activacion/">modelo de logogen</a> de Morton (1969), cada palabra tiene una unidad detectora con un <strong>umbral</strong>. La frecuencia fija ese umbral: las palabras frecuentes lo tienen más bajo y necesitan menos evidencia para dispararse. El modelo de activación interactiva de McClelland y Rumelhart (1981) hace lo mismo con <strong>niveles de activación en reposo</strong>.</p>
+<p>Es la respuesta más literal posible a la pregunta: la frecuencia vive <strong>en el estado basal de la unidad léxica</strong>, antes de que llegue ningún estímulo. Es también la más fácil de conectar con la clínica: un léxico degradado pierde primero las unidades de umbral más alto, es decir, las de baja frecuencia.</p>
+<h3 id="6-rango-no-magnitud-forster-murray-forster-2004">6. Rango, no magnitud (Forster; Murray &amp; Forster 2004)<a class="headerlink" href="#6-rango-no-magnitud-forster-murray-forster-2004" title="Permanent link">&para;</a></h3>
+<p>En el modelo de búsqueda serial de Forster (1976), el léxico está organizado en "cajones" recorridos <strong>en orden de frecuencia</strong>. Lo que importa no es cuán frecuente es una palabra sino <strong>en qué posición del orden está</strong>.</p>
+<p>La distinción no es cosmética. Murray y Forster (2004) argumentan que los datos ajustan mejor al <strong>rango</strong> que a la frecuencia bruta o a su logaritmo. Si tienen razón, el sistema no almacena cantidades: almacena un <strong>orden</strong>. Es una hipótesis más económica y bastante menos discutida de lo que merece.</p>
+<h3 id="7-probabilidad-previa-norris-2006-bayesian-reader">7. Probabilidad previa (Norris 2006, <em>Bayesian Reader</em>)<a class="headerlink" href="#7-probabilidad-previa-norris-2006-bayesian-reader" title="Permanent link">&para;</a></h3>
+<p>No hay contador, ni umbral, ni orden: hay <strong>inferencia</strong>. El reconocimiento es una decisión bayesiana óptima que combina la evidencia perceptual con el <strong>prior</strong> de cada candidato, y ese prior es la frecuencia.</p>
+<p>La consecuencia teórica es fuerte: los efectos de frecuencia dejan de ser una propiedad del almacenamiento y pasan a ser <strong>una propiedad de la decisión</strong>. De ahí que el modelo prediga —correctamente— que el tamaño del efecto <strong>varía con la tarea y con el contexto</strong>. Norris lo formula así: los efectos de frecuencia son una especie de efecto de predictibilidad que aparece <strong>cuando el contexto está ausente o no restringe</strong>, y el sistema tiene que caer en el prior.</p>
+<p>Esto tiene consecuencias metodológicas directas: una tarea con contexto reducido no es una tarea "más simple", es una tarea diseñada para <strong>forzar la exhibición del prior</strong>.</p>
+<h3 id="8-acumulacion-de-evidencia-modelos-de-difusion">8. Acumulación de evidencia (modelos de difusión)<a class="headerlink" href="#8-acumulacion-de-evidencia-modelos-de-difusion" title="Permanent link">&para;</a></h3>
+<p>En los modelos de difusión (Ratcliff), la decisión se modela como acumulación ruidosa de evidencia hasta un límite. La frecuencia puede entrar en <strong>dos parámetros distintos</strong>:</p>
+<ul>
+<li><strong>Tasa de deriva</strong> (<em>drift rate</em>): la evidencia a favor de una palabra frecuente se acumula más rápido.</li>
+<li><strong>Punto de partida</strong>: el acumulador arranca sesgado hacia la respuesta frecuente, antes de ver nada.</li>
+</ul>
+<p>Son mecanismos diferentes con la misma firma gruesa en latencias medias, y se separan solo modelando <strong>la distribución completa de tiempos de respuesta</strong>. Es un buen recordatorio de que "efecto de frecuencia" nombra un fenómeno conductual, no un mecanismo.</p>
+<hr />
+<h2 id="es-la-frecuencia-la-variable-correcta">¿Es la frecuencia la variable correcta?<a class="headerlink" href="#es-la-frecuencia-la-variable-correcta" title="Permanent link">&para;</a></h2>
+<p>Dos resultados le pegan al concepto mismo, y conviene conocerlos antes de tratar la frecuencia como primitivo.</p>
+<h3 id="diversidad-contextual">Diversidad contextual<a class="headerlink" href="#diversidad-contextual" title="Permanent link">&para;</a></h3>
+<p><strong>Adelman, Brown y Quesada (2006)</strong> compararon la frecuencia con la <strong>diversidad contextual</strong>: en cuántos contextos distintos (documentos, películas) aparece una palabra, sin importar cuántas veces en cada uno.</p>
+<p>El resultado es asimétrico y por eso contundente: al controlar diversidad contextual, <strong>el efecto de frecuencia desaparece; al revés no</strong>. Lo que estaría representado no sería un conteo de ocurrencias sino algo más cercano a <strong>en cuántas situaciones distintas esa palabra resultó útil</strong>.</p>
+<p>Es una diferencia conceptual, no estadística: sugiere que el sistema no registra repeticiones sino <strong>contextos de utilidad</strong>.</p>
+<h3 id="edad-de-adquisicion">Edad de adquisición<a class="headerlink" href="#edad-de-adquisicion" title="Permanent link">&para;</a></h3>
+<p>Buena parte de lo que se atribuye a la frecuencia puede ser <strong>orden de entrenamiento</strong>. Las palabras aprendidas temprano quedan más entrenadas en la red, y frecuencia y edad de adquisición están fuertemente correlacionadas en cualquier corpus.</p>
+<p>En español, Cuetos y colegas muestran efectos de edad de adquisición <strong>independientes</strong> de la frecuencia en denominación, modulados por la tarea y por la imaginabilidad de los ítems: en denominación inmediata y rápida solo pesa la frecuencia; en decisión léxica pesan ambas. O sea que ninguna de las dos es reducible a la otra, pero tampoco son separables sin diseños específicos.</p>
+<h3 id="la-moraleja">La moraleja<a class="headerlink" href="#la-moraleja" title="Permanent link">&para;</a></h3>
+<p>Si la diversidad contextual predice mejor que la frecuencia, y la edad de adquisición aporta varianza propia, entonces <strong>el cerebro nunca contó nada</strong>. Lo que llamamos frecuencia es un resumen externo de una historia de aprendizaje que incluye cuándo se aprendió algo, en cuántas situaciones y con qué utilidad. "Frecuencia" es una variable de investigador, no necesariamente una magnitud representada.</p>
+<hr />
+<h2 id="donde-vive-la-frecuencia-en-el-cerebro">Dónde vive la frecuencia en el cerebro<a class="headerlink" href="#donde-vive-la-frecuencia-en-el-cerebro" title="Permanent link">&para;</a></h2>
+<p>Un argumento neural sencillo apunta en la misma dirección. Si existiera un contador, un ítem frecuente debería producir <strong>más</strong> actividad. Se observa lo contrario: <strong>supresión por repetición</strong>, menos respuesta neural para lo repetido y lo frecuente. Esa es la firma de un sistema <strong>sintonizado</strong> —representaciones más eficientes y más selectivas— no de una tabla que se consulta.</p>
+<p>A nivel de localización, la frecuencia léxica modula sobre todo el <strong>giro frontal inferior izquierdo</strong> y regiones <strong>temporales posteriores y fusiformes</strong>: las palabras de baja frecuencia producen más activación, consistente con una recuperación más costosa.</p>
+<h3 id="la-frecuencia-no-es-una-sola-cosa">La frecuencia no es una sola cosa<a class="headerlink" href="#la-frecuencia-no-es-una-sola-cosa" title="Permanent link">&para;</a></h3>
+<p>El punto más importante para no simplificar: <strong>Carreiras, Mechelli y Price (2006)</strong> manipularon <strong>frecuencia léxica y frecuencia silábica en el mismo experimento</strong> y encontraron firmas neurales distintas — las sílabas de baja frecuencia modularon la ínsula anterior izquierda, con un patrón disociable del de la frecuencia de palabra.</p>
+<p>O sea que la frecuencia no vive en un lugar. <strong>Vive en cada nivel de representación que aprende</strong>: correspondencias fonema-grafema, sílabas, morfemas, palabras, construcciones. Cada nivel tiene la suya, y en cualquier tarea concreta varias están operando a la vez.</p>
+<p>Esto tiene una consecuencia práctica para leer literatura clínica: cuando un trabajo reporta "un efecto de frecuencia", la primera pregunta es <strong>frecuencia de qué unidad</strong>. Ver la entrada sobre <a href="../../lectura/disgrafia-superficial-homofonos/">disgrafía superficial y homófonos</a>, donde el mismo sesgo conductual admite cuatro loci distintos según el nivel en que se resuelva.</p>
+<hr />
+<h2 id="distinciones-que-organizan-el-debate">Distinciones que organizan el debate<a class="headerlink" href="#distinciones-que-organizan-el-debate" title="Permanent link">&para;</a></h2>
+<h3 id="type-frequency-vs-token-frequency">Type frequency vs token frequency<a class="headerlink" href="#type-frequency-vs-token-frequency" title="Permanent link">&para;</a></h3>
+<p>Distinción central propuesta por Bybee y adoptada por Tomasello:</p>
+<ul>
+<li><strong>Token frequency</strong>: cuántas veces aparece un ítem concreto. <em>"-ed"</em> aparece, digamos, 50.000 veces en un corpus.</li>
+<li><strong>Type frequency</strong>: con cuántos ítems distintos se combina. <em>"-ed"</em> se combina con 800 verbos distintos.</li>
+</ul>
+<p>Para <strong>productividad</strong> (extender la regla a casos nuevos, tipo wug test), lo que importa es la <strong>type frequency</strong>. Para <strong>automatización</strong> (acceso rápido, <em>chunking</em>), la <strong>token frequency</strong>.</p>
+<p>Tomasello argumenta que el niño aprende gramática vía type frequency creciente — no es que escuche muchas veces los mismos plurales, es que escucha muchos sustantivos distintos pluralizados. Esto es la base empírica del giro <em>usage-based</em> contra el innatismo: si se puede mostrar que los chicos extienden reglas en proporción a la type frequency observada, se debilita el argumento innatista.</p>
+<h3 id="frecuencia-logaritmica-vs-lineal">Frecuencia logarítmica vs lineal<a class="headerlink" href="#frecuencia-logaritmica-vs-lineal" title="Permanent link">&para;</a></h3>
+<p>El efecto de la frecuencia sobre tiempo de reacción es <strong>logarítmico</strong> (Whaley 1978; Murray &amp; Forster 2004). La diferencia entre 10 y 100 ocurrencias es similar a la diferencia entre 1000 y 10000. Esto es compatible con:</p>
+<ul>
+<li>ACT-R (donde la fórmula tiene log explícito).</li>
+<li>SRN y conexionismo (que aprenden representaciones comprimidas y saturan al alto rango).</li>
+<li>Modelos probabilísticos (donde lo que importa es la sorpresa, que también es log).</li>
+</ul>
+<p>Es <strong>menos obvio</strong> en modelos de ejemplares puros, que predicen efectos más lineales — esto es una crítica empírica al exemplarismo.</p>
+<h3 id="decaimiento-la-frecuencia-se-mantiene-indefinidamente">Decaimiento — ¿la frecuencia se mantiene indefinidamente?<a class="headerlink" href="#decaimiento-la-frecuencia-se-mantiene-indefinidamente" title="Permanent link">&para;</a></h3>
+<p>ACT-R dice que <strong>sí, con decaimiento explícito</strong> (la activación cae con el tiempo desde el último uso). Algunos PDP dicen que el conocimiento es <strong>permanente</strong> una vez aprendido (los pesos se quedan ahí). Modelos de ejemplares con olvido proponen una posición intermedia.</p>
+<p>Datos empíricos: hay olvido pero también hay <strong><em>savings</em></strong> (re-aprender es más rápido que aprender de cero), sugiriendo que ni un extremo ni el otro. La representación no desaparece del todo cuando deja de usarse — algo queda.</p>
+<h3 id="probabilidad-condicional-vs-frecuencia-absoluta">Probabilidad condicional vs frecuencia absoluta<a class="headerlink" href="#probabilidad-condicional-vs-frecuencia-absoluta" title="Permanent link">&para;</a></h3>
+<p>Cuando se habla de "frecuencia" en parsing, casi siempre se quiere decir <strong>frecuencia condicional</strong>: P(estructura | verbo), no frecuencia bruta de la estructura. Esto es lo que mide <a href="../surprisal/">surprisal</a>: cuán improbable es el token dado el contexto previo. Cuanto más improbable, mayor sorpresa, mayor costo.</p>
+<p>Surprisal es la formalización moderna más usada para operacionalizar "efectos de frecuencia" en el procesamiento. Conecta frecuencia con los <a href="../modelos-predictivos/">modelos predictivos</a>.</p>
+<h2 id="el-debate-tomasello-innatistas-se-libra-aca">El debate Tomasello / innatistas se libra acá<a class="headerlink" href="#el-debate-tomasello-innatistas-se-libra-aca" title="Permanent link">&para;</a></h2>
+<p>Una de las grandes peleas de la psicolingüística — ¿hay gramática innata o se aprende? — pasa fuertemente por <strong>qué se hace con la frecuencia</strong>:</p>
+<ul>
+<li><strong>Tomasello, Bybee, MacWhinney, conexionistas</strong>: la frecuencia es suficiente para explicar el aprendizaje gramatical. El niño abstrae patrones a partir de exposición probabilística masiva. No hace falta gramática universal.</li>
+<li><strong>Pinker, dual-route, innatistas</strong>: la frecuencia es necesaria pero no suficiente. Hay que postular <strong>sesgos inductivos específicos</strong> que decidan qué patrones extraer del input frecuencial. La frecuencia sola no explica la diferencia entre regulares e irregulares ni la productividad selectiva.</li>
+<li><strong>Yang (2002, 2016) — posición intermedia</strong>: hay reglas, pero se aprenden probabilísticamente. La <strong><em>tolerance principle</em></strong> es una fórmula explícita: una regla es productiva si las excepciones son menos que <strong>N / ln(N)</strong> ítems en el rango cubierto. Cuantifica cuánta evidencia frecuencial se necesita para que el sistema abstraiga una regla. Reconcilia "hay reglas" con "se aprenden del input".</li>
+</ul>
+<p>Esta pelea no se resuelve por argumento teórico — se resuelve (o no) empíricamente, mostrando dónde la frecuencia alcanza y dónde no.</p>
+<h2 id="conexion-con-llms">Conexión con LLMs<a class="headerlink" href="#conexion-con-llms" title="Permanent link">&para;</a></h2>
+<p>Los LLMs aprenden frecuencias <strong>completamente implícitamente</strong> en los pesos durante el entrenamiento — encajan en la familia 2 (pesos en redes neuronales). No tienen contadores explícitos. La frecuencia se "lee" de la probabilidad que asignan a tokens:</p>
+<div class="arithmatex">\[P(w_i \mid contexto) \approx \frac{frecuencia(w_i, contexto)}{frecuencia(contexto)}\]</div>
+<p>matizado por capacidad de generalización (los LLMs no solo memorizan frecuencias brutas, abstraen patrones combinatorios).</p>
+<p><strong>Problemas documentados</strong>:</p>
+<ul>
+<li><strong>Frequency bias</strong>: los LLMs son notablemente mejores con palabras y estructuras frecuentes del corpus de entrenamiento. Las palabras raras o las construcciones poco frecuentes activan representaciones más débiles.</li>
+<li><strong>Confusión memorización vs comprensión</strong>: cuando se los evalúa en <em>targeted assessments</em> psicolingüísticos, parte del éxito puede ser "está prediciendo frecuencias del training, no entendiendo estructura". Esto se controla con baselines basados en frecuencia: ¿el modelo supera lo que se podría predecir solo con n-gramas? Si no, el "éxito" sintáctico es ilusorio.</li>
+<li><strong>Yedetore, Linzen et al. (2023)</strong> muestran que entrenadas con cantidades de input comparables al humano (~10⁷ palabras), las redes no logran las generalizaciones que los niños hacen sin esfuerzo. Sugiere que la frecuencia sola — aun en cantidades realistas — <strong>no basta</strong> sin sesgos inductivos.</li>
+</ul>
+<p>Esto es importante para el debate IA / neurociencia: la convergencia entre LLMs y humanos en sensibilidad a la frecuencia es real, pero <strong>la fuente de la convergencia</strong> puede ser distinta. En humanos hay aprendizaje frecuencial <em>más</em> sesgos. En LLMs hay aprendizaje frecuencial sobre <strong>órdenes de magnitud más datos</strong> sin sesgos específicos. Que produzcan resultados parecidos no implica mismo mecanismo.</p>
+<h2 id="conexiones-en-este-sitio">Conexiones en este sitio<a class="headerlink" href="#conexiones-en-este-sitio" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../modelos-predictivos/">Modelos predictivos</a> — surprisal como formalización moderna del efecto de frecuencia condicional.</li>
+<li><a href="../modelos-basados-memoria/">Modelos basados en memoria</a> — ACT-R y la activación base como mecanismo explícito de frecuencia.</li>
+<li><a href="../modelos-lexicalistas/">Modelos lexicalistas / conexionistas</a> — la frecuencia como información léxica de primer nivel; pesos en redes neuronales como sustrato implícito.</li>
+<li><a href="../surprisal/">Surprisal</a> — la operacionalización dominante hoy.</li>
+<li><a href="../activacion/">Activación</a> — el sustrato común a varios de estos modelos; ahí está el modelo de logogen que acá se desarrolla como familia 5.</li>
+<li><a href="../../lectura/disgrafia-superficial-homofonos/">Disgrafía superficial y homófonos</a> — un caso clínico donde la pregunta "¿dónde vive la frecuencia?" tiene cuatro respuestas empíricamente separables.</li>
+<li><a href="../../lectura/silaba-unidad-sublexical/">La sílaba como unidad subléxica</a> — frecuencia silábica con signo inhibitorio frente a frecuencia de raíz con signo facilitatorio: la mejor demostración de que "frecuencia" no nombra una sola cosa.</li>
+<li><a href="../../aprendizajes-generales/">Aprendizajes generales</a> — la sección sobre autoorganización vs. big data discute si la frecuencia bruta alcanza.</li>
+</ul>
+<h2 id="referencias-clave">Referencias clave<a class="headerlink" href="#referencias-clave" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Bybee, J. (1985)</strong> <em>Morphology: A Study of the Relation Between Meaning and Form</em>. Benjamins. La fundación del enfoque basado en frecuencia y uso.</li>
+<li><strong>Bybee, J. (1995)</strong> "Regular morphology and the lexicon" <em>Language and Cognitive Processes</em> 10(5):425-455.</li>
+<li><strong>Bybee, J. (2006)</strong> "From usage to grammar: The mind's response to repetition" <em>Language</em> 82:711-733. Síntesis del programa.</li>
+<li><strong>Pierrehumbert, J. B. (2001)</strong> "Exemplar dynamics: Word frequency, lenition, and contrast" en <em>Frequency and the Emergence of Linguistic Structure</em>. Benjamins. Modelo exemplarista para fonología.</li>
+<li><strong>Whaley, C. P. (1978)</strong> "Word—nonword classification time" <em>Journal of Verbal Learning and Verbal Behavior</em> 17:143-154. El efecto logarítmico de la frecuencia.</li>
+<li><strong>Murray, W. S. &amp; Forster, K. I. (2004)</strong> "Serial mechanisms in lexical access: The rank hypothesis" <em>Psychological Review</em> 111:721-756. El efecto de rank, no de frecuencia bruta.</li>
+<li><strong>Anderson, J. R. (1993)</strong> <em>Rules of the Mind</em>. Lawrence Erlbaum. Activación base en ACT-R.</li>
+<li><strong>Anderson, J. R. &amp; Lebiere, C. (1998)</strong> <em>The Atomic Components of Thought</em>. Lawrence Erlbaum.</li>
+<li><strong>MacDonald, M. C., Pearlmutter, N. J. &amp; Seidenberg, M. S. (1994)</strong> "The lexical nature of syntactic ambiguity resolution" <em>Psychological Review</em> 101:676-703.</li>
+<li><strong>Trueswell, J. C. &amp; Tanenhaus, M. K. (1994)</strong> "Toward a lexicalist framework for constraint-based syntactic ambiguity resolution" en <em>Perspectives on Sentence Processing</em>. Lawrence Erlbaum.</li>
+<li><strong>Tomasello, M. (2003)</strong> <em>Constructing a Language: A Usage-Based Theory of Language Acquisition</em>. Harvard UP.</li>
+<li><strong>Yang, C. (2002)</strong> <em>Knowledge and Learning in Natural Language</em>. Oxford UP.</li>
+<li><strong>Yang, C. (2016)</strong> <em>The Price of Linguistic Productivity</em>. MIT Press. La <em>tolerance principle</em> formalizada.</li>
+<li><strong>Ellis, N. C. (2002)</strong> "Frequency effects in language processing: A review with implications for theories of implicit and explicit language acquisition" <em>Studies in Second Language Acquisition</em> 24:143-188. Síntesis amplia.</li>
+<li><strong>Hay, J. &amp; Baayen, R. H. (2005)</strong> "Shifting paradigms: Gradient structure in morphology" <em>Trends in Cognitive Sciences</em> 9:342-348.</li>
+<li><strong>Morton, J. (1969)</strong> "Interaction of information in word recognition" <em>Psychological Review</em> 76:165-178. El modelo de logogen; la frecuencia como umbral.</li>
+<li><strong>Forster, K. I. (1976)</strong> "Accessing the mental lexicon" en <em>New Approaches to Language Mechanisms</em>. North-Holland. La frecuencia como orden de búsqueda.</li>
+<li><strong>McClelland, J. L. &amp; Rumelhart, D. E. (1981)</strong> "An interactive activation model of context effects in letter perception" <em>Psychological Review</em> 88:375-407.</li>
+<li><strong>Norris, D. (2006)</strong> "The Bayesian Reader: explaining word recognition as an optimal Bayesian decision process" <em>Psychological Review</em> 113(2):327-357. La frecuencia como probabilidad previa.</li>
+<li><strong>Ratcliff, R. &amp; McKoon, G. (2008)</strong> "The diffusion decision model: theory and data for two-choice decision tasks" <em>Neural Computation</em> 20(4):873-922. Tasa de deriva vs. punto de partida.</li>
+<li><strong>Adelman, J. S., Brown, G. D. A. &amp; Quesada, J. F. (2006)</strong> "Contextual diversity, not word frequency, determines word-naming and lexical decision times" <em>Psychological Science</em> 17(9):814-823.</li>
+<li><strong>Cuetos, F. &amp; Barbón, A. (2006)</strong> "Word naming in Spanish" <em>European Journal of Cognitive Psychology</em> 18:415-436. Efectos independientes de edad de adquisición y frecuencia acumulada.</li>
+<li><strong>Davies, R., Barbón, A. &amp; Cuetos, F. (2013)</strong> "Lexical and semantic age-of-acquisition effects on word naming in Spanish" <em>Memory &amp; Cognition</em> 41(2):297-311.</li>
+<li><strong>Carreiras, M., Mechelli, A. &amp; Price, C. (2006)</strong> "Effect of word and syllable frequency on activation during lexical decision and reading aloud" <em>Human Brain Mapping</em> 27(12):963-972. Frecuencia léxica y silábica con firmas neurales disociables.</li>
+<li><strong>Grill-Spector, K., Henson, R. &amp; Martin, A. (2006)</strong> "Repetition and the brain: neural models of stimulus-specific effects" <em>Trends in Cognitive Sciences</em> 10(1):14-23. Supresión por repetición.</li>
+<li><strong>Yedetore, A., Linzen, T. et al. (2023)</strong> "How poor is the stimulus? Evaluating hierarchical generalization in neural networks trained on child-directed speech" <em>ACL</em>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>
