@@ -97,7 +97,77 @@ Este debate es el problema de las interfaces planteado para un tramo específico
 
 ---
 
-## 6. El nivel neural
+## 6. El caso donde el formato se mide: la memoria icónica
+
+Todo lo anterior postula formatos. La **memoria icónica** es el único lugar de la psicología cognitiva donde el formato de un nivel de representación está **especificado operacionalmente** — medido, no supuesto.
+
+### La clave que funciona revela lo que hay
+
+En el paradigma de **informe parcial** de Sperling, se presenta un arreglo de letras durante ~50 ms y una clave posterior indica qué subconjunto reportar. Lo decisivo no es el efecto en sí, sino **qué tipo de clave produce el beneficio**:
+
+| Clave | ¿Funciona? |
+|---|---|
+| Posición espacial | ✅ |
+| Color | ✅ |
+| Tamaño | ✅ |
+| Forma | ✅ |
+| **Categoría** ("reportá solo las letras, no los dígitos") | ❌ |
+
+Esto es una **lectura directa del formato**. Se puede seleccionar por lo que la representación contiene; no se puede seleccionar por lo que todavía no contiene. El ícono tiene posición, color, tamaño y forma; **no tiene identidad de letra**.
+
+Por eso "precategorial" no es una etiqueta descriptiva sino un resultado: la categoría **no está ahí todavía**. Y entonces, para ese tramo, la pregunta por la transformación tiene respuesta: **la transformación es la categorización**, y lo que se agrega es la identidad de tipo.
+
+El análogo auditivo recibió el nombre de **almacenamiento acústico precategorial**, con el mismo argumento en otra modalidad.
+
+### El informe parcial mide el ancho de banda de la interfaz
+
+Hay una lectura del resultado de Sperling que suele quedar en segundo plano y que es la más relevante acá.
+
+Con 12 letras presentadas, el informe **completo** rinde 4 o 5. Con clave de fila, se puede reportar **cualquier** fila igual de bien, lo que implica que había **9 o más disponibles**.
+
+La lectura estándar es "existe un almacén de alta capacidad y decaimiento rápido". La lectura en términos de interfaces es otra:
+
+> El almacén tiene ~9-12 ítems. Lo que sale de la categorización carga ~4. **El cuello de botella no está en el módulo, está en la interfaz.**
+
+Visto así, el informe parcial no mide una memoria: mide **cuánto se pierde al cruzar**. Es una de las pocas cuantificaciones limpias del costo de una transformación de formato. Y el decaimiento de ~250-500 ms es el otro parámetro de esa interfaz: cuánto tiempo hay para cruzar antes de que el material se evapore.
+
+### Lo que se agrega y lo que se pierde
+
+El patrón se repite a lo largo de toda la cadena, y conviene enunciarlo como esquema general:
+
+**Se gana identidad de tipo; se pierde particularidad de token.**
+
+| Interfaz | Se gana | Se pierde |
+|---|---|---|
+| Ícono → identidad de letra | "es una A" | fuente, tamaño, posición exacta |
+| Identidades abstractas de letra | invariancia a caja y tipografía | la forma concreta |
+| Señal acústica → fonemas | la categoría fonémica | la voz del hablante |
+| Modalidades → conceptos | representación amodal | la modalidad de origen |
+
+Abstraer es **descartar información a propósito**. La interfaz no es un traductor neutro: es un embudo con criterio.
+
+La objeción viene de las teorías de **ejemplares**: hay efectos de voz del hablante en reconocimiento de palabras y efectos de tipografía en memoria. Si el detalle sobrevive, "abstracción con pérdida" sería una propiedad de la teoría abstraccionista más que del sistema. Es la misma tensión que organiza la entrada sobre [frecuencia](frecuencia.md).
+
+### La versión lectora del mismo método: el paradigma de frontera
+
+En lectura existe un instrumento con la misma lógica. El **paradigma de frontera** coloca un límite invisible antes de una palabra: mientras la mirada está a la izquierda se muestra una vista previa, y al cruzar se reemplaza por la palabra real. Comparando qué tipo de vista previa produce beneficio se lee **qué formato cruza la interfaz parafóvea → fóvea antes de la fijación**.
+
+- Información **ortográfica** y **fonológica**: cruza.
+- Información **semántica**: en inglés no; en **alemán y chino, sí**.
+
+El formato que atraviesa esa interfaz **depende del sistema de escritura**. No es una constante del aparato visual: la ortografía lo modula. Para el español, transparente y con el antecedente alemán, es una pregunta abierta.
+
+Informe parcial y paradigma de frontera son dos instrumentos para el mismo problema: **interrogar el contenido de una representación antes de que el siguiente estadio la consuma**.
+
+### Dos complicaciones
+
+**El "ícono" son tres cosas.** Coltheart (1980) separó la persistencia **neural** (actividad posterior al estímulo), la **visible** (seguir viéndolo) y la **informacional** (la información disponible aunque no se vea). Solo la tercera es memoria icónica en el sentido útil, y son disociables: la visible es periférica, la icónica más central. Buena parte de la literatura previa no distingue cuál está midiendo.
+
+**La precategorialidad estricta se erosionó.** Hay evidencia de que, para estímulos con significado, coexisten representaciones pre y postcategoriales. Lo cual es interesante en sí mismo: quizá las interfaces no sean tabiques sino gradientes, y "precategorial" describa qué domina temprano, no qué está ausente.
+
+---
+
+## 7. El nivel neural
 
 ### El caso resuelto: transformaciones de coordenadas
 
@@ -140,7 +210,7 @@ Es la respuesta más económica disponible, y es parte de por qué el marco se v
 
 ---
 
-## 7. La objeción conexionista
+## 8. La objeción conexionista
 
 El conexionismo responde que **no hay formatos discretos que traducir**. Todo son vectores de activación, y una "transformación entre módulos" no es más que una multiplicación por una matriz de pesos. El problema de la interfaz sería un artefacto de haber dibujado cajas donde hay un continuo.
 
@@ -150,7 +220,7 @@ La contra es que la ausencia de un componente en un modelo que funciona no demue
 
 ---
 
-## 8. El caso de los transformers: una interfaz sin traducción
+## 9. El caso de los transformers: una interfaz sin traducción
 
 Los modelos de lenguaje actuales ofrecen un contraste instructivo, y conviene mirarlo con cuidado porque es fácil sacar la conclusión equivocada en cualquiera de las dos direcciones.
 
@@ -206,6 +276,10 @@ Queda abierto si eso es una convergencia genuina o un parecido de superficie ent
 - Damasio, A. (1989). Time-locked multiregional retroactivation: a systems-level proposal for the neural substrates of recall and recognition. *Cognition*, 33(1-2), 25-62.
 - Zipser, D. & Andersen, R. (1988). A back-propagation programmed network that simulates response properties of a subset of posterior parietal neurons. *Nature*, 331, 679-684.
 - Fries, P. (2005). A mechanism for cognitive dynamics: neuronal communication through neuronal coherence. *Trends in Cognitive Sciences*, 9(10), 474-480.
+- Sperling, G. (1960). The information available in brief visual presentations. *Psychological Monographs*, 74(11), 1-29.
+- Coltheart, M. (1980). Iconic memory and visible persistence. *Perception & Psychophysics*, 27(3), 183-228.
+- Crowder, R. & Morton, J. (1969). Precategorical acoustic storage (PAS). *Perception & Psychophysics*, 5(6), 365-373.
+- Rayner, K. (1975). The perceptual span and peripheral cues in reading. *Cognitive Psychology*, 7(1), 65-81.
 - Grainger, J. & van Heuven, W. (2004). Modeling letter position coding in printed word perception. En *The Mental Lexicon*. Nova Science.
 - Elhage, N. et al. (2021). A mathematical framework for transformer circuits. *Anthropic / Transformer Circuits Thread*.
 - Wendler, C., Veselovsky, V., Monea, G. & West, R. (2024). Do llamas work in English? On the latent language of multilingual transformers. *arXiv:2402.10588*.
