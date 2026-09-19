@@ -36,7 +36,7 @@ Los garden paths son **ventana al parser humano en tiempo real**. Permiten ver:
 
 1. **El parsing es incremental**: el cerebro asigna estructura sintáctica palabra por palabra, sin esperar al final de la oración.
 2. **El parser usa heurísticas**: se compromete con la interpretación más simple/probable antes de tener toda la evidencia.
-3. **La reanalysis tiene costo**: se mide en mayor tiempo de lectura, mayor amplitud de potencial evocado N400/P600, fijaciones oculares más largas.
+3. **La reanalysis tiene costo**: se mide en mayor tiempo de lectura, fijaciones oculares más largas y mayor amplitud de potencial evocado — en el caso de los garden paths, típicamente **P600**, el componente asociado a reanálisis. Ver [N400 y P600](../metodologia/n400-p600-potenciales.md), donde se explica por qué la división limpia "N400 semántico / P600 sintáctico" no se sostiene.
 
 ### Principios clásicos del parser (Frazier)
 
