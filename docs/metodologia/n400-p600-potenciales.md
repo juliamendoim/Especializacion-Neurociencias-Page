@@ -72,6 +72,36 @@ La moraleja metodológica: **los componentes ERP no son módulos.** Son patrones
 
 ---
 
+## Cuán establecido está todo esto
+
+Conviene graduar la confianza, porque no todo lo anterior tiene el mismo respaldo.
+
+### Consenso: el efecto
+
+El N400 es de lo más replicado que hay en neurociencia cognitiva. Es de 1980, o sea que **precede a la [crisis de replicación](crisis-replicacion.md) y la atravesó sin problemas**: está en la categoría de los efectos básicos muy robustos, junto con Stroop o el efecto de frecuencia.
+
+El argumento más fuerte no es la cantidad de estudios sino **la variedad de estímulos que lo producen**: palabras escritas, habladas y signadas, pseudopalabras, dibujos, fotos, videos de caras, objetos y acciones, sonidos y símbolos matemáticos. Un efecto que aparece en tantos paradigmas no puede ser artefacto de ninguno.
+
+La modulación **graduada** por predictibilidad también es consenso.
+
+### Abierto: qué significa
+
+Qué proceso indexa el N400 —acceso, integración o error de predicción— **no está resuelto**, y siguen publicándose estudios diseñados específicamente para separar esas cuentas. Los **generadores neurales** tampoco están cerrados: la corteza temporal izquierda es el candidato principal, pero el ERP tiene mala resolución espacial y la evidencia apunta a una red distribuida.
+
+El **P600 está bastante menos asentado que el N400**: hay varias cuentas en competencia sobre el P600 semántico y ninguna cerró el caso.
+
+### Problema real: la calidad de los estudios
+
+Šoškić y colegas (2021) revisaron **132 papers de N400** publicados entre 1980 y 2018, evaluando 73 propiedades de diseño, procesamiento, medición, estadística y reporte. Encontraron que **cada estudio tenía un enfoque único** y que **a todos les faltaba al menos algún detalle**.
+
+La causa es estructural: decenas de electrodos por cientos de puntos temporales dan una cantidad casi ilimitada de análisis posibles. Luck y Gaspelin (2017) mostraron que eligiendo ventana y electrodos **mirando los datos**, más ANOVAs multifactoriales, la probabilidad de al menos un efecto significativo espurio **supera el 50 %** en muchos experimentos.
+
+**La distinción que hay que hacer:** eso afecta mucho más a los hallazgos **nuevos y específicos** que al efecto central. El contraste congruente/incongruente es enorme y aparece en cualquier análisis razonable; un efecto que solo emerge en una ventana estrecha y en electrodos elegidos después de ver los datos, no.
+
+Lo mismo vale para el resultado de Hagoort sobre conocimiento de mundo: es un antecedente sólido y muy citado, pero es **un estudio**. La afirmación general —que el conocimiento de mundo modula el N400— está replicada; la versión fuerte de que ambas violaciones cuestan exactamente lo mismo descansa sobre ese trabajo.
+
+---
+
 ## Qué hay que saber para leer un paper con ERP
 
 - **Promediado**: cada condición necesita decenas de ensayos limpios por participante. Los ERP no se miden en un ítem.
@@ -89,6 +119,7 @@ La moraleja metodológica: **los componentes ERP no son módulos.** Son patrones
 - **[Garden paths](../modelos-cognitivos/garden-paths.md)** — el terreno clásico del P600.
 - **[Efecto de canonicidad](../modelos-cognitivos/efecto-canonicidad.md)** — las estructuras no canónicas y su firma electrofisiológica.
 - **[Frecuencia](../modelos-cognitivos/frecuencia.md)** — la frecuencia léxica modula el N400, otro nivel donde la frecuencia deja huella.
+- **[La crisis de replicación](crisis-replicacion.md)** — por qué el efecto central es sólido pero conviene mirar con lupa los hallazgos específicos.
 
 ---
 
@@ -100,4 +131,6 @@ La moraleja metodológica: **los componentes ERP no son módulos.** Son patrones
 - Lau, E., Phillips, C. & Poeppel, D. (2008). A cortical network for semantics: (de)constructing the N400. *Nature Reviews Neuroscience*, 9(12), 920-933.
 - Osterhout, L. & Holcomb, P. (1992). Event-related brain potentials elicited by syntactic anomaly. *Journal of Memory and Language*, 31(6), 785-806.
 - Kuperberg, G. (2007). Neural mechanisms of language comprehension: challenges to syntax. *Brain Research*, 1146, 23-49.
+- Šoškić, A., Jovanović, V., Styles, S., Kappenman, E. & Ković, V. (2021). How to do better N400 studies: reproducibility, consistency and adherence to research standards in the existing literature. *Neuropsychology Review*, 32, 577-600.
+- Luck, S. & Gaspelin, N. (2017). How to get statistically significant effects in any ERP experiment (and why you shouldn't). *Psychophysiology*, 54(1), 146-157.
 - Michaelov, J. et al. (2024). Strong prediction: language model surprisal explains multiple N400 effects. *Neurobiology of Language*.
