@@ -40,9 +40,33 @@ Lo modula:
 | *"Los trenes holandeses son **blancos** y van muy llenos"* | violación de **conocimiento de mundo** (en Holanda son amarillos) |
 | *"Los trenes holandeses son **agrios** y van muy llenos"* | violación **semántica** |
 
-Las dos violaciones produjeron **N400 de amplitud y latencia similares**. En fMRI, ambas activaron el **giro frontal inferior izquierdo**.
+Con 30 participantes y 29 electrodos, el resultado se reparte así:
 
-La conclusión es fuerte: **el cerebro no trata el significado de las palabras y el conocimiento del mundo como dos bases de datos consultadas en serie.** Los integra en paralelo y en la misma ventana temporal. No hay un momento "lingüístico" previo a un momento "enciclopédico".
+| Propiedad del efecto N400 | Semántica vs. conocimiento de mundo |
+|---|---|
+| **Inicio** | Sin diferencia significativa |
+| **Latencia del pico** | Idéntica |
+| **Distribución topográfica** | Sin diferencia (P = 0,9) |
+| **Amplitud** | **Algo mayor** para la violación semántica (P < 0,05) |
+
+Conviene leer la afirmación con precisión: **no es que ambas violaciones cuesten lo mismo**, sino que se integran **en la misma ventana temporal**. La amplitud difiere; el curso temporal no.
+
+Y eso último es lo que sostiene el argumento: **el cerebro no trata el significado de las palabras y el conocimiento del mundo como dos bases de datos consultadas en serie.** No hay un momento "lingüístico" previo a un momento "enciclopédico". En fMRI, ambas violaciones activaron el **giro frontal inferior izquierdo** (BA 45 y 47).
+
+### El dato que el N400 se pierde
+
+El mismo trabajo analizó **oscilaciones** además del ERP, y ahí los dos tipos de violación **sí se separan**:
+
+| Violación | Respuesta oscilatoria |
+|---|---|
+| Conocimiento de mundo | pico de **gamma** (30-70 Hz), frontocentral |
+| Semántica | aumento de **theta** (4-7 Hz), significativamente mayor |
+
+En palabras de los autores: *"el cerebro parece llevar un registro de la naturaleza del problema de integración"*.
+
+Es una lección metodológica que excede a este estudio: **el N400 no distingue qué tipo de problema hubo, pero otras medidas extraídas de la misma señal sí.** El promediado que construye el ERP descarta la actividad no sincronizada con el estímulo; el análisis tiempo-frecuencia la conserva. Elegir la medida es elegir qué preguntas se pueden contestar.
+
+> **Nota de lectura.** Este es un *Report* de cuatro páginas y los materiales y métodos están en el *supporting online material*, no en el artículo. Cómo se emparejaron las palabras críticas entre condiciones —eran palabras distintas: *amarillos / blancos / agrios*— no puede evaluarse desde el paper. Es un caso típico de por qué el formato no permite juzgar el diseño sin buscar otro archivo.
 
 Para el estudio de la [comprensión de texto](../lectura/cohesion-coherencia-modelo-situacion.md) esto es decisivo: las violaciones de coherencia basadas en conocimiento de mundo son detectables en línea **con los mismos instrumentos** que las semánticas.
 

@@ -67,9 +67,11 @@ La distinción importa porque **solo las primeras son diagnósticas de coherenci
 
 El dato que ancla todo esto: **Hagoort y colegas (2004)** compararon una violación **semántica** (*"los trenes holandeses son agrios"*) con una de **conocimiento de mundo** (*"los trenes holandeses son blancos"* — en Holanda son amarillos).
 
-Las dos produjeron [N400](../metodologia/n400-p600-potenciales.md) de amplitud y latencia **similares**, y activaron las mismas regiones.
+Las dos produjeron [N400](../metodologia/n400-p600-potenciales.md) con **inicio, latencia de pico y topografía equivalentes**, y activaron las mismas regiones. La amplitud sí difirió —algo mayor para la violación semántica— así que la afirmación precisa no es que cuesten lo mismo, sino que **se integran al mismo tiempo**.
 
-El cerebro no consulta primero un diccionario y después una enciclopedia: integra las dos fuentes **en paralelo y en la misma ventana temporal**. Para el estudio de la comprensión eso significa que las rupturas de coherencia basadas en conocimiento de mundo son detectables en línea con los instrumentos habituales.
+Eso alcanza para el punto: el cerebro no consulta primero un diccionario y después una enciclopedia. Integra las dos fuentes **en paralelo y en la misma ventana temporal**.
+
+Con un matiz que importa para medir coherencia: el N400 **no distingue** qué tipo de violación fue, pero el análisis de oscilaciones del mismo estudio sí — las de conocimiento de mundo produjeron un pico de **gamma** y las semánticas un aumento de **theta**. El tipo de problema deja huella, pero no en el componente que se suele mirar. Para el estudio de la comprensión eso significa que las rupturas de coherencia basadas en conocimiento de mundo son detectables en línea con los instrumentos habituales.
 
 ---
 
