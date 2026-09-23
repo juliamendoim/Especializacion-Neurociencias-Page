@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Diagrama del hemisferio izquierdo cerebral mostrando el área de Broca en el lóbulo frontal inferior, el área de Wernicke en el lóbulo temporal superior posterior, y el fascículo arcuato que los conecta">
+<defs>
+<marker id="arrow-arcuate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5E35B1"/></marker>
+<marker id="arrow-callout" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/></marker>
+</defs>
+<rect x="0" y="0" width="720" height="500" fill="white"/>
+<text x="360" y="26" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle" font-weight="700">Áreas del lenguaje — hemisferio izquierdo (vista lateral)</text>
+<text x="360" y="44" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-style="italic">Broca, Wernicke, fascículo arcuato y las afasias clásicas asociadas</text>
+<text x="80" y="75" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">← anterior</text>
+<text x="640" y="75" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">posterior →</text>
+<path d="M 100 240 C 95 160, 160 90, 300 85 C 440 80, 570 100, 620 165 C 645 220, 635 275, 595 305 C 555 325, 470 345, 370 358 C 275 362, 200 348, 160 315 C 130 290, 105 260, 100 240 Z" fill="#FAFAFA" stroke="#555" stroke-width="2"/>
+<path d="M 180 260 C 260 245, 380 245, 500 250" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+<text x="335" y="245" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle" font-style="italic">cisura de Silvio</text>
+<text x="230" y="130" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#BBB" text-anchor="middle" font-style="italic">Frontal</text>
+<text x="420" y="125" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#BBB" text-anchor="middle" font-style="italic">Parietal</text>
+<text x="570" y="230" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#BBB" text-anchor="middle" font-style="italic">Occipital</text>
+<text x="365" y="335" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#BBB" text-anchor="middle" font-style="italic">Temporal</text>
+<ellipse cx="235" cy="220" rx="42" ry="24" fill="#FB8C00" fill-opacity="0.35" stroke="#E65100" stroke-width="2"/>
+<text x="235" y="215" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#BF360C" text-anchor="middle" font-weight="700">Broca</text>
+<text x="235" y="230" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="9" fill="#BF360C" text-anchor="middle">BA 44 / 45</text>
+<ellipse cx="465" cy="280" rx="48" ry="26" fill="#43A047" fill-opacity="0.35" stroke="#1B5E20" stroke-width="2"/>
+<text x="465" y="277" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="12" fill="#1B5E20" text-anchor="middle" font-weight="700">Wernicke</text>
+<text x="465" y="291" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="9" fill="#1B5E20" text-anchor="middle">BA 22</text>
+<path d="M 415 270 C 380 160, 300 150, 260 195" stroke="#5E35B1" stroke-width="2.5" fill="none" marker-end="url(#arrow-arcuate)"/>
+<text x="335" y="170" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="11" fill="#4527A0" text-anchor="middle" font-weight="600" font-style="italic">fascículo arcuato</text>
+<line x1="200" y1="200" x2="130" y2="410" stroke="#666" stroke-width="1"/>
+<rect x="30" y="415" width="220" height="65" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5" rx="4"/>
+<text x="140" y="432" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="11" fill="#BF360C" text-anchor="middle" font-weight="700">Afasia de Broca</text>
+<text x="140" y="448" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">producción no fluente,</text>
+<text x="140" y="461" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">agramática, habla telegráfica;</text>
+<text x="140" y="474" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">comprensión relativamente preservada</text>
+<line x1="480" y1="303" x2="480" y2="410" stroke="#666" stroke-width="1"/>
+<rect x="365" y="415" width="230" height="65" fill="#E8F5E9" stroke="#1B5E20" stroke-width="1.5" rx="4"/>
+<text x="480" y="432" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="11" fill="#1B5E20" text-anchor="middle" font-weight="700">Afasia de Wernicke</text>
+<text x="480" y="448" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">producción fluente con parafasias,</text>
+<text x="480" y="461" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">jergafasia; comprensión</text>
+<text x="480" y="474" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">severamente alterada; anosognosia</text>
+<line x1="340" y1="185" x2="620" y2="405" stroke="#666" stroke-width="1"/>
+<rect x="605" y="410" width="105" height="70" fill="#EDE7F6" stroke="#4527A0" stroke-width="1.5" rx="4"/>
+<text x="657" y="428" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#4527A0" text-anchor="middle" font-weight="700">Afasia de</text>
+<text x="657" y="441" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#4527A0" text-anchor="middle" font-weight="700">conducción</text>
+<text x="657" y="457" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">repetición</text>
+<text x="657" y="469" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">alterada;</text>
+<text x="657" y="481" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">parafasias fonémicas</text>
+</svg>

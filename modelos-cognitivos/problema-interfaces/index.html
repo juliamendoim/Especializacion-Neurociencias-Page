@@ -1,0 +1,4476 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../dual-ruta-lectura/">
+      
+      
+        <link rel="next" href="../activacion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>El problema de las interfaces - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#el-problema-de-las-interfaces-que-viaja-por-las-flechas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              El problema de las interfaces
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../neurobiologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frecuencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memoria-trabajo-ram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El problema de las interfaces
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El problema de las interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-por-que-es-un-problema-y-no-un-detalle-de-implementacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Por qué es un problema y no un detalle de implementación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-respuesta-clasica-un-solo-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La respuesta clásica: un solo código
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-jackendoff-los-modulos-se-definen-por-formato-y-hay-modulos-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Jackendoff: los módulos se definen por formato, y hay módulos de interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Jackendoff: los módulos se definen por formato, y hay módulos de interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-arquitectura-paralela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La arquitectura paralela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-paralelo-generativista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El paralelo generativista
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-la-respuesta-implicita-de-la-neuropsicologia-cognitiva-los-buffers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. La respuesta implícita de la neuropsicología cognitiva: los buffers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-el-caso-concreto-como-se-codifica-la-posicion-de-las-letras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El caso concreto: cómo se codifica la posición de las letras
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-el-caso-donde-el-formato-se-mide-la-memoria-iconica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. El caso donde el formato se mide: la memoria icónica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. El caso donde el formato se mide: la memoria icónica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-clave-que-funciona-revela-lo-que-hay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La clave que funciona revela lo que hay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-parcial-mide-el-ancho-de-banda-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El informe parcial mide el ancho de banda de la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-se-agrega-y-lo-que-se-pierde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que se agrega y lo que se pierde
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-lectora-del-mismo-metodo-el-paradigma-de-frontera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La versión lectora del mismo método: el paradigma de frontera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-complicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dos complicaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-el-nivel-neural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. El nivel neural
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. El nivel neural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-caso-resuelto-transformaciones-de-coordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El caso resuelto: transformaciones de coordenadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-respuesta-anatomica-para-lo-transmodal-hub-and-spoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La respuesta anatómica para lo transmodal: hub-and-spoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-sin-lugar-zonas-de-convergencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La versión sin lugar: zonas de convergencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-ruteo-comunicacion-por-coherencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El ruteo: comunicación por coherencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-respuesta-que-disuelve-el-problema-codificacion-predictiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La respuesta que disuelve el problema: codificación predictiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-la-objecion-conexionista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. La objeción conexionista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-el-caso-de-los-transformers-una-interfaz-sin-traduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. El caso de los transformers: una interfaz sin traducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. El caso de los transformers: una interfaz sin traducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-dato-que-complica-la-conclusion-facil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El dato que complica la conclusión fácil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-conecta-con-otros-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se conecta con otros conceptos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias de entrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../neurobiologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neurobiologia/foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/agramatismo-limites-metodo-modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agramatismo y los límites del método modular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/voz-interna-mediacion-fonologica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voz interna y mediación fonológica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/cohesion-coherencia-modelo-situacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cohesión, coherencia y modelo de situación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/n400-p600-potenciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N400 y P600 (potenciales evocados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/crisis-replicacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La crisis de replicación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-por-que-es-un-problema-y-no-un-detalle-de-implementacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Por qué es un problema y no un detalle de implementación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-respuesta-clasica-un-solo-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La respuesta clásica: un solo código
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-jackendoff-los-modulos-se-definen-por-formato-y-hay-modulos-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Jackendoff: los módulos se definen por formato, y hay módulos de interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Jackendoff: los módulos se definen por formato, y hay módulos de interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-arquitectura-paralela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La arquitectura paralela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-paralelo-generativista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El paralelo generativista
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-la-respuesta-implicita-de-la-neuropsicologia-cognitiva-los-buffers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. La respuesta implícita de la neuropsicología cognitiva: los buffers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-el-caso-concreto-como-se-codifica-la-posicion-de-las-letras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El caso concreto: cómo se codifica la posición de las letras
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-el-caso-donde-el-formato-se-mide-la-memoria-iconica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. El caso donde el formato se mide: la memoria icónica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. El caso donde el formato se mide: la memoria icónica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-clave-que-funciona-revela-lo-que-hay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La clave que funciona revela lo que hay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-parcial-mide-el-ancho-de-banda-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El informe parcial mide el ancho de banda de la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-se-agrega-y-lo-que-se-pierde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que se agrega y lo que se pierde
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-lectora-del-mismo-metodo-el-paradigma-de-frontera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La versión lectora del mismo método: el paradigma de frontera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-complicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dos complicaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-el-nivel-neural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. El nivel neural
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. El nivel neural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-caso-resuelto-transformaciones-de-coordenadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El caso resuelto: transformaciones de coordenadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-respuesta-anatomica-para-lo-transmodal-hub-and-spoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La respuesta anatómica para lo transmodal: hub-and-spoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-sin-lugar-zonas-de-convergencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La versión sin lugar: zonas de convergencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-ruteo-comunicacion-por-coherencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El ruteo: comunicación por coherencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-respuesta-que-disuelve-el-problema-codificacion-predictiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La respuesta que disuelve el problema: codificación predictiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-la-objecion-conexionista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. La objeción conexionista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-el-caso-de-los-transformers-una-interfaz-sin-traduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. El caso de los transformers: una interfaz sin traducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. El caso de los transformers: una interfaz sin traducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-dato-que-complica-la-conclusion-facil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El dato que complica la conclusión fácil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-conecta-con-otros-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se conecta con otros conceptos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias de entrada
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Modelos cognitivos
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="el-problema-de-las-interfaces-que-viaja-por-las-flechas">El problema de las interfaces: qué viaja por las flechas<a class="headerlink" href="#el-problema-de-las-interfaces-que-viaja-por-las-flechas" title="Permanent link">&para;</a></h1>
+<p>Los modelos de cajas y flechas de la neuropsicología cognitiva —el <a href="../dual-ruta-lectura/">dual-ruta</a> entre ellos— especifican las <strong>cajas</strong> con enorme detalle: qué representa cada componente, cómo se rompe, qué patología produce. Las <strong>flechas</strong>, en cambio, casi no tienen teoría. Dicen "de acá pasa a allá" sin decir en qué código viaja la información, qué se conserva, qué se pierde ni quién ejecuta la conversión.</p>
+<p>Esta entrada es sobre las flechas: el <strong>problema de las interfaces representacionales</strong>. Si el sistema está hecho de módulos que operan sobre formatos distintos, algo tiene que traducir entre ellos — y ese algo es, en la mayoría de los modelos, exactamente lo que no está especificado.</p>
+<hr />
+<h2 id="1-por-que-es-un-problema-y-no-un-detalle-de-implementacion">1. Por qué es un problema y no un detalle de implementación<a class="headerlink" href="#1-por-que-es-un-problema-y-no-un-detalle-de-implementacion" title="Permanent link">&para;</a></h2>
+<p>Tomemos la cadena de la lectura. El análisis visual entrega algo <strong>espacial, continuo y retinotópico</strong>. El léxico ortográfico necesita <strong>identidades de letra abstractas y ordenadas</strong>. El sistema semántico opera sobre <strong>conceptos</strong>, que no tienen ni posición ni forma. El parser sintáctico opera sobre <strong>categorías y relaciones estructurales</strong>.</p>
+<p>Son cuatro formatos que no comparten primitivos. No hay manera de que una representación retinotópica sea "leída" directamente por un sistema conceptual: no hay nada en el vocabulario de uno que el otro pueda interpretar.</p>
+<p>El problema tiene tres caras que conviene no confundir:</p>
+<dl>
+<dt><strong>Formato</strong></dt>
+<dd>¿En qué código está la representación que sale de un módulo?</dd>
+<dt><strong>Traducción</strong></dt>
+<dd>¿Qué operación convierte ese código en otro? ¿Es completa, parcial, con pérdida?</dd>
+<dt><strong>Transmisión</strong></dt>
+<dd>¿Cómo llega, cuándo, a qué velocidad, y qué pasa si productor y consumidor operan a ritmos distintos?</dd>
+</dl>
+<p>Los modelos clásicos suelen responder la tercera y dejar las dos primeras abiertas.</p>
+<hr />
+<h2 id="2-la-respuesta-clasica-un-solo-codigo">2. La respuesta clásica: un solo código<a class="headerlink" href="#2-la-respuesta-clasica-un-solo-codigo" title="Permanent link">&para;</a></h2>
+<p>La salida más económica es negar que haya varios formatos. Si todos los módulos hablan el mismo código simbólico —el <strong>lenguaje del pensamiento</strong> de Fodor— entonces no hace falta traducir: solo hay que pasar tokens de un lado al otro.</p>
+<p>Es elegante, pero resuelve el problema por decreto. Y choca con la observación de partida: fonología, sintaxis y semántica <strong>manifiestamente</strong> no manipulan los mismos primitivos. Un rasgo distintivo, un nodo sintáctico y un concepto no son la misma clase de objeto.</p>
+<hr />
+<h2 id="3-jackendoff-los-modulos-se-definen-por-formato-y-hay-modulos-de-interfaz">3. Jackendoff: los módulos se definen por formato, y hay módulos de interfaz<a class="headerlink" href="#3-jackendoff-los-modulos-se-definen-por-formato-y-hay-modulos-de-interfaz" title="Permanent link">&para;</a></h2>
+<p>La propuesta más desarrollada sobre este problema invierte la definición misma de módulo.</p>
+<p>Fodor define los módulos <strong>por dominio</strong>: visión, lenguaje, reconocimiento de caras. <strong>Jackendoff</strong> los define <strong>por formato representacional</strong>: fonología, sintaxis y semántica son módulos distintos porque las estructuras que manipulan requieren primitivos formales y principios de combinación diferentes. Eso es la <strong>modularidad representacional</strong>.</p>
+<p>De ahí se sigue la consecuencia interesante:</p>
+<blockquote>
+<p>Como los módulos representacionales no pueden comunicarse directamente —no entienden el "idioma" del otro—, tienen que existir <strong>módulos de interfaz</strong>: componentes especializados cuyo único trabajo es traducir entre aspectos relevantes de dos módulos.</p>
+</blockquote>
+<p>Tres propiedades que hacen de esto una teoría y no una etiqueta:</p>
+<ol>
+<li><strong>La interfaz es un objeto teórico con estructura propia</strong>, no una flecha. Puede tener sus propias restricciones y, en principio, su propia patología.</li>
+<li><strong>Las interfaces también están encapsuladas.</strong> Un módulo de interfaz no ve las representaciones completas de cada lado: ve solo los aspectos que necesita alinear. La interfaz fonología-sintaxis no accede al contenido conceptual.</li>
+<li><strong>La traducción es parcial.</strong> No hay isomorfismo entre formatos. Lo que hay son <strong>reglas de correspondencia</strong> que establecen un emparejamiento óptimo entre estructuras de tipos independientes — bastante menos que una conversión completa.</li>
+</ol>
+<h3 id="la-arquitectura-paralela">La arquitectura paralela<a class="headerlink" href="#la-arquitectura-paralela" title="Permanent link">&para;</a></h3>
+<p>En el modelo de Jackendoff, fonología, sintaxis y semántica son <strong>tres sistemas generativos independientes</strong> que operan en paralelo, no una cadena donde uno alimenta al siguiente. Una oración bien formada es una <strong>tripleta</strong> de estructuras bien formadas, más los enlaces de interfaz que las conectan.</p>
+<p>El giro más fuerte es qué pasa a ser el léxico: deja de ser un depósito de palabras y pasa a ser <strong>un conjunto almacenado de reglas de interfaz</strong>. Cada entrada léxica es un fragmento de correspondencia entre fonología, sintaxis y semántica. Saber una palabra es saber un pedacito de traducción.</p>
+<h3 id="el-paralelo-generativista">El paralelo generativista<a class="headerlink" href="#el-paralelo-generativista" title="Permanent link">&para;</a></h3>
+<p>En el programa minimalista, las <strong>interfaces</strong> son también un objeto central: PF (forma fonológica) y LF (forma lógica) son los niveles donde la sintaxis "entrega" a los sistemas articulatorio-perceptual y conceptual-intencional. Las <strong>condiciones de legibilidad</strong> exigen que la sintaxis produzca representaciones que esos sistemas puedan efectivamente leer.</p>
+<p>La diferencia de fondo: para Chomsky la sintaxis es el motor y las interfaces son las salidas; para Jackendoff los tres componentes son motores y las interfaces son el centro.</p>
+<hr />
+<h2 id="4-la-respuesta-implicita-de-la-neuropsicologia-cognitiva-los-buffers">4. La respuesta implícita de la neuropsicología cognitiva: los buffers<a class="headerlink" href="#4-la-respuesta-implicita-de-la-neuropsicologia-cognitiva-los-buffers" title="Permanent link">&para;</a></h2>
+<p>Los modelos de cajas y flechas sí tienen una respuesta parcial, aunque rara vez se la presenta como tal: <strong>un buffer es un componente de interfaz</strong>.</p>
+<p>El <a href="../buffer-fonologico/">buffer fonológico</a> de salida y el buffer grafémico están postulados precisamente para resolver el problema de transmisión. Mantienen una representación en un formato determinado, durante un tiempo acotado, <strong>desacoplando la velocidad del productor de la del consumidor</strong>.</p>
+<p>Y tienen firma patológica propia, distinta de la de las cajas que conectan: efectos de longitud, errores de posición de elemento, tasa de error constante a lo largo de la palabra. Que se puedan romper selectivamente es el argumento de que existen.</p>
+<p>O sea: la boxología resuelve la <strong>transmisión</strong> metiendo buffers. Lo que sigue sin resolver es el <strong>formato</strong>.</p>
+<hr />
+<h2 id="5-el-caso-concreto-como-se-codifica-la-posicion-de-las-letras">5. El caso concreto: cómo se codifica la posición de las letras<a class="headerlink" href="#5-el-caso-concreto-como-se-codifica-la-posicion-de-las-letras" title="Permanent link">&para;</a></h2>
+<p>En lectura hay una interfaz donde el problema de formato se vuelve completamente explícito y empíricamente decidible.</p>
+<p>El análisis visual entrega algo espacial. El léxico ortográfico necesita <strong>identidades de letra abstractas</strong> —invariantes a fuente, tamaño y caja, las <em>abstract letter identities</em>— pero <strong>con su orden preservado</strong>. Si la abstracción fuera total, <em>CASA</em> y <em>SACA</em> activarían la misma entrada.</p>
+<p>Las propuestas rivales son, literalmente, propuestas de formato de interfaz:</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Cómo codifica el orden</th>
+<th>Predicción distintiva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Codificación por casilleros</strong></td>
+<td>Posición absoluta: C en 1, A en 2, S en 3, A en 4</td>
+<td>Las transposiciones deberían ser tan disruptivas como las sustituciones</td>
+</tr>
+<tr>
+<td><strong>Bigramas abiertos</strong></td>
+<td>Pares ordenados, no necesariamente adyacentes: CA, CS, AS, AA…</td>
+<td>Las transposiciones preservan muchos bigramas → efectos de similitud fuertes</td>
+</tr>
+<tr>
+<td><strong>Codificación espacial</strong></td>
+<td>Gradiente continuo de activación sobre la cadena</td>
+<td>Similitud graduada según distancia de posición</td>
+</tr>
+</tbody>
+</table>
+<p>El dato que ordena el debate son los <strong>efectos de transposición</strong>: <em>jugdar</em> se confunde con <em>jugar</em> mucho más de lo que predice un esquema de casilleros estrictos. Eso favorece formatos más laxos que la posición absoluta.</p>
+<p>Este debate es el problema de las interfaces planteado para un tramo específico, y muestra que la pregunta por el formato <strong>es empírica</strong>, no filosófica.</p>
+<hr />
+<h2 id="6-el-caso-donde-el-formato-se-mide-la-memoria-iconica">6. El caso donde el formato se mide: la memoria icónica<a class="headerlink" href="#6-el-caso-donde-el-formato-se-mide-la-memoria-iconica" title="Permanent link">&para;</a></h2>
+<p>Todo lo anterior postula formatos. La <strong>memoria icónica</strong> es el único lugar de la psicología cognitiva donde el formato de un nivel de representación está <strong>especificado operacionalmente</strong> — medido, no supuesto.</p>
+<h3 id="la-clave-que-funciona-revela-lo-que-hay">La clave que funciona revela lo que hay<a class="headerlink" href="#la-clave-que-funciona-revela-lo-que-hay" title="Permanent link">&para;</a></h3>
+<p>En el paradigma de <strong>informe parcial</strong> de Sperling, se presenta un arreglo de letras durante ~50 ms y una clave posterior indica qué subconjunto reportar. Lo decisivo no es el efecto en sí, sino <strong>qué tipo de clave produce el beneficio</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Clave</th>
+<th>¿Funciona?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Posición espacial</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Tamaño</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Forma</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Categoría</strong> ("reportá solo las letras, no los dígitos")</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p>Esto es una <strong>lectura directa del formato</strong>. Se puede seleccionar por lo que la representación contiene; no se puede seleccionar por lo que todavía no contiene. El ícono tiene posición, color, tamaño y forma; <strong>no tiene identidad de letra</strong>.</p>
+<p>Por eso "precategorial" no es una etiqueta descriptiva sino un resultado: la categoría <strong>no está ahí todavía</strong>. Y entonces, para ese tramo, la pregunta por la transformación tiene respuesta: <strong>la transformación es la categorización</strong>, y lo que se agrega es la identidad de tipo.</p>
+<p>El análogo auditivo recibió el nombre de <strong>almacenamiento acústico precategorial</strong>, con el mismo argumento en otra modalidad.</p>
+<h3 id="el-informe-parcial-mide-el-ancho-de-banda-de-la-interfaz">El informe parcial mide el ancho de banda de la interfaz<a class="headerlink" href="#el-informe-parcial-mide-el-ancho-de-banda-de-la-interfaz" title="Permanent link">&para;</a></h3>
+<p>Hay una lectura del resultado de Sperling que suele quedar en segundo plano y que es la más relevante acá.</p>
+<p>Con 12 letras presentadas, el informe <strong>completo</strong> rinde 4 o 5. Con clave de fila, se puede reportar <strong>cualquier</strong> fila igual de bien, lo que implica que había <strong>9 o más disponibles</strong>.</p>
+<p>La lectura estándar es "existe un almacén de alta capacidad y decaimiento rápido". La lectura en términos de interfaces es otra:</p>
+<blockquote>
+<p>El almacén tiene ~9-12 ítems. Lo que sale de la categorización carga ~4. <strong>El cuello de botella no está en el módulo, está en la interfaz.</strong></p>
+</blockquote>
+<p>Visto así, el informe parcial no mide una memoria: mide <strong>cuánto se pierde al cruzar</strong>. Es una de las pocas cuantificaciones limpias del costo de una transformación de formato. Y el decaimiento de ~250-500 ms es el otro parámetro de esa interfaz: cuánto tiempo hay para cruzar antes de que el material se evapore.</p>
+<h3 id="lo-que-se-agrega-y-lo-que-se-pierde">Lo que se agrega y lo que se pierde<a class="headerlink" href="#lo-que-se-agrega-y-lo-que-se-pierde" title="Permanent link">&para;</a></h3>
+<p>El patrón se repite a lo largo de toda la cadena, y conviene enunciarlo como esquema general:</p>
+<p><strong>Se gana identidad de tipo; se pierde particularidad de token.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Interfaz</th>
+<th>Se gana</th>
+<th>Se pierde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ícono → identidad de letra</td>
+<td>"es una A"</td>
+<td>fuente, tamaño, posición exacta</td>
+</tr>
+<tr>
+<td>Identidades abstractas de letra</td>
+<td>invariancia a caja y tipografía</td>
+<td>la forma concreta</td>
+</tr>
+<tr>
+<td>Señal acústica → fonemas</td>
+<td>la categoría fonémica</td>
+<td>la voz del hablante</td>
+</tr>
+<tr>
+<td>Modalidades → conceptos</td>
+<td>representación amodal</td>
+<td>la modalidad de origen</td>
+</tr>
+</tbody>
+</table>
+<p>Abstraer es <strong>descartar información a propósito</strong>. La interfaz no es un traductor neutro: es un embudo con criterio.</p>
+<p>La objeción viene de las teorías de <strong>ejemplares</strong>: hay efectos de voz del hablante en reconocimiento de palabras y efectos de tipografía en memoria. Si el detalle sobrevive, "abstracción con pérdida" sería una propiedad de la teoría abstraccionista más que del sistema. Es la misma tensión que organiza la entrada sobre <a href="../frecuencia/">frecuencia</a>.</p>
+<h3 id="la-version-lectora-del-mismo-metodo-el-paradigma-de-frontera">La versión lectora del mismo método: el paradigma de frontera<a class="headerlink" href="#la-version-lectora-del-mismo-metodo-el-paradigma-de-frontera" title="Permanent link">&para;</a></h3>
+<p>En lectura existe un instrumento con la misma lógica. El <strong>paradigma de frontera</strong> coloca un límite invisible antes de una palabra: mientras la mirada está a la izquierda se muestra una vista previa, y al cruzar se reemplaza por la palabra real. Comparando qué tipo de vista previa produce beneficio se lee <strong>qué formato cruza la interfaz parafóvea → fóvea antes de la fijación</strong>.</p>
+<ul>
+<li>Información <strong>ortográfica</strong> y <strong>fonológica</strong>: cruza.</li>
+<li>Información <strong>semántica</strong>: en inglés no; en <strong>alemán y chino, sí</strong>.</li>
+</ul>
+<p>El formato que atraviesa esa interfaz <strong>depende del sistema de escritura</strong>. No es una constante del aparato visual: la ortografía lo modula. Para el español, transparente y con el antecedente alemán, es una pregunta abierta.</p>
+<p>Informe parcial y paradigma de frontera son dos instrumentos para el mismo problema: <strong>interrogar el contenido de una representación antes de que el siguiente estadio la consuma</strong>.</p>
+<h3 id="dos-complicaciones">Dos complicaciones<a class="headerlink" href="#dos-complicaciones" title="Permanent link">&para;</a></h3>
+<p><strong>El "ícono" son tres cosas.</strong> Coltheart (1980) separó la persistencia <strong>neural</strong> (actividad posterior al estímulo), la <strong>visible</strong> (seguir viéndolo) y la <strong>informacional</strong> (la información disponible aunque no se vea). Solo la tercera es memoria icónica en el sentido útil, y son disociables: la visible es periférica, la icónica más central. Buena parte de la literatura previa no distingue cuál está midiendo.</p>
+<p><strong>La precategorialidad estricta se erosionó.</strong> Hay evidencia de que, para estímulos con significado, coexisten representaciones pre y postcategoriales. Lo cual es interesante en sí mismo: quizá las interfaces no sean tabiques sino gradientes, y "precategorial" describa qué domina temprano, no qué está ausente.</p>
+<hr />
+<h2 id="7-el-nivel-neural">7. El nivel neural<a class="headerlink" href="#7-el-nivel-neural" title="Permanent link">&para;</a></h2>
+<h3 id="el-caso-resuelto-transformaciones-de-coordenadas">El caso resuelto: transformaciones de coordenadas<a class="headerlink" href="#el-caso-resuelto-transformaciones-de-coordenadas" title="Permanent link">&para;</a></h3>
+<p>El ejemplo mejor entendido de una conversión de formato real en el cerebro está en la corteza parietal. La información visual llega en coordenadas <strong>retinotópicas</strong> y debe convertirse a coordenadas centradas en la cabeza o en el cuerpo para guiar un movimiento de alcance.</p>
+<p>El mecanismo son los <strong>campos de ganancia</strong>: la respuesta retinotópica de la neurona se multiplica por una señal de posición ocular. La población, en conjunto, codifica la posición en el nuevo marco de referencia sin que ninguna neurona individual lo haga.</p>
+<p>Importa como <strong>prueba de existencia</strong>: las conversiones de formato se pueden implementar neuronalmente y se pueden encontrar experimentalmente. No son un artefacto de la manera de dibujar modelos.</p>
+<h3 id="la-respuesta-anatomica-para-lo-transmodal-hub-and-spoke">La respuesta anatómica para lo transmodal: hub-and-spoke<a class="headerlink" href="#la-respuesta-anatomica-para-lo-transmodal-hub-and-spoke" title="Permanent link">&para;</a></h3>
+<p>Para el problema de integrar formatos sensoriales distintos en conceptos, el modelo dominante es el de <strong>hub y radios</strong>: regiones modalidad-específicas (los <em>radios</em>) conectadas a un <strong>hub transmodal</strong> en los <strong>lóbulos temporales anteriores</strong>, que destila los rasgos sensoriomotores dispersos en representaciones conceptuales coherentes y amodales.</p>
+<p>La predicción de doble disociación es limpia y se cumple:</p>
+<ul>
+<li>Daño al <strong>hub</strong> → déficit semántico <strong>en todas las modalidades</strong>.</li>
+<li>Daño a un <strong>radio</strong> → déficit <strong>solo en esa modalidad</strong>.</li>
+</ul>
+<p>La evidencia central viene de la <strong>demencia semántica</strong>, donde la atrofia temporal anterior produce un deterioro conceptual transversal a modalidades y a tipos de material.</p>
+<p>Es una respuesta fuerte al problema de las interfaces: el formato común no está distribuido por todos lados, está <strong>en un lugar anatómico concreto</strong>, y ese lugar se puede romper.</p>
+<h3 id="la-version-sin-lugar-zonas-de-convergencia">La versión sin lugar: zonas de convergencia<a class="headerlink" href="#la-version-sin-lugar-zonas-de-convergencia" title="Permanent link">&para;</a></h3>
+<p>La alternativa de Damasio niega que exista un sitio donde resida la representación integrada. Las <strong>zonas de convergencia</strong> almacenan solo el <strong>registro de cómo reactivar</strong> los patrones distribuidos; la integración es retroactivación sincronizada hacia las cortezas de origen.</p>
+<p>La diferencia con el hub es sustantiva: acá la transformación <strong>no produce un objeto nuevo en un formato nuevo</strong>, solo coordina los objetos viejos en sus formatos originales.</p>
+<h3 id="el-ruteo-comunicacion-por-coherencia">El ruteo: comunicación por coherencia<a class="headerlink" href="#el-ruteo-comunicacion-por-coherencia" title="Permanent link">&para;</a></h3>
+<p>Dos poblaciones neuronales se comunican efectivamente cuando sus oscilaciones están <strong>en fase</strong>. Eso responde <em>quién habla con quién y cuándo</em> — el problema de ruteo — sin decir nada sobre el código.</p>
+<p>El acoplamiento <strong>theta-gamma</strong> en el procesamiento del habla es un caso concreto: agrupar unidades fonémicas dentro de ventanas silábicas <strong>es</strong> una transformación de formato, implementada por relación de fase entre dos ritmos. Ver <a href="../../lectura/silaba-unidad-sublexical/">la sílaba como unidad subléxica</a>.</p>
+<h3 id="la-respuesta-que-disuelve-el-problema-codificacion-predictiva">La respuesta que disuelve el problema: codificación predictiva<a class="headerlink" href="#la-respuesta-que-disuelve-el-problema-codificacion-predictiva" title="Permanent link">&para;</a></h3>
+<p>En los <a href="../modelos-predictivos/">modelos predictivos</a>, lo que baja por la jerarquía son <strong>predicciones</strong> y lo que sube son <strong>errores de predicción ponderados por precisión</strong>. Si eso es correcto, hay <strong>un único formato de mensaje en todo el sistema</strong>, y nadie traduce nada porque todos hablan la misma moneda.</p>
+<p>Es la respuesta más económica disponible, y es parte de por qué el marco se volvió tan influyente. También es la más difícil de falsar.</p>
+<hr />
+<h2 id="8-la-objecion-conexionista">8. La objeción conexionista<a class="headerlink" href="#8-la-objecion-conexionista" title="Permanent link">&para;</a></h2>
+<p>El conexionismo responde que <strong>no hay formatos discretos que traducir</strong>. Todo son vectores de activación, y una "transformación entre módulos" no es más que una multiplicación por una matriz de pesos. El problema de la interfaz sería un artefacto de haber dibujado cajas donde hay un continuo.</p>
+<p>Es una objeción seria porque es constructiva: los modelos conexionistas de lectura producen los efectos conductuales relevantes sin postular ninguna interfaz explícita.</p>
+<p>La contra es que la ausencia de un componente en un modelo que funciona no demuestra su ausencia en el sistema modelado — sobre todo cuando la evidencia de disociación (el hub, los buffers) apunta a que algunas de esas fronteras son reales porque se rompen selectivamente.</p>
+<hr />
+<h2 id="9-el-caso-de-los-transformers-una-interfaz-sin-traduccion">9. El caso de los transformers: una interfaz sin traducción<a class="headerlink" href="#9-el-caso-de-los-transformers-una-interfaz-sin-traduccion" title="Permanent link">&para;</a></h2>
+<p>Los modelos de lenguaje actuales ofrecen un contraste instructivo, y conviene mirarlo con cuidado porque es fácil sacar la conclusión equivocada en cualquiera de las dos direcciones.</p>
+<p>En un transformer, todos los componentes se comunican a través del <strong>stream residual</strong>: un espacio vectorial único, de dimensión fija, que atraviesa toda la red. El stream <strong>no procesa nada</strong>; es un canal de comunicación. Cada capa <strong>lee</strong> de él, computa, y <strong>escribe</strong> su resultado de vuelta sumándolo.</p>
+<p>La descripción que hace de esto la interpretabilidad mecanicista es notablemente cercana al vocabulario de las interfaces: los componentes se comunican <strong>leyendo y escribiendo en distintos subespacios</strong> del stream residual, que <strong>no tiene base privilegiada</strong> y cuyo ancho de banda es un recurso escaso por el que los componentes compiten.</p>
+<p>Pero la diferencia con Jackendoff es exactamente la que importa:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Arquitectura cognitiva</th>
+<th>Transformer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Formatos</td>
+<td>Múltiples e <strong>inconmensurables</strong></td>
+<td><strong>Uno solo</strong> (vectores del mismo espacio)</td>
+</tr>
+<tr>
+<td>Traducción</td>
+<td>Módulos de interfaz dedicados</td>
+<td><strong>Proyección lineal</strong> a un subespacio</td>
+</tr>
+<tr>
+<td>Encapsulamiento</td>
+<td>Informativo, por diseño</td>
+<td>Ninguno: todo componente puede leer todo</td>
+</tr>
+<tr>
+<td>Origen de los límites</td>
+<td>Postulados o madurativos</td>
+<td>Emergentes del entrenamiento</td>
+</tr>
+</tbody>
+</table>
+<p><strong>En un transformer el problema de las interfaces no existe por construcción.</strong> No hay traducción porque no hay dos idiomas: hay un idioma y muchos dialectos ocupando subespacios distintos del mismo espacio.</p>
+<h3 id="el-dato-que-complica-la-conclusion-facil">El dato que complica la conclusión fácil<a class="headerlink" href="#el-dato-que-complica-la-conclusion-facil" title="Permanent link">&para;</a></h3>
+<p>Sería cómodo cerrar diciendo que se trata de una homonimia: "módulo" e "interfaz" significan cosas distintas acá y allá, y listo.</p>
+<p>Pero los transformers multilingües hacen algo que complica esa salida. Al procesar una entrada en cualquier idioma, las representaciones atraviesan <strong>tres fases</strong>: parten de un espacio ligado al idioma de entrada, pasan por un <strong>espacio conceptual</strong> en las capas intermedias donde la información es en buena medida independiente del idioma, y vuelven a un espacio específico del idioma de salida.</p>
+<p>Es decir: una arquitectura sin ninguna presión de diseño hacia la modularidad <strong>desarrolla espontáneamente algo con la forma de un hub transmodal</strong> — representaciones amodales en el medio, específicas en los extremos. La misma forma que el modelo hub-and-spoke atribuye al lóbulo temporal anterior.</p>
+<p>Eso sugiere una lectura más interesante que la homonimia: quizá el hub no sea un rasgo de diseño del cerebro sino <strong>una solución convergente a una presión computacional</strong> — la de tener que mapear muchas superficies distintas a un mismo conjunto de contenidos. Si dos sistemas con historias completamente diferentes convergen en la misma arquitectura, el candidato a explicación es la presión, no el linaje.</p>
+<p>Queda abierto si eso es una convergencia genuina o un parecido de superficie entre dos cosas medidas con instrumentos incomparables. Es exactamente el tipo de pregunta que no se decide por argumento.</p>
+<hr />
+<h2 id="como-se-conecta-con-otros-conceptos">Cómo se conecta con otros conceptos<a class="headerlink" href="#como-se-conecta-con-otros-conceptos" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../dual-ruta-lectura/">Modelo dual-ruta de lectura</a></strong> — el modelo de cajas y flechas donde el problema se plantea con más claridad: cada flecha conecta formatos que no comparten primitivos.</li>
+<li><strong><a href="../buffer-fonologico/">Buffer fonológico</a></strong> — la respuesta implícita de la boxología al problema de transmisión.</li>
+<li><strong><a href="../modelos-predictivos/">Modelos predictivos</a></strong> — la propuesta de un formato de mensaje único que disuelve el problema.</li>
+<li><strong><a href="../modelos-lexicalistas/">Modelos lexicalistas / conexionistas</a></strong> — la posición que niega que haya formatos discretos que traducir.</li>
+<li><strong><a href="../../neurobiologia/marr-vision-computacional/">Marr y el modelo computacional de la visión</a></strong> — el problema del formato es justamente donde el nivel algorítmico debería tocar el implementacional.</li>
+<li><strong><a href="../../lectura/silaba-unidad-sublexical/">La sílaba como unidad subléxica</a></strong> — el acoplamiento theta-gamma como caso concreto de transformación de formato implementada por fase.</li>
+<li><strong><a href="../tarea-anagrama/">Tarea de anagrama</a></strong> — otro caso donde el formato de la representación (letras vs. tokens BPE) explica una disociación entre humanos y modelos.</li>
+</ul>
+<hr />
+<h2 id="referencias-de-entrada">Referencias de entrada<a class="headerlink" href="#referencias-de-entrada" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Jackendoff, R. (1997). <em>The Architecture of the Language Faculty</em>. MIT Press. (Modularidad representacional y módulos de interfaz.)</li>
+<li>Jackendoff, R. (2002). <em>Foundations of Language: Brain, Meaning, Grammar, Evolution</em>. Oxford University Press.</li>
+<li>Jackendoff, R. (2025). The Parallel Architecture in language and elsewhere. <em>Topics in Cognitive Science</em>.</li>
+<li>Fodor, J. (1983). <em>The Modularity of Mind</em>. MIT Press.</li>
+<li>Patterson, K. &amp; Lambon Ralph, M. (2016). The hub-and-spoke hypothesis of semantic memory. En <em>Neurobiology of Language</em>. Academic Press.</li>
+<li>Lambon Ralph, M., Jefferies, E., Patterson, K. &amp; Rogers, T. (2017). The neural and computational bases of semantic cognition. <em>Nature Reviews Neuroscience</em>, 18(1), 42-55.</li>
+<li>Damasio, A. (1989). Time-locked multiregional retroactivation: a systems-level proposal for the neural substrates of recall and recognition. <em>Cognition</em>, 33(1-2), 25-62.</li>
+<li>Zipser, D. &amp; Andersen, R. (1988). A back-propagation programmed network that simulates response properties of a subset of posterior parietal neurons. <em>Nature</em>, 331, 679-684.</li>
+<li>Fries, P. (2005). A mechanism for cognitive dynamics: neuronal communication through neuronal coherence. <em>Trends in Cognitive Sciences</em>, 9(10), 474-480.</li>
+<li>Sperling, G. (1960). The information available in brief visual presentations. <em>Psychological Monographs</em>, 74(11), 1-29.</li>
+<li>Coltheart, M. (1980). Iconic memory and visible persistence. <em>Perception &amp; Psychophysics</em>, 27(3), 183-228.</li>
+<li>Crowder, R. &amp; Morton, J. (1969). Precategorical acoustic storage (PAS). <em>Perception &amp; Psychophysics</em>, 5(6), 365-373.</li>
+<li>Rayner, K. (1975). The perceptual span and peripheral cues in reading. <em>Cognitive Psychology</em>, 7(1), 65-81.</li>
+<li>Grainger, J. &amp; van Heuven, W. (2004). Modeling letter position coding in printed word perception. En <em>The Mental Lexicon</em>. Nova Science.</li>
+<li>Elhage, N. et al. (2021). A mathematical framework for transformer circuits. <em>Anthropic / Transformer Circuits Thread</em>.</li>
+<li>Wendler, C., Veselovsky, V., Monea, G. &amp; West, R. (2024). Do llamas work in English? On the latent language of multilingual transformers. <em>arXiv:2402.10588</em>.</li>
+<li>Dumas, C. et al. (2024). Separating tongue from thought: activation patching reveals language-agnostic concept representations in transformers. <em>arXiv:2411.08745</em>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>
