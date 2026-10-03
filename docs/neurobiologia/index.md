@@ -24,3 +24,4 @@ Conceptos básicos de neurobiología, fisiología y anatomía del sistema nervio
 - **[Neuronas tipo ensamble (cell assemblies)](neuronas-ensamble.md)** — la idea de Hebb (1949) sobre representaciones distribuidas y "neurons that fire together, wire together".
 - **[Arousal — activación general del organismo](arousal.md)** — la dimensión continua de activación fisiológica que modula percepción, atención y memoria. Yerkes-Dodson, ARAS, locus coeruleus, pupilometría, circumplejo de Russell. Por qué los LLMs no tienen análogo.
 - **[FOXP2](foxp2.md)** — el supuesto "gen del lenguaje": qué es realmente, qué descubrió la familia KE, y por qué la etiqueta se quedó corta.
+- **[Epigenética](epigenetica.md)** — metilación, histonas, impronta; el modelo de cuidado materno de Meaney; qué está establecido y qué no sobre herencia transgeneracional en humanos; el problema de sangre vs. cerebro y el hype educativo.
