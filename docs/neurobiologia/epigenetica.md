@@ -222,6 +222,7 @@ La posición razonable no es ni el entusiasmo ni el descarte. La epigenética mo
 ## Conexiones con el sitio
 
 - **[Ontogenia y filogenia](ontogenia-filogenia.md)** — la distinción intergeneracional/transgeneracional es exactamente el límite entre esos dos planos. La herencia epigenética es interesante precisamente porque, si existiera, haría pasar algo de lo ontogenético al plano filogenético.
+- **[Sinaptogénesis y poda sináptica](sinaptogenesis-poda-sinaptica.md)** — el otro gran candidato a explicar "cómo el ambiente temprano se inscribe en el cerebro", y con el mismo patrón de sobreinterpretación educativa. La poda tiene la ventaja de un mecanismo celular identificado; conviene leer las dos entradas juntas.
 - **[Plasticidad estructural y sináptica](plasticidad-estructural-mecanismos.md)** — la LTP y la consolidación de memoria a largo plazo requieren transcripción génica, y hay regulación epigenética involucrada. Es el punto donde los dos temas se tocan en serio.
 - **[La crisis de replicación](../metodologia/crisis-replicacion.md)** — los EWAS tienen el mismo perfil de riesgo que cualquier campo de muestras chicas y muchas comparaciones.
 - **[Las 4 preguntas de Tinbergen](tinbergen-niveles-analisis.md)** — útil para ubicar de qué se está hablando: la epigenética es una respuesta de nivel **mecanismo**, que a veces se presenta como si respondiera **ontogenia** o **filogenia**.

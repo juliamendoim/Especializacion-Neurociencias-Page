@@ -108,6 +108,12 @@ Esta diferencia es una de las razones por las que las **lesiones medulares y los
 
 La **rehabilitación clínica** apunta principalmente a la segunda categoría: requiere tiempo, repetición y trabajo dirigido. Por eso la fisioterapia y la fonoaudiología post-ACV no muestran resultados visibles en una sesión — el sustrato biológico (plasticidad estructural) opera en meses.
 
+## Una aclaración de alcance
+
+Todo lo de esta entrada es **plasticidad sobre un cerebro ya formado** — lo que ocurre con las sinapsis existentes y con las que se forman en el adulto, típicamente después de una lesión. Es un proceso distinto del que esculpe el circuito durante el desarrollo, que combina sobreproducción sináptica y eliminación selectiva: ver **[sinaptogénesis y poda sináptica](sinaptogenesis-poda-sinaptica.md)**.
+
+Los dos temas se tocan en un punto concreto y vale notarlo: las proteínas **Nogo**, que acá aparecen como inhibidores de la regeneración axonal, son también uno de los "frenos moleculares" que cierran los períodos críticos del desarrollo. El mismo mecanismo que estabiliza un circuito maduro es el que limita su capacidad de reorganizarse.
+
 ## Lecturas
 
 - **Garcés-Vieira & Suárez Escudero (2014)** "Neuroplasticidad: aspectos bioquímicos y neurofisiológicos". *Revista CES Med* 28(1):119-132.
