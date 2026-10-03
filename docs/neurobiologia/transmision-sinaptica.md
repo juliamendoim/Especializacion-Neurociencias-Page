@@ -207,6 +207,7 @@ La lógica de la tabla es útil por sí misma: un cuadro clínico puede surgir d
 ## Conexiones con el sitio
 
 - **[Bases físico-químicas para entender la neurona](bases-fisicoquimicas.md)** — iones, voltaje, gradientes y selectividad de canales. Es el prerrequisito directo de esta entrada.
+- **[¿Están las neuronas especializadas por neurotransmisor?](neurotransmisores-especializacion.md)** — la continuación natural del paso 8: por qué la mayoría de las neuronas libera más de un transmisor, y por qué el efecto excitatorio o inhibitorio lo decide el receptor y no la molécula.
 - **[Sincitio y la doctrina de la neurona](sincitio.md)** — la sinapsis eléctrica y el debate Golgi-Cajal.
 - **[Plasticidad estructural y sináptica](plasticidad-estructural-mecanismos.md)** — LTP y LTD son modificaciones de la eficacia de los pasos 8 y 9; los receptores AMPA y NMDA son el sustrato.
 - **[Sinaptogénesis y poda sináptica](sinaptogenesis-poda-sinaptica.md)** — cómo se forman y se eliminan estas sinapsis durante el desarrollo. La poda selecciona según la **actividad**, es decir según cuánto se usó esta maquinaria.
