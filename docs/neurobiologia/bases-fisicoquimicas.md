@@ -144,6 +144,7 @@ se vuelven leíbles: "se abre la puerta para el Na⁺ → el Na⁺ entra porque 
 Este es **pre-requisito** para:
 
 - **Potencial de acción** (futura entrada) — usa todos estos conceptos.
+- **[Transmisión sináptica, paso a paso](transmision-sinaptica.md)** — la continuación directa de esta entrada: qué hacen estos canales y gradientes cuando el sistema se pone en marcha, del potencial de acción a la liberación del neurotransmisor.
 - **Sinapsis química** — el neurotransmisor abre canales que dejan pasar iones específicos.
 - **[Plasticidad estructural y sináptica](plasticidad-estructural-mecanismos.md)** — los receptores AMPA/NMDA son canales iónicos.
 - **[Mecanismos de recuperación post-lesión](mecanismos-recuperacion-post-lesion.md)** — el primer paso de la recuperación es restablecer el equilibrio iónico.
