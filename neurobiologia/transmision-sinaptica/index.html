@@ -1,0 +1,4589 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../bases-fisicoquimicas/">
+      
+      
+        <link rel="next" href="../neurotransmisores-especializacion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Transmisión sináptica (paso a paso) - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#transmision-sinaptica-paso-a-paso" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Transmisión sináptica (paso a paso)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelos-cognitivos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../modelos-cognitivos/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/memoria-trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/frecuencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/memoria-trabajo-ram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/problema-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El problema de las interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transmisión sináptica (paso a paso)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transmisión sináptica (paso a paso)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#la-secuencia-breve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La secuencia breve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-a-el-potencial-de-accion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque A — El potencial de acción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque A — El potencial de acción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reposo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reposo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umbral-y-ley-de-todo-o-nada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Umbral y ley de todo o nada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#las-fases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las fases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#periodos-refractarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Períodos refractarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-b-propagacion-por-el-axon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque B — Propagación por el axón
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque B — Propagación por el axón">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conduccion-saltatoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conducción saltatoria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quien-produce-la-mielina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quién produce la mielina
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-c-la-sinapsis-quimica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque C — La sinapsis química
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque C — La sinapsis química">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-estado-previo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El estado previo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los pasos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminacion-de-la-senal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminación de la señal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reciclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reciclado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-retardo-sinaptico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El retardo sináptico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulacion-la-sinapsis-no-es-una-via-de-un-solo-sentido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulación: la sinapsis no es una vía de un solo sentido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sinapsis-electrica-para-contrastar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sinapsis eléctrica, para contrastar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-conviene-saber-la-lista-en-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué conviene saber la lista en orden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-frecuentes-resumidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores frecuentes, resumidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-con-el-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones con el sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neurotransmisores-especializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Especialización por neurotransmisor?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sinaptogenesis-poda-sinaptica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sinaptogénesis y poda sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epigenetica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Epigenética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/agramatismo-limites-metodo-modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agramatismo y los límites del método modular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/voz-interna-mediacion-fonologica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voz interna y mediación fonológica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/cohesion-coherencia-modelo-situacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cohesión, coherencia y modelo de situación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/n400-p600-potenciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N400 y P600 (potenciales evocados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/crisis-replicacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La crisis de replicación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#la-secuencia-breve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La secuencia breve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-a-el-potencial-de-accion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque A — El potencial de acción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque A — El potencial de acción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reposo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reposo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umbral-y-ley-de-todo-o-nada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Umbral y ley de todo o nada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#las-fases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las fases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#periodos-refractarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Períodos refractarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-b-propagacion-por-el-axon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque B — Propagación por el axón
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque B — Propagación por el axón">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conduccion-saltatoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conducción saltatoria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quien-produce-la-mielina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quién produce la mielina
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-c-la-sinapsis-quimica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque C — La sinapsis química
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque C — La sinapsis química">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-estado-previo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El estado previo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los pasos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminacion-de-la-senal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminación de la señal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reciclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reciclado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-retardo-sinaptico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El retardo sináptico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulacion-la-sinapsis-no-es-una-via-de-un-solo-sentido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modulación: la sinapsis no es una vía de un solo sentido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sinapsis-electrica-para-contrastar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sinapsis eléctrica, para contrastar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-conviene-saber-la-lista-en-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué conviene saber la lista en orden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-frecuentes-resumidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores frecuentes, resumidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-con-el-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones con el sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecturas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Neurobiología
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="transmision-sinaptica-paso-a-paso">Transmisión sináptica, paso a paso<a class="headerlink" href="#transmision-sinaptica-paso-a-paso" title="Permanent link">&para;</a></h1>
+<p>Del potencial de acción a la liberación del neurotransmisor. Es la secuencia que conviene poder recitar en orden, porque casi todo lo demás en neurofisiología se cuelga de ella: los fármacos, las patologías de la unión neuromuscular, la plasticidad y la codificación de información.</p>
+<p>Esta entrada continúa donde termina <strong><a href="../bases-fisicoquimicas/">bases físico-químicas</a></strong> — ahí están iones, voltaje, gradientes y canales; acá, qué hacen cuando el sistema se pone en marcha.</p>
+<hr />
+<h2 id="la-secuencia-breve">La secuencia breve<a class="headerlink" href="#la-secuencia-breve" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Reposo</strong> — ~−70 mV.</li>
+<li><strong>Despolarización local</strong> → si alcanza el <strong>umbral</strong> (~−55 mV), dispara.</li>
+<li><strong>Potencial de acción</strong>: entra Na⁺ (sube a ~+40 mV) → sale K⁺ (<strong>repolarización</strong>) → hiperpolarización → período refractario.</li>
+<li><strong>Conducción saltatoria</strong> por el axón: se regenera en cada <strong>nodo de Ranvier</strong>.</li>
+<li>Llega al <strong>terminal presináptico</strong> y lo despolariza.</li>
+<li>Entra <strong>Ca²⁺</strong> — el paso que convierte lo eléctrico en químico.</li>
+<li><strong>Fusión de la vesícula</strong> (complejo SNARE) y <strong>liberación del neurotransmisor</strong>.</li>
+<li>Unión a <strong>receptores postsinápticos</strong> → potencial postsináptico → vuelve al paso 2 en la neurona siguiente.</li>
+</ol>
+<p>El resto de la entrada desarrolla cada bloque.</p>
+<hr />
+<h2 id="bloque-a-el-potencial-de-accion">Bloque A — El potencial de acción<a class="headerlink" href="#bloque-a-el-potencial-de-accion" title="Permanent link">&para;</a></h2>
+<h3 id="reposo">Reposo<a class="headerlink" href="#reposo" title="Permanent link">&para;</a></h3>
+<p>La membrana está a ~<strong>−70 mV</strong> (negativa adentro). Lo mantiene la <strong>bomba Na⁺/K⁺ ATPasa</strong>, que saca 3 Na⁺ por cada 2 K⁺ que mete, consumiendo ATP. El resultado: mucho Na⁺ afuera, mucho K⁺ adentro, y un gradiente listo para usarse.</p>
+<h3 id="umbral-y-ley-de-todo-o-nada">Umbral y ley de todo o nada<a class="headerlink" href="#umbral-y-ley-de-todo-o-nada" title="Permanent link">&para;</a></h3>
+<p>La despolarización que llega desde otras sinapsis es <strong>graduada</strong>: puede ser chica o grande. El potencial de acción, en cambio, <strong>no es graduado</strong>. O se alcanza el umbral (~−55 mV) y se dispara completo, o no se dispara.</p>
+<div class="admonition info">
+<p class="admonition-title">La consecuencia de codificación</p>
+<p>Si la amplitud es siempre la misma, la intensidad del estímulo no puede estar codificada en ella. Está codificada en la <strong>frecuencia de disparo</strong>. Esto es lo que vuelve a la tasa de descarga la variable central en electrofisiología, y es el origen de la noción de <em>rate coding</em>.</p>
+</div>
+<h3 id="las-fases">Las fases<a class="headerlink" href="#las-fases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué pasa a nivel de canales</th>
+<th>Voltaje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Despolarización</strong> (fase ascendente)</td>
+<td>se abren canales de <strong>Na⁺</strong> voltaje-dependientes; entra Na⁺, lo que abre más canales de Na⁺ — <strong>retroalimentación positiva</strong></td>
+<td>−55 → ~+40 mV</td>
+</tr>
+<tr>
+<td><strong>Repolarización</strong></td>
+<td>los canales de Na⁺ se <strong>inactivan</strong> (una compuerta distinta de la de apertura) y se abren los de <strong>K⁺</strong>, más lentos; sale K⁺</td>
+<td>+40 → −70 mV</td>
+</tr>
+<tr>
+<td><strong>Hiperpolarización posterior</strong> (<em>undershoot</em>)</td>
+<td>los canales de K⁺ cierran con retraso</td>
+<td>baja de −70 mV transitoriamente</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Error frecuente</p>
+<p>El potencial de acción <strong>no</strong> es un paso entre la despolarización y la repolarización. <strong>Es</strong> esa secuencia. Listar "despolarización → potencial de acción → repolarización" como tres pasos sucesivos cuenta dos veces lo mismo.</p>
+</div>
+<h3 id="periodos-refractarios">Períodos refractarios<a class="headerlink" href="#periodos-refractarios" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Absoluto</strong>: los canales de Na⁺ están inactivados y no hay estímulo que dispare otro potencial de acción.</li>
+<li><strong>Relativo</strong>: se puede disparar, pero hace falta un estímulo mayor.</li>
+</ul>
+<p>No es un detalle técnico: el período refractario <strong>le da dirección a la propagación</strong>. El impulso no puede volver hacia atrás, porque el tramo que acaba de disparar está inactivado. Y además <strong>pone un techo a la frecuencia máxima</strong> de disparo, lo que acota cuánta información puede transmitir un axón por unidad de tiempo.</p>
+<hr />
+<h2 id="bloque-b-propagacion-por-el-axon">Bloque B — Propagación por el axón<a class="headerlink" href="#bloque-b-propagacion-por-el-axon" title="Permanent link">&para;</a></h2>
+<h3 id="conduccion-saltatoria">Conducción saltatoria<a class="headerlink" href="#conduccion-saltatoria" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">El error más común sobre la mielina</p>
+<p>El impulso <strong>no viaja "por la mielina"</strong>. La mielina es un <strong>aislante</strong>: aumenta la resistencia de membrana y reduce su capacitancia, impidiendo que la corriente se fugue hacia afuera. La corriente fluye <strong>pasivamente por el axoplasma</strong> (el interior del axón) debajo de los tramos mielinizados, y el potencial de acción se <strong>regenera activamente solo en los nodos de Ranvier</strong>, donde se concentran los canales de Na⁺ voltaje-dependientes.</p>
+<p>La mielina acelera la conducción porque <strong>impide</strong> el paso de corriente por la membrana, no porque la conduzca.</p>
+</div>
+<p>De ahí el nombre: el impulso "salta" de nodo a nodo.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Axón amielínico</th>
+<th>Axón mielínico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propagación</strong></td>
+<td>continua, punto a punto</td>
+<td><strong>saltatoria</strong>, nodo a nodo</td>
+</tr>
+<tr>
+<td><strong>Velocidad</strong></td>
+<td>~0,5-2 m/s</td>
+<td>hasta ~120 m/s</td>
+</tr>
+<tr>
+<td><strong>Costo metabólico</strong></td>
+<td>alto (toda la membrana despolariza)</td>
+<td>bajo (solo los nodos)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quien-produce-la-mielina">Quién produce la mielina<a class="headerlink" href="#quien-produce-la-mielina" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Oligodendrocitos</strong> en el sistema nervioso central (cada uno mieliniza segmentos de varios axones).</li>
+<li><strong>Células de Schwann</strong> en el sistema nervioso periférico (una célula por segmento de un solo axón).</li>
+</ul>
+<p>Esa diferencia tiene consecuencias clínicas: explica por qué la <strong>esclerosis múltiple</strong> (central) y el <strong>síndrome de Guillain-Barré</strong> (periférico) son cuadros distintos, y por qué la regeneración es mucho mejor en el periférico.</p>
+<p>La desmielinización <strong>enlentece o bloquea la conducción sin que la neurona esté dañada</strong>. Es un punto conceptual útil: se puede perder función sin perder neuronas.</p>
+<hr />
+<h2 id="bloque-c-la-sinapsis-quimica">Bloque C — La sinapsis química<a class="headerlink" href="#bloque-c-la-sinapsis-quimica" title="Permanent link">&para;</a></h2>
+<h3 id="el-estado-previo">El estado previo<a class="headerlink" href="#el-estado-previo" title="Permanent link">&para;</a></h3>
+<p>Las vesículas no flotan sueltas. Están en la <strong>zona activa</strong> del terminal, en dos estados que conviene distinguir:</p>
+<ul>
+<li><strong>Acopladas</strong> (<em>docked</em>) — pegadas a la membrana presináptica.</li>
+<li><strong>Cebadas</strong> (<em>primed</em>) — con el complejo de fusión semiensamblado, listas para soltar en microsegundos.</li>
+</ul>
+<h3 id="los-pasos">Los pasos<a class="headerlink" href="#los-pasos" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>El potencial de acción invade el terminal</strong> y lo despolariza.</li>
+<li><strong>Se abren canales de Ca²⁺ voltaje-dependientes</strong> (tipo P/Q y N), concentrados en la zona activa.</li>
+<li><strong>Entra Ca²⁺</strong>, a favor de un gradiente enorme: ~2 mM afuera contra ~100 nM adentro, unas 10.000 veces de diferencia.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">El paso que no hay que saltear</p>
+<p>La <strong>entrada de Ca²⁺ es el eslabón que convierte la señal eléctrica en química.</strong> Sin Ca²⁺ no hay liberación, por más potencial de acción que llegue al terminal. En las versiones abreviadas de la secuencia este paso es el que más se omite, y es el único que no se puede omitir.</p>
+</div>
+<ol>
+<li><strong>El Ca²⁺ se une a la sinaptotagmina-1</strong>, el sensor de calcio de la vesícula, que desplaza a la <strong>complexina</strong> — hasta ese momento, el freno del complejo de fusión.</li>
+<li><strong>Exocitosis</strong>, ejecutada por el <strong>complejo SNARE</strong>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Proteína</th>
+<th>Ubicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sinaptobrevina (VAMP)</strong></td>
+<td>membrana de la vesícula (v-SNARE)</td>
+</tr>
+<tr>
+<td><strong>Sintaxina-1</strong> y <strong>SNAP-25</strong></td>
+<td>membrana plasmática (t-SNAREs)</td>
+</tr>
+</tbody>
+</table>
+<p>Las tres se enrollan entre sí y tiran de ambas membranas hasta fusionarlas.</p>
+<ol>
+<li><strong>Liberación a la hendidura sináptica</strong>, que mide <strong>20-40 nm</strong>. La liberación es <strong>cuántica</strong>: ocurre en múltiplos del contenido de una vesícula —un "cuanto"—, lo que estableció <strong>Katz</strong>. No es un chorro graduable, son paquetes discretos.</li>
+<li><strong>Difusión</strong> por la hendidura, en menos de un milisegundo.</li>
+<li><strong>Unión a receptores postsinápticos.</strong> Acá la vía se bifurca, y la distinción es importante:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ionotrópicos</th>
+<th>Metabotrópicos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Qué son</strong></td>
+<td>el receptor <strong>es</strong> el canal iónico</td>
+<td>acoplados a proteína G, actúan vía segundos mensajeros</td>
+</tr>
+<tr>
+<td><strong>Latencia</strong></td>
+<td>milisegundos</td>
+<td>cientos de ms a segundos</td>
+</tr>
+<tr>
+<td><strong>Ejemplos</strong></td>
+<td>AMPA, NMDA, GABA_A, nicotínico, glicina</td>
+<td>mGluR, GABA_B, muscarínico, dopaminérgicos, serotoninérgicos</td>
+</tr>
+<tr>
+<td><strong>Rol típico</strong></td>
+<td>transmisión rápida punto a punto</td>
+<td><strong>modulación</strong> del estado del circuito</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Potencial postsináptico</strong>, graduado y local:<ul>
+<li><strong>PEPS</strong> (excitatorio): entra Na⁺ o Ca²⁺ → despolariza → acerca al umbral.</li>
+<li><strong>PIPS</strong> (inhibitorio): entra Cl⁻ o sale K⁺ → hiperpolariza → aleja del umbral.</li>
+</ul>
+</li>
+<li><strong>Integración</strong> en el soma: <strong>sumación espacial</strong> (varias sinapsis a la vez) y <strong>temporal</strong> (una misma sinapsis en ráfaga). Si la suma alcanza el umbral en el <strong>segmento inicial del axón</strong> —no en el soma—, se dispara un potencial de acción nuevo.</li>
+</ol>
+<h3 id="terminacion-de-la-senal">Terminación de la señal<a class="headerlink" href="#terminacion-de-la-senal" title="Permanent link">&para;</a></h3>
+<p>Tres vías, no una. Que la señal se corte es tan necesario como que se produzca:</p>
+<ul>
+<li><strong>Recaptación</strong> por transportadores, hacia la neurona o hacia la glía: <strong>DAT</strong> (dopamina), <strong>SERT</strong> (serotonina), <strong>NET</strong> (noradrenalina), <strong>EAAT/GLT-1</strong> (glutamato), <strong>GAT</strong> (GABA).</li>
+<li><strong>Degradación enzimática</strong>: la <strong>acetilcolinesterasa</strong> es el caso canónico; <strong>MAO</strong> y <strong>COMT</strong> para monoaminas.</li>
+<li><strong>Difusión</strong> fuera de la hendidura.</li>
+</ul>
+<h3 id="reciclado">Reciclado<a class="headerlink" href="#reciclado" title="Permanent link">&para;</a></h3>
+<p>Endocitosis mediada por <strong>clatrina</strong> y <strong>dinamina</strong>, y recarga de la vesícula mediante transportadores vesiculares (<strong>VGLUT, VMAT, VGAT</strong>) que aprovechan el gradiente de protones generado por la <strong>V-ATPasa</strong>.</p>
+<hr />
+<h2 id="el-retardo-sinaptico">El retardo sináptico<a class="headerlink" href="#el-retardo-sinaptico" title="Permanent link">&para;</a></h2>
+<p>La transmisión química tarda <strong>~0,5-1 ms</strong>, y el paso que determina ese tiempo es la entrada de Ca²⁺ y la fusión vesicular.</p>
+<p>No es un detalle: una cadena de muchas sinapsis es necesariamente lenta, y <strong>contar sinapsis sirve para estimar tiempos de procesamiento</strong>. Es uno de los argumentos clásicos para acotar cuántas etapas puede tener un proceso cognitivo que se completa en, digamos, 200 ms — el tipo de razonamiento que sostiene la lectura de latencias en <a href="../../metodologia/n400-p600-potenciales/">potenciales evocados</a>.</p>
+<hr />
+<h2 id="modulacion-la-sinapsis-no-es-una-via-de-un-solo-sentido">Modulación: la sinapsis no es una vía de un solo sentido<a class="headerlink" href="#modulacion-la-sinapsis-no-es-una-via-de-un-solo-sentido" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Autorreceptores presinápticos</strong> (D2, α2, GABA_B): el propio terminal detecta cuánto neurotransmisor liberó y <strong>frena la liberación</strong>. Retroalimentación negativa local.</li>
+<li><strong>Señalización retrógrada</strong>: la neurona postsináptica manda señales hacia atrás, sobre todo vía <strong>endocannabinoides</strong>, que reducen la liberación presináptica.</li>
+</ul>
+<p>Esto importa porque desarma la imagen de la sinapsis como un cable con dirección fija. Hay control en ambos sentidos.</p>
+<hr />
+<h2 id="sinapsis-electrica-para-contrastar">Sinapsis eléctrica, para contrastar<a class="headerlink" href="#sinapsis-electrica-para-contrastar" title="Permanent link">&para;</a></h2>
+<p>Todo lo anterior es la <strong>sinapsis química</strong>. La <strong>eléctrica</strong> —uniones <em>gap</em>, formadas por <strong>conexinas</strong>— saltea los bloques de Ca²⁺, vesícula y receptor por completo:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Química</th>
+<th>Eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mecanismo</strong></td>
+<td>neurotransmisor, vesículas, receptores</td>
+<td>citoplasmas conectados, la corriente pasa directo</td>
+</tr>
+<tr>
+<td><strong>Retardo</strong></td>
+<td>~0,5-1 ms</td>
+<td>prácticamente nulo</td>
+</tr>
+<tr>
+<td><strong>Dirección</strong></td>
+<td>unidireccional</td>
+<td>típicamente <strong>bidireccional</strong></td>
+</tr>
+<tr>
+<td><strong>Plasticidad</strong></td>
+<td>alta</td>
+<td>baja</td>
+</tr>
+<tr>
+<td><strong>Dónde abunda</strong></td>
+<td>casi todo el SNC</td>
+<td>sincronización rápida: retina, interneuronas, glía</td>
+</tr>
+</tbody>
+</table>
+<p>Más sobre esto en <strong><a href="../sincitio/">sincitio y la doctrina de la neurona</a></strong> — históricamente, la existencia de uniones <em>gap</em> fue el argumento tardío a favor de la intuición de Golgi.</p>
+<hr />
+<h2 id="por-que-conviene-saber-la-lista-en-orden">Por qué conviene saber la lista en orden<a class="headerlink" href="#por-que-conviene-saber-la-lista-en-orden" title="Permanent link">&para;</a></h2>
+<p>Porque casi cada paso tiene un fármaco o una patología asociada, y es la forma más rápida de fijarla:</p>
+<table>
+<thead>
+<tr>
+<th>Paso</th>
+<th>Qué lo ataca</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canal de Na⁺ (bloque A)</td>
+<td><strong>tetrodotoxina</strong>; anestésicos locales como la lidocaína</td>
+</tr>
+<tr>
+<td>Mielina (bloque B)</td>
+<td><strong>esclerosis múltiple</strong>, <strong>Guillain-Barré</strong></td>
+</tr>
+<tr>
+<td>Canal de Ca²⁺ presináptico</td>
+<td><strong>síndrome de Lambert-Eaton</strong> (anticuerpos anti-canal)</td>
+</tr>
+<tr>
+<td>Complejo SNARE</td>
+<td><strong>toxina botulínica</strong> (corta SNAP-25 y sintaxina), <strong>toxina tetánica</strong> (corta sinaptobrevina)</td>
+</tr>
+<tr>
+<td>Receptor nicotínico</td>
+<td><strong>miastenia gravis</strong> (anticuerpos anti-receptor)</td>
+</tr>
+<tr>
+<td>Receptor NMDA</td>
+<td><strong>encefalitis anti-NMDAR</strong>; ketamina y fenciclidina como antagonistas</td>
+</tr>
+<tr>
+<td>Recaptación</td>
+<td><strong>ISRS</strong> (bloquean SERT), cocaína y metilfenidato (DAT)</td>
+</tr>
+<tr>
+<td>Degradación</td>
+<td><strong>organofosforados</strong>, donepecilo (inhiben acetilcolinesterasa)</td>
+</tr>
+</tbody>
+</table>
+<p>La lógica de la tabla es útil por sí misma: un cuadro clínico puede surgir de <strong>cualquier</strong> eslabón de la cadena, y cuadros que se parecen en la superficie (debilidad muscular) pueden venir de pasos distintos.</p>
+<hr />
+<h2 id="errores-frecuentes-resumidos">Errores frecuentes, resumidos<a class="headerlink" href="#errores-frecuentes-resumidos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Formulación habitual</th>
+<th>Qué corregir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"despolarización → potencial de acción → repolarización"</td>
+<td>el potencial de acción <strong>es</strong> despolarización + repolarización, no un paso intermedio</td>
+</tr>
+<tr>
+<td>"el impulso viaja por la mielina"</td>
+<td>viaja por el <strong>axoplasma</strong> y se regenera en los <strong>nodos de Ranvier</strong>; la mielina <strong>aísla</strong></td>
+</tr>
+<tr>
+<td>"llega el potencial de acción y se libera el neurotransmisor"</td>
+<td>falta la <strong>entrada de Ca²⁺</strong>, que es el disparador real de la liberación</td>
+</tr>
+<tr>
+<td>"el umbral se alcanza en el soma"</td>
+<td>se alcanza en el <strong>segmento inicial del axón</strong>, donde la densidad de canales de Na⁺ es mayor</td>
+</tr>
+<tr>
+<td>"más estímulo, más grande el potencial de acción"</td>
+<td>es <strong>todo o nada</strong>; más estímulo significa <strong>más frecuencia</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="conexiones-con-el-sitio">Conexiones con el sitio<a class="headerlink" href="#conexiones-con-el-sitio" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../bases-fisicoquimicas/">Bases físico-químicas para entender la neurona</a></strong> — iones, voltaje, gradientes y selectividad de canales. Es el prerrequisito directo de esta entrada.</li>
+<li><strong><a href="../neurotransmisores-especializacion/">¿Están las neuronas especializadas por neurotransmisor?</a></strong> — la continuación natural del paso 8: por qué la mayoría de las neuronas libera más de un transmisor, y por qué el efecto excitatorio o inhibitorio lo decide el receptor y no la molécula.</li>
+<li><strong><a href="../sincitio/">Sincitio y la doctrina de la neurona</a></strong> — la sinapsis eléctrica y el debate Golgi-Cajal.</li>
+<li><strong><a href="../plasticidad-estructural-mecanismos/">Plasticidad estructural y sináptica</a></strong> — LTP y LTD son modificaciones de la eficacia de los pasos 8 y 9; los receptores AMPA y NMDA son el sustrato.</li>
+<li><strong><a href="../sinaptogenesis-poda-sinaptica/">Sinaptogénesis y poda sináptica</a></strong> — cómo se forman y se eliminan estas sinapsis durante el desarrollo. La poda selecciona según la <strong>actividad</strong>, es decir según cuánto se usó esta maquinaria.</li>
+<li><strong><a href="../neuronas-ensamble/">Neuronas tipo ensamble</a></strong> — la regla de Hebb opera sobre la coincidencia temporal de estos potenciales postsinápticos.</li>
+<li><strong><a href="../arousal/">Arousal</a></strong> — los sistemas moduladores (noradrenalina, acetilcolina) actúan sobre receptores metabotrópicos, que es la columna derecha de la tabla del paso 8.</li>
+<li><strong><a href="../../metodologia/n400-p600-potenciales/">N400 y P600</a></strong> — lo que se registra en un ERP es la suma de potenciales postsinápticos (paso 9) de poblaciones grandes de neuronas alineadas, no potenciales de acción.</li>
+</ul>
+<hr />
+<h2 id="lecturas">Lecturas<a class="headerlink" href="#lecturas" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Kandel, E. R., Schwartz, J. H., Jessell, T. M., Siegelbaum, S. A. &amp; Hudspeth, A. J.</strong> <em>Principles of Neural Science</em> (hay traducción, <em>Principios de Neurociencia</em>) — los capítulos sobre potencial de acción, transmisión sináptica y liberación de neurotransmisores. <strong>La referencia estándar</strong>, y la que conviene tener a mano para esta secuencia.</li>
+<li><strong>Hodgkin, A. L. &amp; Huxley, A. F. (1952)</strong> "A quantitative description of membrane current and its application to conduction and excitation in nerve". <em>Journal of Physiology</em> 117(4):500-544. — el modelo del potencial de acción, y uno de los trabajos más influyentes de la biología del siglo XX.</li>
+<li><strong>Katz, B. (1969)</strong> <em>The Release of Neural Transmitter Substances</em>. Liverpool University Press. — la naturaleza cuántica de la liberación.</li>
+<li><strong>Südhof, T. C. (2013)</strong> "Neurotransmitter release: the last millisecond in the life of a synaptic vesicle". <em>Neuron</em> 80(3):675-690. — revisión del mecanismo SNARE por uno de los autores del Nobel 2013.</li>
+<li><strong>Purves, D. et al.</strong> <em>Neuroscience</em> — alternativa a Kandel, con figuras más claras para la conducción saltatoria.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>

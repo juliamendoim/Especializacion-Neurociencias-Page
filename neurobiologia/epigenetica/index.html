@@ -1,0 +1,4528 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y aprendizajes transversales de la Especialización en Neurociencias Cognitivas del Lenguaje y la Lectura (UBA). Contenido producido en diálogo con Claude (LLM) y curado humanamente.">
+      
+      
+        <meta name="author" content="Julia Milanese">
+      
+      
+      
+        <link rel="prev" href="../sinaptogenesis-poda-sinaptica/">
+      
+      
+        <link rel="next" href="../../evaluacion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Epigenética - Apuntes — Especialización en Neurociencias del Lenguaje</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#epigenetica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-header__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apuntes — Especialización en Neurociencias del Lenguaje
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Epigenética
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aprendizajes-generales/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Aprendizajes generales
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estadistica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Estadística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelos-cognitivos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelos cognitivos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Neurobiología
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../evaluacion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../medidas-linguisticas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Medidas lingüísticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tipologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lingüística
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tdl/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TDL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../afasia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Afasia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lectura y alfabetización
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodologia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metodología
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apuntes — Especialización en Neurociencias del Lenguaje" class="md-nav__button md-logo" aria-label="Apuntes — Especialización en Neurociencias del Lenguaje" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apuntes — Especialización en Neurociencias del Lenguaje
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/juliamendoim/Especializacion-Neurociencias-Page" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    juliamendoim/Especializacion-Neurociencias-Page
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aprendizajes-generales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprendizajes generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../estadistica/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estadística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estadística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/t-de-student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    t de Student
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/chi-cuadrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chi cuadrado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/efecto-techo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto techo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estadistica/media-y-desvio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media y desvío
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../modelos-cognitivos/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos cognitivos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos cognitivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/buffer-fonologico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buffer fonológico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/memoria-trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memoria de trabajo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-predictivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos predictivos del procesamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-basados-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos basados en memoria (retrieval)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/modelos-lexicalistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos lexicalistas / constraint satisfaction (conexionistas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/frecuencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frecuencia y cómo se representa mentalmente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/agreement-attraction-distributividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agreement attraction y lectura distributiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/tarea-anagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarea de anagrama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/efecto-canonicidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efecto de canonicidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/recuperacion-memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recuperación de memoria (voluntaria/involuntaria)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/memoria-trabajo-ram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAM vs. memoria de trabajo (y chunks)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/amnesias-casos-clinicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amnesias y casos clínicos (HM, Wearing, Korsakoff…)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/atencion-endogena-exogena/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atención endógena vs. exógena (redes frontoparietales)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/dual-ruta-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo dual-ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/problema-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El problema de las interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/activacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/garden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garden paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos-cognitivos/surprisal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surprisal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neurobiología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neurobiología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinbergen-niveles-analisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Las 4 preguntas de Tinbergen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bottom-up-top-down/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bottom-up vs. top-down
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bases-fisicoquimicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases físico-químicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transmision-sinaptica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transmisión sináptica (paso a paso)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neurotransmisores-especializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Especialización por neurotransmisor?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marr-vision-computacional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marr — modelo computacional de la visión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sincitio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincitio y doctrina neurona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plasticidad-experimentos-fundacionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad — experimentos fundacionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontogenia-filogenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontogenia y filogenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mecanismos-recuperacion-post-lesion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mecanismos de recuperación post-lesión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plasticidad-estructural-mecanismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plasticidad estructural y sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neuronas-ensamble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuronas tipo ensamble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arousal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arousal (activación general)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foxp2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOXP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sinaptogenesis-poda-sinaptica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sinaptogénesis y poda sináptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Epigenética
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Epigenética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-problema-que-viene-a-resolver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. El problema que viene a resolver
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-los-mecanismos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Los mecanismos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Los mecanismos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metilacion-del-adn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metilación del ADN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificaciones-de-histonas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificaciones de histonas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arn-no-codificantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ARN no codificantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cromatina-de-orden-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cromatina de orden superior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-los-casos-solidos-donde-nadie-discute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Los casos sólidos: donde nadie discute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-modelo-que-fundo-la-epigenetica-del-comportamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El modelo que fundó la "epigenética del comportamiento"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-el-caso-humano-mas-citado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El caso humano más citado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-intergeneracional-vs-transgeneracional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Intergeneracional vs. transgeneracional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Intergeneracional vs. transgeneracional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-la-barrera-de-weismann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: la barrera de Weismann
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-la-reprogramacion-germinal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: la reprogramación germinal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-los-confusores-en-humanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: los confusores en humanos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-los-problemas-de-medicion-en-estudios-humanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Los problemas de medición en estudios humanos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Los problemas de medición en estudios humanos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-del-tejido-sangre-no-es-cerebro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema del tejido: sangre no es cerebro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-la-direccion-causal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de la dirección causal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-del-tamano-de-efecto-y-la-potencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema del tamaño de efecto y la potencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-relojes-epigeneticos-predicen-sin-explicar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los relojes epigenéticos: predicen sin explicar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-el-hype-y-por-que-no-es-inocuo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. El hype y por qué no es inocuo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-como-leer-un-paper-de-epigenetica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cómo leer un paper de epigenética
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-donde-queda-entonces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Dónde queda, entonces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-con-el-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones con el sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../evaluacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evaluación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/itpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ITPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/kbit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K-BIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/wisc-v/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/celf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CELF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/trog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TROG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/ceg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CEG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/eceni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECENI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/repeticion-pseudopalabras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición de pseudopalabras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/span-de-digitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Span de dígitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluacion/normas-y-baremos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normas y baremos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../medidas-linguisticas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medidas lingüísticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medidas lingüísticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../medidas-linguisticas/unidades-t-y-clausulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidades-t y cláusulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tipologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingüística
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lingüística
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tipologia/espanol-fusional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español como lengua fusional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tdl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TDL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/etiologia-multifactorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiología multifactorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdl/markers-psicolinguisticos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markers psicolingüísticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../afasia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Afasia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/areas-broca-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áreas de Broca y Wernicke y sus afasias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/triangulo-lichtheim-wernicke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triángulo / casita de Wernicke-Lichtheim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/comprension-boston-aat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de comprensión (BDAE Boston y AAT Aachen)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/perseveracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseveración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasia-conduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasia de conducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/afasias-transcorticales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Afasias transcorticales (motora, sensorial, mixta)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/parafasias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parafasias — tipos y valor diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/bada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BADA (Batería para el Análisis de los Déficits Afásicos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/anatomia-lenguaje-perisilviano-subcortical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatomía del lenguaje (perisilviano, extrasilviano, subcortical)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../afasia/agramatismo-limites-metodo-modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agramatismo y los límites del método modular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lectura/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lectura y alfabetización
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lectura y alfabetización
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/constructivismo-palabra-generadora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructivismo y palabra generadora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/silaba-unidad-sublexical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La sílaba como unidad subléxica (y el morfema)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/disgrafia-superficial-homofonos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disgrafía superficial y homófonos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/voz-interna-mediacion-fonologica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voz interna y mediación fonológica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lectura/cohesion-coherencia-modelo-situacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cohesión, coherencia y modelo de situación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../metodologia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodología
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/prisma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRISMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/catalise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CATALISE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/tiempo-reaccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempo de reacción (TR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/n400-p600-potenciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N400 y P600 (potenciales evocados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/crisis-replicacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La crisis de replicación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/childes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHILDES (Child Language Data Exchange System)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-problema-que-viene-a-resolver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. El problema que viene a resolver
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-los-mecanismos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Los mecanismos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Los mecanismos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metilacion-del-adn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metilación del ADN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificaciones-de-histonas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificaciones de histonas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arn-no-codificantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ARN no codificantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cromatina-de-orden-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cromatina de orden superior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-los-casos-solidos-donde-nadie-discute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Los casos sólidos: donde nadie discute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-modelo-que-fundo-la-epigenetica-del-comportamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El modelo que fundó la "epigenética del comportamiento"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-el-caso-humano-mas-citado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El caso humano más citado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-intergeneracional-vs-transgeneracional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Intergeneracional vs. transgeneracional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Intergeneracional vs. transgeneracional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-la-barrera-de-weismann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: la barrera de Weismann
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-la-reprogramacion-germinal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: la reprogramación germinal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-dificil-los-confusores-en-humanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué es difícil: los confusores en humanos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-los-problemas-de-medicion-en-estudios-humanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Los problemas de medición en estudios humanos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Los problemas de medición en estudios humanos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-del-tejido-sangre-no-es-cerebro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema del tejido: sangre no es cerebro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-la-direccion-causal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de la dirección causal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-del-tamano-de-efecto-y-la-potencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema del tamaño de efecto y la potencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-relojes-epigeneticos-predicen-sin-explicar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los relojes epigenéticos: predicen sin explicar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-el-hype-y-por-que-no-es-inocuo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. El hype y por qué no es inocuo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-como-leer-un-paper-de-epigenetica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cómo leer un paper de epigenética
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-donde-queda-entonces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Dónde queda, entonces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexiones-con-el-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexiones con el sitio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Neurobiología
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="epigenetica">Epigenética<a class="headerlink" href="#epigenetica" title="Permanent link">&para;</a></h1>
+<p>Conjunto de mecanismos moleculares que <strong>regulan si un gen se expresa o no, sin modificar la secuencia del ADN</strong>. La metáfora habitual: el genoma es la partitura y la epigenética decide qué instrumentos la tocan, cuándo y con qué volumen.</p>
+<p>Es un campo real, con mecanismos bien caracterizados, y al mismo tiempo <strong>uno de los más sobrevendidos de la biología contemporánea</strong> — sobre todo cuando salta a la divulgación, la educación y el discurso sobre políticas sociales. Esta entrada intenta separar las dos cosas: qué está establecido, qué está en disputa y qué es directamente hype.</p>
+<div class="admonition note">
+<p class="admonition-title">Por qué aparece en neurociencias del lenguaje y la educación</p>
+<p>Tres debates del campo pasan por acá: <strong>períodos críticos vs. sensibles</strong> (¿qué fija una ventana de desarrollo?), <strong>el efecto de la pobreza y la adversidad temprana sobre el desarrollo cognitivo</strong> (¿cómo se "mete" el ambiente en el cerebro?) y el problema de los <strong>neuromitos</strong> (la epigenética es hoy una de las fuentes principales de afirmaciones educativas mal fundadas).</p>
+</div>
+<hr />
+<h2 id="1-el-problema-que-viene-a-resolver">1. El problema que viene a resolver<a class="headerlink" href="#1-el-problema-que-viene-a-resolver" title="Permanent link">&para;</a></h2>
+<p>Todas las células de un organismo tienen el mismo genoma. Una neurona y un hepatocito comparten el ADN y expresan programas completamente distintos. Algo tiene que estar apagando y prendiendo tramos del genoma de forma <strong>estable y heredable entre divisiones celulares</strong>. Eso es, en su sentido estricto y original (Waddington, años 40), la epigenética: el estudio de cómo el genotipo da lugar al fenotipo durante el desarrollo.</p>
+<p>El sentido estricto importa porque hay una <strong>definición amplia y una restringida</strong> circulando a la vez, y el deslizamiento entre ambas es la fuente de la mitad de las confusiones:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Definición restringida</th>
+<th>Definición amplia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Qué exige</strong></td>
+<td>Marca molecular <strong>heredable a través de divisiones celulares</strong> (o generaciones) sin cambio de secuencia</td>
+<td>Cualquier regulación de la expresión génica</td>
+</tr>
+<tr>
+<td><strong>Qué incluye</strong></td>
+<td>Metilación del ADN, algunas marcas de histonas, impronta, inactivación del X</td>
+<td>Además: todo factor de transcripción, toda señal intracelular</td>
+</tr>
+<tr>
+<td><strong>Problema</strong></td>
+<td>Difícil de demostrar</td>
+<td>Tan amplia que se vuelve trivialmente cierta</td>
+</tr>
+</tbody>
+</table>
+<p>Cuando un texto de divulgación dice "la experiencia modifica tu epigenoma", suele estar usando la definición amplia — donde la afirmación es casi tautológica — y dejando que el lector la entienda en la restringida, donde implicaría herencia.</p>
+<hr />
+<h2 id="2-los-mecanismos">2. Los mecanismos<a class="headerlink" href="#2-los-mecanismos" title="Permanent link">&para;</a></h2>
+<h3 id="metilacion-del-adn">Metilación del ADN<a class="headerlink" href="#metilacion-del-adn" title="Permanent link">&para;</a></h3>
+<p>Es el mecanismo más estudiado y el más medido. Se agrega un grupo metilo (<strong>—CH₃</strong>) a una citosina, típicamente en un contexto <strong>CpG</strong> (una citosina seguida de una guanina). Las enzimas que lo hacen son las <strong>DNMT</strong> (ADN metiltransferasas); las que lo quitan, de la familia <strong>TET</strong>.</p>
+<ul>
+<li>Metilación alta en una <strong>región promotora</strong> → típicamente <strong>silenciamiento</strong> del gen (el promotor queda menos accesible y se reclutan proteínas represoras).</li>
+<li>Las <strong>islas CpG</strong> son regiones ricas en CpG asociadas a promotores; su estado de metilación es informativo.</li>
+<li>Es <strong>mitóticamente estable</strong>: se copia a las células hijas. Esto es lo que la vuelve candidata a "memoria celular".</li>
+</ul>
+<h3 id="modificaciones-de-histonas">Modificaciones de histonas<a class="headerlink" href="#modificaciones-de-histonas" title="Permanent link">&para;</a></h3>
+<p>El ADN está enrollado sobre octámeros de histonas. Las colas de esas histonas reciben modificaciones químicas — <strong>acetilación, metilación, fosforilación, ubiquitinación</strong> — que cambian qué tan compacta queda la cromatina y qué proteínas se reclutan.</p>
+<ul>
+<li><strong>Acetilación</strong> (vía HAT, enzimas acetiltransferasas) → cromatina más abierta → <strong>más transcripción</strong>. Las <strong>HDAC</strong> (deacetilasas) hacen lo inverso.</li>
+<li>La metilación de histonas no tiene un signo único: <strong>H3K4me3</strong> marca promotores activos, mientras <strong>H3K27me3</strong> y <strong>H3K9me3</strong> marcan represión.</li>
+<li>Los inhibidores de HDAC (por ejemplo la <strong>tricostatina A</strong>) son la herramienta farmacológica estándar para probar causalidad en modelos animales.</li>
+</ul>
+<h3 id="arn-no-codificantes">ARN no codificantes<a class="headerlink" href="#arn-no-codificantes" title="Permanent link">&para;</a></h3>
+<p><strong>miARN, lncARN, piARN</strong>: regulan la traducción y la estabilidad de los mensajeros, y en algunos casos dirigen maquinaria de silenciamiento a loci específicos. En la discusión sobre herencia transgeneracional son hoy <strong>los candidatos más plausibles</strong>, por una razón concreta: a diferencia de la metilación, los ARN pequeños del gameto no se borran en la reprogramación germinal.</p>
+<h3 id="cromatina-de-orden-superior">Cromatina de orden superior<a class="headerlink" href="#cromatina-de-orden-superior" title="Permanent link">&para;</a></h3>
+<p>Dominios topológicos (<strong>TAD</strong>), bucles de cromatina, posición del locus respecto de la lámina nuclear. Menos presente en la discusión psicológica, central en la molecular.</p>
+<hr />
+<h2 id="3-los-casos-solidos-donde-nadie-discute">3. Los casos sólidos: donde nadie discute<a class="headerlink" href="#3-los-casos-solidos-donde-nadie-discute" title="Permanent link">&para;</a></h2>
+<p>Antes de entrar en lo polémico, vale fijar que hay fenómenos epigenéticos <strong>completamente establecidos</strong>, y que son los que le dan credibilidad al campo:</p>
+<ul>
+<li><strong>Impronta genómica (imprinting)</strong>. Alrededor de 100-200 genes humanos se expresan solo desde la copia materna o solo desde la paterna, según marcas de metilación puestas en la gametogénesis. Cuando la impronta falla aparecen cuadros clínicos definidos: <strong>síndrome de Prader-Willi</strong> y <strong>síndrome de Angelman</strong> (ambos en 15q11-q13, según qué copia se pierda), <strong>Beckwith-Wiedemann</strong>, <strong>Silver-Russell</strong>. Esto es herencia epigenética real, intergeneracional, documentada.</li>
+<li><strong>Inactivación del cromosoma X</strong>. En células de mamíferos hembra, uno de los dos X se silencia casi por completo, de forma estable y clonal, mediante el lncARN <strong>XIST</strong>. Es el ejemplo canónico de silenciamiento epigenético a escala de cromosoma.</li>
+<li><strong>Diferenciación celular</strong>. El perfil de metilación y de marcas de histonas es lo que mantiene a una neurona siendo una neurona. La reprogramación a células madre inducidas (<strong>iPSC</strong>, Yamanaka) funciona precisamente borrando ese perfil.</li>
+<li><strong>Oncología</strong>. La hipermetilación de promotores de supresores tumorales y la hipometilación global son hallazgos robustos, y hay fármacos epigenéticos aprobados (azacitidina, decitabina).</li>
+</ul>
+<p>Nada de lo que viene después invalida esto. La pregunta es cuánto se puede extrapolar de acá a afirmaciones sobre conducta, aprendizaje y herencia de la experiencia.</p>
+<hr />
+<h2 id="4-el-modelo-que-fundo-la-epigenetica-del-comportamiento">4. El modelo que fundó la "epigenética del comportamiento"<a class="headerlink" href="#4-el-modelo-que-fundo-la-epigenetica-del-comportamiento" title="Permanent link">&para;</a></h2>
+<p><strong>Weaver, Cervoni, Champagne, Meaney y colaboradores (2004)</strong>, en <em>Nature Neuroscience</em>, es el trabajo que abrió el campo conductual. Vale conocerlo en detalle porque es el estándar metodológico contra el que conviene medir todo lo demás.</p>
+<p>El diseño, en ratas:</p>
+<ol>
+<li>Las madres varían naturalmente en cuánto <strong>lamen y acicalan</strong> (<em>licking and grooming</em>) a sus crías en la primera semana.</li>
+<li>Las crías de madres de alto cuidado muestran, de adultas, <strong>menor metilación del promotor del gen del receptor de glucocorticoides (GR, exón 1₇)</strong> en el hipocampo, más acetilación de histonas en ese sitio, más unión del factor de transcripción <strong>NGFI-A</strong>, más expresión de GR y una <strong>respuesta de estrés atenuada</strong> (eje HPA mejor regulado).</li>
+<li><strong>Crianza cruzada</strong> (<em>cross-fostering</em>): crías de madres de bajo cuidado criadas por madres de alto cuidado adquieren el patrón de la madre adoptiva. Esto descarta la explicación genética y establece que <strong>la conducta materna es la causa</strong>.</li>
+<li><strong>Reversión farmacológica en el adulto</strong>: infundir un inhibidor de HDAC (tricostatina A) o metionina revierte las diferencias de metilación, de expresión y de conducta. Esto establece que la marca es <strong>causalmente necesaria</strong>, no un correlato.</li>
+</ol>
+<p>Por qué es un buen estudio: tiene <strong>manipulación experimental</strong> del supuesto causante, un mecanismo molecular medido en <strong>el tejido relevante</strong> (hipocampo, no sangre), <strong>intervención sobre el mecanismo</strong> en ambas direcciones y un resultado conductual medido.</p>
+<p>Y acá está el problema de todo lo que vino después: <strong>casi ningún estudio humano puede hacer nada de eso.</strong> No se puede randomizar el cuidado materno, no se puede biopsiar hipocampo, no se puede infundir un inhibidor de HDAC. Lo que queda son estudios de asociación en tejidos accesibles. Lo que se pierde es, justamente, la causalidad.</p>
+<hr />
+<h2 id="5-el-caso-humano-mas-citado">5. El caso humano más citado<a class="headerlink" href="#5-el-caso-humano-mas-citado" title="Permanent link">&para;</a></h2>
+<p><strong>Heijmans, Lumey y colaboradores (2008)</strong>, en <em>PNAS</em>: el <strong>Hongerwinter</strong> holandés, la hambruna provocada por el bloqueo alemán entre 1944 y 1945. Es el experimento natural mejor documentado que existe, porque los registros civiles y sanitarios holandeses siguieron funcionando con precisión durante la hambruna.</p>
+<p>El hallazgo: las personas expuestas <strong>en el período periconcepcional</strong> tenían, <strong>seis décadas después</strong>, un <strong>5,2% menos de metilación</strong> en la región diferencialmente metilada (DMR) del gen <strong>IGF2</strong>, comparadas con hermanos del mismo sexo no expuestos. La comparación intrafamiliar es la fortaleza del diseño: controla parcialmente genética y entorno familiar.</p>
+<p>Y el efecto era <strong>específico del momento de la exposición</strong>: aparecía en los expuestos periconcepcionalmente, no en los expuestos al final del embarazo.</p>
+<p>Qué muestra y qué no:</p>
+<ul>
+<li>✅ Que una exposición ambiental en una ventana muy temprana deja una marca molecular detectable décadas después. Esto, en sí, es notable.</li>
+<li>⚠️ Es un <strong>único locus</strong> candidato, con un efecto <strong>pequeño en magnitud</strong> (5,2%), medido en <strong>sangre</strong>, y <strong>sin demostración de que medie</strong> ningún resultado de salud o cognición. La cohorte tiene consecuencias de salud documentadas, pero el vínculo causal entre esta marca de metilación y esas consecuencias no está establecido.</li>
+<li>⚠️ Es <strong>intergeneracional, no transgeneracional</strong>: la exposición ocurrió sobre el individuo medido, en el útero. No hay herencia de nada.</li>
+</ul>
+<p>Esa última distinción es la que más se abusa en divulgación, y vale fijarla.</p>
+<hr />
+<h2 id="6-intergeneracional-vs-transgeneracional">6. Intergeneracional vs. transgeneracional<a class="headerlink" href="#6-intergeneracional-vs-transgeneracional" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">La distinción que casi todo el hype atropella</p>
+<p><strong>Intergeneracional</strong>: el ambiente afecta a un individuo que estaba <strong>presente y expuesto</strong> — un feto en el útero (F1), o incluso los gametos que ya existían dentro de ese feto (F2, en el caso de una hembra expuesta). Esto es <strong>exposición directa</strong>, no herencia.</p>
+<p><strong>Transgeneracional (herencia epigenética propiamente dicha)</strong>: el efecto aparece en una generación que <strong>nunca estuvo expuesta, ni como gameto</strong>. En la línea materna eso exige llegar a <strong>F3</strong>; en la paterna, a <strong>F2</strong>. Es lo único que justificaría hablar de "herencia".</p>
+</div>
+<p>Casi todos los hallazgos humanos citados como "herencia epigenética" son intergeneracionales. Y el salto a lo transgeneracional enfrenta obstáculos mecanísticos serios.</p>
+<h3 id="por-que-es-dificil-la-barrera-de-weismann">Por qué es difícil: la barrera de Weismann<a class="headerlink" href="#por-que-es-dificil-la-barrera-de-weismann" title="Permanent link">&para;</a></h3>
+<p>La <strong>barrera de Weismann</strong> (1892) es la separación entre línea germinal y línea somática: lo que le pasa a las células del cuerpo no se transmite a los gametos. Es uno de los pilares de la síntesis moderna y la razón por la cual el lamarckismo quedó descartado. La herencia epigenética transgeneracional, si existe, tiene que <strong>atravesarla</strong>.</p>
+<h3 id="por-que-es-dificil-la-reprogramacion-germinal">Por qué es difícil: la reprogramación germinal<a class="headerlink" href="#por-que-es-dificil-la-reprogramacion-germinal" title="Permanent link">&para;</a></h3>
+<p>Hay <strong>dos oleadas de borrado</strong> masivo de marcas epigenéticas:</p>
+<ol>
+<li>Durante la <strong>diferenciación de las células germinales</strong>, la cromatina se remodela extensamente y la metilación se borra casi por completo (incluidas las marcas de impronta, que se reponen después según el sexo).</li>
+<li><strong>Después de la fertilización</strong>, en el cigoto y el embrión temprano, hay una segunda ronda de desmetilación y remetilación.</li>
+</ol>
+<p>O sea: el sistema está <strong>organizado para borrar</strong> justamente lo que la hipótesis transgeneracional necesita que se conserve. Hay loci que <strong>escapan</strong> a la reprogramación — algunos retrotransposones, algunos loci improntados — y son el candidato mecanístico serio, junto con los ARN pequeños del espermatozoide.</p>
+<h3 id="por-que-es-dificil-los-confusores-en-humanos">Por qué es difícil: los confusores en humanos<a class="headerlink" href="#por-que-es-dificil-los-confusores-en-humanos" title="Permanent link">&para;</a></h3>
+<p><strong>Horsthemke (2018)</strong>, en <em>Nature Communications</em>, es la revisión crítica de referencia. Su punto central: en humanos, lo que se interpreta como herencia epigenética es <strong>indistinguible</strong> de</p>
+<ul>
+<li><strong>herencia genética</strong> — incluyendo variantes de secuencia que controlan la metilación (<strong>mQTL</strong>: una fracción sustancial de la variación interindividual en metilación, con estimaciones de hasta ~20%, es atribuible a variantes de secuencia; es decir, es <em>genética</em> disfrazada de epigenética);</li>
+<li><strong>herencia ecológica</strong> — los hijos heredan el barrio, la dieta, la exposición a tóxicos, el microbioma, el nivel socioeconómico;</li>
+<li><strong>herencia cultural</strong> — y las prácticas de crianza, que se transmiten sin ningún mecanismo molecular especial.</li>
+</ul>
+<p><strong>Heard &amp; Martienssen (2014)</strong>, en <em>Cell</em>, llegan a una conclusión parecida desde la biología molecular: hay evidencia buena en plantas, en <em>C. elegans</em> y en algunos casos de ratón, evidencia <strong>débil y mal controlada</strong> en humanos, y una brecha grande entre lo que el campo afirma y lo que los mecanismos permiten.</p>
+<hr />
+<h2 id="7-los-problemas-de-medicion-en-estudios-humanos">7. Los problemas de medición en estudios humanos<a class="headerlink" href="#7-los-problemas-de-medicion-en-estudios-humanos" title="Permanent link">&para;</a></h2>
+<p>Esta es la sección más útil para leer papers con criterio.</p>
+<h3 id="el-problema-del-tejido-sangre-no-es-cerebro">El problema del tejido: sangre no es cerebro<a class="headerlink" href="#el-problema-del-tejido-sangre-no-es-cerebro" title="Permanent link">&para;</a></h3>
+<p>Casi todos los estudios epigenéticos humanos de fenotipos cognitivos o psiquiátricos miden metilación en <strong>sangre periférica</strong> (o saliva, o epitelio bucal), porque el cerebro no está disponible. Pero la metilación es <strong>específica de tejido</strong> — es el mecanismo mismo de la diferenciación celular, así que su especificidad tisular no es un ruido molesto: es su función.</p>
+<p><strong>Hannon, Lunnon, Schalkwyk &amp; Mill (2015)</strong>, en <em>Epigenetics</em>, midieron metilación en muestras pareadas de sangre y <strong>cuatro regiones cerebrales</strong> (corteza prefrontal, corteza entorrinal, giro temporal superior y cerebelo) de 122 individuos. Resultado: <strong>para la mayoría de los sitios, la variación interindividual en sangre no predice bien la variación en cerebro</strong> — algo mejor para regiones corticales que para cerebelo. Existe un <strong>subconjunto minoritario</strong> de sitios donde la correlación entre tejidos sí es fuerte (incluso cuando el nivel absoluto de metilación difiere), y ese subconjunto es el que vale la pena usar; de ahí herramientas como <strong>BECon</strong>, que ayudan a estimar si un sitio hallado en sangre es interpretable en cerebro.</p>
+<p>Qué preguntarle entonces a un paper: <strong>¿el sitio reportado está en ese subconjunto con correlación sangre-cerebro documentada, o se asume la extrapolación sin más?</strong></p>
+<p>Y un confusor adicional: la sangre es una <strong>mezcla de tipos celulares</strong> en proporciones variables. Un cambio aparente de metilación puede ser, en realidad, un cambio en la <strong>composición celular</strong> de la muestra (más linfocitos, menos neutrófilos). Un paper serio corrige por composición celular; conviene verificar que lo haga.</p>
+<h3 id="el-problema-de-la-direccion-causal">El problema de la dirección causal<a class="headerlink" href="#el-problema-de-la-direccion-causal" title="Permanent link">&para;</a></h3>
+<p>Un estudio de asociación encuentra que cierto patrón de metilación va con cierta conducta. La lectura intuitiva es que la metilación es la <strong>base</strong> de la conducta. Pero puede ser la <strong>consecuencia</strong>.</p>
+<p>El estudio longitudinal <strong>IMAGEN</strong> (publicado en <em>Biological Psychiatry</em>) midió metilación y problemas de conducta en los mismos adolescentes a los <strong>14 y a los 19 años</strong> (n ≈ 506), lo que permite ordenar temporalmente las variables. Los análisis de mediación longitudinal indicaron que la metilación asociada a problemas de conducta externalizante era <strong>más probablemente un resultado</strong> de esas conductas (acentuadas por eventos vitales negativos) <strong>que su base epigenética</strong>. Las <em>methylation risk scores</em> correlacionaban además con menor volumen de materia gris en corteza orbitofrontal medial y cingulada anterior/media.</p>
+<p>Es un recordatorio incómodo y necesario: <strong>conducta → biología</strong> es una dirección tan posible como la inversa, y la mayoría de los diseños no la distingue.</p>
+<h3 id="el-problema-del-tamano-de-efecto-y-la-potencia">El problema del tamaño de efecto y la potencia<a class="headerlink" href="#el-problema-del-tamano-de-efecto-y-la-potencia" title="Permanent link">&para;</a></h3>
+<p>Un array de metilación mide cientos de miles de sitios CpG a la vez. Los <strong>EWAS</strong> (estudios de asociación epigenómica) tienen por lo tanto el mismo problema de comparaciones múltiples que los GWAS, pero históricamente con muestras <strong>mucho más chicas</strong>. El resultado previsible es una literatura con muchos hallazgos de un solo locus que no replican. Vale aplicar acá exactamente los criterios de <a href="../../metodologia/crisis-replicacion/">la crisis de replicación</a>: preguntar por el <em>n</em>, por la corrección por comparaciones múltiples, por la replicación en cohorte independiente, por el preregistro.</p>
+<h3 id="los-relojes-epigeneticos-predicen-sin-explicar">Los relojes epigenéticos: predicen sin explicar<a class="headerlink" href="#los-relojes-epigeneticos-predicen-sin-explicar" title="Permanent link">&para;</a></h3>
+<p>El <strong>reloj de Horvath</strong> (2013) es un predictor de edad cronológica construido con regresión regularizada (<em>elastic net</em>) sobre <strong>353 sitios CpG</strong>, entrenado en alrededor de 8.000 muestras de múltiples tejidos. Funciona notablemente bien, y la "aceleración epigenética de la edad" predice morbilidad y mortalidad.</p>
+<p>Pero conviene ser preciso sobre lo que es: <strong>un modelo predictivo, no un mecanismo</strong>. Los sitios fueron seleccionados por su valor predictivo, no por su función biológica; el modelo asume aditividad y tasa de cambio constante a lo largo de la vida, dos supuestos que no se sostienen en todos los CpG; y los procesos moleculares que determinan la velocidad del reloj <strong>no están establecidos</strong>. Es un biomarcador excelente y una explicación nula — una distinción que la divulgación suele colapsar.</p>
+<hr />
+<h2 id="8-el-hype-y-por-que-no-es-inocuo">8. El hype y por qué no es inocuo<a class="headerlink" href="#8-el-hype-y-por-que-no-es-inocuo" title="Permanent link">&para;</a></h2>
+<p><strong>Isles (2015)</strong>, "Neural and behavioural epigenetics; what it is, and what is hype", en <em>Genes, Brain and Behavior</em>, es el artículo que conviene leer para calibrar. El argumento general del campo crítico tiene dos partes.</p>
+<p>La primera es epistémica: <strong>"es epigenético" no explica nada por sí solo.</strong> Decir que la adversidad temprana deja marcas epigenéticas es compatible con prácticamente cualquier mecanismo de efecto ambiental duradero, y por eso no discrimina entre hipótesis. La palabra funciona como un sello de respetabilidad molecular sobre una afirmación que podría formularse sin ella.</p>
+<p>La segunda es ética y política, y está desarrollada en trabajos como <strong>"Epigenetics Changes Nothing: What a New Scientific Field Does and Does Not Mean for Ethics and Social Justice"</strong>. El punto: la retórica epigenética se usa en dos direcciones opuestas, y ninguna de las dos se sigue de la evidencia.</p>
+<ul>
+<li><strong>Dirección optimista</strong>: "la epigenética demuestra que el ambiente importa, entonces hay que invertir en primera infancia". La conclusión puede ser correcta, pero <strong>no necesita la epigenética</strong> — que el ambiente temprano importa está establecido por epidemiología, estudios de intervención y psicología del desarrollo desde mucho antes. Fundamentar una política en el eslabón molecular más frágil de la cadena la vuelve vulnerable a que ese eslabón no replique.</li>
+<li><strong>Dirección pesimista, más preocupante</strong>: "la pobreza deja marcas epigenéticas" puede derivar en una <strong>biologización del daño social</strong> — en tratar a los chicos de hogares pobres como molecularmente dañados, con una ventana que ya se cerró. Eso reintroduce determinismo por la puerta de atrás y traslada la responsabilidad del Estado al cuerpo de la madre, que es donde la narrativa epigenética suele depositarla.</li>
+</ul>
+<p>Hay una asimetría retórica digna de atención: la epigenética entró al discurso público <strong>como antídoto del determinismo genético</strong> ("tus genes no son tu destino") y puede terminar funcionando como un determinismo nuevo, con una ventana temporal más estrecha y una atribución de responsabilidad más individual.</p>
+<hr />
+<h2 id="9-como-leer-un-paper-de-epigenetica">9. Cómo leer un paper de epigenética<a class="headerlink" href="#9-como-leer-un-paper-de-epigenetica" title="Permanent link">&para;</a></h2>
+<p>Una lista de verificación, ordenada por cuánta diferencia hace cada punto:</p>
+<ol>
+<li><strong>¿Es un estudio de asociación o hay manipulación?</strong> Sin manipulación experimental del supuesto causante, lo que hay es correlación. La crianza cruzada de Weaver et al. es el estándar; en humanos rara vez es alcanzable.</li>
+<li><strong>¿En qué tejido se midió?</strong> Si es sangre o saliva y el fenotipo es cognitivo, preguntar si los sitios reportados tienen correlación sangre-cerebro documentada.</li>
+<li><strong>¿Se corrigió por composición celular?</strong> En sangre es obligatorio.</li>
+<li><strong>¿Se controló la genética?</strong> ¿Hay datos de mQTL, diseño intrafamiliar, gemelos monocigóticos discordantes? Sin esto, una fracción del "efecto epigenético" puede ser secuencia.</li>
+<li><strong>¿Es intergeneracional o transgeneracional?</strong> Si se habla de herencia: ¿llegaron a F3 en línea materna, o a F2 en paterna?</li>
+<li><strong>¿Cuál es la dirección temporal?</strong> ¿Hay diseño longitudinal que permita distinguir causa de consecuencia?</li>
+<li><strong>¿Hay un mecanismo o solo una marca?</strong> ¿Se midió expresión del gen? ¿Proteína? ¿Función? Una diferencia de metilación sin cambio de expresión no es un efecto funcional.</li>
+<li><strong>¿Es gen candidato o epigenoma completo?</strong> Y si es epigenoma completo: corrección por comparaciones múltiples, tamaño muestral, replicación independiente.</li>
+<li><strong>¿El tamaño de efecto es interpretable?</strong> Un 5% de diferencia de metilación en un locus no se traduce automáticamente en nada fenotípico.</li>
+</ol>
+<hr />
+<h2 id="10-donde-queda-entonces">10. Dónde queda, entonces<a class="headerlink" href="#10-donde-queda-entonces" title="Permanent link">&para;</a></h2>
+<p>Un resumen por niveles de confianza:</p>
+<table>
+<thead>
+<tr>
+<th>Afirmación</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Existen marcas epigenéticas que regulan la expresión génica de forma estable</td>
+<td><strong>Establecido</strong></td>
+</tr>
+<tr>
+<td>La impronta genómica y la inactivación del X son fenómenos epigenéticos con consecuencias clínicas</td>
+<td><strong>Establecido</strong></td>
+</tr>
+<tr>
+<td>El perfil epigenético es específico de tejido y sostiene la identidad celular</td>
+<td><strong>Establecido</strong></td>
+</tr>
+<tr>
+<td>El ambiente temprano puede dejar marcas epigenéticas detectables mucho después, en el individuo expuesto</td>
+<td><strong>Bien apoyado</strong>, con el Hongerwinter y los modelos animales</td>
+</tr>
+<tr>
+<td>En roedores, la conducta materna causa cambios epigenéticos que median la respuesta al estrés</td>
+<td><strong>Bien apoyado</strong> (Weaver et al. 2004, con manipulación y reversión)</td>
+</tr>
+<tr>
+<td>En humanos, marcas epigenéticas específicas median efectos de la adversidad sobre la cognición</td>
+<td><strong>En disputa</strong> — problemas de tejido, de dirección causal y de potencia</td>
+</tr>
+<tr>
+<td>Existe herencia epigenética transgeneracional en humanos</td>
+<td><strong>No establecido</strong> — mecanísticamente problemática y empíricamente confundida</td>
+</tr>
+<tr>
+<td>Hallazgos epigenéticos justifican intervenciones educativas concretas</td>
+<td><strong>No establecido</strong> — y ninguna intervención con evidencia depende de ellos</td>
+</tr>
+</tbody>
+</table>
+<p>La posición razonable no es ni el entusiasmo ni el descarte. La epigenética molecular es sólida; la epigenética <strong>conductual humana</strong> es un campo joven con problemas metodológicos severos y bien identificados; y la epigenética <strong>de divulgación</strong> es, en buena medida, una metáfora que viaja mucho más rápido que su evidencia.</p>
+<hr />
+<h2 id="conexiones-con-el-sitio">Conexiones con el sitio<a class="headerlink" href="#conexiones-con-el-sitio" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../ontogenia-filogenia/">Ontogenia y filogenia</a></strong> — la distinción intergeneracional/transgeneracional es exactamente el límite entre esos dos planos. La herencia epigenética es interesante precisamente porque, si existiera, haría pasar algo de lo ontogenético al plano filogenético.</li>
+<li><strong><a href="../sinaptogenesis-poda-sinaptica/">Sinaptogénesis y poda sináptica</a></strong> — el otro gran candidato a explicar "cómo el ambiente temprano se inscribe en el cerebro", y con el mismo patrón de sobreinterpretación educativa. La poda tiene la ventaja de un mecanismo celular identificado; conviene leer las dos entradas juntas.</li>
+<li><strong><a href="../plasticidad-estructural-mecanismos/">Plasticidad estructural y sináptica</a></strong> — la LTP y la consolidación de memoria a largo plazo requieren transcripción génica, y hay regulación epigenética involucrada. Es el punto donde los dos temas se tocan en serio.</li>
+<li><strong><a href="../../metodologia/crisis-replicacion/">La crisis de replicación</a></strong> — los EWAS tienen el mismo perfil de riesgo que cualquier campo de muestras chicas y muchas comparaciones.</li>
+<li><strong><a href="../tinbergen-niveles-analisis/">Las 4 preguntas de Tinbergen</a></strong> — útil para ubicar de qué se está hablando: la epigenética es una respuesta de nivel <strong>mecanismo</strong>, que a veces se presenta como si respondiera <strong>ontogenia</strong> o <strong>filogenia</strong>.</li>
+<li><strong><a href="../foxp2/">FOXP2</a></strong> — el precedente directo de cómo un hallazgo molecular real se convierte en una etiqueta demasiado grande ("el gen del lenguaje") y después hay que desarmarla.</li>
+</ul>
+<hr />
+<h2 id="fuentes">Fuentes<a class="headerlink" href="#fuentes" title="Permanent link">&para;</a></h2>
+<p><strong>Mecanismos y revisiones generales</strong></p>
+<ul>
+<li><strong>Waddington, C. H. (1942)</strong> "The epigenotype". <em>Endeavour</em> 1:18-20. — el origen del término, en un sentido bastante distinto del actual.</li>
+<li><strong>Heard, E. &amp; Martienssen, R. A. (2014)</strong> "Transgenerational epigenetic inheritance: myths and mechanisms". <em>Cell</em> 157(1):95-109. — <strong>la revisión de referencia.</strong> Ordena qué evidencia hay por organismo y cuáles son las barreras mecanísticas.</li>
+</ul>
+<p><strong>El modelo conductual fundacional</strong></p>
+<ul>
+<li><strong>Weaver, I. C. G., Cervoni, N., Champagne, F. A., D'Alessio, A. C., Sharma, S., Seckl, J. R., Dymov, S., Szyf, M. &amp; Meaney, M. J. (2004)</strong> "Epigenetic programming by maternal behavior". <em>Nature Neuroscience</em> 7(8):847-854. — crianza cruzada y reversión farmacológica. El estándar metodológico del campo.</li>
+</ul>
+<p><strong>El caso humano</strong></p>
+<ul>
+<li><strong>Heijmans, B. T., Tobi, E. W., Stein, A. D., Putter, H., Blauw, G. J., Susser, E. S., Slagboom, P. E. &amp; Lumey, L. H. (2008)</strong> "Persistent epigenetic differences associated with prenatal exposure to famine in humans". <em>PNAS</em> 105(44):17046-17049. — <a href="https://www.pnas.org/doi/10.1073/pnas.0806560105">acceso abierto</a>.</li>
+</ul>
+<p><strong>La crítica (lo más útil para calibrar)</strong></p>
+<ul>
+<li><strong>Horsthemke, B. (2018)</strong> "A critical view on transgenerational epigenetic inheritance in humans". <em>Nature Communications</em> 9:2973. — <strong>acceso abierto.</strong> La demolición ordenada del caso humano: herencia genética, ecológica y cultural como confusores.</li>
+<li><strong>Isles, A. R. (2015)</strong> "Neural and behavioural epigenetics; what it is, and what is hype". <em>Genes, Brain and Behavior</em> 14(1):64-72.</li>
+<li><strong>Juengst, E. T., Fishman, J. R., McGowan, M. L. &amp; Settersten, R. A. (2014)</strong> "Serving epigenetics before its time". <em>Trends in Genetics</em> 30(10):427-429. — sobre la traducción prematura a política pública.</li>
+<li><strong>"Epigenetics Changes Nothing: What a New Scientific Field Does and Does Not Mean for Ethics and Social Justice"</strong> — el argumento de que la epigenética no agrega premisas a los debates sobre justicia social, y de los riesgos de pretender que sí.</li>
+</ul>
+<p><strong>Problemas de medición</strong></p>
+<ul>
+<li><strong>Hannon, E., Lunnon, K., Schalkwyk, L. &amp; Mill, J. (2015)</strong> "Interindividual methylomic variation across blood, cortex, and cerebellum: implications for epigenetic studies of neurological and neuropsychiatric phenotypes". <em>Epigenetics</em> 10(11):1024-1032. — <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4844197/">en PMC</a>. El paper que hay que citar cada vez que alguien extrapola de sangre a cerebro.</li>
+<li><strong>Edgar, R. D., Jones, M. J., Meaney, M. J., Turecki, G. &amp; Kobor, M. S. (2017)</strong> "BECon: a tool for interpreting DNA methylation findings from blood in the context of brain". <em>Translational Psychiatry</em> 7:e1187.</li>
+<li><strong>Horvath, S. (2013)</strong> "DNA methylation age of human tissues and cell types". <em>Genome Biology</em> 14:R115. — el reloj epigenético original.</li>
+<li><strong>Bell, C. G. et al. (2019)</strong> "DNA methylation aging clocks: challenges and recommendations". <em>Genome Biology</em> 20:249. — qué no hay que concluir de un reloj.</li>
+<li><strong>Chen, Z. et al. (2023)</strong> "Associations of DNA methylation with behavioral problems, gray matter volumes, and negative life events across adolescence: evidence from the longitudinal IMAGEN study". <em>Biological Psychiatry</em> 94(4):342-351. — el estudio longitudinal que sugiere causalidad inversa.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido producido en diálogo con <strong>Claude (Anthropic)</strong> y curado por Julia Milanese. Verificá con fuentes primarias antes de citar.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+    
+  </body>
+</html>
