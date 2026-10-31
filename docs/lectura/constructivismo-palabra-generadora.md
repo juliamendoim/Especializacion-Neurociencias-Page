@@ -38,6 +38,8 @@ Los métodos **mixtos o eclécticos** combinan ambas entradas y son, de hecho, l
 
 Marco de **Emilia Ferreiro y Ana Teberosky**, *Los sistemas de escritura en el desarrollo del niño* (1979), de raíz **piagetiana**.
 
+> Esta sección resume lo necesario para el contraste con los métodos. La teoría en sí —la herencia piagetiana, el método clínico con el que se obtuvieron los datos, la distinción entre sistema de representación y código de transcripción, la objeción de circularidad y el alcance translingüístico de los niveles— tiene entrada propia: **[la perspectiva psicogenética](perspectiva-psicogenetica.md)**.
+
 **Tesis central:** la escritura no es un código de transcripción que se aprende por asociación, sino un **objeto de conocimiento** que el niño **reconstruye** formulando hipótesis sucesivas, del mismo modo en que construye la noción de número o de conservación. Antes de cualquier enseñanza formal el niño ya tiene ideas sobre qué es escribir — y esas ideas son **sistemáticas y ordenadas**, no errores azarosos.
 
 ### Los niveles descritos
@@ -86,7 +88,7 @@ Este es el motivo por el que el tema entra en neuropsicología y no solo en did�
 
 **La decodificación es el motor del aprendizaje, no un residuo.** Según la *self-teaching hypothesis* (Share, 1995), cada vez que un lector novato decodifica **con éxito** una palabra nueva se genera la oportunidad de construir su **representación ortográfica**. La ruta sublexical es lo que alimenta a la léxica; sin decodificación eficiente el léxico ortográfico crece poco y lento. Ver [modelo dual-ruta](../modelos-cognitivos/dual-ruta-lectura.md).
 
-**La evidencia experimental.** Convergen el *National Reading Panel* (2000) y el meta-análisis de Ehri et al. (2001), Rayner et al. (2001, *How psychological science informs the teaching of reading*) y Castles, Rayner & Seidenberg (2018, *Ending the reading wars*): la **instrucción fónica sistemática y explícita** supera a los enfoques global/incidental, con efecto **moderado** (d ≈ 0,4 en el meta-análisis de Ehri), mayor en:
+**La evidencia experimental.** Convergen el *National Reading Panel* (2000) y el meta-análisis de Ehri et al. (2001), Rayner et al. (2001, *How psychological science informs the teaching of reading*) y Castles, Rastle & Nation (2018, *Ending the reading wars*): la **instrucción fónica sistemática y explícita** supera a los enfoques global/incidental, con efecto **moderado** (d ≈ 0,4 en el meta-análisis de Ehri), mayor en:
 
 - los **primeros años** de escolaridad (1° y 2° grado),
 - los lectores **en riesgo** o con dificultades,
@@ -104,7 +106,7 @@ Reducir esto a "el constructivismo estaba mal" es tan impreciso como sostener qu
 
 **Se sostiene del constructivismo:**
 
-- La **descripción de los niveles** es un hallazgo empírico robusto, replicado en varias lenguas. Los chicos efectivamente pasan por una hipótesis silábica.
+- La **descripción de los niveles** es un hallazgo empírico robusto. Los chicos hispanohablantes efectivamente pasan por una fase silábica. La generalidad translingüística es más acotada de lo que suele decirse, y Ferreiro misma la acota: ver **[la perspectiva psicogenética](perspectiva-psicogenetica.md)**.
 - La idea de que las escrituras infantiles no son ruido sino **sistema**, y que sirven como ventana diagnóstica del punto conceptual en que está el niño.
 - El énfasis en el **sentido**: aprender el código no alcanza. La *Simple View of Reading* (Gough & Tunmer, 1986) lo formaliza — comprensión lectora = **decodificación × comprensión lingüística**: si cualquiera de los dos factores es cero, el producto es cero. Vocabulario, sintaxis y conocimiento del mundo son tan necesarios como el código.
 
@@ -140,6 +142,7 @@ Para la evaluación neuropsicológica, el método con el que se enseñó a leer 
 
 ## Cómo se conecta con otros conceptos
 
+- **[La perspectiva psicogenética](perspectiva-psicogenetica.md)** — la teoría en detalle: raíz piagetiana, método clínico, la tesis del sistema de representación, la objeción de circularidad y el puente de Vernon y Ferreiro (1999) con la conciencia fonológica.
 - **[Modelo dual-ruta de lectura](../modelos-cognitivos/dual-ruta-lectura.md)** — el marco que explica por qué la enseñanza del código construye la ruta sublexical, y por qué esa ruta es la que alimenta al léxico ortográfico.
 - **[Repetición de pseudopalabras](../evaluacion/repeticion-pseudopalabras.md)** — las mismas representaciones fonológicas en juego; las pseudopalabras miden selectivamente lo que la instrucción fónica entrena.
 - **[Aprendizajes generales](../aprendizajes-generales.md)** — las secciones sobre el andamiaje innato del cerebro y la autoorganización cerebral discuten el reciclaje neuronal y los límites de "aprender por exposición".
@@ -152,7 +155,7 @@ Para la evaluación neuropsicológica, el método con el que se enseñó a leer 
 - Freire, P. (1967). *La educación como práctica de la libertad*. Siglo XXI.
 - Share, D. (1995). Phonological recoding and self-teaching: sine qua non of reading acquisition. *Cognition*, 55(2), 151-218.
 - Rayner, K., Foorman, B., Perfetti, C., Pesetsky, D. & Seidenberg, M. (2001). How psychological science informs the teaching of reading. *Psychological Science in the Public Interest*, 2(2), 31-74.
-- Castles, A., Rayner, K. & Seidenberg, M. (2018). Ending the reading wars: reading acquisition from novice to expert. *Psychological Science in the Public Interest*, 19(1), 5-51.
+- Castles, A., Rastle, K. & Nation, K. (2018). Ending the reading wars: reading acquisition from novice to expert. *Psychological Science in the Public Interest*, 19(1), 5-51.
 - Dehaene, S. (2007). *Les neurones de la lecture* [*El cerebro lector*]. Siglo XXI.
 - Seymour, P., Aro, M. & Erskine, J. (2003). Foundation literacy acquisition in European orthographies. *British Journal of Psychology*, 94(2), 143-174.
 - Gough, P. & Tunmer, W. (1986). Decoding, reading, and reading disability. *Remedial and Special Education*, 7(1), 6-10.
