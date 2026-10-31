@@ -213,6 +213,7 @@ En Argentina la discusión está hoy abierta y es también de política pública
 
 ## Cómo se conecta con otros conceptos
 
+- **[Constructivismo](../aprendizaje/constructivismo.md)** — el marco general del que esta perspectiva es un caso: la epistemología, las variantes que no dicen lo mismo, y por qué de "el conocimiento se construye" no se sigue ninguna didáctica en particular.
 - **[Constructivismo y palabra generadora](constructivismo-palabra-generadora.md)** — la didáctica derivada, el método con el que se la confunde y la evidencia experimental del debate.
 - **[Modelo dual-ruta de lectura](../modelos-cognitivos/dual-ruta-lectura.md)** — el modelo de procesos con el que la perspectiva psicogenética suele compararse indebidamente: describen objetos de distinto nivel.
 - **[La sílaba como unidad subléxica](silaba-unidad-sublexical.md)** — por qué la sílaba es una unidad privilegiada en español, que es la clave fonética de la fase silábica.

@@ -142,6 +142,7 @@ Para la evaluación neuropsicológica, el método con el que se enseñó a leer 
 
 ## Cómo se conecta con otros conceptos
 
+- **[Constructivismo](../aprendizaje/constructivismo.md)** — el término en su sentido general, fuera de la alfabetización: epistemología, variantes, qué quedó firme y por qué la inferencia de guía mínima no se sostiene.
 - **[La perspectiva psicogenética](perspectiva-psicogenetica.md)** — la teoría en detalle: raíz piagetiana, método clínico, la tesis del sistema de representación, la objeción de circularidad y el puente de Vernon y Ferreiro (1999) con la conciencia fonológica.
 - **[Modelo dual-ruta de lectura](../modelos-cognitivos/dual-ruta-lectura.md)** — el marco que explica por qué la enseñanza del código construye la ruta sublexical, y por qué esa ruta es la que alimenta al léxico ortográfico.
 - **[Repetición de pseudopalabras](../evaluacion/repeticion-pseudopalabras.md)** — las mismas representaciones fonológicas en juego; las pseudopalabras miden selectivamente lo que la instrucción fónica entrena.
