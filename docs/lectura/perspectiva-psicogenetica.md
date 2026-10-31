@@ -125,7 +125,55 @@ Que esto esté firmado por Ferreiro vuelve difícil sostener que la tradición p
 
 ---
 
-## 7. Qué quedó en las aulas
+## 7. Dos lecturas de Piaget, y por qué dan prescripciones opuestas
+
+Hay un episodio argentino que conviene conocer porque es el mejor caso disponible de que **invocar a Piaget no determina ninguna didáctica**. Durante los años 70 y la última dictadura, el currículum oficial se organizó sobre una lectura del piagetismo, y esa lectura produjo exactamente lo contrario de lo que produjo la de Ferreiro.
+
+### La lectura evolutiva: esperar
+
+El **Diseño Curricular de la Municipalidad de la Ciudad de Buenos Aires de 1981** quedó conocido entre los docentes como **"el currículum de las trece letras"**: en primer grado solo estaba permitido enseñar esa cantidad, las vocales y las consonantes de correspondencia grafema-fonema fácil. El alumno terminaría de reconocer todas las unidades del código recién en **segundo grado**, para aplicarlas en tercero (Mannocchi, 2010).
+
+La fundamentación era psicopedagógica. Según el análisis de Pineau (2006), el **nivel evolutivo** del alumno se vuelve el principal organizador del currículum, los contenidos quedan relegados y el aprendizaje queda determinado por la **maduración psicológica**, con lo que llama una "graduación de hierro". Caruso y Fairstein (1997) lo nombraron **"psicopedagogización autoritaria"**: si la maduración determina el aprendizaje, los factores sociales salen de la ecuación y a la escuela le queda un **rol pasivo de espera**.
+
+En la práctica eso tuvo una forma administrativa concreta. Berta Braslavsky lo describió así: con las letras disponibles se armaban textos más o menos disparatados, mientras "desde la supervisión escolar se mandaban orientaciones a los maestros **ordenando que retengan el aprendizaje**" (citada en Mannocchi, 2010).
+
+El dispositivo que sostenía la espera era el **aprestamiento**: antes de enseñar a leer había que desarrollar supuestos prerrequisitos. Los cuadernillos que el Consejo Nacional de Educación publicó en 1973 para maestros organizaban ejercicios por áreas de lenguaje oral, organización espacial, esquema corporal, estructuración temporal, percepción, psicomotricidad y madurez afectivo-social.
+
+### La lectura epistemológica: no hay nada que esperar
+
+Ferreiro toma a Piaget por otro lado: no como **psicología evolutiva** de etapas sino como **epistemología genética**, y el sujeto deja de ser el niño abstracto de las etapas para ser un "sujeto epistémico, fuertemente condicionado por sus coordenadas sociales y económicas de vida" (Scherman, Vissani y Fantini, 2018).
+
+El giro es decisivo, y es el mismo que recorre esta entrada. Si el chico **ya está construyendo hipótesis sobre la escritura desde los cuatro años**, entonces no hay ninguna maduración que aguardar, y el fracaso escolar no puede explicarse por inmadurez. Ferreiro lo reencuadra como **selección social** y habla de "expulsión encubierta" antes que de deserción, porque la responsabilidad se corre del chico a la escuela. El dato que más incomodaba a la explicación maduracionista era simple: chicos que fracasaban sabían perfectamente bien todas las letras.
+
+| | Lectura evolutiva / aprestamiento | Lectura epistemológica / psicogénesis |
+|---|---|---|
+| Qué se lee de Piaget | Etapas, maduración, prerrequisitos | Construcción de conocimiento, método clínico |
+| Dónde está la causa del fracaso | En el niño: inmadurez, déficit | En la escuela: selección social |
+| Qué hay que hacer | Esperar y ejercitar prerrequisitos | Trabajar sobre lo que el chico ya construye |
+| Rol del docente | Diagnosticar madurez y demorar | Proponer situaciones y leer los errores |
+
+### La ironía institucional
+
+Mientras el currículum oficial argentino se organizaba sobre una lectura de Piaget, **el libro de Ferreiro y Teberosky no pudo publicarse en el país**. Salió en México en 1979, con prólogo de Hermine Sinclair, y entró de manera clandestina: circuló en grupos de estudio restringidos, en algún caso con las tapas cubiertas para ocultar a la autora. La investigación se había interrumpido en 1976 y el equipo se exilió. En algunas bibliotecas se retiraron obras de Piaget, y su circulación se toleraba en la medida en que se las pudiera reducir a una psicología evolutiva compatible con la evaluación psicométrica (Scherman, Vissani y Fantini, 2018).
+
+Que un mismo autor sea a la vez el fundamento del currículum oficial y el material retirado de bibliotecas no es una paradoja: es la consecuencia de que **"piagetiano" no es una posición didáctica**. Una lectura convertía las etapas en un reloj al que la escuela debía someterse; la otra convertía la construcción en una actividad ya en curso que la escuela debía reconocer.
+
+### La advertencia historiográfica
+
+Hay una tentación fuerte acá, y vale resistirla: leer el aprestamiento como invención de la dictadura y la psicogénesis como su contracara democrática. La investigación disponible no lo sostiene. Mannocchi (2010) muestra, revisando diseños curriculares, programas, circulares y entrevistas a docentes de la provincia de Buenos Aires, que esas convicciones **se asientan a partir de 1973 y se consolidan después, atravesando discursos políticos discrepantes**. El viraje decisivo es el **Programa Curricular de Primer Ciclo de 1974** de la provincia, el que los maestros llamaban **"el conductero"** porque cada objetivo debía traducirse en conductas observables: a partir de ahí desaparece de modo definitivo el objetivo de iniciar la lengua escrita al comienzo del ciclo lectivo.
+
+Su conclusión es explícita: con la dictadura **no se inaugura** el retroceso en el área, se consolida una serie más larga, y recortar la historia de los modos de enseñar a leer según el paso de los gobiernos "es negar las intersecciones". La represión, la censura y la prohibición de autores son hechos de ese período y no están en discusión. La didáctica de la lectura, en cambio, seguía un calendario propio.
+
+### Lo que esto deja para la discusión actual
+
+Dos cosas que vale conservar:
+
+1. **Dos marcos pueden coincidir en la conclusión práctica y diferir en todo lo demás.** El aprestamiento y la didáctica de inspiración psicogenética terminaron ambos demorando la enseñanza explícita del código, pero por razones opuestas: el primero porque **el chico todavía no puede**, la segunda porque **no hace falta enseñárselo**. La objeción empírica contra la demora los alcanza a los dos; la crítica conceptual, no, porque sus supuestos sobre el chico son contrarios.
+2. **El prestigio del fundamento no valida la prescripción.** Un currículum puede nombrar la mejor teoría disponible y derivar de ella una práctica que su propio autor rechazaría. Es el mismo problema de nivel de análisis de la sección 5, en versión institucional.
+
+---
+
+## 8. Qué quedó en las aulas
 
 La perspectiva psicogenética no se difundió como teoría sino a través de una **didáctica** elaborada por otras autoras, principalmente **Delia Lerner, Mirta Castedo y Ana María Kaufman**, que tomó forma en los diseños curriculares latinoamericanos a partir de los 80.
 
@@ -135,7 +183,7 @@ En Argentina la discusión está hoy abierta y es también de política pública
 
 ---
 
-## 8. Errores frecuentes
+## 9. Errores frecuentes
 
 | Se dice | Por qué no |
 |---|---|
@@ -144,11 +192,12 @@ En Argentina la discusión está hoy abierta y es también de política pública
 | "La psicogénesis se opone a la conciencia fonológica" | Como posición didáctica histórica, en gran medida sí. Pero el trabajo de Vernon y Ferreiro (1999) articula ambas cosas desde adentro de la tradición |
 | "Si los niveles describen bien, la teoría explica bien" | Son dos cosas separables, y es el núcleo de la objeción de circularidad: la descripción puede ser correcta y el constructo igual no explicar nada |
 | "La evidencia sobre instrucción fónica refuta la psicogénesis" | Refuta la inferencia didáctica de que el código no necesita enseñarse. No refuta la descripción de las conceptualizaciones infantiles, que es un objeto de otro nivel |
+| "El currículum de la dictadura era piagetiano, entonces la psicogénesis lo fundamentó" | Son dos lecturas opuestas del mismo autor. La oficial leyó etapas y maduración y mandó esperar; la de Ferreiro leyó construcción en curso y dijo que no había nada que esperar. Y mientras eso pasaba, el libro de 1979 no se podía publicar en el país |
 | "Es la versión latinoamericana del *whole language*" | Comparten la desconfianza hacia la enseñanza explícita del código y por eso convergieron en el aula, pero son marcos distintos: Goodman modela el **proceso de lectura** como adivinación psicolingüística, Ferreiro modela la **construcción conceptual** del sistema. Las críticas aplicables a uno no son automáticamente aplicables al otro |
 
 ---
 
-## 9. Estado de la evidencia
+## 10. Estado de la evidencia
 
 | Afirmación | Estado |
 |---|---|
@@ -178,5 +227,7 @@ En Argentina la discusión está hoy abierta y es también de política pública
 - Vernon, S. y Ferreiro, E. (1999). Writing development: a neglected variable in the consideration of phonological awareness. *Harvard Educational Review*, 69(4), 395-415.
 - Borzone, A. y Lacunza, M. (2017). Revisión crítica de los postulados del Lenguaje integral y de la Psicogénesis de la escritura. *Revista de Psicología*, 13(26), 29-43.
 - Alegría, M. y Cisternas, T. (2018). Alfabetización inicial desde una perspectiva constructivista psicogenética. Una entrevista con Delia Lerner y Mirta Castedo. *Bellaterra Journal of Teaching & Learning Language & Literature*, 11(2), 100-119.
+- Mannocchi, C. (2010). Aprender a leer y escribir durante la última dictadura. *Archivos de Ciencias de la Educación*, 4ª época, 4(4), 135-150. [Fuente de las citas de Pineau (2006), Caruso y Fairstein (1997) y Braslavsky sobre el currículum de 1981 y el "conductero" de 1974.]
+- Scherman, P., Vissani, L. y Fantini, N. (2018). Lecturas de Piaget en América Latina: Emilia Ferreiro, la lectoescritura y el fracaso escolar. *Estudos e Pesquisas em Psicologia*, 18(4), 1279-1298.
 - Liberman, I., Shankweiler, D., Fischer, F. y Carter, B. (1974). Explicit syllable and phoneme segmentation in the young child. *Journal of Experimental Child Psychology*, 18(2), 201-212.
 - Castles, A., Rastle, K. y Nation, K. (2018). Ending the reading wars: reading acquisition from novice to expert. *Psychological Science in the Public Interest*, 19(1), 5-51.
